@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mario's Handyman Service — Exterior Repairs, Bristow VA</title>
+<meta name="description" content="Gutters, flashing, siding, roof repair and wood rot across Bristow, Linton Hall, Manassas and Arlington. One man, 22 years. Call 703-415-6623.">
+<style>
+@font-face{font-family:'Saira Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/saira-condensed.woff2) format('woff2')}
+@font-face{font-family:'Saira Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/saira-condensed-600.woff2) format('woff2')}
+@font-face{font-family:'Saira Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/saira-condensed-700.woff2) format('woff2')}
+@font-face{font-family:'Public Sans';font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/public-sans.woff2) format('woff2')}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/roboto-mono.woff2) format('woff2')}
+
+:root{
+  --zinc:#ECEFF0;    /* galvanized ground */
+  --board:#FFFFFF;   /* raised panel */
+  --slate:#232B30;   /* ink            12.5:1 */
+  --shade:#58656B;   /* secondary       5.2:1 */
+  --patina:#2E6B5E;  /* copper patina, the only accent  5.4:1 */
+  --line:#C9D1D3;    /* rules and the elevation scale */
+  --display:'Saira Condensed','Arial Narrow',Arial,sans-serif;
+  --body:'Public Sans','Helvetica Neue',Arial,sans-serif;
+  --num:'Roboto Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+  --gut:clamp(1.1rem,4vw,3rem);
+  --fs-xs:.75rem;    /* 12px   labels, heights, captions */
+  --fs-md:1rem;      /* 16px   body and secondary */
+  --fs-lg:1.3rem;    /* 20.8px symptom lines */
+  --fs-xl:1.65rem;   /* 26.4px the loudest non-heading voice */
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--zinc);color:var(--slate);
+  font-family:var(--body);font-size:var(--fs-md);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* browser surfaces, themed */
+::selection{background:var(--patina);color:#fff}
+body{caret-color:var(--patina);scrollbar-color:var(--line) var(--zinc);scrollbar-width:thin}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--zinc)}
+::-webkit-scrollbar-thumb{background:var(--line);border:2px solid var(--zinc);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:#AEB9BC}
+:focus-visible{outline:2px solid var(--patina);outline-offset:3px}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+
+.wrap{width:min(100% - var(--gut) * 2,1140px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.08;letter-spacing:.005em}
+
+/* ---------- persistent bar ---------- */
+.bar{position:sticky;top:0;z-index:20;background:var(--board);border-bottom:1px solid var(--line)}
+.bar-in{display:flex;align-items:center;gap:1.2rem;padding-top:.7rem;padding-bottom:.7rem;flex-wrap:wrap}
+.mark{
+  font-family:var(--display);font-weight:700;text-transform:uppercase;
+  font-size:clamp(1.05rem,.85rem + .8vw,1.45rem);letter-spacing:.02em;
+  text-decoration:none;line-height:1.1;
+}
+.bar-right{margin-left:auto;display:flex;align-items:center;gap:1rem}
+.bar-hours{font-family:var(--num);font-size:var(--fs-xs);color:var(--shade);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.tel{
+  font-family:var(--num);font-weight:500;font-size:var(--fs-md);
+  background:var(--patina);color:#fff;text-decoration:none;
+  padding:.5rem .95rem;border-radius:2px;white-space:nowrap;
+  font-variant-numeric:tabular-nums;
+  box-shadow:0 2px 8px -4px rgba(35,43,48,.6);
+  transition:background .15s ease;
+}
+.tel:hover{background:#245849}
+
+/* ---------- hero ---------- */
+.hero img{display:block;width:100%;height:clamp(260px,40vw,480px);object-fit:cover;object-position:52% 46%}
+.hero-say{padding-top:2rem;padding-bottom:1.6rem}
+.hero-say h1{font-size:clamp(2.1rem,1rem + 5.4vw,4.6rem);font-weight:700;text-transform:uppercase;
+  letter-spacing:.004em;max-width:16ch}
+.hero-say h1 b{font-weight:700;color:var(--patina)}
+.hero-sub{margin:1.2rem 0 0;max-width:58ch;color:var(--shade);font-size:var(--fs-lg);line-height:1.45}
+
+/* ---------- symptom index ---------- */
+.broke{border-top:1px solid var(--line);padding-top:2rem;padding-bottom:2rem}
+.sec-head{font-family:var(--display);font-weight:600;text-transform:uppercase;
+  font-size:var(--fs-xs);letter-spacing:.16em;color:var(--shade);margin-bottom:1.5rem}
+.sym{border-top:1px solid var(--line)}
+.sym-row{
+  display:grid;grid-template-columns:1fr auto;gap:.5rem 1.5rem;align-items:baseline;
+  padding-top:.85rem;padding-bottom:.85rem;border-bottom:1px solid var(--line);
+}
+.sym-row span{font-size:var(--fs-lg);line-height:1.35}
+.sym-row em{
+  font-style:normal;font-family:var(--num);font-size:var(--fs-xs);
+  text-transform:uppercase;letter-spacing:.09em;color:var(--patina);white-space:nowrap;
+}
+
+/* ---------- elevation strip (signature) ---------- */
+.elev{border-top:1px solid var(--line);padding-top:2.2rem;padding-bottom:2.2rem}
+.elev h2{font-size:var(--fs-xl);line-height:1.2;font-weight:600;margin-bottom:.4rem}
+.elev-lede{color:var(--shade);max-width:60ch;margin:0 0 2.2rem}
+.scale{position:relative;padding-left:2.6rem}
+.scale::before{
+  content:"";position:absolute;left:9px;top:.75rem;bottom:.75rem;width:2px;
+  background:var(--line);transform-origin:top center;
+  animation:drop .7s cubic-bezier(.16,1,.3,1) forwards;
+}
+@keyframes drop{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+@media (prefers-reduced-motion:reduce){.scale::before{animation:none}}
+.rung{position:relative;display:grid;grid-template-columns:7.5rem 1fr auto;
+  gap:.35rem 1.4rem;align-items:baseline;padding-top:1.05rem;padding-bottom:1.05rem;border-bottom:1px solid var(--line)}
+.rung:last-child{border-bottom:0}
+.rung::before{
+  content:"";position:absolute;left:-2.6rem;top:1.45rem;width:12px;height:12px;
+  border-radius:50%;background:var(--zinc);border:2px solid var(--patina);
+}
+.rung b{font-family:var(--display);font-weight:600;text-transform:uppercase;
+  font-size:var(--fs-md);letter-spacing:.05em}
+.rung p{margin:0;color:var(--shade)}
+.rung i{font-style:normal;font-family:var(--num);font-size:var(--fs-xs);color:var(--slate);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ---------- the work ---------- */
+.work{border-top:1px solid var(--line);padding-top:2rem;padding-bottom:2rem}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.8rem,2vw,1.5rem)}
+.shot{background:var(--board);border:1px solid var(--line);border-radius:2px;overflow:hidden}
+.shot img{display:block;width:100%;height:clamp(190px,23vw,280px);object-fit:cover}
+.shot figcaption{padding:.85rem 1rem 1rem;font-size:var(--fs-md);line-height:1.45}
+.shot figcaption i{display:block;font-style:normal;font-family:var(--num);font-size:var(--fs-xs);
+  text-transform:uppercase;letter-spacing:.09em;color:var(--shade);margin-top:.35rem}
+.work-note{margin:1.5rem 0 0;color:var(--shade);max-width:66ch}
+
+/* ---------- said ---------- */
+.said{border-top:1px solid var(--line);padding-top:2rem;padding-bottom:2rem}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2.5vw,2rem)}
+.q{background:var(--board);border:1px solid var(--line);border-radius:2px;padding:1.3rem 1.4rem}
+.q p{margin:0 0 .8rem;font-size:var(--fs-md);line-height:1.55}
+.q cite{font-style:normal;font-family:var(--num);font-size:var(--fs-xs);color:var(--shade);
+  font-variant-numeric:tabular-nums}
+
+/* ---------- call ---------- */
+.call{border-top:1px solid var(--line);padding-top:2.2rem;padding-bottom:2.2rem}
+.call-in{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
+.call h2{font-size:var(--fs-xl);line-height:1.2;font-weight:600;margin-bottom:.9rem}
+.call p{margin:0 0 1rem;color:var(--shade);max-width:52ch}
+.big-tel{
+  display:inline-block;font-family:var(--num);font-weight:500;
+  font-size:clamp(1.5rem,1rem + 2.2vw,2.4rem);letter-spacing:-.01em;
+  color:var(--patina);text-decoration:none;font-variant-numeric:tabular-nums;
+  border-bottom:2px solid var(--patina);padding-bottom:.1rem;
+}
+.hours{width:100%;border-collapse:collapse;font-family:var(--num);font-size:var(--fs-md);
+  font-variant-numeric:tabular-nums}
+.hours th,.hours td{padding:.5rem 0;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
+.hours th{color:var(--shade);width:8rem;font-weight:400}
+.hours tr:last-child th,.hours tr:last-child td{border-bottom:0}
+.area{margin-top:1.3rem;font-size:var(--fs-md);color:var(--shade);line-height:1.7}
+
+footer{border-top:1px solid var(--line);padding-top:1.8rem;padding-bottom:2.4rem;color:var(--shade);font-size:var(--fs-md)}
+.foot-in{display:flex;flex-wrap:wrap;gap:.6rem 2rem;align-items:baseline}
+.disclosure{margin:0;max-width:68ch;font-size:var(--fs-xs);line-height:1.62;color:var(--shade)}
+
+@media (min-width:900px){
+  .hero-say{padding-top:3.6rem;padding-bottom:2.8rem}
+  .broke,.work,.said{padding-top:3.4rem;padding-bottom:3.4rem}
+  .elev,.call{padding-top:4rem;padding-bottom:4rem}
+  footer{padding-top:2.4rem;padding-bottom:3rem}
+}
+@media (max-width:880px){
+  .shots,.quotes{grid-template-columns:1fr}
+  .call-in{grid-template-columns:1fr}
+  .rung{grid-template-columns:1fr;gap:.15rem}
+  .rung i{margin-top:.2rem}
+}
+@media (max-width:560px){
+  .bar-hours{display:none}
+  .sym-row{grid-template-columns:1fr}
+  .sym-row em{margin-top:.1rem}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="mark" href="#top">Mario's Handyman Service</a>
+    <div class="bar-right">
+      <span class="bar-hours">Mon&ndash;Fri&nbsp;&nbsp;10:00&ndash;16:00</span>
+      <a class="tel" href="tel:+17034156623">703-415-6623</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <!-- generated illustrative imagery -->
+    <img src="images/hero.png" width="1536" height="1024"
+         alt="An extension ladder standing against the gutter line of a two-storey brick and siding colonial on an autumn morning.">
+    <div class="wrap hero-say">
+      <h1>Ladder work is <b>my</b> specialty.</h1>
+      <p class="hero-sub">Gutters, flashing, siding, roof repairs and wood rot. Twenty-two
+      years on the outside of houses in Prince William County. One man, and he answers his
+      own phone.</p>
+    </div>
+  </section>
+
+  <section class="broke">
+    <div class="wrap">
+      <h2 class="sec-head">What's broken?</h2>
+      <div class="sym">
+        <div class="sym-row"><span>Water is coming in above a window or where the roof meets a wall</span><em>Flashing</em></div>
+        <div class="sym-row"><span>The gutter is sagging, overflowing, or full of oak leaves again</span><em>Gutters</em></div>
+        <div class="sym-row"><span>There's a soft spot in the trim, and the paint keeps failing there</span><em>Wood rot</em></div>
+        <div class="sym-row"><span>A board came off in the wind and nothing matches the old colour</span><em>Siding</em></div>
+        <div class="sym-row"><span>Shingles went missing after the last storm</span><em>Roof repair</em></div>
+        <div class="sym-row"><span>The attic is hot and there's no vent up there</span><em>Roof vents</em></div>
+        <div class="sym-row"><span>Something outside caused a hole in the drywall inside</span><em>Drywall, caulking</em></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="elev">
+    <div class="wrap">
+      <h2>How high does he go?</h2>
+      <p class="elev-lede">All the way. Most of these repairs are only expensive because they
+      are awkward to reach, and reaching them is the part he is best at.</p>
+      <div class="scale">
+        <div class="rung">
+          <b>Ridge</b>
+          <p>Shingle replacement, storm damage, louvered roof vent installation.</p>
+          <i>28 ft</i>
+        </div>
+        <div class="rung">
+          <b>Eave</b>
+          <p>Gutter cleaning and repair, micro-mesh guards, fascia and soffit.</p>
+          <i>18 ft</i>
+        </div>
+        <div class="rung">
+          <b>Wall junction</b>
+          <p>Step flashing, counter flashing, the leak nobody can find.</p>
+          <i>14 ft</i>
+        </div>
+        <div class="rung">
+          <b>First storey</b>
+          <p>Clapboard and vinyl siding repair, wood rot cut out and replaced.</p>
+          <i>9 ft</i>
+        </div>
+        <div class="rung">
+          <b>Grade</b>
+          <p>Downspouts, extensions and splash blocks, so it drains away from the house.</p>
+          <i>0 ft</i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="wrap">
+      <h2 class="sec-head">Recent work</h2>
+      <div class="shots">
+        <figure class="shot">
+          <!-- generated illustrative imagery -->
+          <img src="images/gutter.png" width="1024" height="1024"
+               alt="Gloved hands pressing a stainless steel micro-mesh guard into a white aluminium gutter beside asphalt shingles.">
+          <figcaption>Stainless steel micro-mesh gutter guard install
+            <i>Bristow</i></figcaption>
+        </figure>
+        <figure class="shot">
+          <!-- generated illustrative imagery -->
+          <img src="images/rot.png" width="1024" height="1024"
+               alt="Rotted fascia trim cut away at a soffit corner, exposing sound timber behind it.">
+          <figcaption>Wood rot cut out at the soffit corner
+            <i>Alexandria</i></figcaption>
+        </figure>
+        <figure class="shot">
+          <!-- generated illustrative imagery -->
+          <img src="images/siding.png" width="1024" height="1024"
+               alt="A gloved hand holding a fresh clapboard against a run of older weathered painted siding.">
+          <figcaption>Custom clapboard siding repair, colour matched
+            <i>Linton Hall</i></figcaption>
+        </figure>
+      </div>
+      <p class="work-note">There are around a hundred and ten more of these, taken on the job
+      over twenty-two years. On a finished site they would all live here, sorted by what broke.</p>
+    </div>
+  </section>
+
+  <section class="said">
+    <div class="wrap">
+      <h2 class="sec-head">What people say</h2>
+      <div class="quotes">
+        <blockquote class="q">
+          <p>"We call him Super Mario for a reason! Since we purchased our townhouse in
+          Arlington last August, Mario has been a regular fixture in our home."</p>
+          <cite>Ryan W. · Yelp · 22 Jul 2021</cite>
+        </blockquote>
+        <blockquote class="q">
+          <p>"He did an amazing job, he reinstalled some siding. Went above and beyond to
+          match the color. His heart is in the task at hand."</p>
+          <cite>Zane S. · Yelp · 13 Oct 2024</cite>
+        </blockquote>
+        <blockquote class="q">
+          <p>"Mario has fixed dry wall holes, resloped our gutters, and recaulked our
+          bathroom. He is on time, polite, friendly, efficient, honest."</p>
+          <cite>Leslie G. · Yelp · 22 Sep 2020</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="call">
+    <div class="wrap call-in">
+      <div>
+        <h2>Send a picture of it.</h2>
+        <p>Text a photo of whatever is wrong and roughly where it is on the house, and you'll
+        get a straight answer about whether it's a repair or something bigger. If it's bigger,
+        he'll say so.</p>
+        <a class="big-tel" href="tel:+17034156623">703-415-6623</a>
+        <p class="area">Bristow &middot; Linton Hall &middot; Gainesville &middot; Manassas
+        &middot; Arlington &middot; Alexandria<br>
+        Based in Bristow, VA 20136.</p>
+      </div>
+      <table class="hours">
+        <caption class="sec-head" style="margin-bottom:.9rem">Hours</caption>
+        <tbody>
+          <tr><th scope="row">Monday</th><td>10:00 – 16:00</td></tr>
+          <tr><th scope="row">Tuesday</th><td>10:00 – 16:00</td></tr>
+          <tr><th scope="row">Wednesday</th><td>10:00 – 16:00</td></tr>
+          <tr><th scope="row">Thursday</th><td>10:00 – 16:00</td></tr>
+          <tr><th scope="row">Friday</th><td>10:00 – 16:00</td></tr>
+          <tr><th scope="row">Saturday</th><td>Closed</td></tr>
+          <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>Mario's Handyman Service, LLC &middot; Bristow, Virginia</span>
+    <p class="disclosure">Concept design. The photographs here are illustrative art direction
+    rather than pictures of Mario's own jobs — a finished site would use his own, which already
+    exist. Review quotations are real and are reproduced from his public Yelp listing.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Mario's Handyman Service, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
