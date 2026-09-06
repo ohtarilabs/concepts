@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pizza Luca - Brick Fired Pizza and Pasta in Downtown Staunton, Virginia</title>
+<meta name="description" content="Brick fired pizzas, pasta and salads on N. Lewis Street in Staunton's Historic Auto Architecture District. Lunch 11 to 3, dinner 3 to 9, Tuesday through Saturday. Order online or call (540) 712-0150.">
+<style>
+@font-face{font-family:'Bricolage Grotesque';src:url('fonts/bricolage.woff2')format('woff2');font-weight:200 800;font-display:swap;}
+@font-face{font-family:'Newsreader';src:url('fonts/newsreader.woff2')format('woff2');font-weight:200 800;font-display:swap;}
+@font-face{font-family:'Archivo';src:url('fonts/archivo.woff2')format('woff2');font-weight:100 900;font-display:swap;}
+
+:root{
+  --ink:#0f1012;
+  --raised:#1a1c20;
+  --bone:#e9e4d9;
+  --ember:#e2571f;
+  --muted:#6b6459;
+  --rule:#2b2d31;
+  --bone-dim:#a8a294;
+  --display:'Bricolage Grotesque',ui-sans-serif,system-ui,sans-serif;
+  --body:'Newsreader',ui-serif,Georgia,serif;
+  --util:'Archivo',ui-sans-serif,system-ui,sans-serif;
+  --gut:clamp(20px,4vw,64px);
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--muted) var(--ink);}
+body{
+  margin:0;background:var(--ink);color:var(--bone);
+  font-family:var(--body);font-size:17px;line-height:1.6;
+  font-synthesis-weight:none;-webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--ember);color:#0f1012;}
+::-webkit-scrollbar{width:11px;height:11px;}
+::-webkit-scrollbar-track{background:var(--ink);}
+::-webkit-scrollbar-thumb{background:#3a3d42;border:3px solid var(--ink);border-radius:99px;}
+::-webkit-scrollbar-thumb:hover{background:var(--muted);}
+a{color:inherit;}
+:focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:2px;}
+img{display:block;max-width:100%;}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-0.035em;line-height:1.02;margin:0;text-wrap:balance;}
+p{margin:0;}
+
+.wrap{max-width:1240px;margin:0 auto;padding-inline:var(--gut);}
+
+/* ---------- masthead ---------- */
+.mast{
+  position:sticky;top:0;z-index:20;background:rgba(15,16,18,.88);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);
+}
+.mast-in{
+  max-width:1240px;margin:0 auto;padding:0 var(--gut);height:68px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.mark{font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:-0.045em;text-decoration:none;white-space:nowrap;}
+.mark i{font-style:normal;color:var(--ember);}
+.mast-r{display:flex;align-items:center;gap:clamp(12px,2vw,26px);font-family:var(--util);font-size:13px;}
+.mast-r .when{color:var(--bone-dim);white-space:nowrap;}
+.tel{text-decoration:none;font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums;}
+.tel:hover{color:var(--ember);}
+.btn{
+  font-family:var(--util);font-weight:700;font-size:13px;letter-spacing:.01em;
+  background:var(--ember);color:#140b06;text-decoration:none;
+  padding:11px 18px;border-radius:3px;min-height:44px;
+  display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;
+  transition:background .18s cubic-bezier(.16,1,.3,1),transform .18s cubic-bezier(.16,1,.3,1);
+}
+.btn:hover{background:#f06a30;}
+.btn:active{transform:translateY(1px);}
+.btn-ghost{background:transparent;color:var(--bone);border:1px solid var(--rule);}
+.btn-ghost:hover{background:var(--raised);border-color:var(--muted);}
+@media(max-width:720px){.mast-r .when{display:none;}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:min(62vh,520px);display:grid;}
+.hero img{grid-area:1/1;width:100%;height:100%;min-height:min(62vh,520px);object-fit:cover;}
+.hero-veil{
+  grid-area:1/1;
+  background:linear-gradient(90deg,rgba(15,16,18,.94) 0%,rgba(15,16,18,.72) 44%,rgba(15,16,18,.14) 78%);
+}
+.hero-in{grid-area:1/1;align-self:end;padding-block:clamp(28px,5vw,56px);}
+.addr{
+  font-family:var(--display);font-weight:800;letter-spacing:-0.045em;line-height:.98;
+  font-size:clamp(2.5rem,7.4vw,5.4rem);margin:0 0 14px;
+}
+.hero-sub{
+  font-family:var(--util);font-size:clamp(13px,1.5vw,15px);color:var(--bone-dim);
+  max-width:44ch;margin-bottom:22px;
+}
+.hero-sub b{color:var(--bone);font-weight:600;}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap;}
+
+/* ---------- menu, the centrepiece ---------- */
+.menu-sec{padding-block:clamp(52px,7vw,90px);}
+.menu-grid{display:grid;grid-template-columns:minmax(0,1fr) 268px;gap:clamp(32px,5vw,72px);align-items:start;}
+.menu-grid > div{min-width:0;}
+@media(max-width:940px){.menu-grid{grid-template-columns:1fr;}}
+
+.svc + .svc{margin-top:clamp(44px,5vw,66px);}
+.svc-head{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--rule);padding-bottom:12px;margin-bottom:26px;flex-wrap:wrap;}
+.svc-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);}
+.svc-head .hrs{font-family:var(--util);font-size:13px;color:var(--ember);font-weight:600;letter-spacing:.02em;}
+.note{font-family:var(--util);font-size:13px;color:var(--bone-dim);margin-bottom:26px;max-width:66ch;}
+
+.grp{margin-bottom:34px;}
+.grp h3{font-size:15px;font-family:var(--util);font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
+
+.rows{display:grid;gap:15px;}
+.row{display:grid;grid-template-columns:auto minmax(18px,1fr) auto;align-items:baseline;column-gap:9px;}
+.row .nm{font-family:var(--util);font-weight:600;font-size:16px;letter-spacing:-.005em;max-width:38ch;}
+.row .lead{
+  border-bottom:1px dotted var(--rule);position:relative;top:-.24em;min-width:18px;
+  transition:border-bottom-color .22s cubic-bezier(.16,1,.3,1),border-bottom-style .22s;
+}
+.row:hover .lead{border-bottom-color:var(--ember);border-bottom-style:solid;}
+.row .pr{font-family:var(--util);font-weight:600;font-size:15px;font-variant-numeric:tabular-nums;color:var(--bone);}
+.row .ing{grid-column:1/-1;color:var(--bone-dim);font-size:15.5px;line-height:1.45;max-width:68ch;margin-top:2px;}
+
+.two{columns:2;column-gap:44px;}
+.two .grp{break-inside:avoid;}
+@media(max-width:760px){.two{columns:1;}}
+
+.rail{position:sticky;top:96px;border:1px solid var(--rule);background:var(--raised);padding:22px;border-radius:4px;}
+@media(max-width:940px){.rail{position:static;order:-1;margin-bottom:38px;}}
+.rail h3{font-family:var(--util);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;}
+.rail dl{margin:0 0 20px;font-family:var(--util);font-size:14px;}
+.rail dt{color:var(--bone-dim);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;margin-top:12px;}
+.rail dt:first-child{margin-top:0;}
+.rail dd{margin:3px 0 0;font-weight:600;font-variant-numeric:tabular-nums;}
+.rail .rest{color:var(--ember);font-weight:600;}
+.rail .btn{width:100%;margin-bottom:9px;}
+.rail address{font-style:normal;font-family:var(--util);font-size:13.5px;color:var(--bone-dim);line-height:1.55;margin-top:18px;padding-top:18px;border-top:1px solid var(--rule);}
+
+/* ---------- craft band ---------- */
+.craft{border-top:1px solid var(--rule);padding-block:clamp(52px,7vw,84px);}
+.craft-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2.4vw,28px);}
+.craft-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px;}
+.craft-say{margin-top:clamp(26px,4vw,40px);max-width:60ch;}
+.craft-say h2{font-size:clamp(1.7rem,3.2vw,2.5rem);margin-bottom:14px;}
+.craft-say p{color:var(--bone-dim);font-size:17.5px;}
+@media(max-width:620px){.craft-grid{grid-template-columns:1fr;}}
+
+/* ---------- room ---------- */
+.room{border-top:1px solid var(--rule);padding-block:clamp(52px,7vw,84px);}
+.room-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(28px,4.5vw,60px);align-items:center;}
+@media(max-width:860px){.room-grid{grid-template-columns:1fr;}}
+.room img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:3px;}
+.room h2{font-size:clamp(1.7rem,3.2vw,2.5rem);margin-bottom:14px;}
+.room p{color:var(--bone-dim);font-size:17.5px;}
+.room p + p{margin-top:14px;}
+
+/* ---------- voices ---------- */
+.voices{border-top:1px solid var(--rule);padding-block:clamp(52px,7vw,84px);}
+.voices-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);}
+@media(max-width:760px){.voices-grid{grid-template-columns:1fr;}}
+blockquote{margin:0;font-size:19px;line-height:1.5;max-width:46ch;}
+.by{font-family:var(--util);font-size:13px;color:var(--bone-dim);margin-top:12px;}
+.by b{color:var(--bone);font-weight:600;}
+.illus{display:block;font-family:var(--util);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:7px;}
+
+/* ---------- foot ---------- */
+footer{border-top:1px solid var(--rule);padding-block:clamp(40px,5vw,60px);}
+.foot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;font-family:var(--util);font-size:14px;}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:26px;}}
+.foot-grid h3{font-family:var(--util);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 11px;}
+.foot-grid p,.foot-grid address{font-style:normal;color:var(--bone-dim);line-height:1.6;margin:0;}
+.foot-grid a{text-decoration:none;}
+.foot-grid a:hover{color:var(--ember);}
+.disclosure{
+  margin-top:34px;padding-top:20px;border-top:1px solid var(--rule);
+  font-family:var(--util);font-size:12px;color:var(--muted);max-width:70ch;line-height:1.55;
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-in">
+    <a class="mark" href="#top">PIZZA <i>LUCA</i></a>
+    <div class="mast-r">
+      <span class="when">Tue to Sat, 11 to 9</span>
+      <a class="tel" href="tel:+15407120150">(540) 712-0150</a>
+      <a class="btn" href="#menu">See the menu</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <!-- generated illustrative imagery -->
+    <img src="images/hero.png" alt="A pizza sliding off a steel peel onto the deck of a wood fired brick oven, with flame at the back of the dome.">
+    <div class="hero-veil"></div>
+    <div class="hero-in wrap">
+      <h1 class="addr">213A N. Lewis Street</h1>
+      <p class="hero-sub">Brick fired pizza, pasta and salads in Staunton's Historic Auto Architecture District. Lunch <b>11 to 3</b>, dinner <b>3 to 9</b>, Tuesday through Saturday.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#menu">See the menu</a>
+        <a class="btn btn-ghost" href="tel:+15407120150">Call for a table</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-sec wrap" id="menu">
+    <div class="menu-grid">
+
+      <div>
+        <div class="svc">
+          <div class="svc-head">
+            <h2>Brick fired pizzas</h2>
+            <span class="hrs">12 in. 18.99 &nbsp;/&nbsp; gluten free 19.99</span>
+          </div>
+          <p class="note">Classic cheese, Trenton cheese or margherita, 12 in. 12.99, gluten free 13.99.</p>
+
+          <div class="rows">
+            <div class="row">
+              <span class="nm">Pepperoni Peppadew</span><span class="lead"></span><span class="pr">18.99</span>
+              <span class="ing">Tomato sauce, mozzarella, Grana Padano, oregano</span>
+            </div>
+            <div class="row">
+              <span class="nm">Fennel Sausage &amp; Kale</span><span class="lead"></span><span class="pr">18.99</span>
+              <span class="ing">Provolone, mozzarella, red onion, marinara, pecorino</span>
+            </div>
+            <div class="row">
+              <span class="nm">I Heart Meat</span><span class="lead"></span><span class="pr">18.99</span>
+              <span class="ing">Tomato sauce, mozzarella, pepperoni, fennel sausage, bacon, mortadella</span>
+            </div>
+            <div class="row">
+              <span class="nm">Veggie Luca</span><span class="lead"></span><span class="pr">18.99</span>
+              <span class="ing">Garlic, cherry tomato, eggplant, zucchini, roasted red pepper, green olive, feta, arugula, balsamic glaze</span>
+            </div>
+            <div class="row">
+              <span class="nm">Pesto Chicken</span><span class="lead"></span><span class="pr">18.99</span>
+              <span class="ing">Garlic, spinach, artichoke, fresh mozzarella, tomato</span>
+            </div>
+            <div class="row">
+              <span class="nm">Pineapple &amp; Prosciutto</span><span class="lead"></span><span class="pr">18.99</span>
+              <span class="ing">Tomato sauce, mozzarella, fresh basil</span>
+            </div>
+            <div class="row">
+              <span class="nm">Spicy Soppressata Salami &amp; Hot Honey</span><span class="lead"></span><span class="pr">18.99</span>
+              <span class="ing">Ricotta, mascarpone, arugula, Parmesan Reggiano</span>
+            </div>
+            <div class="row">
+              <span class="nm">Mushroom &amp; Caramelized Onion</span><span class="lead"></span><span class="pr">18.99</span>
+              <span class="ing">White sauce, mozzarella, pecorino, fresh chive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc">
+          <div class="svc-head">
+            <h2>Lunch</h2>
+            <span class="hrs">11am to 3pm</span>
+          </div>
+          <p class="note">Lunch deals include a fountain drink or bottled water.</p>
+          <div class="two">
+            <div class="grp">
+              <h3>Deals</h3>
+              <div class="rows">
+                <div class="row">
+                  <span class="nm">Pick Two Lunch Deal</span><span class="lead"></span><span class="pr">15.99</span>
+                  <span class="ing">Soup: creamy sausage and kale, or tomato basil. Salad: house or signature Caesar. Sandwich: toasted Italian, meatball marinara, or caprese pesto</span>
+                </div>
+                <div class="row">
+                  <span class="nm">12 in. Specialty Pizza Lunch Deal</span><span class="lead"></span><span class="pr">16.99</span>
+                  <span class="ing">Your choice of any specialty pizza</span>
+                </div>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>Salads</h3>
+              <div class="rows">
+                <div class="row">
+                  <span class="nm">House Salad</span><span class="lead"></span><span class="pr">12.99 / 6.99</span>
+                  <span class="ing">Tomato, green olives, onions, pepperoncini, grated parmesan, focaccia croutons</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Signature Caesar</span><span class="lead"></span><span class="pr">14.99 / 7.99</span>
+                  <span class="ing">Grated parmesan, fresh black pepper, focaccia croutons</span>
+                </div>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>Roast chicken wings</h3>
+              <div class="rows">
+                <div class="row">
+                  <span class="nm">8 piece</span><span class="lead"></span><span class="pr">12.99</span>
+                </div>
+                <div class="row">
+                  <span class="nm">12 piece</span><span class="lead"></span><span class="pr">18.99</span>
+                  <span class="ing">Buffalo, sesame hot honey, garlic parmesan with parsley, rosemary with caramelized onion and red chili flake, or lemon pepper. Ranch or blue cheese to dip</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc">
+          <div class="svc-head">
+            <h2>Dinner</h2>
+            <span class="hrs">3pm to 9pm</span>
+          </div>
+          <div class="two">
+            <div class="grp">
+              <h3>Pasta</h3>
+              <div class="rows">
+                <div class="row">
+                  <span class="nm">Spaghetti &amp; Meatballs</span><span class="lead"></span><span class="pr">15.99</span>
+                  <span class="ing">Marinara, Parmesan Reggiano</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Shrimp Scampi</span><span class="lead"></span><span class="pr">15.99</span>
+                  <span class="ing">White wine, garlic butter, lemon, red chili flake, parsley</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Shells &amp; Cheese</span><span class="lead"></span><span class="pr">11.99</span>
+                  <span class="ing">Add prosciutto, shrimp or broccolini for 4.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>Breads, meats and cheese</h3>
+              <div class="rows">
+                <div class="row">
+                  <span class="nm">Garlic Bread</span><span class="lead"></span><span class="pr">8.99</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Cheesy Bread</span><span class="lead"></span><span class="pr">9.99</span>
+                  <span class="ing">Marinara or ranch to dip</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Meatballs</span><span class="lead"></span><span class="pr">11.99</span>
+                  <span class="ing">Marinara, Parmesan Reggiano, crostini</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Burrata &amp; Roasted Beets</span><span class="lead"></span><span class="pr">14.99</span>
+                  <span class="ing">Escarole, fresh orange, candied walnuts, lemon vinaigrette</span>
+                </div>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>Veggies</h3>
+              <div class="rows">
+                <div class="row">
+                  <span class="nm">Marinated Olives</span><span class="lead"></span><span class="pr">5.99</span>
+                  <span class="ing">Olive oil, sherry vinegar, garlic, citrus, thyme</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Luca Taters</span><span class="lead"></span><span class="pr">9.99</span>
+                  <span class="ing">Roasted potatoes tossed in olive oil, paprika, herbes de Provence and sea salt, with garlic aioli</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Broccolini</span><span class="lead"></span><span class="pr">9.99</span>
+                  <span class="ing">Garlic, olive oil, pine nuts, lemon</span>
+                </div>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>Sweets</h3>
+              <div class="rows">
+                <div class="row">
+                  <span class="nm">Cannoli</span><span class="lead"></span><span class="pr">4.99 each</span>
+                  <span class="ing">Chocolate, or pistachio orange</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Tiramisu</span><span class="lead"></span><span class="pr">8.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc">
+          <div class="svc-head">
+            <h2>This season</h2>
+            <span class="hrs">changes with the menu</span>
+          </div>
+          <div class="two">
+            <div class="grp">
+              <h3>Seasonal</h3>
+              <div class="rows">
+                <div class="row">
+                  <span class="nm">Summer Melon &amp; Prosciutto</span><span class="lead"></span><span class="pr">14.99</span>
+                  <span class="ing">Baby gem lettuce, parmesan, pistachio, melon vinaigrette</span>
+                </div>
+                <div class="row">
+                  <span class="nm">BBQ Chicken Pizza</span><span class="lead"></span><span class="pr">19.99</span>
+                  <span class="ing">Mozzarella, provolone, corn, red onion, jalapeno</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Classic Aperol Spritz</span><span class="lead"></span><span class="pr">9.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="grp">
+              <h3>Wine by the glass</h3>
+              <div class="rows">
+                <div class="row">
+                  <span class="nm">Il Lascone Chianti</span><span class="lead"></span><span class="pr">8.49</span>
+                  <span class="ing">Luscious, supple, cherry</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Genio Monastrell Rose</span><span class="lead"></span><span class="pr">8.49</span>
+                  <span class="ing">Fresh, compote, berries</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Ultraviolet Cab</span><span class="lead"></span><span class="pr">9.99</span>
+                  <span class="ing">Bold, supple, elegance</span>
+                </div>
+                <div class="row">
+                  <span class="nm">Ancley Minervois</span><span class="lead"></span><span class="pr">9.99</span>
+                  <span class="ing">Dark, sanguine, velvet</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="rail">
+        <h3>Today</h3>
+        <dl>
+          <dt>Lunch</dt><dd>11:00am to 3:00pm</dd>
+          <dt>Dinner</dt><dd>3:00pm to 9:00pm</dd>
+          <dt>Sunday and Monday</dt><dd class="rest">Closed for rest</dd>
+        </dl>
+        <a class="btn" href="#order">Order online</a>
+        <a class="btn btn-ghost" href="tel:+15407120150">(540) 712-0150</a>
+        <address>
+          213A N. Lewis Street<br>
+          Staunton, Virginia 24401<br>
+          <a href="mailto:pizzalucasva@gmail.com">pizzalucasva@gmail.com</a>
+        </address>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="craft wrap">
+    <div class="craft-grid">
+      <!-- generated illustrative imagery -->
+      <img src="images/dough.png" alt="Two floured hands stretching a round of pizza dough across a steel counter.">
+      <!-- generated illustrative imagery -->
+      <img src="images/crust.png" alt="Close view of a baked crust edge, blistered and leopard spotted, with honey drizzled across it.">
+    </div>
+    <div class="craft-say">
+      <h2>Everything comes out of the same fire.</h2>
+      <p>Dough is stretched by hand and the pies go straight onto the brick. That is where the blistering on the rim comes from, and it is why the Spicy Soppressata Salami and Hot Honey tastes the way it does.</p>
+    </div>
+  </section>
+
+  <section class="room wrap">
+    <div class="room-grid">
+      <!-- generated illustrative imagery -->
+      <img src="images/room.png" alt="A restaurant dining room in a converted early automobile showroom at dusk, with tall steel framed windows and low pendant lights.">
+      <div>
+        <h2>An old showroom on N. Lewis Street.</h2>
+        <p>Staunton's Historic Auto Architecture District is a rare thing: a downtown block built for the first years of the automobile, and still standing. Pizza Luca sits inside one of those buildings.</p>
+        <p>Tall windows, hard floors, a room that carries sound. It fills up early on Friday and it is worth calling ahead.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="voices wrap">
+    <div class="voices-grid">
+      <div>
+        <blockquote>"We came in at five with two kids and were out by six, and the Veggie Luca was gone before the wings landed. The crust is the real thing."</blockquote>
+        <p class="by"><b>Marguerite Bledsoe</b>, Staunton
+          <span class="illus">Sample review, written for this concept</span></p>
+      </div>
+      <div>
+        <blockquote>"I drove over from Waynesboro on a Thursday for the hot honey pie. Worth the trip. Order the Luca Taters, do not think about it."</blockquote>
+        <p class="by"><b>Denny Ratliff</b>, Waynesboro
+          <span class="illus">Sample review, written for this concept</span></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap" id="order">
+  <div class="foot-grid">
+    <div>
+      <h3>Find us</h3>
+      <address>
+        213A N. Lewis Street<br>
+        Staunton, Virginia 24401<br>
+        <a href="tel:+15407120150">(540) 712-0150</a><br>
+        <a href="mailto:pizzalucasva@gmail.com">pizzalucasva@gmail.com</a>
+      </address>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <p>Tuesday to Saturday<br>
+      Lunch 11:00am to 3:00pm<br>
+      Dinner 3:00pm to 9:00pm<br>
+      Sunday and Monday, closed for rest</p>
+    </div>
+    <div>
+      <h3>Order</h3>
+      <p>Pickup and delivery through Toast.<br>
+      Gift cards available.<br>
+      Call for a table on Friday and Saturday.</p>
+    </div>
+  </div>
+  <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Pizza Luca. Menu items and prices are transcribed from Pizza Luca's own Summer 2026 lunch and dinner menus. This page is an unsolicited design concept prepared by Ohtari Labs and is not affiliated with, endorsed by, or operated by Pizza Luca.</p>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Pizza Luca, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
