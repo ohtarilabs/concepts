@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miss Kibbles — Raw &amp; Fresh Pet Food, Bristow &amp; Gainesville VA</title>
+<meta name="description" content="The largest raw-diet selection in the area, a dog bakery, and free nutritional counselling. Two shops in Bristow and Gainesville, with same-day local delivery.">
+<style>
+@font-face{font-family:'Gabarito';font-style:normal;font-weight:500 700;font-display:swap;src:url(fonts/gabarito.woff2) format('woff2')}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/newsreader.woff2) format('woff2')}
+@font-face{font-family:'Azeret Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/azeret-mono.woff2) format('woff2')}
+
+:root{
+  --brine:#12525A;   /* the cold room. the page is this colour. */
+  --deep:#0C3C43;    /* recessed panel */
+  --bone:#F8F1DC;    /* body voice          7.8:1 */
+  --mist:#AECBCF;    /* secondary, tinted   5.1:1 */
+  --marrow:#F5B451;  /* the one warm field  4.8:1 */
+  --moss:#8FBF6A;    /* fill only, never text */
+  --edge:rgba(248,241,220,.17);
+  --display:'Gabarito','Trebuchet MS',sans-serif;
+  --body:'Newsreader',Georgia,serif;
+  --num:'Azeret Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+  --gut:1.4rem;
+  --fs-xs:.75rem;    /* 12px */
+  --fs-md:1rem;      /* 16px */
+  --fs-lg:1.3rem;    /* 20.8px */
+  --fs-xl:1.65rem;   /* 26.4px */
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--brine);color:var(--bone);
+  font-family:var(--body);font-size:var(--fs-md);line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--marrow);color:var(--brine)}
+body{caret-color:var(--marrow);scrollbar-color:var(--deep) var(--brine);scrollbar-width:thin}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--brine)}
+::-webkit-scrollbar-thumb{background:var(--deep);border:2px solid var(--brine);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:#072C31}
+:focus-visible{outline:2px solid var(--marrow);outline-offset:3px}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.14;letter-spacing:-.008em;text-wrap:balance}
+
+/* ---------- the split ---------- */
+.shell{display:grid;grid-template-columns:19rem 1fr;gap:0;max-width:1400px;margin-inline:auto}
+.rail{
+  position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;
+  border-right:1px solid var(--edge);
+  padding:1.8rem var(--gut) 1.8rem var(--gut);
+  display:flex;flex-direction:column;gap:1.5rem;
+}
+.rail .mark{font-family:var(--display);font-weight:700;font-size:var(--fs-xl);
+  line-height:1.1;letter-spacing:-.015em;text-decoration:none;display:block}
+.rail .tag{margin:.45rem 0 0;color:var(--mist);font-size:var(--fs-md);line-height:1.5}
+.store{border-top:1px solid var(--edge);padding-top:1.1rem}
+.store b{display:block;font-family:var(--display);font-weight:600;font-size:var(--fs-md);
+  letter-spacing:.02em;margin-bottom:.3rem}
+.store span{display:block;color:var(--mist);font-size:var(--fs-md);line-height:1.5}
+.store a{font-family:var(--num);font-size:var(--fs-md);color:var(--bone);
+  font-variant-numeric:tabular-nums;display:inline-block;margin-top:.35rem}
+.open{font-family:var(--num);font-size:var(--fs-xs);color:var(--marrow);
+  letter-spacing:.04em;margin-top:.3rem;display:block}
+.deliver{border-top:1px solid var(--edge);padding-top:1.1rem;color:var(--mist);font-size:var(--fs-md)}
+.shop-btn{
+  display:block;text-align:center;text-decoration:none;
+  background:var(--marrow);color:var(--brine);
+  font-family:var(--display);font-weight:700;font-size:var(--fs-md);letter-spacing:.01em;
+  padding:.8rem 1rem;border-radius:3px;margin-top:auto;
+  box-shadow:0 4px 14px -8px rgba(0,0,0,.85);transition:background .15s ease;
+}
+.shop-btn:hover{background:#FAC672}
+
+.flow{min-width:0}
+.pad{padding:2rem var(--gut)}
+
+/* ---------- hero ---------- */
+.hero img{display:block;width:100%;height:300px;object-fit:cover;object-position:50% 50%}
+.hero-say h1{font-size:clamp(2rem,1rem + 4.2vw,3.5rem);font-weight:700;max-width:19ch}
+.hero-say p{margin:1.1rem 0 0;max-width:60ch;color:var(--mist);
+  font-size:var(--fs-lg);line-height:1.5}
+
+/* ---------- the label lesson ---------- */
+.lesson{border-top:1px solid var(--edge)}
+.here-h{font-size:var(--fs-xl);line-height:1.2;font-weight:600;margin:0 0 1.5rem}
+.lesson h2{font-size:var(--fs-xl);line-height:1.2;font-weight:600;margin-bottom:.5rem}
+.lesson-lede{margin:0 0 1.9rem;color:var(--mist);max-width:62ch}
+.rows{border-top:1px solid var(--edge)}
+.row{
+  display:grid;grid-template-columns:14rem 1fr;gap:.4rem 1.6rem;align-items:baseline;
+  padding-top:1rem;padding-bottom:1rem;border-bottom:1px solid var(--edge);
+  opacity:.72;animation:lift .6s cubic-bezier(.16,1,.3,1) forwards;
+}
+.row:nth-child(2){animation-delay:.09s}
+.row:nth-child(3){animation-delay:.18s}
+.row:nth-child(4){animation-delay:.27s}
+@keyframes lift{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.row{animation:none;opacity:1}}
+.row b{
+  font-family:var(--display);font-weight:600;font-size:var(--fs-lg);line-height:1.3;
+  text-decoration:line-through;text-decoration-color:var(--marrow);
+  text-decoration-thickness:2px;color:var(--bone);
+}
+.row p{margin:0;color:var(--mist)}
+
+/* ---------- the counter: the one warm field ---------- */
+.counter{background:var(--marrow);color:var(--brine)}
+.counter h2{font-size:clamp(1.6rem,1rem + 2.4vw,2.6rem);font-weight:700;max-width:17ch;
+  line-height:1.14}
+.counter p{margin:1rem 0 0;max-width:54ch;font-size:var(--fs-lg);line-height:1.5}
+.counter .free{
+  display:inline-block;margin-top:1.3rem;font-family:var(--num);font-weight:500;
+  font-size:var(--fs-md);letter-spacing:.02em;
+  border-bottom:2px solid var(--brine);padding-bottom:.15rem;
+}
+
+/* ---------- what's here ---------- */
+.here{border-top:1px solid var(--edge)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.tile{background:var(--deep);border-radius:3px;overflow:hidden}
+.tile img{display:block;width:100%;height:190px;object-fit:cover}
+.tile-say{padding:1.1rem 1.2rem 1.3rem}
+.tile-say h3{font-size:var(--fs-lg);line-height:1.25;font-weight:600;margin-bottom:.45rem}
+.tile-say p{margin:0;color:var(--mist);font-size:var(--fs-md)}
+
+/* ---------- the two shops ---------- */
+.shops{border-top:1px solid var(--edge)}
+.shops h2{font-size:var(--fs-xl);line-height:1.2;font-weight:600;margin-bottom:.6rem}
+.shops p{margin:0 0 1.1rem;color:var(--mist);max-width:62ch}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
+.fact{border-top:2px solid var(--moss);padding-top:.8rem}
+.fact b{display:block;font-family:var(--num);font-weight:500;font-size:var(--fs-lg);
+  line-height:1.3;font-variant-numeric:tabular-nums}
+.fact span{color:var(--mist);font-size:var(--fs-md)}
+
+footer{border-top:1px solid var(--edge);color:var(--mist);font-size:var(--fs-md)}
+.disclosure{margin:.7rem 0 0;max-width:70ch;font-size:var(--fs-xs);line-height:1.65;color:var(--mist)}
+
+@media (min-width:1000px){
+  :root{--gut:2.6rem}
+  .pad{padding-top:3.2rem;padding-bottom:3.2rem}
+  .hero img{height:420px}
+  .tile img{height:230px}
+}
+@media (max-width:860px){
+  .shell{grid-template-columns:1fr}
+  .rail{position:static;height:auto;border-right:0;border-bottom:1px solid var(--edge)}
+  .shop-btn{margin-top:.4rem}
+  .tiles,.facts{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr;gap:.2rem}
+}
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="rail">
+    <div>
+      <a class="mark" href="#top">Miss&nbsp;Kibbles</a>
+      <p class="tag">Locally owned. Raw, fresh and freeze-dried food for dogs and cats,
+      and someone who will tell you what to feed.</p>
+    </div>
+
+    <div class="store">
+      <b>Bristow</b>
+      <span>10390 Bristow Center Drive<br>Bristow, VA 20136</span>
+      <a href="tel:+15713797832">571-379-7832</a>
+      <span class="open">Open today until 7:00 pm</span>
+    </div>
+
+    <div class="store">
+      <b>Gainesville</b>
+      <span>13841 Heathcote Blvd<br>Gainesville, VA 20155</span>
+      <a href="tel:+12768853101">276-885-3101</a>
+      <span class="open">Open today until 7:00 pm</span>
+    </div>
+
+    <p class="deliver">Same-day local delivery, curbside and no-contact pickup from both
+    shops.</p>
+
+    <a class="shop-btn" href="#shop">Shop online</a>
+  </aside>
+
+  <main class="flow" id="top">
+
+    <section class="hero">
+      <!-- generated illustrative imagery -->
+      <img src="images/hero.png" width="1536" height="1024"
+           alt="A wall of glass-doored freezers in a small pet shop, stacked with frozen raw food in plain packaging.">
+      <div class="pad hero-say">
+        <h1>The biggest raw selection in the county, and someone to explain it.</h1>
+        <p>Two shops, ten minutes apart, built around a freezer wall. Fromm lists us as
+        carrying the largest raw-diet selection in the area — but the selection is not the
+        point. Knowing which part of it is right for your animal is.</p>
+      </div>
+    </section>
+
+    <section class="lesson">
+      <div class="pad">
+        <h2>Four things the label is allowed not to tell you.</h2>
+        <p class="lesson-lede">None of this makes a food bad. It makes the bag a poor way to
+        judge one. These are the rules the words are printed under.</p>
+        <div class="rows">
+          <div class="row">
+            <b>Chicken meal</b>
+            <p>A rendered, dried protein concentrate with the water and fat removed. It can be
+            an excellent ingredient. The label will not tell you which kind you have.</p>
+          </div>
+          <div class="row">
+            <b>Made with beef</b>
+            <p>Under federal labelling rules, a "with" claim needs the named ingredient to be
+            only three percent of the food. The picture on the front is not a measurement.</p>
+          </div>
+          <div class="row">
+            <b>Natural</b>
+            <p>Means the ingredients were not chemically synthesised, vitamins and minerals
+            aside. It is a sourcing statement, not a quality one, and it is unregulated by
+            comparison with what people assume it means.</p>
+          </div>
+          <div class="row">
+            <b>Guaranteed analysis</b>
+            <p>Protein and fat are printed as minimums, fibre and moisture as maximums. Every
+            number on that panel is a boundary the food promises not to cross, not the amount
+            actually in it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="counter">
+      <div class="pad">
+        <h2>Bring the dog. Bring the bag you're using now.</h2>
+        <p>We will read it with you at the counter, ask what your animal is actually like —
+        the coat, the energy, the digestion, the age — and tell you honestly whether changing
+        anything is worth it. Sometimes the answer is no.</p>
+        <span class="free">Nutritional counselling, no charge</span>
+      </div>
+    </section>
+
+    <section class="here" id="shop">
+      <div class="pad">
+        <h2 class="here-h">What's in the shop</h2>
+        <div class="tiles">
+          <article class="tile">
+            <!-- generated illustrative imagery -->
+            <img src="images/bowl.png" width="1024" height="1024"
+                 alt="A stainless bowl of raw food on a kitchen floor, a dog's front paws waiting at the edge of frame.">
+            <div class="tile-say">
+              <h3>Raw and fresh</h3>
+              <p>Frozen raw, freeze-dried and gently cooked, across more brands and proteins
+              than anywhere else nearby. Cold chain kept properly from the case to your car.</p>
+            </div>
+          </article>
+          <article class="tile">
+            <!-- generated illustrative imagery -->
+            <img src="images/bakery.png" width="1024" height="1024"
+                 alt="Iced bone-shaped dog biscuits on a tray behind counter glass.">
+            <div class="tile-say">
+              <h3>The dog bakery</h3>
+              <p>Baked treats made for dogs rather than for the people buying them. Birthdays
+              handled, with enough notice.</p>
+            </div>
+          </article>
+          <article class="tile">
+            <!-- generated illustrative imagery -->
+            <img src="images/counter.png" width="1024" height="1024"
+                 alt="Two pairs of hands comparing a plain bag of pet food across a shop counter, a dog waiting below.">
+            <div class="tile-say">
+              <h3>Cats too</h3>
+              <p>A full cat side — food, litter, supplements — and the same counter
+              conversation, which cats need more of than dogs do.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shops">
+      <div class="pad">
+        <h2>Two shops, ten minutes apart.</h2>
+        <p>Bristow Center Drive and Heathcote Boulevard, both open until seven. Order online
+        for same-day local delivery, curbside, or no-contact pickup — or come in and let
+        somebody meet your dog. We run adoption weekends through the year and would rather you
+        left with the right food than the expensive one.</p>
+        <div class="facts">
+          <div class="fact"><b>62</b><span>five-star reviews across the two shops</span></div>
+          <div class="fact"><b>2</b><span>locations, Bristow and Gainesville</span></div>
+          <div class="fact"><b>Same day</b><span>local delivery, curbside and no-contact</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="pad">
+        <span>Miss Kibbles &middot; Bristow &amp; Gainesville, Virginia &middot; locally,
+        women- and minority-owned</span>
+        <p class="disclosure">Concept design. The photography is illustrative art direction
+        rather than pictures of these shops, and no packaging shown is a real product. Store
+        addresses, phone numbers, hours, services and the review count are taken from Miss
+        Kibbles' own published information.</p>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Miss Kibbles, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
