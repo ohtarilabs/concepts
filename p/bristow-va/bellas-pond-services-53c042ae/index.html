@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bella's Pond Services | Pond repair, cleanouts and rebuilds in Bristow, VA</title>
+<meta name="description" content="Leak detection, liner and pump repair, cleanouts and rebuilds for backyard ponds across Bristow, Gainesville, Haymarket, Manassas and western Northern Virginia. Call (703) 843-3020.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bella's Pond Services | Pond repair in Bristow, VA">
+<meta property="og:description" content="Leak detection, liner and pump repair, cleanouts and rebuilds for backyard ponds across western Northern Virginia.">
+<meta property="og:image" content="images/hero.webp">
+<meta name="theme-color" content="#24382D">
+<style>
+/* ---- One family, three widths. Archivo variable, self-hosted, no network. ---- */
+@font-face{
+  font-family:'Archivo';
+  src:url('fonts/archivo-var-latin.woff2') format('woff2');
+  font-weight:100 900;
+  font-stretch:62% 125%;
+  font-style:normal;
+  font-display:swap;
+}
+
+:root{
+  --ground:#E6EAE2;
+  --ground-2:#DCE2D8;
+  --ink:#17251E;
+  --deep:#24382D;
+  --water:#6E8F7D;
+  --water-lt:#AFC6B8;
+  --koi:#B4471F;
+  --koi-lt:#C9622F;   /* door-go text on the dark scrim only */
+  --koi-dk:#8F3616;   /* button hover: darken, so contrast rises rather than falls */
+  --fs-xs:.84rem;
+  --fs-sm:.95rem;
+  --fs-md:1.08rem;
+  --fs-lg:1.2rem;
+  --rule:rgba(23,37,30,.16);
+  --measure:68ch;
+  --pad:clamp(1.25rem,4vw,3.5rem);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--water) var(--ground-2);}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:'Archivo',system-ui,sans-serif;
+  font-stretch:100%;
+  font-weight:400;
+  font-size:clamp(1rem,.96rem + .2vw,1.09rem);
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ---- Browser surfaces: the parts we did not draw still carry the design ---- */
+::selection{background:var(--water-lt);color:var(--ink);}
+::-webkit-scrollbar{width:12px;height:12px;}
+::-webkit-scrollbar-track{background:var(--ground-2);}
+::-webkit-scrollbar-thumb{background:var(--water);border:3px solid var(--ground-2);border-radius:8px;}
+::-webkit-scrollbar-thumb:hover{background:var(--deep);}
+:focus-visible{outline:3px solid var(--koi);outline-offset:3px;border-radius:2px;}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px;}
+input,textarea{caret-color:var(--koi);}
+
+h1,h2,h3{
+  font-stretch:118%;
+  font-weight:800;
+  line-height:1.02;
+  letter-spacing:-.03em;
+  margin:0;
+  text-wrap:balance;
+}
+h1{font-size:clamp(2.4rem,1.3rem + 3.6vw,4rem);}
+h2{font-size:clamp(1.9rem,1.2rem + 2.6vw,3.1rem);}
+h3{font-size:clamp(1.35rem,1.1rem + 1.1vw,1.85rem);letter-spacing:-.025em;}
+p{margin:0;max-width:var(--measure);}
+
+.util{
+  font-stretch:78%;
+  font-weight:600;
+  letter-spacing:.01em;
+  font-variant-numeric:tabular-nums;
+}
+.wrap{max-width:1360px;margin-inline:auto;padding-inline:var(--pad);}
+
+/* ---- Header ---- */
+.masthead{
+  display:flex;flex-wrap:wrap;gap:.75rem 2rem;
+  align-items:baseline;justify-content:space-between;
+  padding-block:1.15rem;
+  border-bottom:1px solid var(--rule);
+}
+.mark{font-stretch:118%;font-weight:800;font-size:1.24rem;letter-spacing:-.028em;}
+.mark span{font-stretch:78%;font-weight:600;font-size:var(--fs-xs);letter-spacing:.06em;
+  text-transform:none;color:var(--deep);display:block;margin-top:.1rem;opacity:.8;}
+.mast-tel{display:flex;align-items:baseline;gap:1.1rem;flex-wrap:wrap;}
+.mast-kind{color:#3D5347;font-size:var(--fs-sm);}
+.tel-lg{font-stretch:78%;font-weight:700;font-size:1.32rem;font-variant-numeric:tabular-nums;
+  color:var(--koi);text-decoration:none;}
+.tel-lg:hover{text-decoration:underline;}
+
+/* ---- Hero: asymmetric split, 38 text / 62 image ---- */
+.hero{display:grid;grid-template-columns:42fr 58fr;gap:0;align-items:stretch;
+  border-bottom:1px solid var(--rule);}
+.hero-copy{padding:clamp(2.25rem,4.5vw,4.5rem) clamp(1.25rem,3.2vw,3.25rem)
+  clamp(2.25rem,4.5vw,4.5rem) var(--pad);display:flex;flex-direction:column;
+  justify-content:center;gap:1.5rem;}
+.hero-copy p{font-size:var(--fs-md);max-width:34ch;color:#26382F;}
+.hero-fig{position:relative;min-height:clamp(320px,52vw,660px);margin:0;}
+.hero-fig img{width:100%;height:100%;object-fit:cover;object-position:52% 60%;display:block;}
+.actions{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:.35rem;}
+.btn{
+  display:inline-flex;align-items:center;min-height:52px;padding:.7rem 1.5rem;
+  font-stretch:78%;font-weight:700;font-size:var(--fs-md);letter-spacing:.005em;
+  border-radius:3px;text-decoration:none;border:2px solid var(--koi);
+  transition:background-color .35s var(--ease),color .35s var(--ease),
+             transform .35s var(--ease);
+  font-variant-numeric:tabular-nums;
+}
+.btn-a{background:var(--koi);color:#FFF8F4;}
+.btn-a:hover{background:var(--koi-dk);border-color:var(--koi-dk);}
+.btn-b{background:transparent;color:var(--koi);}
+.btn-b:hover{background:var(--koi-dk);border-color:var(--koi-dk);color:#FFF8F4;}
+.btn:active{transform:translateY(1px);}
+
+/* ---- The two doors: the signature. 62/38, sized to the real business mix ---- */
+.doors{display:grid;grid-template-columns:62fr 38fr;}
+.door{
+  position:relative;display:block;overflow:hidden;text-decoration:none;color:#F2F5EF;
+  min-height:clamp(380px,44vw,600px);isolation:isolate;
+  border-right:1px solid rgba(230,234,226,.22);
+}
+.door:last-child{border-right:0;}
+.door img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+  z-index:-2;transition:transform 1.1s var(--ease);
+}
+.door::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(178deg,rgba(20,32,26,.14) 6%,rgba(20,32,26,.62) 56%,rgba(16,26,21,.9) 100%);
+  transition:opacity .55s var(--ease);
+}
+.door-body{position:absolute;left:0;right:0;bottom:0;padding:clamp(1.5rem,2.6vw,2.6rem) clamp(1.5rem,2.6vw,2.6rem) clamp(1.75rem,2.9vw,3rem);
+  display:flex;flex-direction:column;gap:.7rem;}
+.door-body p{max-width:44ch;color:#DCE5DC;font-size:1rem;line-height:1.55;}
+.door h2{color:#F4F7F1;}
+.door-go{font-stretch:78%;font-weight:700;font-size:var(--fs-sm);color:var(--koi-lt);
+  margin-top:.15rem;}
+/* the one authored moment */
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  .doors:hover .door img{transform:scale(1.005);}
+  .doors:hover .door:not(:hover)::after{opacity:.82;}
+  .door:hover img,.door:focus-visible img{transform:scale(1.02);}
+  .door:hover::after{opacity:.88;}
+}
+.door:focus-visible{outline:3px solid var(--koi);outline-offset:-6px;}
+
+/* ---- Symptom rows ---- */
+.symptoms{padding-block:clamp(3.5rem,7vw,6.5rem) clamp(2.75rem,5vw,5rem);}
+.symptoms > h2{margin-bottom:2.4rem;max-width:20ch;}
+.row{
+  display:grid;grid-template-columns:minmax(0,42fr) minmax(0,58fr);
+  gap:clamp(.6rem,3vw,3rem);
+  padding-block:1.7rem;border-top:1px solid var(--rule);align-items:start;
+}
+.row:last-child{border-bottom:1px solid var(--rule);}
+.row h3{color:var(--deep);}
+.row p{color:#2A3C33;}
+
+/* ---- The review ---- */
+.review{background:var(--deep);color:var(--water-lt);padding-block:clamp(3.5rem,7vw,6rem);}
+.review blockquote{margin:0;max-width:none;}
+.review q{
+  font-stretch:118%;font-weight:800;letter-spacing:-.03em;line-height:1.14;
+  font-size:clamp(1.7rem,1.05rem + 2.5vw,3rem);color:#F1F5EE;quotes:"\201C" "\201D";
+  display:block;max-width:27ch;text-wrap:balance;
+}
+.review-src{margin-top:1.6rem;font-stretch:78%;font-weight:600;font-size:var(--fs-sm);
+  color:var(--water-lt);letter-spacing:.02em;}
+
+/* ---- Seasonal band ---- */
+.season{display:grid;grid-template-columns:46fr 54fr;align-items:center;
+  background:var(--ground-2);}
+.season-fig{min-height:clamp(260px,30vw,440px);margin:0;}
+.season-fig img{width:100%;height:100%;object-fit:cover;display:block;}
+.season-copy{padding:clamp(2rem,4.5vw,4rem) var(--pad);display:flex;
+  flex-direction:column;gap:1.15rem;}
+.season-copy p{max-width:52ch;color:#26382F;}
+
+/* ---- Service area ---- */
+.area{padding-block:clamp(3rem,6vw,5rem);}
+.area h2{max-width:22ch;margin-bottom:1.5rem;}
+.towns{display:flex;flex-wrap:wrap;gap:.5rem .55rem;margin:0;padding:0;list-style:none;
+  max-width:60rem;}
+.towns li{
+  font-stretch:78%;font-weight:600;font-size:1rem;
+  border:1px solid var(--rule);border-radius:2px;padding:.42rem .75rem;color:var(--deep);
+}
+
+/* ---- Contact close ---- */
+.close{background:var(--deep);color:#E8EEE7;padding-block:clamp(3.5rem,7vw,6rem);}
+.close-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
+  gap:clamp(2rem,5vw,5rem);align-items:start;}
+.close h2{color:#F4F7F1;max-width:16ch;}
+.close p{color:var(--water-lt);margin-top:1.15rem;max-width:46ch;}
+.close .btn-a{margin-top:1.9rem;}
+.card-nap{display:grid;gap:1.15rem;}
+.nap-item{display:grid;gap:.18rem;padding-bottom:1.05rem;
+  border-bottom:1px solid rgba(175,198,178,.22);}
+.nap-item:last-child{border-bottom:0;}
+.nap-k{font-stretch:78%;font-weight:600;font-size:var(--fs-xs);letter-spacing:.05em;
+  color:var(--water);}
+.nap-v{font-stretch:78%;font-weight:700;font-size:var(--fs-lg);color:#F1F5EE;
+  text-decoration:none;font-variant-numeric:tabular-nums;}
+a.nap-v:hover{text-decoration:underline;}
+
+/* ---- Footer ---- */
+.foot{background:#16241D;color:var(--water);padding-block:2.25rem;font-size:var(--fs-sm);}
+.foot p{max-width:78ch;line-height:1.6;}
+.disclosure{margin-top:.9rem;color:#8FAC9C;font-size:var(--fs-xs);}
+
+/* ---- Mobile ---- */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .hero-copy{padding:2.25rem var(--pad) 2rem;order:2;}
+  .hero-fig{order:1;min-height:300px;}
+  .doors{grid-template-columns:1fr;}
+  .door{min-height:340px;border-right:0;border-bottom:1px solid rgba(230,234,226,.22);}
+  .row{grid-template-columns:1fr;gap:.5rem;padding-block:1.4rem;}
+  .season{grid-template-columns:1fr;}
+  .season-fig{min-height:230px;}
+  .close-grid{grid-template-columns:1fr;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms !important;animation-duration:.01ms !important;}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A pond contractor's site that sorts the visitor by what already went wrong, refusing the
+category's equal-weight "want a pond / have a pond" button pair and the build-first brochure.
+OWN-WORLD: Dry-fieldstone limestone ground, pond-green ink and fields, one persimmon accent taken
+from the koi. One variable family, Archivo, at three widths: 118 display, 100 body, 78 utility.
+Photographs full-bleed, no cards, no icons, hairline rules only.
+STORY: A homeowner with a leaking or green pond sees their own problem named in the first screen,
+learns this shop fixes rather than sells, and calls or sends three photos.
+FIRST VIEWPORT: 38/62 split. Left, limestone, the headline at 4.9rem max, one line of scope, a
+persimmon call button and a photo-send button. Right, full-bleed evening pond with koi. Primary
+action sits in the left column, above the fold at every breakpoint.
+FORM: Unequal two-door entry, first on the ordered list of five structures. No concept-seed roll:
+this run is unattended prospecting and the direction is pinned by design-brief.md.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the
+verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+<header class="wrap masthead">
+  <div class="mark">Bella&rsquo;s Pond Services<span>Bristow, Virginia</span></div>
+  <div class="mast-tel">
+    <span class="util mast-kind">Pond repair and cleanouts</span>
+    <a class="tel-lg" href="tel:+17038433020">(703)&nbsp;843-3020</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <h1>We fix ponds that stopped behaving.</h1>
+    <p>Leak detection, liner and pump repair, cleanouts and rebuilds for backyard ponds across
+       western Northern Virginia.</p>
+    <div class="actions">
+      <a class="btn btn-a" href="tel:+17038433020">Call (703) 843-3020</a>
+      <a class="btn btn-b" href="#send-photos">Send us three photos</a>
+    </div>
+  </div>
+  <figure class="hero-fig">
+    <!-- generated illustrative imagery -->
+    <img src="images/hero.webp" width="1536" height="1024" fetchpriority="high"
+         alt="A backyard pond at early evening: a low fieldstone waterfall spilling into clear water, koi under the surface, lily pads and marginal grasses along the far bank.">
+  </figure>
+</section>
+
+<nav class="doors" aria-label="Choose what you need">
+  <a class="door" href="#symptoms">
+    <!-- generated illustrative imagery -->
+    <img src="images/door-repair.webp" width="1024" height="1536"
+         alt="Gloved hands lifting a skimmer basket packed with wet fallen leaves out of the edge of a pond.">
+    <div class="door-body">
+      <h2>My pond needs help</h2>
+      <p>Losing water, gone green, the pump quit, or it came with the house and you have no idea
+         what half of it does.</p>
+      <span class="door-go">See what it is doing</span>
+    </div>
+  </a>
+  <a class="door" href="#send-photos">
+    <!-- generated illustrative imagery -->
+    <img src="images/door-build.webp" width="1024" height="1536"
+         alt="A newly completed three-step fieldstone waterfall with clean water sheeting over each ledge into a new pond.">
+    <div class="door-body">
+      <h2>I want one built</h2>
+      <p>Start from nothing, or replace a pond that is past saving.</p>
+      <span class="door-go">Tell us about the yard</span>
+    </div>
+  </a>
+</nav>
+
+<section class="wrap symptoms" id="symptoms">
+  <h2>What is it doing?</h2>
+
+  <div class="row">
+    <h3>It is losing water.</h3>
+    <p>Usually a liner tear, a settled edge, or a leak in the plumbing. We find where the water is
+       actually going before quoting the repair, because those three cost very different amounts
+       and guessing is how people end up paying for a new liner they did not need.</p>
+  </div>
+
+  <div class="row">
+    <h3>It has gone green.</h3>
+    <p>Green water is a filtration and balance problem rather than a dirt problem. A cleanout
+       resets it in a day. Why it went green in the first place decides whether it comes back
+       next summer.</p>
+  </div>
+
+  <div class="row">
+    <h3>The waterfall stopped.</h3>
+    <p>Pump service, pump replacement, or a blockage somewhere in the line. If you can find the
+       model number on the pump housing, read it to us over the phone and we can often tell you
+       which one it is before we come out.</p>
+  </div>
+
+  <div class="row">
+    <h3>It came with the house.</h3>
+    <p>We will walk it with you and tell you what you actually own, what it costs to run, and
+       give you a straight answer about whether to keep it, rebuild it, or fill it in. Not every
+       inherited pond is worth saving and we will say so.</p>
+  </div>
+
+  <div class="row">
+    <h3>The fish are not right.</h3>
+    <p>Water quality, oxygen, or a filter that quietly stopped working. Fish trouble is the one
+       thing here that is time-sensitive, so call rather than email.</p>
+  </div>
+</section>
+
+<section class="review">
+  <div class="wrap">
+    <blockquote>
+      <q>One company actually disposed of all of my fish, I will not mention any names. Thanks
+         Bella&rsquo;s Pond for doing such an awesome job.</q>
+    </blockquote>
+    <p class="review-src">From a customer review on Yelp</p>
+  </div>
+</section>
+
+<section class="season">
+  <figure class="season-fig">
+    <!-- generated illustrative imagery -->
+    <img src="images/seasonal.webp" width="1536" height="1024"
+         alt="A small backyard pond covered with taut black netting in late autumn, oak and maple leaves collecting on top of it.">
+  </figure>
+  <div class="season-copy">
+    <h2>Right now, in September</h2>
+    <p>Net the pond before the leaves drop. A net over the water in September is the difference
+       between a rinse in November and a full cleanout, and it is the cheapest thing you will do
+       for the pond all year.</p>
+    <p>Autumn service books out first. Call before the maples turn.</p>
+  </div>
+</section>
+
+<section class="wrap area">
+  <h2>Where we work</h2>
+  <!-- Service-area list drafted from the business's public listings. Owner to confirm the
+       real radius before this goes live. -->
+  <ul class="towns">
+    <li>Bristow</li><li>Gainesville</li><li>Haymarket</li><li>Manassas</li>
+    <li>Nokesville</li><li>Catlett</li><li>Warrenton</li><li>Centreville</li>
+    <li>Chantilly</li><li>Broad Run</li>
+  </ul>
+</section>
+
+<section class="close" id="send-photos">
+  <div class="wrap close-grid">
+    <div>
+      <h2>Send three photos of your pond.</h2>
+      <p>Most repairs can be quoted from pictures. Take one of the whole pond, one of the
+         waterfall or filter box, and one close-up of wherever you think the water is going.
+         We will tell you what we think it is before anyone drives out.</p>
+      <a class="btn btn-a" href="mailto:info@bellaspond.com?subject=Pond%20photos">
+        Email the photos
+      </a>
+    </div>
+    <div class="card-nap">
+      <div class="nap-item">
+        <span class="nap-k util">Call</span>
+        <a class="nap-v" href="tel:+17038433020">(703) 843-3020</a>
+      </div>
+      <div class="nap-item">
+        <span class="nap-k util">Email</span>
+        <a class="nap-v" href="mailto:info@bellaspond.com">info@bellaspond.com</a>
+      </div>
+      <div class="nap-item">
+        <span class="nap-k util">Address</span>
+        <span class="nap-v">12906 Correen Hills Dr<br>Bristow, VA 20136</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="util">Bella&rsquo;s Pond Services LLC &nbsp;&middot;&nbsp; Bristow, Virginia
+       &nbsp;&middot;&nbsp; (703) 843-3020</p>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site
+       would use photography of Bella&rsquo;s Pond Services&rsquo; own work, of which they already
+       have a decade. The service-area list above is drafted from public listings and is for the
+       owner to confirm.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Bella's Pond Services LLC",
+  "description":"Pond repair, leak detection, liner and pump replacement, cleanouts and rebuilds for backyard ponds in Bristow and western Northern Virginia.",
+  "telephone":"+1-703-843-3020",
+  "email":"info@bellaspond.com",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"12906 Correen Hills Dr",
+    "addressLocality":"Bristow",
+    "addressRegion":"VA",
+    "postalCode":"20136",
+    "addressCountry":"US"
+  },
+  "areaServed":["Bristow VA","Gainesville VA","Haymarket VA","Manassas VA","Nokesville VA","Warrenton VA","Centreville VA","Chantilly VA"],
+  "knowsAbout":["pond leak detection","pond liner repair","pond pump replacement","pond cleanout","koi pond maintenance","waterfall repair"]
+}
+</script>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Bella's Pond Services LLC, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
