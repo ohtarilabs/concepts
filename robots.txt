@@ -1,0 +1,21 @@
+# Client preview mockups. Every page carries
+# <meta name="robots" content="noindex,nofollow">. Search crawlers are allowed
+# in so they can read that directive and drop the URL entirely; a blanket
+# Disallow would stop them fetching it and leave a leaked URL indexable.
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
