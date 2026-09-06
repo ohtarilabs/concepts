@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priory of Indulgence — Pâtisserie &amp; Chocolate, Bristow VA</title>
+<meta name="description" content="A French pastry counter, a chocolate bench and a gelato bar at 10215 Carnoch Way in Bristow. Four entremets in the case at a time.">
+<style>
+@font-face{font-family:'Bodoni Moda';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/bodoni-moda.woff2) format('woff2')}
+@font-face{font-family:'Karla';font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/karla.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/ibm-plex-mono-400.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/ibm-plex-mono-500.woff2) format('woff2')}
+
+:root{
+  --conche:#221510;      /* dark roasted-cacao ground */
+  --ganache:#33211A;     /* raised panel */
+  --chalk:#EDE6DC;       /* primary text        14.3:1 */
+  --muted:#A7968A;       /* secondary, same hue  6.2:1 */
+  --yuzu:#E0A72E;        /* accent               8.2:1 */
+  --cassis:#7B2D4E;      /* FILL ONLY, never text */
+  --display:'Bodoni Moda',Georgia,'Times New Roman',serif;
+  --body:'Karla','Helvetica Neue',Arial,sans-serif;
+  --num:'IBM Plex Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+  --rose:#FBE4EF;        /* tinted from cassis, not grey  7.5:1 */
+  --gut:clamp(1.15rem,4.5vw,3.25rem);
+  /* three small-text steps, each a 1.3x jump; headings ride their own clamps */
+  --fs-xs:.75rem;   /* 12px  micro-labels, tags, dates, hours */
+  --fs-md:1rem;     /* 16px  body and every secondary paragraph */
+  --fs-lg:1.3rem;   /* 20.8px ledes */
+  --fs-xl:1.65rem;  /* 26.4px the loudest non-heading voice */
+  --rule:1px solid rgba(237,230,220,.14);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--conche);color:var(--chalk);
+  font-family:var(--body);font-size:var(--fs-md);
+  line-height:1.62;font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* --- browser surfaces, themed rather than left to the browser --- */
+::selection{background:var(--yuzu);color:#1A0F0B}
+body{caret-color:var(--yuzu);scrollbar-color:var(--ganache) var(--conche);scrollbar-width:thin}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--conche)}
+::-webkit-scrollbar-thumb{background:var(--ganache);border:2px solid var(--conche);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:#462E24}
+:focus-visible{outline:2px solid var(--yuzu);outline-offset:3px;border-radius:2px}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+
+.wrap{width:min(100% - var(--gut) * 2,1160px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.06;letter-spacing:-.018em;text-wrap:balance}
+
+/* ---------- persistent bar ---------- */
+.bar{
+  position:sticky;top:0;z-index:20;background:rgba(34,21,16,.94);
+  backdrop-filter:saturate(1.3) blur(9px);border-bottom:var(--rule);
+}
+.bar-in{display:flex;align-items:baseline;gap:1.5rem;padding-block:.92rem}
+.mark{
+  font-family:var(--display);font-weight:600;font-size:clamp(1.02rem,.9rem + .55vw,1.32rem);
+  letter-spacing:.055em;text-transform:uppercase;text-decoration:none;white-space:nowrap;
+}
+.bar-meta{margin-left:auto;display:flex;align-items:baseline;gap:1.4rem;font-size:var(--fs-md)}
+.bar-where{color:var(--muted);white-space:nowrap}
+.bar-open{
+  font-family:var(--num);font-weight:500;font-size:var(--fs-xs);letter-spacing:.03em;
+  color:var(--yuzu);white-space:nowrap;font-variant-numeric:tabular-nums;
+}
+.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--yuzu);
+  margin-right:.5rem;vertical-align:middle;outline:3px solid rgba(224,167,46,.2)}
+
+/* ---------- hero ---------- */
+.hero img{display:block;width:100%;height:clamp(310px,46vw,560px);object-fit:cover;object-position:52% 56%}
+.hero-say{padding-block:clamp(2.4rem,5.5vw,4.4rem) clamp(2rem,4.5vw,3.4rem)}
+.hero-say h1{font-size:clamp(2.35rem,1rem + 6.4vw,5.3rem);letter-spacing:-.028em;max-width:15ch}
+.hero-say h1 em{font-style:italic}
+.hero-sub{margin:1.5rem 0 0;max-width:56ch;color:var(--muted);font-size:var(--fs-lg);line-height:1.5}
+
+/* ---------- case board (the signature) ---------- */
+.case{border-top:var(--rule);padding-block:clamp(2.6rem,6vw,4.6rem)}
+.case-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1.6rem;margin-bottom:2.4rem}
+.case-head h2{font-size:clamp(1.55rem,1.1rem + 1.5vw,2.35rem)}
+.case-date{
+  font-family:var(--num);font-size:var(--fs-xs);letter-spacing:.09em;text-transform:uppercase;
+  color:var(--yuzu);font-variant-numeric:tabular-nums;
+}
+.plates{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2.4vw,2rem)}
+.plate{
+  background:var(--ganache);border:var(--rule);border-radius:3px;overflow:hidden;
+  display:flex;flex-direction:column;
+  opacity:.6;transform:translateY(18px);
+  animation:settle .78s cubic-bezier(.16,1,.3,1) forwards;
+}
+.plate:nth-child(2){animation-delay:.12s}
+.plate:nth-child(3){animation-delay:.24s}
+@keyframes settle{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .plate{animation:none;opacity:1;transform:none}
+}
+.plate img{display:block;width:100%;height:clamp(230px,29vw,392px);object-fit:cover}
+.plate-say{padding:1.35rem 1.35rem 1.55rem;display:flex;flex-direction:column;gap:.55rem;flex:1}
+.plate-say h3{font-size:clamp(1.15rem,1rem + .5vw,1.45rem)}
+.plate-say p{margin:0;color:var(--muted);font-size:var(--fs-md);line-height:1.55}
+.tag{
+  margin-top:auto;padding-top:.9rem;font-family:var(--num);font-size:var(--fs-xs);
+  letter-spacing:.1em;text-transform:uppercase;color:var(--yuzu);
+}
+
+.recent{margin-top:clamp(2.2rem,4.5vw,3.2rem);display:grid;grid-template-columns:1.15fr 1fr;
+  gap:clamp(1.4rem,3.5vw,3.4rem);align-items:start}
+.recent h3{font-size:var(--fs-xl);margin-bottom:.85rem}
+.recent p{margin:0;color:var(--muted);max-width:62ch}
+.named{background:var(--cassis);color:var(--rose);border-radius:3px;padding:1.5rem 1.6rem;
+  box-shadow:0 10px 26px -16px rgba(0,0,0,.9)}
+.named b{display:block;font-family:var(--display);font-weight:600;
+  font-size:var(--fs-xl);letter-spacing:-.01em;line-height:1.3;margin-bottom:.5rem}
+.named span{font-size:var(--fs-md);line-height:1.58;display:block}
+
+/* ---------- provenance ---------- */
+.prov{border-top:var(--rule);padding-block:clamp(2.6rem,6vw,4.6rem)}
+.prov-in{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(1.6rem,4vw,4rem);align-items:start}
+.prov h2{font-size:clamp(1.6rem,1.15rem + 1.6vw,2.5rem);max-width:13ch}
+.prov p{margin:0 0 1.15rem;max-width:64ch}
+.prov p:last-child{margin-bottom:0}
+.prov .lede{color:var(--chalk);font-size:var(--fs-lg);line-height:1.5}
+.prov .rest{color:var(--muted)}
+
+/* ---------- the honest block ---------- */
+.honest{border-top:var(--rule);padding-block:clamp(2.4rem,5.5vw,4rem)}
+.honest-in{display:flex;flex-wrap:wrap;align-items:baseline;gap:.9rem 2.6rem}
+.honest h2{font-size:clamp(1.5rem,1.1rem + 1.5vw,2.3rem);white-space:nowrap}
+.honest p{margin:0;color:var(--muted);max-width:52ch}
+
+/* ---------- visit ---------- */
+.visit{border-top:var(--rule);padding-block:clamp(2.6rem,6vw,4.6rem)}
+.visit-in{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(1.8rem,4vw,4rem);align-items:start}
+.visit h2{font-size:clamp(1.6rem,1.15rem + 1.6vw,2.5rem);margin-bottom:1.4rem}
+.addr{font-style:normal;font-size:var(--fs-md);line-height:1.72}
+.addr a{color:var(--yuzu)}
+.addr a:hover{text-decoration-thickness:2px}
+.hours{width:100%;border-collapse:collapse;font-family:var(--num);font-size:var(--fs-md);
+  font-variant-numeric:tabular-nums}
+.hours caption{
+  text-align:left;font-family:var(--body);font-size:var(--fs-xs);letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);padding-bottom:.85rem;
+}
+.hours th,.hours td{padding:.56rem 0;border-bottom:var(--rule);text-align:left;font-weight:400}
+.hours th{color:var(--muted);width:8.5rem}
+.hours tr.now th,.hours tr.now td{color:var(--yuzu);font-weight:500}
+.hours tr:last-child th,.hours tr:last-child td{border-bottom:0}
+
+/* ---------- footer ---------- */
+footer{border-top:var(--rule);padding-block:2.2rem 2.8rem;color:var(--muted);font-size:var(--fs-md)}
+.foot-in{display:flex;flex-wrap:wrap;gap:.7rem 2rem;align-items:baseline}
+.disclosure{margin:0;max-width:66ch;font-size:var(--fs-xs);line-height:1.62;color:#95867A}
+
+/* ---------- mobile ---------- */
+@media (max-width:860px){
+  .plates{grid-template-columns:1fr;gap:1.15rem}
+  .plate{opacity:1;transform:none;animation:none}
+  .plate img{height:clamp(240px,54vw,330px)}
+  .recent,.prov-in,.visit-in{grid-template-columns:1fr}
+  .bar-where{display:none}
+}
+@media (max-width:520px){
+  .bar-in{gap:.75rem}
+  .mark{letter-spacing:.04em}
+  .honest h2{white-space:normal}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="mark" href="#top">Priory of Indulgence</a>
+    <div class="bar-meta">
+      <span class="bar-where">10215 Carnoch Way, Bristow</span>
+      <span class="bar-open"><span class="dot"></span>Open today until 7:00</span>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <!-- generated illustrative imagery -->
+    <img src="images/hero.png" width="1536" height="1024"
+         alt="A domed entremet under a dark chocolate mirror glaze on a slate plate, one fleck of gold leaf on top.">
+    <div class="wrap hero-say">
+      <h1>Four entremets. <em>Never</em> the same four.</h1>
+      <p class="hero-sub">A French pastry counter, a chocolate bench and a gelato bar, in a
+      strip suite off Linton Hall Road. Flour and butter from France. Nothing sits in the
+      case for long.</p>
+    </div>
+  </section>
+
+  <section class="case">
+    <div class="wrap">
+      <div class="case-head">
+        <h2>In the case</h2>
+        <span class="case-date">Friday 4 September</span>
+      </div>
+
+      <div class="plates">
+        <article class="plate">
+          <!-- generated illustrative imagery -->
+          <img src="images/case-paradise.png" width="1024" height="1536"
+               alt="A domed entremet finished in a bright translucent yuzu-yellow mirror glaze, topped with a curl of candied citrus peel.">
+          <div class="plate-say">
+            <h3>The entremets</h3>
+            <p>Mousse, curd and sponge under a mirror glaze, built in layers and finished
+            by hand. The fruit ones are why people stop driving to Fairfax.</p>
+            <span class="tag">Four at a time</span>
+          </div>
+        </article>
+
+        <article class="plate">
+          <!-- generated illustrative imagery -->
+          <img src="images/case-croissant.png" width="1024" height="1536"
+               alt="A chocolate croissant torn open on its side, showing the honeycomb of laminated layers and dark chocolate batons at the centre.">
+          <div class="plate-say">
+            <h3>The pastry case</h3>
+            <p>Laminated with French butter and left to prove properly, so the layers
+            shatter instead of tearing. Chocolate, ham and Swiss with béchamel, almond.</p>
+            <span class="tag">Almond on weekends</span>
+          </div>
+        </article>
+
+        <article class="plate">
+          <!-- generated illustrative imagery -->
+          <img src="images/case-gelato.png" width="1024" height="1536"
+               alt="A stainless steel spade lifting a curl of stracciatella gelato from a pozzetto pan, chocolate shards suspended through the cream.">
+          <div class="plate-say">
+            <h3>The gelato bar</h3>
+            <p>Churned here, in small pans, by the person who makes it. Stracciatella,
+            banana peanut butter, chocolate brownie marshmallow, peach.</p>
+            <span class="tag">Churned here</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="recent">
+        <div>
+          <h3>Recently in the case</h3>
+          <p>Silent Night. Love at First Bite. Paradise. The midnight chocolate dome.
+          Mango passion fruit. Brown butter chocolate chip cookies, malted milk balls and
+          chocolate-covered graham crackers on the chocolate side. Ask what came out this
+          morning, because by Sunday it is usually something else.</p>
+        </div>
+        <div class="named">
+          <b>Silent Night</b>
+          <span>Vanilla Japanese sponge with a vanilla mascarpone mousse, under a blueberry
+          citrus purée, topped with a cinnamon walnut crunch.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="prov">
+    <div class="wrap prov-in">
+      <h2>Trained in Las&nbsp;Vegas. Baking in Bristow.</h2>
+      <div>
+        <p class="lede">The two head pastry chefs trained together in Las Vegas under Amaury
+        Guichon before opening this room. The flour and the butter are brought in from France,
+        and the vanilla and most of the chocolate are French too, or single-origin.</p>
+        <p class="rest">That is the whole reason the croissants behave the way they do. A
+        laminated pastry is mostly an argument between butter and time, and cheaper butter
+        loses it. You can taste the difference in a plain croissant before you ever get to
+        the chocolate one.</p>
+        <p class="rest">Everything is made in this room. The gelato is churned in the pans
+        it is served from. The entremets are assembled the morning they go in the case, four
+        at a time, which is the most a small kitchen can do properly in one day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="honest">
+    <div class="wrap honest-in">
+      <h2>There is nowhere to sit.</h2>
+      <p>That is not an oversight. The room is a kitchen with a counter attached. Boxed at
+      the counter, home in four minutes, on the table while it is still cold.</p>
+    </div>
+  </section>
+
+  <section class="visit">
+    <div class="wrap visit-in">
+      <div>
+        <h2>Come by</h2>
+        <address class="addr">
+          10215 Carnoch Way, Suite 121<br>
+          Bristow, VA 20136<br>
+          <a href="https://maps.app.goo.gl/VQCR5cw4d9SPfXo96">Directions</a><br>
+          <a href="mailto:inquiry@prioryofindulgence.com">inquiry@prioryofindulgence.com</a>
+        </address>
+      </div>
+      <table class="hours">
+        <caption>Hours</caption>
+        <tbody>
+          <tr><th scope="row">Monday</th><td>Closed</td></tr>
+          <tr><th scope="row">Tuesday</th><td>11:00 – 19:00</td></tr>
+          <tr><th scope="row">Wednesday</th><td>11:00 – 19:00</td></tr>
+          <tr><th scope="row">Thursday</th><td>11:00 – 19:00</td></tr>
+          <tr class="now"><th scope="row">Friday</th><td>11:00 – 19:00</td></tr>
+          <tr><th scope="row">Saturday</th><td>09:00 – 19:00</td></tr>
+          <tr><th scope="row">Sunday</th><td>09:00 – 17:00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>Priory of Indulgence, Bristow, Virginia</span>
+    <p class="disclosure">Concept design. The photography is illustrative art direction, not
+    photographs of this shop, and the opening hours shown are placeholders — the finished
+    site would carry Priory's own pictures and its real hours.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Priory of Indulgence, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
