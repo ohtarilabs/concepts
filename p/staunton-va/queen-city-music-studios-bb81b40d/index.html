@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Queen City Music Studios | Lessons, Instrument Shop and Live Music, Staunton VA</title>
+<meta name="description" content="A school of music for learning by ear. Private lessons and group classes in thirteen instruments plus voice, Musikgarten for babies and toddlers, a consignment instrument shop with repair and setup, and free community jams. 16 West Beverley Street, Staunton.">
+<style>
+@font-face{font-family:'Sora';src:url('fonts/sora.woff2')format('woff2');font-weight:100 800;font-display:swap;}
+@font-face{font-family:'Newsreader';src:url('fonts/newsreader.woff2')format('woff2');font-weight:200 800;font-display:swap;}
+@font-face{font-family:'Roboto Mono';src:url('fonts/robotomono.woff2')format('woff2');font-weight:100 700;font-display:swap;}
+
+:root{
+  --paper:#f4f2ee;
+  --ink:#171a19;
+  --teal:#2f5d66;
+  --rust:#b8582f;
+  --olive:#6b7a58;
+  --line:#dfdcd5;
+  --muted:#5f625c;
+  --display:'Sora',ui-sans-serif,system-ui,sans-serif;
+  --body:'Newsreader',ui-serif,Georgia,serif;
+  --util:'Roboto Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --gut:clamp(20px,4.5vw,70px);
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scrollbar-color:#c3c0b8 var(--paper);}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:18px;line-height:1.6;
+  font-synthesis-weight:none;-webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--teal);color:#fff;}
+::-webkit-scrollbar{width:11px;height:11px;}
+::-webkit-scrollbar-track{background:var(--paper);}
+::-webkit-scrollbar-thumb{background:#cdcac2;border:3px solid var(--paper);border-radius:99px;}
+::-webkit-scrollbar-thumb:hover{background:var(--muted);}
+a{color:inherit;}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px;}
+img{display:block;max-width:100%;}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-0.025em;line-height:1.08;margin:0;text-wrap:balance;}
+p{margin:0;}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--gut);}
+
+/* ---------- mast ---------- */
+.mast{border-bottom:1px solid var(--line);}
+.mast-in{max-width:1180px;margin:0 auto;padding:0 var(--gut);min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.mark{font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:-.03em;text-decoration:none;white-space:nowrap;}
+.mast-r{display:flex;gap:clamp(10px,2vw,20px);font-family:var(--util);font-size:12px;color:var(--muted);}
+.mast-r a{text-decoration:none;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;}
+.mast-r a:hover{color:var(--ink);}
+@media(max-width:700px){.mast-r .addr{display:none;}}
+
+/* ---------- opening ---------- */
+.open{padding-block:clamp(32px,5vw,58px);}
+.open h1{font-size:clamp(1.9rem,4.6vw,3.4rem);max-width:19ch;}
+.open h1 em{font-style:italic;color:var(--teal);}
+.open p{margin-top:18px;max-width:56ch;color:var(--muted);font-size:18.5px;}
+.open-img img{width:100%;aspect-ratio:21/9;object-fit:cover;}
+@media(max-width:760px){.open-img img{aspect-ratio:3/2;}}
+
+/* ---------- the three doors ---------- */
+.door{padding-block:clamp(40px,6vw,76px);color:#fff;}
+.door-in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4.5vw,58px);align-items:center;}
+@media(max-width:880px){.door-in{grid-template-columns:1fr;}}
+.door h2{font-size:clamp(1.9rem,4vw,3rem);}
+.door .lede{margin-top:14px;max-width:44ch;font-size:18.5px;opacity:.92;}
+.door ul{margin:22px 0 0;padding:0;list-style:none;font-family:var(--util);font-size:13.5px;}
+.door li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.22);}
+.door li:first-child{border-top:1px solid rgba(255,255,255,.22);}
+.door img{width:100%;object-fit:cover;}
+.act{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:24px;
+  padding:13px 24px;font-family:var(--util);font-size:13.5px;font-weight:600;text-decoration:none;
+  border:2px solid #fff;color:#fff;background:transparent;position:relative;
+  transition:background .22s cubic-bezier(.16,1,.3,1),color .22s cubic-bezier(.16,1,.3,1),letter-spacing .22s;
+}
+.act:hover{background:#fff;letter-spacing:.03em;}
+.school{background:var(--teal);}
+.school img{aspect-ratio:3/2;}
+.school .act:hover{color:var(--teal);}
+.shop{background:var(--rust);}
+.shop img{aspect-ratio:1/1;}
+.shop .act:hover{color:var(--rust);}
+.shop .door-in{direction:rtl;}
+.shop .door-in > *{direction:ltr;}
+@media(max-width:880px){.shop .door-in{direction:ltr;}}
+.stage{background:var(--olive);}
+.stage img{aspect-ratio:3/2;}
+.stage .act:hover{color:var(--olive);}
+.dates{margin:22px 0 0;font-family:var(--util);font-size:13.5px;}
+.dates div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 18px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.22);}
+.dates div:first-child{border-top:1px solid rgba(255,255,255,.22);}
+.dates b{font-weight:600;}
+.dates span{opacity:.85;white-space:nowrap;}
+
+/* ---------- foot ---------- */
+footer{padding-block:clamp(38px,5vw,58px);}
+.f-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;font-family:var(--util);font-size:13px;}
+@media(max-width:760px){.f-grid{grid-template-columns:1fr;gap:22px;}}
+.f-grid h3{font-family:var(--util);font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin:0 0 11px;}
+.f-grid p,.f-grid address{font-style:normal;line-height:1.85;margin:0;color:var(--ink);}
+.f-grid a{text-decoration:none;}
+.f-grid a:hover{color:var(--teal);}
+.disclosure{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--util);font-size:11.5px;color:var(--muted);max-width:78ch;line-height:1.65;}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-in">
+    <a class="mark" href="#top">Queen City Music Studios</a>
+    <div class="mast-r">
+      <span class="addr">16 W. Beverley St, Staunton</span>
+      <a href="tel:+15404809969">(540) 480-9969</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="open wrap">
+    <h1>A school of music for learning <em>by ear</em>.</h1>
+    <p>Lessons and classes for all ages, an instrument shop and repair bench, and a room where people play together. Three things, one door, on West Beverley Street.</p>
+  </section>
+
+  <section class="open-img">
+    <!-- generated illustrative imagery -->
+    <img src="images/room.png" alt="A small music teaching room with two chairs facing each other, a music stand, an upright piano and a guitar on a stand, lit by a tall window.">
+  </section>
+
+  <section class="door school">
+    <div class="door-in wrap">
+      <div>
+        <h2>The school.</h2>
+        <p class="lede">Thirteen instruments and voice, taught aurally, for beginners through to players who have been at it for decades.</p>
+        <ul>
+          <li>Private lessons, all ages and levels</li>
+          <li>Voice, guitar, piano, bass, percussion</li>
+          <li>Banjo, fiddle, mandolin, ukulele, accordion</li>
+          <li>Trumpet, trombone, saxophone</li>
+          <li>Musikgarten for babies, toddlers and pre-schoolers</li>
+          <li>Adult group classes and kids group classes</li>
+        </ul>
+        <a class="act" href="#visit">Register for lessons</a>
+      </div>
+      <!-- generated illustrative imagery -->
+      <img src="images/wall.png" alt="A wall of second-hand acoustic guitars, a banjo, a mandolin, a ukulele and a fiddle hanging on hooks in a small music shop.">
+    </div>
+  </section>
+
+  <section class="door shop">
+    <div class="door-in wrap">
+      <div>
+        <h2>The shop.</h2>
+        <p class="lede">Instruments on consignment, so the inventory changes constantly, plus a bench for repairs and setups. Come find a new instrument, or make an old one sing again.</p>
+        <ul>
+          <li>Consignment instruments, stock changes weekly</li>
+          <li>Repairs and setups</li>
+          <li>Strings, reeds, stands and accessories</li>
+          <li>Sell your instrument on consignment</li>
+        </ul>
+        <a class="act" href="#visit">Visit the shop</a>
+      </div>
+      <!-- generated illustrative imagery -->
+      <img src="images/bench.png" alt="An instrument repair bench with an acoustic guitar body on a padded cradle, hand tools and a coil of new strings under a task lamp.">
+    </div>
+  </section>
+
+  <section class="door stage">
+    <div class="door-in wrap">
+      <div>
+        <h2>The stage.</h2>
+        <p class="lede">A room for concerts, residencies and the regular sessions that are the reason half our students found us. All welcome, bring your instrument.</p>
+        <div class="dates">
+          <div><b>Bluegrass Jam</b><span>Every 2nd Sunday</span></div>
+          <div><b>Irish Session at Marino's Lunch</b><span>1st + 3rd Thursday, 7 to 9pm</span></div>
+          <div><b>Artist in residence</b><span>Concerts and workshops</span></div>
+        </div>
+        <a class="act" href="#visit">Come and play</a>
+      </div>
+      <!-- generated illustrative imagery -->
+      <img src="images/jam.png" alt="A community music session: seven players in a circle on folding chairs with guitars, a banjo, a fiddle and an upright bass, seen from behind.">
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap" id="visit">
+  <div class="f-grid">
+    <div>
+      <h3>Studios</h3>
+      <address>
+        16 West Beverley Street<br>
+        Staunton, Virginia 24401<br>
+        <a href="tel:+15404809969">(540) 480-9969</a>
+      </address>
+    </div>
+    <div>
+      <h3>The school</h3>
+      <p>Private lessons<br>
+      Group classes, adults and kids<br>
+      Musikgarten from babies up</p>
+    </div>
+    <div>
+      <h3>Regular sessions</h3>
+      <p>Bluegrass Jam, 2nd Sundays<br>
+      Irish Session at Marino's Lunch,<br>
+      1st and 3rd Thursdays</p>
+    </div>
+  </div>
+  <p class="disclosure">Photography shown is illustrative art direction and does not depict Queen City Music Studios' own rooms, founder, faculty, students or stock. The finished site would use their own photography. Instrument lists, class programmes, shop services and session schedules are taken from Queen City Music Studios' own current website; specific dates and times should be confirmed before publication. This page is an unsolicited design concept prepared by Ohtari Labs and is not affiliated with, endorsed by, or operated by Queen City Music Studios.</p>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Queen City Music Studios, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
