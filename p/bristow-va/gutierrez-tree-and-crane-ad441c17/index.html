@@ -113,6 +113,11 @@ p{margin:0;max-width:60ch;}
 .band{margin:0;height:clamp(280px,34vw,480px);}
 .band img{width:100%;height:100%;object-fit:cover;display:block;}
 
+.band-pair{display:grid;grid-template-columns:61fr 39fr;height:clamp(260px,32vw,440px);}
+.band-pair figure{margin:0;overflow:hidden;}
+.band-pair img{width:100%;height:100%;object-fit:cover;display:block;}
+.band-pair figure + figure{border-left:2px solid var(--steel);}
+
 /* ---- Two lists, no rules, no cards ---- */
 .lists{background:var(--steel-d);padding-block:clamp(2.75rem,5.5vw,4.5rem);}
 .lists-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.75rem,5vw,5rem);}
@@ -159,6 +164,9 @@ a.nap-v:hover{text-decoration:underline;}
 
 @media (max-width:900px){
   .hero{min-height:520px;}
+  .band-pair{grid-template-columns:1fr;height:auto;}
+  .band-pair figure{height:220px;}
+  .band-pair figure + figure{border-left:0;border-top:2px solid var(--steel);}
   .lists-grid{grid-template-columns:1fr;}
   .close-grid{grid-template-columns:1fr;}
   .argue-col{margin-inline:0;}
@@ -255,11 +263,18 @@ verdict, DESIGN.md, and every shipping raster carrying its provenance.
   </div>
 </section>
 
-<figure class="band">
-  <!-- generated illustrative imagery -->
-  <img src="images/storm.webp" width="1536" height="1024"
-       alt="A large oak limb down across a suburban back yard the morning after a storm, splintered at the break and resting on a clipped wooden fence.">
-</figure>
+<div class="band-pair">
+  <figure>
+    <!-- generated illustrative imagery -->
+    <img src="images/storm.webp" width="1536" height="1024"
+         alt="A large oak limb down across a suburban back yard the morning after a storm, splintered at the break and resting on a clipped wooden fence.">
+  </figure>
+  <figure>
+    <!-- generated illustrative imagery -->
+    <img src="images/grinder.webp" width="1024" height="1536"
+         alt="A stump grinder cutting into a large freshly cut oak stump, wood chips spraying from the cutting wheel.">
+  </figure>
+</div>
 
 <section class="wrap said">
   <blockquote class="said-q">
