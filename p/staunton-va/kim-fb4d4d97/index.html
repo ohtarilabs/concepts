@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KIM - Thai, Singaporean and Korean Food on Staunton's West End</title>
+<meta name="description" content="Khao man gai served Thai style or Singaporean style, khao kha moo, pad kee mao, Panang and Massaman curries. 1116A W. Beverley Street, Staunton, Virginia. Call (540) 910-3446.">
+<style>
+@font-face{font-family:'Gabarito';src:url('fonts/gabarito.woff2')format('woff2');font-weight:400 900;font-display:swap;}
+@font-face{font-family:'Literata';src:url('fonts/literata.woff2')format('woff2');font-weight:200 700;font-display:swap;}
+@font-face{font-family:'DM Mono';src:url('fonts/dmmono.woff2')format('woff2');font-weight:300 500;font-display:swap;}
+
+:root{
+  --paper:#faf6f0;
+  --ink:#1b1a17;
+  --jade:#14493c;
+  --chilli:#d0342c;
+  --muted:#7a746a;
+  --line:#e2dbd0;
+  --paper-2:#f2ece2;
+  --display:'Gabarito',ui-sans-serif,system-ui,sans-serif;
+  --body:'Literata',ui-serif,Georgia,serif;
+  --util:'DM Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --gut:clamp(20px,4.5vw,72px);
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scrollbar-color:#c4bbac var(--paper);}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:17px;line-height:1.62;
+  font-synthesis-weight:none;-webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--chilli);color:#fff;}
+::-webkit-scrollbar{width:11px;height:11px;}
+::-webkit-scrollbar-track{background:var(--paper);}
+::-webkit-scrollbar-thumb{background:#cdc4b5;border:3px solid var(--paper);border-radius:99px;}
+::-webkit-scrollbar-thumb:hover{background:var(--muted);}
+a{color:inherit;}
+:focus-visible{outline:2px solid var(--chilli);outline-offset:3px;border-radius:2px;}
+img{display:block;max-width:100%;}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-0.03em;line-height:1.04;margin:0;text-wrap:balance;}
+p{margin:0;}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:var(--gut);}
+
+/* ---------- find-us bar, pinned above everything ---------- */
+.findbar{background:var(--ink);color:var(--paper);font-family:var(--util);font-size:12.5px;}
+.findbar-in{
+  max-width:1120px;margin:0 auto;padding:9px var(--gut);
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;
+}
+.findbar a{text-decoration:none;}
+.findbar a:hover{color:#f7a599;}
+.findbar .sep{color:#6a6459;}
+@media(max-width:620px){.findbar-in{gap:4px 14px;font-size:11.5px;}}
+
+/* ---------- monument ---------- */
+.monument{background:var(--jade);color:var(--paper);padding-block:clamp(56px,10vw,132px);}
+.monument h1{
+  font-size:clamp(5.2rem,22vw,15rem);line-height:.82;letter-spacing:-0.055em;
+  margin:0 0 clamp(20px,3vw,34px);
+}
+.monument .lede{
+  font-size:clamp(1.15rem,2.5vw,1.7rem);line-height:1.42;max-width:30ch;
+  color:#e6ece8;
+}
+.monument .lede em{font-style:italic;color:#fff;}
+.monument .sub{
+  font-family:var(--util);font-size:13px;color:#9fb8ae;margin-top:22px;max-width:46ch;line-height:1.6;
+}
+
+/* ---------- hero plate ---------- */
+.plate{padding-block:clamp(34px,5vw,64px);}
+.plate img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:3px;}
+.plate figcaption{
+  font-family:var(--util);font-size:12.5px;color:var(--muted);margin-top:11px;
+}
+
+/* ---------- one dish two ways ---------- */
+.twoways{padding-block:clamp(40px,6vw,76px);border-top:1px solid var(--line);}
+.twoways h2{font-size:clamp(1.9rem,4vw,3rem);margin-bottom:12px;}
+.twoways .intro{color:var(--muted);max-width:62ch;margin-bottom:clamp(26px,4vw,42px);font-size:17.5px;}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,38px);}
+@media(max-width:680px){.pair{grid-template-columns:1fr;}}
+.way img{
+  width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px;
+  filter:saturate(1);transition:filter .3s cubic-bezier(.16,1,.3,1);
+}
+.way h3{font-family:var(--display);font-size:1.35rem;font-weight:800;margin-top:16px;}
+.way .rule{
+  height:2px;background:var(--chilli);width:38px;margin-top:10px;
+  transition:width .3s cubic-bezier(.16,1,.3,1),opacity .3s;
+}
+.way p{color:var(--muted);font-size:16.5px;margin-top:11px;max-width:40ch;}
+.pair:hover .way img{filter:saturate(.55);}
+.pair:hover .way .rule{opacity:.3;}
+.pair .way:hover img{filter:saturate(1.04);}
+.pair .way:hover .rule{opacity:1;width:64px;}
+
+/* ---------- the rest ---------- */
+.rest{padding-block:clamp(40px,6vw,76px);border-top:1px solid var(--line);}
+.rest h2{font-size:clamp(1.9rem,4vw,3rem);margin-bottom:12px;}
+.rest .intro{color:var(--muted);max-width:62ch;margin-bottom:clamp(26px,4vw,40px);font-size:17.5px;}
+.dishes{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:2px;background:var(--line);border:1px solid var(--line);border-radius:3px;overflow:hidden;}
+.dish{background:var(--paper);padding:20px 22px;}
+.dish b{font-family:var(--display);font-weight:700;font-size:17px;display:block;letter-spacing:-.01em;}
+.dish span{color:var(--muted);font-size:15.5px;display:block;margin-top:5px;line-height:1.45;}
+.dish .where{font-family:var(--util);font-size:11px;color:var(--chilli);display:block;margin-top:9px;letter-spacing:.03em;}
+.pricenote{font-family:var(--util);font-size:12.5px;color:var(--muted);margin-top:20px;}
+
+/* ---------- finding the door ---------- */
+.door{padding-block:clamp(40px,6vw,76px);border-top:1px solid var(--line);}
+.door-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(26px,4.5vw,58px);align-items:center;}
+@media(max-width:820px){.door-grid{grid-template-columns:1fr;}}
+.door img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:3px;}
+.door h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:14px;}
+.door p{color:var(--muted);font-size:17.5px;}
+.door p + p{margin-top:13px;}
+.hours{margin-top:22px;font-family:var(--util);font-size:14px;border-top:1px solid var(--line);padding-top:16px;}
+.hours div{display:flex;justify-content:space-between;gap:24px;padding:4px 0;max-width:42ch;white-space:nowrap;}
+.hours span:last-child{color:var(--muted);}
+.call{
+  display:inline-flex;align-items:center;justify-content:center;min-height:44px;
+  margin-top:20px;padding:12px 22px;background:var(--chilli);color:#fff;
+  font-family:var(--util);font-size:14px;text-decoration:none;border-radius:3px;
+  transition:background .18s cubic-bezier(.16,1,.3,1),transform .18s;
+}
+.call:hover{background:#b92c25;}
+.call:active{transform:translateY(1px);}
+
+/* ---------- foot ---------- */
+footer{background:var(--paper-2);border-top:1px solid var(--line);padding-block:clamp(38px,5vw,58px);margin-top:clamp(30px,5vw,60px);}
+.foot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;font-family:var(--util);font-size:13.5px;}
+@media(max-width:720px){.foot-grid{grid-template-columns:1fr;gap:24px;}}
+.foot-grid h3{font-family:var(--util);font-size:11.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;}
+.foot-grid p,.foot-grid address{font-style:normal;color:var(--ink);line-height:1.7;margin:0;}
+.foot-grid a{text-decoration:none;}
+.foot-grid a:hover{color:var(--chilli);}
+.disclosure{
+  margin-top:30px;padding-top:18px;border-top:1px solid var(--line);
+  font-family:var(--util);font-size:11.5px;color:var(--muted);max-width:74ch;line-height:1.6;
+}
+</style>
+</head>
+<body>
+
+<div class="findbar">
+  <div class="findbar-in">
+    <span>1116A W. Beverley St, Staunton VA</span>
+    <span class="sep">/</span>
+    <span>Tue to Sun 11:30am to 9pm, Mon from 4pm</span>
+    <span class="sep">/</span>
+    <a href="tel:+15409103446">(540) 910-3446</a>
+  </div>
+</div>
+
+<main>
+
+  <section class="monument">
+    <div class="wrap">
+      <h1>KIM</h1>
+      <p class="lede">Named for the cook's mother. Her name was <em>Kim</em>.</p>
+      <p class="sub">Thai, Singaporean and Korean food, cooked by one person, on Staunton's West End.</p>
+    </div>
+  </section>
+
+  <figure class="plate wrap" style="margin:0 auto;">
+    <!-- generated illustrative imagery -->
+    <img src="images/hero.png" alt="A plate of khao man gai being set down: sliced poached chicken over rice, with a bowl of clear broth and a saucer of dark chilli and ginger sauce beside it.">
+    <figcaption>Khao man gai. Poached chicken, rice cooked in the broth, and the sauce that decides everything.</figcaption>
+  </figure>
+
+  <section class="twoways wrap">
+    <h2>One dish, two ways.</h2>
+    <p class="intro">Most kitchens in America pick a side. This one cooks khao man gai the Thai way and the Singaporean way, and will happily explain the difference while you decide. It comes down to the sauce.</p>
+    <div class="pair">
+      <article class="way">
+        <!-- generated illustrative imagery -->
+        <img src="images/thai.png" alt="Thai style khao man gai photographed from above: poached chicken over rice with a single dish of dark fermented soybean, chilli and ginger sauce.">
+        <h3>Thai style</h3>
+        <div class="rule"></div>
+        <p>One sauce, and it does all the work. Fermented soybean, ginger, garlic and chilli, dark and thick enough to hold onto the chicken.</p>
+      </article>
+      <article class="way">
+        <!-- generated illustrative imagery -->
+        <img src="images/singapore.png" alt="Singaporean style chicken rice photographed from above: poached chicken over rice with three separate sauce dishes holding red chilli, grated ginger and dark soy.">
+        <h3>Singaporean style</h3>
+        <div class="rule"></div>
+        <p>Three sauces, kept apart on purpose. Bright red chilli, grated ginger, and dark soy, so you mix each bite the way you want it.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="rest wrap">
+    <h2>The rest of the menu.</h2>
+    <p class="intro">It moves around. Three cuisines is a lot for one kitchen, so what is on any given day depends on what she felt like cooking. These are the regulars.</p>
+    <div class="dishes">
+      <div class="dish"><b>Khao gai yang</b><span>Grilled chicken over rice</span><span class="where">Thailand</span></div>
+      <div class="dish"><b>Khao kha moo</b><span>Braised pork leg, stewed until it gives way</span><span class="where">Thailand</span></div>
+      <div class="dish"><b>Pad kee mao</b><span>Drunken noodles, wide and hot</span><span class="where">Thailand</span></div>
+      <div class="dish"><b>Panang curry</b><span>Thick, peanut-rich, mild heat</span><span class="where">Thailand</span></div>
+      <div class="dish"><b>Massaman curry</b><span>Slow, sweet, warm with spice</span><span class="where">Thailand</span></div>
+      <div class="dish"><b>Chicken sa-tay</b><span>Skewered and grilled, with peanut</span><span class="where">Thailand</span></div>
+      <div class="dish"><b>Thai style poke</b><span>Raw fish, Thai herbs and heat</span><span class="where">Thailand</span></div>
+      <div class="dish"><b>Crab rangoon</b><span>The American one. Still good.</span><span class="where">House</span></div>
+      <div class="dish"><b>Mango sticky rice</b><span>Coconut rice, ripe mango</span><span class="where">Thailand</span></div>
+    </div>
+    <p class="pricenote">Prices and the day's specials come from the kitchen. Call ahead and ask what she is making.</p>
+  </section>
+
+  <section class="door wrap">
+    <div class="door-grid">
+      <!-- generated illustrative imagery -->
+      <img src="images/room.png" alt="A small plain restaurant dining room with white block walls, mismatched chairs and a plate glass window onto a parking lot.">
+      <div>
+        <h2>Finding the door.</h2>
+        <p>KIM is on the West End at 1116A W. Beverley Street, in the building that also holds the Citgo station and the Little Mart, across from Thornrose Cemetery. If you are looking for a standalone restaurant with its own parking lot, you will drive past it.</p>
+        <p>The room is small and plain and that is not an accident. The money went into the kitchen.</p>
+        <div class="hours">
+          <div><span>Monday</span><span>4:00pm to 9:00pm</span></div>
+          <div><span>Tuesday to Sunday</span><span>11:30am to 9:00pm</span></div>
+        </div>
+        <a class="call" href="tel:+15409103446">Call (540) 910-3446</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Where</h3>
+        <address>
+          1116A W. Beverley Street<br>
+          Staunton, Virginia 24401<br>
+          <a href="tel:+15409103446">(540) 910-3446</a>
+        </address>
+      </div>
+      <div>
+        <h3>When</h3>
+        <p>Monday 4:00pm to 9:00pm<br>
+        Tuesday to Sunday<br>
+        11:30am to 9:00pm</p>
+      </div>
+      <div>
+        <h3>What</h3>
+        <p>Thai, Singaporean and Korean.<br>
+        Dine in and takeout.<br>
+        Call ahead for large orders.</p>
+      </div>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of KIM's own food and room. Dish names are drawn from KIM's published listings; prices are deliberately not shown because they were not published anywhere we could verify. Hours are as listed on Yelp in September 2026 and should be confirmed. This page is an unsolicited design concept prepared by Ohtari Labs and is not affiliated with, endorsed by, or operated by KIM.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for KIM, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
