@@ -6,29 +6,50 @@
 <meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Miss Kibbles — Raw &amp; Fresh Pet Food, Bristow &amp; Gainesville VA</title>
+<meta name="color-scheme" content="dark">
+<title>Miss Kibbles - Raw &amp; Fresh Pet Food, Bristow &amp; Gainesville VA</title>
 <meta name="description" content="The largest raw-diet selection in the area, a dog bakery, and free nutritional counselling. Two shops in Bristow and Gainesville, with same-day local delivery.">
+<link rel="preload" as="font" type="font/woff2" href="fonts/gabarito.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/newsreader.woff2" crossorigin>
+<link rel="preload" as="image" href="images/hero.webp" fetchpriority="high">
 <style>
 @font-face{font-family:'Gabarito';font-style:normal;font-weight:500 700;font-display:swap;src:url(fonts/gabarito.woff2) format('woff2')}
 @font-face{font-family:'Newsreader';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/newsreader.woff2) format('woff2')}
 @font-face{font-family:'Azeret Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(fonts/azeret-mono.woff2) format('woff2')}
 
 :root{
-  --brine:#12525A;   /* the cold room. the page is this colour. */
-  --deep:#0C3C43;    /* recessed panel */
-  --bone:#F8F1DC;    /* body voice          7.8:1 */
-  --mist:#AECBCF;    /* secondary, tinted   5.1:1 */
-  --marrow:#F5B451;  /* the one warm field  4.8:1 */
+  /* ---- palette: the cold room, and the one warm field ---- */
+  --brine:#12525A;   /* the page is this colour, not accented by it */
+  --deep:#0C3C43;    /* recessed material: the rail, the label panel */
+  --sink:#092B31;    /* deepest seam, used for edges and scrim only */
+  --bone:#F8F1DC;    /* body voice            7.8:1 on brine */
+  --mist:#AECBCF;    /* secondary, tinted     5.1:1 on brine */
+  --marrow:#F5B451;  /* the one warm field    4.8:1 both ways */
   --moss:#8FBF6A;    /* fill only, never text */
-  --edge:rgba(248,241,220,.17);
+  --edge:rgba(248,241,220,.15);
+  --edge-lit:rgba(174,203,207,.30);
+  --glow:rgba(140,214,214,.16);   /* freezer light, spilling */
+
   --display:'Gabarito','Trebuchet MS',sans-serif;
   --body:'Newsreader',Georgia,serif;
   --num:'Azeret Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+
+  /* ---- one radius scale: full-bleed surfaces 0, contained surfaces 4px ---- */
+  --r:4px;
+
   --gut:1.4rem;
-  --fs-xs:.75rem;    /* 12px */
-  --fs-md:1rem;      /* 16px */
-  --fs-lg:1.3rem;    /* 20.8px */
-  --fs-xl:1.65rem;   /* 26.4px */
+  --fs-2xs:.6875rem; /* 11   mono micro */
+  --fs-xs:.8125rem;  /* 13   */
+  --fs-sm:.9375rem;  /* 15   */
+  --fs-md:1.0625rem; /* 17   body */
+  --fs-lg:1.25rem;   /* 20   lede */
+  --fs-xl:1.5rem;    /* 24   */
+  --fs-2xl:clamp(1.75rem,1.1rem + 2.3vw,2.75rem);   /* section voice */
+  --fs-3xl:clamp(2.4rem,1.15rem + 4.2vw,4.05rem);   /* display, once */
+
+  --shadow:0 18px 44px -26px rgba(6,32,36,.9);      /* tinted to the ground, never black */
+  --z-rail:10;
+  --z-grain:60;
 }
 
 *{box-sizing:border-box}
@@ -38,122 +59,213 @@ body{
   font-family:var(--body);font-size:var(--fs-md);line-height:1.68;
   -webkit-font-smoothing:antialiased;
 }
+/* the drenched field gets a material, so it reads as a room and not a fill */
+body::after{
+  content:"";position:fixed;inset:0;z-index:var(--z-grain);pointer-events:none;
+  opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
 ::selection{background:var(--marrow);color:var(--brine)}
 body{caret-color:var(--marrow);scrollbar-color:var(--deep) var(--brine);scrollbar-width:thin}
 ::-webkit-scrollbar{width:11px;height:11px}
 ::-webkit-scrollbar-track{background:var(--brine)}
 ::-webkit-scrollbar-thumb{background:var(--deep);border:2px solid var(--brine);border-radius:99px}
-::-webkit-scrollbar-thumb:hover{background:#072C31}
-:focus-visible{outline:2px solid var(--marrow);outline-offset:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--sink)}
+:focus-visible{outline:2px solid var(--marrow);outline-offset:3px;border-radius:2px}
 a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
-h1,h2,h3{font-family:var(--display);margin:0;line-height:1.14;letter-spacing:-.008em;text-wrap:balance}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.1;letter-spacing:-.015em;text-wrap:balance}
+p{text-wrap:pretty}
+img{display:block;max-width:100%}
 
-/* ---------- the split ---------- */
-.shell{display:grid;grid-template-columns:19rem 1fr;gap:0;max-width:1400px;margin-inline:auto}
+/* ================= the split ================= */
+.shell{display:grid;grid-template-columns:20.5rem 1fr;max-width:1480px;margin-inline:auto;
+  box-shadow:0 0 120px -40px rgba(6,32,36,.8)}
+
+/* ---- the rail: recessed, permanent, carries identity and the action ---- */
 .rail{
-  position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;
+  position:sticky;top:0;align-self:start;height:100vh;height:100dvh;overflow-y:auto;
+  z-index:var(--z-rail);
+  background:var(--deep);
   border-right:1px solid var(--edge);
-  padding:1.8rem var(--gut) 1.8rem var(--gut);
-  display:flex;flex-direction:column;gap:1.5rem;
+  padding:2.1rem var(--gut);
+  display:flex;flex-direction:column;gap:1.6rem;
 }
-.rail .mark{font-family:var(--display);font-weight:700;font-size:var(--fs-xl);
-  line-height:1.1;letter-spacing:-.015em;text-decoration:none;display:block}
-.rail .tag{margin:.45rem 0 0;color:var(--mist);font-size:var(--fs-md);line-height:1.5}
-.store{border-top:1px solid var(--edge);padding-top:1.1rem}
+/* light spilling from the freezer aisle onto the rail edge */
+.rail::after{
+  content:"";position:absolute;inset:0 -1px 0 auto;width:1px;pointer-events:none;
+  background:linear-gradient(180deg,transparent,var(--edge-lit) 22%,var(--edge-lit) 62%,transparent);
+}
+.mark{font-family:var(--display);font-weight:700;font-size:2rem;line-height:.98;
+  letter-spacing:-.03em;text-decoration:none;display:block}
+.tag{margin:.7rem 0 0;color:var(--mist);font-size:var(--fs-sm);line-height:1.55}
+
+.store{border-top:1px solid var(--edge);padding-top:1.15rem}
 .store b{display:block;font-family:var(--display);font-weight:600;font-size:var(--fs-md);
-  letter-spacing:.02em;margin-bottom:.3rem}
-.store span{display:block;color:var(--mist);font-size:var(--fs-md);line-height:1.5}
-.store a{font-family:var(--num);font-size:var(--fs-md);color:var(--bone);
-  font-variant-numeric:tabular-nums;display:inline-block;margin-top:.35rem}
-.open{font-family:var(--num);font-size:var(--fs-xs);color:var(--marrow);
-  letter-spacing:.04em;margin-top:.3rem;display:block}
-.deliver{border-top:1px solid var(--edge);padding-top:1.1rem;color:var(--mist);font-size:var(--fs-md)}
+  letter-spacing:.01em;margin-bottom:.35rem}
+.store address{font-style:normal;display:block;color:var(--mist);font-size:var(--fs-sm);line-height:1.55}
+.store a{font-family:var(--num);font-size:var(--fs-sm);color:var(--bone);
+  font-variant-numeric:tabular-nums;display:inline-block;margin-top:.45rem;letter-spacing:-.02em}
+.open{font-family:var(--num);font-size:var(--fs-2xs);color:var(--mist);
+  letter-spacing:.05em;margin-top:.55rem;display:flex;align-items:center;gap:.5rem}
+/* semantic state: the shop is open right now */
+.open::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--moss);
+  box-shadow:0 0 0 3px rgba(143,191,106,.16);flex:none}
+
+.deliver{border-top:1px solid var(--edge);padding-top:1.15rem;margin:0;
+  color:var(--marrow);font-size:var(--fs-sm);line-height:1.55}
 .shop-btn{
   display:block;text-align:center;text-decoration:none;
   background:var(--marrow);color:var(--brine);
-  font-family:var(--display);font-weight:700;font-size:var(--fs-md);letter-spacing:.01em;
-  padding:.8rem 1rem;border-radius:3px;margin-top:auto;
-  box-shadow:0 4px 14px -8px rgba(0,0,0,.85);transition:background .15s ease;
+  font-family:var(--display);font-weight:700;font-size:var(--fs-md);letter-spacing:.005em;
+  padding:.85rem 1rem;border-radius:var(--r);margin-top:auto;
+  box-shadow:var(--shadow);
+  transition:background .16s ease,transform .16s ease;
 }
-.shop-btn:hover{background:#FAC672}
+.shop-btn:hover{background:#FBC670}
+.shop-btn:active{transform:translateY(1px)}
 
 .flow{min-width:0}
-.pad{padding:2rem var(--gut)}
+.pad{padding:2.4rem var(--gut)}
 
-/* ---------- hero ---------- */
-.hero img{display:block;width:100%;height:300px;object-fit:cover;object-position:50% 50%}
-.hero-say h1{font-size:clamp(2rem,1rem + 4.2vw,3.5rem);font-weight:700;max-width:19ch}
-.hero-say p{margin:1.1rem 0 0;max-width:60ch;color:var(--mist);
-  font-size:var(--fs-lg);line-height:1.5}
-
-/* ---------- the label lesson ---------- */
-.lesson{border-top:1px solid var(--edge)}
-.here-h{font-size:var(--fs-xl);line-height:1.2;font-weight:600;margin:0 0 1.5rem}
-.lesson h2{font-size:var(--fs-xl);line-height:1.2;font-weight:600;margin-bottom:.5rem}
-.lesson-lede{margin:0 0 1.9rem;color:var(--mist);max-width:62ch}
-.rows{border-top:1px solid var(--edge)}
-.row{
-  display:grid;grid-template-columns:14rem 1fr;gap:.4rem 1.6rem;align-items:baseline;
-  padding-top:1rem;padding-bottom:1rem;border-bottom:1px solid var(--edge);
-  opacity:.72;animation:lift .6s cubic-bezier(.16,1,.3,1) forwards;
+/* ================= hero: the freezer wall, unconstrained ================= */
+.hero{position:relative;isolation:isolate;min-height:min(100dvh,820px);
+  display:flex;align-items:flex-end;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:38% 50%;z-index:-2}
+/* the photograph is pulled into the colour field rather than sitting on top of it */
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:
+    linear-gradient(to top,var(--brine) 0%,rgba(18,82,90,.94) 24%,rgba(18,82,90,.58) 54%,rgba(18,82,90,.22) 100%),
+    linear-gradient(to right,rgba(9,43,49,.80) 0%,rgba(18,82,90,.26) 68%);
 }
-.row:nth-child(2){animation-delay:.09s}
-.row:nth-child(3){animation-delay:.18s}
-.row:nth-child(4){animation-delay:.27s}
-@keyframes lift{to{opacity:1}}
-@media (prefers-reduced-motion:reduce){.row{animation:none;opacity:1}}
-.row b{
-  font-family:var(--display);font-weight:600;font-size:var(--fs-lg);line-height:1.3;
-  text-decoration:line-through;text-decoration-color:var(--marrow);
-  text-decoration-thickness:2px;color:var(--bone);
-}
-.row p{margin:0;color:var(--mist)}
+.hero-say{position:relative;padding-bottom:3rem;max-width:49rem}
+.hero-say h1{font-size:var(--fs-3xl);font-weight:700;max-width:23ch;letter-spacing:-.032em}
+.hero-say p{margin:1.15rem 0 0;max-width:44ch;color:var(--bone);
+  font-size:var(--fs-lg);line-height:1.48}
 
-/* ---------- the counter: the one warm field ---------- */
-.counter{background:var(--marrow);color:var(--brine)}
-.counter h2{font-size:clamp(1.6rem,1rem + 2.4vw,2.6rem);font-weight:700;max-width:17ch;
-  line-height:1.14}
-.counter p{margin:1rem 0 0;max-width:54ch;font-size:var(--fs-lg);line-height:1.5}
-.counter .free{
-  display:inline-block;margin-top:1.3rem;font-family:var(--num);font-weight:500;
-  font-size:var(--fs-md);letter-spacing:.02em;
-  border-bottom:2px solid var(--brine);padding-bottom:.15rem;
+/* ================= the label lesson: a recessed panel, read at scale ================= */
+.lesson{position:relative;background:var(--sink);
+  border-top:1px solid var(--edge-lit);border-bottom:1px solid var(--edge);
+  box-shadow:inset 0 22px 44px -30px rgba(0,0,0,.6)}
+/* freezer light continues to spill down from the aisle above */
+.lesson::before{
+  content:"";position:absolute;inset:0 0 auto;height:220px;pointer-events:none;
+  background:radial-gradient(120% 100% at 30% 0%,var(--glow),transparent 70%)}
+.lesson>.pad{position:relative}
+.lesson h2{font-size:var(--fs-2xl);font-weight:700;max-width:20ch}
+.lesson-lede{margin:1rem 0 2.6rem;color:var(--mist);max-width:52ch;font-size:var(--fs-lg);line-height:1.5}
+
+.claims{margin:0;max-width:68rem}
+.claim{display:grid;grid-template-columns:minmax(0,21rem) minmax(0,1fr);gap:.9rem 3.5rem;
+  align-items:start;padding:2rem 0}
+.claim+.claim{border-top:1px solid var(--edge)}
+.claim dt{position:relative;justify-self:start;
+  font-family:var(--display);font-weight:600;letter-spacing:-.02em;
+  font-size:clamp(1.45rem,.95rem + 1.5vw,2.05rem);line-height:1.14;color:var(--bone)}
+.claim dd{margin:0;color:var(--mist)}
+/* the pinned motion moment: four claims struck through, once, on load */
+.claim dt::after{
+  content:"";position:absolute;left:-.05em;right:-.05em;top:53%;height:3px;
+  background:var(--marrow);border-radius:2px;
+  transform:scaleX(0);transform-origin:0 50%;
+  animation:strike .6s cubic-bezier(.16,1,.3,1) forwards;
+}
+.claim:nth-of-type(2) dt::after{animation-delay:.09s}
+.claim:nth-of-type(3) dt::after{animation-delay:.18s}
+.claim:nth-of-type(4) dt::after{animation-delay:.27s}
+@keyframes strike{to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){
+  .claim dt::after{animation:none;transform:scaleX(1)}
 }
 
-/* ---------- what's here ---------- */
+/* ================= the counter: the one warm field on the page ================= */
+.counsel{background:var(--marrow);color:var(--brine);
+  display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr)}
+.counsel-say{padding:3rem var(--gut)}
+.counsel h2{font-size:var(--fs-2xl);font-weight:700;max-width:14ch;color:var(--brine)}
+.counsel p{margin:1.15rem 0 0;max-width:46ch;font-size:var(--fs-lg);line-height:1.5}
+.counsel .free{display:inline-block;margin-top:1.5rem;font-family:var(--num);font-weight:500;
+  font-size:var(--fs-sm);letter-spacing:.01em;border-bottom:2px solid var(--brine);padding-bottom:.2rem}
+.counsel figure{margin:0;position:relative;min-height:22rem}
+.counsel figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:44% 52%}
+
+/* ================= what's in the shop: three things, three shapes ================= */
 .here{border-top:1px solid var(--edge)}
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
-.tile{background:var(--deep);border-radius:3px;overflow:hidden}
-.tile img{display:block;width:100%;height:190px;object-fit:cover}
-.tile-say{padding:1.1rem 1.2rem 1.3rem}
-.tile-say h3{font-size:var(--fs-lg);line-height:1.25;font-weight:600;margin-bottom:.45rem}
-.tile-say p{margin:0;color:var(--mist);font-size:var(--fs-md)}
+.here h2{font-size:var(--fs-2xl);font-weight:700;margin-bottom:1.9rem}
+.tiles{display:grid;grid-template-columns:1.22fr 1fr;grid-template-rows:auto auto;gap:1.15rem}
+.tile{background:var(--deep);border-radius:var(--r);overflow:hidden;
+  border:1px solid var(--edge);box-shadow:var(--shadow);
+  display:flex;flex-direction:column}
+.tile img{width:100%;object-fit:cover;flex:none}
+.tile-say{padding:1.4rem 1.5rem 1.6rem}
+.tile-say h3{font-size:var(--fs-xl);font-weight:600;margin-bottom:.55rem;letter-spacing:-.018em}
+.tile-say p{margin:0;color:var(--mist);font-size:var(--fs-sm);line-height:1.6}
 
-/* ---------- the two shops ---------- */
+.t-raw{grid-row:span 2}
+.t-raw img{flex:1 1 auto;height:auto;min-height:min(34vw,23rem)}
+.t-bakery img{flex:1 1 auto;height:auto;min-height:min(18vw,12.5rem)}
+/* moss is the bakery note, and only ever a fill */
+.t-bakery{border-top:2px solid var(--moss)}
+.t-cats{position:relative;justify-content:center;
+  background:
+    radial-gradient(115% 120% at 86% 6%,rgba(140,214,214,.17),transparent 64%),
+    var(--deep)}
+.t-cats .tile-say{padding-block:2.2rem}
+.t-cats p{font-size:var(--fs-md)}
+
+/* ================= the two shops: one figure that carries the section ================= */
 .shops{border-top:1px solid var(--edge)}
-.shops h2{font-size:var(--fs-xl);line-height:1.2;font-weight:600;margin-bottom:.6rem}
-.shops p{margin:0 0 1.1rem;color:var(--mist);max-width:62ch}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
-.fact{border-top:2px solid var(--moss);padding-top:.8rem}
-.fact b{display:block;font-family:var(--num);font-weight:500;font-size:var(--fs-lg);
-  line-height:1.3;font-variant-numeric:tabular-nums}
-.fact span{color:var(--mist);font-size:var(--fs-md)}
+.shops h2{font-size:var(--fs-2xl);font-weight:700;max-width:18ch}
+.shops>.pad>p{margin:1.1rem 0 0;color:var(--mist);max-width:58ch;font-size:var(--fs-lg);line-height:1.5}
+.figs{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1fr);
+  gap:2rem 3.4rem;align-items:end;
+  margin-top:3.2rem;padding-top:2.1rem;border-top:1px solid var(--edge)}
+.fig{display:flex;flex-direction:column;justify-content:flex-end;min-width:0}
+.fig b{font-family:var(--num);font-weight:500;font-variant-numeric:tabular-nums;
+  letter-spacing:-.035em;font-size:var(--fs-xl);line-height:1.1}
+.fig span{margin-top:.75rem;color:var(--mist);font-size:var(--fs-sm);line-height:1.5;
+  min-height:3em}   /* the three labels share one box, so the band sits on one line */
+.fig-big b{color:var(--marrow);letter-spacing:-.055em;line-height:.8;
+  font-size:clamp(3.4rem,1.6rem + 6.6vw,6.2rem)}
+.fig-big span{max-width:19ch}
 
-footer{border-top:1px solid var(--edge);color:var(--mist);font-size:var(--fs-md)}
-.disclosure{margin:.7rem 0 0;max-width:70ch;font-size:var(--fs-xs);line-height:1.65;color:var(--mist)}
+/* ================= footer ================= */
+footer{border-top:1px solid var(--edge);background:var(--deep);color:var(--mist)}
+.foot{display:grid;grid-template-columns:minmax(0,18rem) minmax(0,1fr);gap:1.6rem 3.5rem;
+  align-items:start}
+.foot b{display:block;font-family:var(--display);font-weight:600;font-size:var(--fs-md);
+  color:var(--bone);letter-spacing:-.01em}
+.foot .where{margin:.45rem 0 0;font-size:var(--fs-sm);line-height:1.55}
+.disclosure{margin:0;max-width:64ch;font-size:var(--fs-xs);line-height:1.7}
 
 @media (min-width:1000px){
-  :root{--gut:2.6rem}
-  .pad{padding-top:3.2rem;padding-bottom:3.2rem}
-  .hero img{height:420px}
-  .tile img{height:230px}
+  :root{--gut:3.2rem}
+  .pad{padding-top:4.4rem;padding-bottom:4.4rem}
+  .hero-say{padding-bottom:4.4rem}
+  .counsel-say{padding:4.4rem var(--gut)}
 }
-@media (max-width:860px){
+
+@media (max-width:900px){
   .shell{grid-template-columns:1fr}
   .rail{position:static;height:auto;border-right:0;border-bottom:1px solid var(--edge)}
-  .shop-btn{margin-top:.4rem}
-  .tiles,.facts{grid-template-columns:1fr}
-  .row{grid-template-columns:1fr;gap:.2rem}
+  .rail::after{display:none}
+  .shop-btn{margin-top:.6rem}
+  .hero{min-height:min(66dvh,30rem)}
+  /* portrait crop keeps the aisle readable instead of one freezer door */
+  .hero img{object-position:48% 46%}
+  .hero-say{max-width:none}
+  .claim{grid-template-columns:1fr;gap:.75rem}
+  .claim dd{max-width:none}
+  .counsel{grid-template-columns:1fr}
+  .counsel figure{min-height:15rem}
+  .tiles{grid-template-columns:1fr}
+  .t-raw{grid-row:auto}
+  .t-raw img,.t-bakery img{flex:none;height:min(58vw,17rem);min-height:0}
+  .figs{grid-template-columns:1fr;align-items:start;gap:1.8rem}
+  .fig span{min-height:0}
+  .foot{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -163,27 +275,26 @@ footer{border-top:1px solid var(--edge);color:var(--mist);font-size:var(--fs-md)
 
   <aside class="rail">
     <div>
-      <a class="mark" href="#top">Miss&nbsp;Kibbles</a>
-      <p class="tag">Locally owned. Raw, fresh and freeze-dried food for dogs and cats,
-      and someone who will tell you what to feed.</p>
+      <a class="mark" href="#top">Miss<br>Kibbles</a>
+      <p class="tag">Locally owned. Raw, fresh and freeze-dried food for dogs and cats, and
+      someone who will tell you what to feed.</p>
     </div>
 
     <div class="store">
       <b>Bristow</b>
-      <span>10390 Bristow Center Drive<br>Bristow, VA 20136</span>
+      <address>10390 Bristow Center Drive<br>Bristow, VA 20136</address>
       <a href="tel:+15713797832">571-379-7832</a>
       <span class="open">Open today until 7:00 pm</span>
     </div>
 
     <div class="store">
       <b>Gainesville</b>
-      <span>13841 Heathcote Blvd<br>Gainesville, VA 20155</span>
+      <address>13841 Heathcote Blvd<br>Gainesville, VA 20155</address>
       <a href="tel:+12768853101">276-885-3101</a>
       <span class="open">Open today until 7:00 pm</span>
     </div>
 
-    <p class="deliver">Same-day local delivery, curbside and no-contact pickup from both
-    shops.</p>
+    <p class="deliver">Same-day local delivery, curbside and no-contact pickup from both shops.</p>
 
     <a class="shop-btn" href="#shop">Shop online</a>
   </aside>
@@ -192,13 +303,12 @@ footer{border-top:1px solid var(--edge);color:var(--mist);font-size:var(--fs-md)
 
     <section class="hero">
       <!-- generated illustrative imagery -->
-      <img src="images/hero.png" width="1536" height="1024"
+      <img src="images/hero.webp" width="1800" height="1200" fetchpriority="high"
            alt="A wall of glass-doored freezers in a small pet shop, stacked with frozen raw food in plain packaging.">
       <div class="pad hero-say">
-        <h1>The biggest raw selection in the county, and someone to explain it.</h1>
-        <p>Two shops, ten minutes apart, built around a freezer wall. Fromm lists us as
-        carrying the largest raw-diet selection in the area — but the selection is not the
-        point. Knowing which part of it is right for your animal is.</p>
+        <h1>The biggest raw selection in the county.</h1>
+        <p>And someone at the counter who will tell you which part of it your animal
+        actually needs.</p>
       </div>
     </section>
 
@@ -206,61 +316,68 @@ footer{border-top:1px solid var(--edge);color:var(--mist);font-size:var(--fs-md)
       <div class="pad">
         <h2>Four things the label is allowed not to tell you.</h2>
         <p class="lesson-lede">None of this makes a food bad. It makes the bag a poor way to
-        judge one. These are the rules the words are printed under.</p>
-        <div class="rows">
-          <div class="row">
-            <b>Chicken meal</b>
-            <p>A rendered, dried protein concentrate with the water and fat removed. It can be
-            an excellent ingredient. The label will not tell you which kind you have.</p>
+        judge one.</p>
+
+        <dl class="claims">
+          <div class="claim">
+            <dt>Chicken meal</dt>
+            <dd>A rendered, dried protein concentrate with the water and fat removed. It can be
+            an excellent ingredient. The label will not tell you which kind you have.</dd>
           </div>
-          <div class="row">
-            <b>Made with beef</b>
-            <p>Under federal labelling rules, a "with" claim needs the named ingredient to be
-            only three percent of the food. The picture on the front is not a measurement.</p>
+          <div class="claim">
+            <dt>Made with beef</dt>
+            <dd>Under federal labelling rules, a "with" claim needs the named ingredient to be
+            only three percent of the food. The picture on the front is not a measurement.</dd>
           </div>
-          <div class="row">
-            <b>Natural</b>
-            <p>Means the ingredients were not chemically synthesised, vitamins and minerals
-            aside. It is a sourcing statement, not a quality one, and it is unregulated by
-            comparison with what people assume it means.</p>
+          <div class="claim">
+            <dt>Natural</dt>
+            <dd>Means the ingredients were not chemically synthesised, vitamins and minerals
+            aside. It is a sourcing statement, not a quality one.</dd>
           </div>
-          <div class="row">
-            <b>Guaranteed analysis</b>
-            <p>Protein and fat are printed as minimums, fibre and moisture as maximums. Every
+          <div class="claim">
+            <dt>Guaranteed analysis</dt>
+            <dd>Protein and fat are printed as minimums, fibre and moisture as maximums. Every
             number on that panel is a boundary the food promises not to cross, not the amount
-            actually in it.</p>
+            actually in it.</dd>
           </div>
-        </div>
+        </dl>
       </div>
     </section>
 
-    <section class="counter">
-      <div class="pad">
+    <section class="counsel">
+      <div class="counsel-say">
         <h2>Bring the dog. Bring the bag you're using now.</h2>
-        <p>We will read it with you at the counter, ask what your animal is actually like —
-        the coat, the energy, the digestion, the age — and tell you honestly whether changing
-        anything is worth it. Sometimes the answer is no.</p>
+        <p>We will read it with you at the counter, ask what your animal is actually like in
+        coat, energy, digestion and age, and tell you honestly whether changing anything is
+        worth it. Sometimes the answer is no.</p>
         <span class="free">Nutritional counselling, no charge</span>
       </div>
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/counter.webp" width="1000" height="1000" loading="lazy" decoding="async"
+             alt="Two pairs of hands comparing a plain bag of pet food across a shop counter, a dog waiting below.">
+      </figure>
     </section>
 
     <section class="here" id="shop">
       <div class="pad">
-        <h2 class="here-h">What's in the shop</h2>
+        <h2>What's in the shop</h2>
         <div class="tiles">
-          <article class="tile">
+          <article class="tile t-raw">
             <!-- generated illustrative imagery -->
-            <img src="images/bowl.png" width="1024" height="1024"
+            <img src="images/bowl.webp" width="1000" height="1000" loading="lazy" decoding="async"
                  alt="A stainless bowl of raw food on a kitchen floor, a dog's front paws waiting at the edge of frame.">
             <div class="tile-say">
               <h3>Raw and fresh</h3>
-              <p>Frozen raw, freeze-dried and gently cooked, across more brands and proteins
-              than anywhere else nearby. Cold chain kept properly from the case to your car.</p>
+              <p>Frozen raw, freeze-dried and gently cooked, across more brands and proteins than
+              anywhere else nearby. Fromm lists us as carrying the largest raw-diet selection in
+              the area. Cold chain kept properly from the case to your car.</p>
             </div>
           </article>
-          <article class="tile">
+
+          <article class="tile t-bakery">
             <!-- generated illustrative imagery -->
-            <img src="images/bakery.png" width="1024" height="1024"
+            <img src="images/bakery.webp" width="1100" height="1100" loading="lazy" decoding="async"
                  alt="Iced bone-shaped dog biscuits on a tray behind counter glass.">
             <div class="tile-say">
               <h3>The dog bakery</h3>
@@ -268,13 +385,11 @@ footer{border-top:1px solid var(--edge);color:var(--mist);font-size:var(--fs-md)
               handled, with enough notice.</p>
             </div>
           </article>
-          <article class="tile">
-            <!-- generated illustrative imagery -->
-            <img src="images/counter.png" width="1024" height="1024"
-                 alt="Two pairs of hands comparing a plain bag of pet food across a shop counter, a dog waiting below.">
+
+          <article class="tile t-cats">
             <div class="tile-say">
               <h3>Cats too</h3>
-              <p>A full cat side — food, litter, supplements — and the same counter
+              <p>A full cat side of food, litter and supplements, and the same counter
               conversation, which cats need more of than dogs do.</p>
             </div>
           </article>
@@ -285,22 +400,35 @@ footer{border-top:1px solid var(--edge);color:var(--mist);font-size:var(--fs-md)
     <section class="shops">
       <div class="pad">
         <h2>Two shops, ten minutes apart.</h2>
-        <p>Bristow Center Drive and Heathcote Boulevard, both open until seven. Order online
-        for same-day local delivery, curbside, or no-contact pickup — or come in and let
-        somebody meet your dog. We run adoption weekends through the year and would rather you
-        left with the right food than the expensive one.</p>
-        <div class="facts">
-          <div class="fact"><b>62</b><span>five-star reviews across the two shops</span></div>
-          <div class="fact"><b>2</b><span>locations, Bristow and Gainesville</span></div>
-          <div class="fact"><b>Same day</b><span>local delivery, curbside and no-contact</span></div>
+        <p>Bristow Center Drive and Heathcote Boulevard, both open until seven. Order for
+        same-day local delivery, curbside or no-contact pickup, or come in and let somebody meet
+        your dog. We run adoption weekends through the year, and would rather you left with the
+        right food than the expensive one.</p>
+
+        <div class="figs">
+          <div class="fig fig-big">
+            <b>62</b>
+            <span>five-star reviews across the two shops</span>
+          </div>
+          <div class="fig">
+            <b>Same day</b>
+            <span>local delivery, curbside and no-contact pickup</span>
+          </div>
+          <div class="fig">
+            <b>7:00 pm</b>
+            <span>both shops, Bristow and Gainesville</span>
+          </div>
         </div>
       </div>
     </section>
 
     <footer>
-      <div class="pad">
-        <span>Miss Kibbles &middot; Bristow &amp; Gainesville, Virginia &middot; locally,
-        women- and minority-owned</span>
+      <div class="pad foot">
+        <div>
+          <b>Miss Kibbles</b>
+          <p class="where">Bristow and Gainesville, Virginia.<br>
+          Locally, women- and minority-owned.</p>
+        </div>
         <p class="disclosure">Concept design. The photography is illustrative art direction
         rather than pictures of these shops, and no packaging shown is a real product. Store
         addresses, phone numbers, hours, services and the review count are taken from Miss
