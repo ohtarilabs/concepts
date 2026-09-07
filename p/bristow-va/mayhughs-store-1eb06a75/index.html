@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mayhugh's Store - Greenwich Road at Vint Hill, Nokesville, Virginia</title>
+<meta name="description" content="A country store at the corner of Greenwich Road and Vint Hill Road since 1912. Fishing supplies, country ham, seasonal Northern Neck oysters, groceries, garden and feed, and fuel from six in the morning.">
+<style>
+/* ---------------------------------------------------------------
+   Mayhugh's Store - proposed site
+   Self-contained: no network, no build, no framework.
+   Fonts are bundled in fonts/. Images are bundled in images/.
+   --------------------------------------------------------------- */
+
+@font-face{
+  font-family:'YoungSerif';
+  src:url('fonts/youngserif-latin.woff2') format('woff2');
+  font-weight:400; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'PublicSans';
+  src:url('fonts/publicsans-var-latin.woff2') format('woff2-variations'),
+      url('fonts/publicsans-var-latin.woff2') format('woff2');
+  font-weight:400 700; font-style:normal; font-display:swap;
+}
+
+:root{
+  --paper:#E9EDEC;
+  --paper-warm:#DFE5E3;
+  --slate:#151C1E;
+  --slate-lift:#1E282B;
+  --bobber:#C6102E;
+  --field:#5F7671;
+  --brine:#98A5A1;
+  --ink-2:#3E4E49;          /* darkened field, 7.4:1 on paper */
+  --field-ink:#4E625C;      /* mid field, 5.5:1 on paper - safe for small text */
+  --chip-ink:#FFF6F3;       /* warm off-white, 5.9:1 on bobber */
+  --rule:rgba(21,28,30,.14);
+  --rule-dark:rgba(233,237,236,.16);
+
+  --display:'YoungSerif',Georgia,'Times New Roman',serif;
+  --body:'PublicSans',system-ui,-apple-system,'Segoe UI',sans-serif;
+
+  --t-xs:.78rem;
+  --t-sm:.875rem;
+  --t-md:.9375rem;
+  --t-base:1rem;
+  --t-lg:1.0625rem;
+  --t-xl:1.35rem;
+
+  --gutter:clamp(1.25rem,5vw,5rem);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+
+html{
+  -webkit-text-size-adjust:100%;
+  scrollbar-color:var(--field) var(--paper-warm);
+}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--slate);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.6;
+  font-synthesis-weight:none;
+  caret-color:var(--bobber);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Browser surfaces themed from the palette rather than left at defaults. */
+::selection{background:var(--bobber);color:var(--paper)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--paper-warm)}
+::-webkit-scrollbar-thumb{background:var(--field);border:3px solid var(--paper-warm);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:var(--ink-2)}
+
+:focus-visible{
+  outline:2px solid var(--bobber);
+  outline-offset:3px;
+  border-radius:2px;
+}
+
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em}
+
+img{max-width:100%;height:auto;display:block}
+
+h1,h2,h3{
+  font-family:var(--display);
+  font-weight:400;
+  letter-spacing:-.018em;
+  line-height:1.04;
+  text-wrap:balance;
+  margin:0;
+}
+
+.wrap{
+  max-width:1240px;
+  margin-inline:auto;
+  padding-inline:2rem;
+  padding-inline:var(--gutter);
+}
+
+/* ---------- masthead ---------------------------------------------------- */
+
+.masthead{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:1.5rem;
+  flex-wrap:wrap;
+  padding-block:1.35rem 1.15rem;
+  border-bottom:1px solid var(--rule);
+}
+.mark{
+  font-family:var(--display);
+  font-size:var(--t-xl);
+  letter-spacing:-.01em;
+  line-height:1;
+}
+.masthead-meta{
+  display:flex;
+  align-items:baseline;
+  gap:1.6rem;
+  font-size:var(--t-sm);
+  color:var(--ink-2);
+}
+.masthead-meta .tel{
+  color:var(--bobber);
+  font-weight:600;
+  font-variant-numeric:tabular-nums;
+  text-decoration:none;
+  border-bottom:1px solid rgba(198,16,46,.32);
+  padding-bottom:1px;
+  transition:border-color .35s var(--ease);
+}
+.masthead-meta .tel:hover{border-bottom-color:var(--bobber)}
+@media (max-width:640px){
+  .masthead-meta .where{display:none}
+}
+
+/* ---------- hero -------------------------------------------------------- */
+
+.hero{
+  display:grid;
+  grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);
+  gap:clamp(2rem,5vw,4.5rem);
+  align-items:center;
+  padding-block:clamp(2.75rem,6vw,5rem) clamp(2.5rem,5vw,4rem);
+}
+.hero-sign{
+  font-size:3.4rem;
+  font-size:clamp(2.6rem,6.4vw,5.2rem);
+  letter-spacing:-.028em;
+  line-height:.99;
+}
+.hero-sign .amp{
+  font-size:.78em;
+  color:var(--field);
+}
+.hero-lede{
+  margin:1.5rem 0 0;
+  max-width:34ch;
+  font-size:var(--t-lg);
+  color:var(--ink-2);
+}
+.hero-actions{
+  display:flex;
+  gap:.85rem;
+  flex-wrap:wrap;
+  margin-top:2rem;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap;
+  font-family:var(--body);
+  font-size:var(--t-md);
+  font-weight:600;
+  letter-spacing:.005em;
+  padding:.82rem 1.5rem;
+  border-radius:2px;
+  text-decoration:none;
+  transition:transform .3s var(--ease),background-color .3s var(--ease),color .3s var(--ease);
+}
+.btn-primary{
+  background:var(--slate);
+  color:var(--paper);
+  border:1px solid var(--slate);
+}
+.btn-primary:hover{background:#0B1214;transform:translateY(-1px)}
+.btn-primary:active{transform:translateY(0)}
+.btn-quiet{
+  background:transparent;
+  color:var(--slate);
+  border:1px solid var(--rule);
+}
+.btn-quiet:hover{border-color:var(--ink-2);transform:translateY(-1px)}
+.btn-quiet:active{transform:translateY(0)}
+
+.hero-figure{margin:0}
+.hero-figure img{
+  width:100%;
+  aspect-ratio:3/2;
+  object-fit:cover;
+  border-radius:2px;
+}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:2rem;padding-block:2.25rem 2.25rem}
+  .hero-figure{order:-1}
+  .hero-figure img{aspect-ratio:16/10}
+  .hero-lede{max-width:46ch}
+}
+
+/* ---------- the board (signature) --------------------------------------- */
+
+.board-shell{
+  background:var(--slate);
+  color:var(--paper);
+  padding:3rem 2rem 2.5rem;
+  padding:clamp(2.5rem,5vw,4rem) var(--gutter) clamp(2rem,4vw,3rem);
+}
+.board-inner{max-width:1240px;margin-inline:auto}
+.board-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:1rem;
+  flex-wrap:wrap;
+  padding-bottom:1.4rem;
+  border-bottom:1px solid var(--rule-dark);
+}
+.board-head h2{
+  font-size:2rem;
+  font-size:clamp(1.6rem,3vw,2.3rem);
+  color:var(--paper);
+}
+.board-date{
+  font-size:var(--t-sm);
+  color:var(--brine);
+  font-variant-numeric:tabular-nums;
+}
+.board-cols{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(1.5rem,3.5vw,3.25rem);
+  padding-top:2rem;
+}
+.board-col h3{
+  font-family:var(--body);
+  font-size:var(--t-xs);
+  font-weight:700;
+  letter-spacing:.03em;
+  color:var(--brine);
+  margin:0 0 1.15rem;
+  padding-bottom:.7rem;
+  border-bottom:1px solid var(--rule-dark);
+}
+.board-list{list-style:none;margin:0;padding:0}
+.row{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:1rem;
+  padding:.72rem 0;
+  border-bottom:1px solid transparent;
+  transition:border-color .4s var(--ease);
+}
+.row:hover{border-bottom-color:var(--rule-dark)}
+.row-name{font-size:var(--t-base);color:var(--paper)}
+.row-note{
+  font-size:var(--t-xs);
+  color:var(--brine);
+  font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+  transition:color .4s var(--ease);
+}
+.row:hover .row-note{color:var(--paper)}
+.chip{
+  display:inline-block;
+  background:var(--bobber);
+  color:var(--chip-ink);
+  font-size:var(--t-xs);
+  font-weight:700;
+  letter-spacing:.02em;
+  padding:.24rem .58rem;
+  border-radius:2px;
+  white-space:nowrap;
+}
+.board-foot{
+  margin:2.25rem 0 0;
+  font-size:var(--t-sm);
+  color:var(--brine);
+  max-width:62ch;
+}
+
+@media (max-width:820px){
+  .board-cols{grid-template-columns:1fr;gap:2rem}
+}
+
+/* ---------- provenance band --------------------------------------------- */
+
+.provenance{
+  display:grid;
+  grid-template-columns:minmax(0,.82fr) minmax(0,1fr);
+  gap:clamp(2rem,5vw,4.5rem);
+  align-items:center;
+  padding-block:clamp(3.25rem,7vw,6rem);
+}
+.provenance img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:2px;
+}
+.provenance h2{
+  font-size:2.5rem;
+  font-size:clamp(1.9rem,4vw,3.1rem);
+  max-width:15ch;
+}
+.provenance p{
+  margin:1.35rem 0 0;
+  max-width:52ch;
+  color:var(--ink-2);
+}
+.provenance .quiet{
+  margin-top:1.1rem;
+  font-size:var(--t-md);
+  color:var(--field-ink);
+}
+@media (max-width:820px){
+  .provenance{grid-template-columns:1fr;gap:1.75rem;padding-block:2.75rem}
+  .provenance img{aspect-ratio:4/3}
+}
+
+/* ---------- two-up ------------------------------------------------------ */
+
+.pair{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(1.25rem,3vw,2.5rem);
+  padding-bottom:clamp(3rem,7vw,5.5rem);
+}
+.pair figure{margin:0}
+.pair img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  border-radius:2px;
+}
+.pair figcaption{
+  margin-top:.95rem;
+  font-size:var(--t-md);
+  color:var(--ink-2);
+  max-width:38ch;
+}
+@media (max-width:700px){
+  .pair{grid-template-columns:1fr;gap:2rem}
+}
+
+/* ---------- finding us -------------------------------------------------- */
+
+.finding{
+  border-top:1px solid var(--rule);
+  padding-block:clamp(2.75rem,6vw,4.5rem);
+}
+.finding h2{
+  font-size:2.1rem;
+  font-size:clamp(1.7rem,3.4vw,2.5rem);
+  margin-bottom:2.25rem;
+}
+.facts{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(1.5rem,4vw,3.5rem);
+}
+.fact{display:flex;gap:.85rem;align-items:flex-start}
+.fact svg{flex:none;margin-top:.15rem;color:var(--field)}
+.fact-label{
+  font-size:var(--t-xs);
+  font-weight:700;
+  color:var(--ink-2);
+  margin:0 0 .3rem;
+}
+.fact-body{margin:0;font-size:1rem;color:var(--slate);font-variant-numeric:tabular-nums}
+.fact-body .sub{display:block;font-size:var(--t-sm);color:var(--ink-2);margin-top:.25rem}
+.fact-body .tel{
+  color:var(--bobber);
+  font-weight:600;
+  text-decoration:none;
+  border-bottom:1px solid rgba(198,16,46,.32);
+  transition:border-color .35s var(--ease);
+}
+.fact-body .tel:hover{border-bottom-color:var(--bobber)}
+.tbd{
+  color:var(--field-ink);
+  font-style:italic;
+}
+@media (max-width:760px){
+  .facts{grid-template-columns:1fr;gap:1.6rem}
+}
+
+/* ---------- footer ------------------------------------------------------ */
+
+.foot{
+  border-top:1px solid var(--rule);
+  padding-block:1.85rem 2.5rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+.foot p{margin:0;font-size:var(--t-xs);color:var(--field-ink)}
+.disclosure{max-width:64ch}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms !important;animation-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap masthead">
+  <span class="mark">Mayhugh's Store</span>
+  <div class="masthead-meta">
+    <span class="where">Greenwich Road at Vint Hill</span>
+    <a class="tel" href="tel:+17037544319">(703) 754-4319</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="wrap hero">
+    <div>
+      <h1 class="hero-sign">Fishing Supplies <span class="amp">&amp;</span> Country&nbsp;Ham</h1>
+      <p class="hero-lede">The store at Greenwich Road and Vint Hill has kept the same two promises on its sign since 1912.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://maps.google.com/?q=9580+Greenwich+Rd+Nokesville+VA+20181">Get directions</a>
+        <a class="btn btn-quiet" href="tel:+17037544319">Call the store</a>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <!-- generated illustrative imagery -->
+      <img src="images/hero.png" width="1536" height="1024"
+           alt="A shallow wooden crate of unopened oysters resting on damp newspaper on a worn shop counter, lit by cold morning light from a window.">
+    </figure>
+  </section>
+
+  <section class="board-shell">
+    <div class="board-inner">
+      <div class="board-head">
+        <h2>In the store</h2>
+        <span class="board-date">Week of September 6</span>
+      </div>
+
+      <div class="board-cols">
+        <div class="board-col">
+          <h3>From the water</h3>
+          <ul class="board-list">
+            <li class="row">
+              <span class="row-name">Northern Neck oysters</span>
+              <span class="row-note"><span class="chip">In now</span></span>
+            </li>
+            <li class="row">
+              <span class="row-name">Bait and tackle</span>
+              <span class="row-note">Year round</span>
+            </li>
+            <li class="row">
+              <span class="row-name">Line, hooks and sinkers</span>
+              <span class="row-note">By the bin</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="board-col">
+          <h3>From the counter</h3>
+          <ul class="board-list">
+            <li class="row">
+              <span class="row-name">Country ham</span>
+              <span class="row-note">Cut to order</span>
+            </li>
+            <li class="row">
+              <span class="row-name">Groceries and staples</span>
+              <span class="row-note">Daily</span>
+            </li>
+            <li class="row">
+              <span class="row-name">Home and hardware</span>
+              <span class="row-note">On the shelves</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="board-col">
+          <h3>Out back and out front</h3>
+          <ul class="board-list">
+            <li class="row">
+              <span class="row-name">Garden and feed</span>
+              <span class="row-note">By the sack</span>
+            </li>
+            <li class="row">
+              <span class="row-name">Fuel</span>
+              <span class="row-note">6am to 9pm</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="board-foot">Sample board. This is the one panel that would change week to week, and the only part of the site anyone has to keep up with.</p>
+    </div>
+  </section>
+
+  <section class="wrap provenance">
+    <figure style="margin:0">
+      <!-- generated illustrative imagery -->
+      <img src="images/ham.png" width="1024" height="1024"
+           alt="A whole salt-cured country ham on brown butcher paper with one thick slice cut away and laid beside it.">
+    </figure>
+    <div>
+      <h2>The same crossroads since 1912.</h2>
+      <p>Mayhugh's has stood at the corner of Greenwich Road and Vint Hill Road since 1912. The sign out front still names the two things people drive out for. The rest of the store is what a household actually runs out of: groceries, garden and feed, tackle, and a fuel island that opens at six.</p>
+      <p class="quiet">Nokesville, Virginia. A railroad stop since 1865, about sixteen hundred people, and the same store on the corner since 1912.</p>
+    </div>
+  </section>
+
+  <section class="wrap pair">
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/tackle.png" width="1024" height="1024"
+           alt="Bins and pegboard hooks holding sinkers, swivels, red and white bobbers, and spools of monofilament line.">
+      <figcaption>Tackle, line and terminal gear, in bins you can dig through.</figcaption>
+    </figure>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/feed.png" width="1024" height="1024"
+           alt="Stacked paper feed and seed sacks on a worn plank floor beside two galvanised buckets and a coiled garden hose.">
+      <figcaption>Garden and feed, by the sack, at the back of the store.</figcaption>
+    </figure>
+  </section>
+
+  <section class="wrap finding">
+    <h2>Finding us</h2>
+    <div class="facts">
+
+      <div class="fact">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 10c0 5.4-8 12-8 12s-8-6.6-8-12a8 8 0 0 1 16 0Z"/>
+          <circle cx="12" cy="10" r="2.8"/>
+        </svg>
+        <div>
+          <p class="fact-label">Where</p>
+          <p class="fact-body">9580 Greenwich Road<br>Nokesville, Virginia 20181
+            <span class="sub">At the corner of Greenwich Road and Vint Hill Road.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="fact">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5.4l3.4 2"/>
+        </svg>
+        <div>
+          <p class="fact-label">When</p>
+          <p class="fact-body">Fuel, 6am to 9pm daily
+            <span class="sub tbd">[Store hours to confirm before this page goes live.]</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="fact">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6.2 3.8h3l1.5 3.8-1.9 1.4a11.5 11.5 0 0 0 5.2 5.2l1.4-1.9 3.8 1.5v3a1.8 1.8 0 0 1-2 1.8A15.6 15.6 0 0 1 4.4 5.8a1.8 1.8 0 0 1 1.8-2Z"/>
+        </svg>
+        <div>
+          <p class="fact-label">Call</p>
+          <p class="fact-body"><a class="tel" href="tel:+17037544319">(703) 754-4319</a>
+            <span class="sub">Ask whether the oysters are in before you drive out.</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <p>Mayhugh's Store, 9580 Greenwich Road, Nokesville, Virginia 20181</p>
+  <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Mayhugh's Store.</p>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Mayhugh's Store, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
