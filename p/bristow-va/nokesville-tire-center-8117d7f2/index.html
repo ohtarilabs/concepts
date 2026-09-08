@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nokesville Tire Center | Tire Repair and Auto Service, Nokesville VA</title>
+<meta name="description" content="Independent tire and automotive repair on Fitzwater Drive in Nokesville, Virginia. Tire repair, mount and balance, farm and skid steer tires. Call (703) 594-3534.">
+<style>
+@font-face{font-family:"Big Shoulders";src:url("fonts/bigshoulders-700.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Big Shoulders";src:url("fonts/bigshoulders-800.woff2") format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("fonts/plexsans-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"IBM Plex Sans";src:url("fonts/plexsans-600.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-700.woff2") format("woff2");font-weight:700;font-display:swap}
+
+:root{
+  --graphite:#15181B;
+  --raised:#1E2328;
+  --bone:#ECE8E1;
+  --oxide:#E4573C;
+  --steel:#9BA6AC;
+  --hair:1px solid rgba(155,166,172,.26);
+  --display:"Big Shoulders",Haettenschweiler,"Arial Narrow",sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,monospace;
+  --gut:clamp(1.15rem,4vw,3.25rem);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scrollbar-color:#3A4248 var(--graphite)}
+body{
+  margin:0;background:var(--graphite);color:var(--bone);
+  font-family:var(--body);font-size:clamp(1rem,.96rem + .2vw,1.1rem);line-height:1.6;
+  font-variant-numeric:tabular-nums;
+}
+/* browser surfaces themed from the palette */
+::selection{background:var(--oxide);color:var(--graphite)}
+:focus-visible{outline:3px solid var(--oxide);outline-offset:3px}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--graphite)}
+::-webkit-scrollbar-thumb{background:#3A4248;border:3px solid var(--graphite)}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+img{max-width:100%;display:block}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:800;text-transform:uppercase;
+  letter-spacing:.005em;line-height:.92;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--gut)}
+
+/* ---- top bar ---- */
+.top{display:flex;align-items:center;gap:1rem;height:60px;border-bottom:var(--hair);
+  max-width:1280px;margin:0 auto;padding:0 var(--gut)}
+.top .name{font-family:var(--display);font-weight:700;text-transform:uppercase;
+  font-size:1.32rem;letter-spacing:.02em;white-space:nowrap}
+.top .where{margin-left:auto;font-family:var(--mono);font-size:.8rem;color:var(--steel);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ---- hero: photograph carries the headline ---- */
+.hero{position:relative;isolation:isolate;min-height:clamp(400px,64vh,620px);display:flex;align-items:flex-end}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 58%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(21,24,27,.88) 0%,rgba(21,24,27,.38) 52%,rgba(21,24,27,.88) 100%)}
+.hero .wrap{width:100%;padding-top:clamp(2.5rem,7vw,5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
+.hero h1{font-size:clamp(2.9rem,9.2vw,7rem);max-width:15ch}
+.hero .sub{margin-top:1.35rem;max-width:48ch;color:var(--bone);font-size:clamp(1rem,1.5vw,1.16rem)}
+
+/* ---- the signature: the call bar ---- */
+.call{display:block;text-decoration:none;border-top:var(--hair);border-bottom:var(--hair);
+  background:var(--graphite);color:var(--bone);
+  transition:background .24s var(--ease),color .24s var(--ease)}
+.call:hover,.call:focus-visible{background:var(--oxide);color:var(--graphite)}
+.call .wrap{padding-top:clamp(2rem,5vw,3.25rem);padding-bottom:clamp(2rem,5vw,3.25rem)}
+.call .num{font-family:var(--display);font-weight:800;font-size:clamp(3.4rem,13vw,9rem);
+  line-height:.85;letter-spacing:.004em}
+.call .meta{margin-top:1.15rem;display:flex;flex-wrap:wrap;gap:.5rem 2.25rem;
+  font-family:var(--mono);font-size:.86rem;color:var(--steel);transition:color .24s var(--ease)}
+.call:hover .meta,.call:focus-visible .meta{color:var(--graphite)}
+
+/* ---- service rows ---- */
+.rows{padding:clamp(3rem,7vw,5.5rem) 0}
+.rows h2{font-size:clamp(1.7rem,3.4vw,2.6rem);margin-bottom:1.9rem}
+.row{display:grid;grid-template-columns:1fr 1.15fr;gap:1rem 2rem;
+  padding:1.15rem 0;border-top:var(--hair);align-items:baseline}
+.row:last-child{border-bottom:var(--hair)}
+.row b{font-family:var(--display);font-weight:700;text-transform:uppercase;
+  font-size:clamp(1.16rem,2vw,1.5rem);letter-spacing:.015em}
+.row span{color:var(--steel);font-size:.98rem}
+
+/* ---- quote + image ---- */
+.said{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.5rem,4vw,3.25rem);
+  align-items:center;padding-bottom:clamp(3rem,7vw,5.5rem)}
+.said img{aspect-ratio:1;object-fit:cover}
+.said blockquote{margin:0;font-family:var(--display);font-weight:700;
+  font-size:clamp(1.9rem,4.4vw,3.4rem);line-height:.95;max-width:14ch}
+.said .src{margin-top:1.35rem;font-family:var(--mono);font-size:.8rem;color:var(--steel);line-height:1.7}
+.said .rate{margin-top:1.5rem;font-family:var(--mono);font-size:.86rem;color:var(--oxide)}
+
+/* ---- full bleed band ---- */
+.band img{width:100%;height:clamp(230px,40vw,440px);object-fit:cover;object-position:50% 60%}
+
+/* ---- odd jobs ---- */
+.odd{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,3.25rem);
+  align-items:center;padding:clamp(3rem,7vw,5.5rem) 0}
+.odd h2{font-size:clamp(1.7rem,3.6vw,2.7rem);max-width:14ch}
+.odd p{margin-top:1.35rem;color:var(--steel);max-width:46ch}
+.odd ul{margin:1.5rem 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:.55rem}
+.odd li{font-family:var(--mono);font-size:.8rem;padding:.45rem .8rem;
+  border:1px solid rgba(155,166,172,.4);color:var(--bone)}
+.odd img{aspect-ratio:1;object-fit:cover}
+
+/* ---- find us ---- */
+.find{border-top:var(--hair);padding:clamp(2.5rem,6vw,4.25rem) 0}
+.find h2{font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:1.35rem}
+.find .addr{font-family:var(--display);font-weight:700;text-transform:uppercase;
+  font-size:clamp(1.35rem,3.4vw,2.35rem);line-height:1.05}
+.find .note{margin-top:1.1rem;color:var(--steel);max-width:52ch}
+.find .again{display:inline-block;margin-top:1.75rem;font-family:var(--mono);font-weight:700;
+  font-size:1.06rem;text-decoration:none;color:var(--oxide);
+  border-bottom:2px solid var(--oxide);padding-bottom:3px}
+.find .again:hover{color:var(--bone);border-bottom-color:var(--bone)}
+
+/* ---- footer ---- */
+footer{border-top:var(--hair);padding:2.25rem 0 2rem;font-size:.9rem;color:var(--steel)}
+.frow{display:flex;flex-wrap:wrap;gap:.6rem 2.5rem;align-items:baseline}
+footer .fname{font-family:var(--display);font-weight:700;text-transform:uppercase;
+  font-size:1.16rem;color:var(--bone);letter-spacing:.02em}
+.disclosure{margin-top:1.75rem;padding-top:1.15rem;border-top:1px solid rgba(155,166,172,.18);
+  font-size:.82rem;line-height:1.65;color:#79848A;max-width:80ch}
+
+@media (max-width:880px){
+  .row,.said,.odd{grid-template-columns:1fr}
+  .said img,.odd img{order:-1}
+  .row{gap:.3rem}
+}
+@media (max-width:560px){
+  .top{height:auto;padding-top:.85rem;padding-bottom:.85rem;flex-wrap:wrap;gap:.3rem}
+  .top .where{margin-left:0;width:100%;white-space:normal}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <span class="name">Nokesville Tire Center</span>
+  <span class="where">12915 Fitzwater Dr &nbsp;·&nbsp; Nokesville, VA</span>
+</header>
+
+<section class="hero">
+  <!-- generated illustrative imagery -->
+  <img src="images/hero.png" alt="A car tire seated on a mounting machine in a dim rural garage bay, lit by one work lamp and daylight from an open roll-up door.">
+  <div class="wrap">
+    <h1>Flat tire? We'll tell you if it can be patched.</h1>
+    <p class="sub">Tire work and automotive repair on Fitzwater Drive. Same small town shop, same answer whether the fix is thirty dollars or four new tires.</p>
+  </div>
+</section>
+
+<a class="call" href="tel:17035943534">
+  <div class="wrap">
+    <div class="num">(703) 594-3534</div>
+    <div class="meta">
+      <span>CALL FOR TODAY'S HOURS</span>
+      <span>12915 FITZWATER DR, NOKESVILLE VA 20181</span>
+      <span>WALK-INS TAKEN</span>
+    </div>
+  </div>
+</a>
+
+<main>
+  <section class="wrap rows">
+    <h2>What we do</h2>
+    <div class="row"><b>Tire repair and patching</b><span>Inside patches and plugs. If the tire can be saved we will say so.</span></div>
+    <div class="row"><b>Mount and balance</b><span>Cars, pickups, trailers and odd sizes.</span></div>
+    <div class="row"><b>Farm and equipment tires</b><span>Skid steer, tractor and implement tires, mounted here.</span></div>
+    <div class="row"><b>New tires</b><span>Priced honestly, and only when you actually need them.</span></div>
+    <div class="row"><b>General automotive repair</b><span>Ask us. If we cannot do it we will tell you who can.</span></div>
+  </section>
+
+  <section class="wrap said">
+    <div>
+      <blockquote>The world needs more businesses like this.</blockquote>
+      <p class="src">Customer review, posted publicly.<br>Another writes: "Very good prices on the tires, with the service of the small town shop."</p>
+      <p class="rate">4.8 out of 5 across 16 Yelp reviews</p>
+    </div>
+    <figure style="margin:0">
+      <!-- generated illustrative imagery -->
+      <img src="images/patch.png" alt="A mechanic's gloved hands pressing a patch onto the inner liner of a dismounted tire on a workbench.">
+    </figure>
+  </section>
+</main>
+
+<section class="band">
+  <!-- generated illustrative imagery -->
+  <img src="images/farm.png" alt="A large mud-caked skid steer tire leaning against a steel workbench in a farm garage.">
+</section>
+
+<section class="wrap odd">
+  <div>
+    <h2>The work the chains send away</h2>
+    <p>Plenty of shops will not put a skid steer tire on the machine, or will not touch a trailer that showed up without an appointment. Out here that is most of the work, so it is most of what we do.</p>
+    <ul>
+      <li>SKID STEER</li><li>TRACTOR</li><li>TRAILER</li><li>IMPLEMENT</li><li>ODD SIZES</li>
+    </ul>
+  </div>
+  <figure style="margin:0">
+    <!-- generated illustrative imagery -->
+    <img src="images/counter.png" alt="A worn wooden service counter in a small garage office with keys, a clipboard and a coffee mug.">
+  </figure>
+</section>
+
+<section class="wrap find">
+  <h2>Find us</h2>
+  <p class="addr">12915 Fitzwater Drive<br>Nokesville, Virginia 20181</p>
+  <p class="note">On the Fitzwater Drive crossroads, serving Nokesville, Bristow, Gainesville and the farms in between. Call before you drive out and we will tell you whether to come now or after lunch.</p>
+  <a class="again" href="tel:17035943534">Call (703) 594-3534</a>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="frow">
+      <span class="fname">Nokesville Tire Center</span>
+      <span>12915 Fitzwater Dr, Nokesville, VA 20181</span>
+      <span><a href="tel:17035943534">(703) 594-3534</a></span>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Nokesville Tire Center.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Nokesville Tire Center, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
