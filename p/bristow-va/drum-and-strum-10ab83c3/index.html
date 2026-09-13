@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drum &amp; Strum Music Center - Warrenton, Virginia, since 1990</title>
+<meta name="description" content="Guitars, instrument repair, rentals and lessons at 102 Main Street in Warrenton since 1990, with a forty-seat listening room in the back. Open Monday to Saturday.">
+<style>
+/* ---------------------------------------------------------------
+   Drum & Strum Music Center - concept comp
+   Type: Zilla Slab (display) / Schibsted Grotesk (body) / Martian Mono (dates)
+   Set in the room, not the shop: a cool near-black at the light level of a
+   forty-seat listening room, warm cream type, and one committed stage amber
+   used the way a two-colour letterpress bill uses its second ink.
+----------------------------------------------------------------- */
+
+@font-face{font-family:"Zilla Slab";src:url("fonts/zillaslab-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Zilla Slab";src:url("fonts/zillaslab-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Zilla Slab";src:url("fonts/zillaslab-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Schibsted Grotesk";src:url("fonts/schibsted-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Schibsted Grotesk";src:url("fonts/schibsted-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Martian Mono";src:url("fonts/martianmono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Martian Mono";src:url("fonts/martianmono-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+
+:root{
+  --room:#14161B;
+  --raised:#1D2028;
+  --cream:#EFEAE1;
+  --grey:#8E9099;
+  --amber:#E8862B;
+  --hair:rgba(239,234,225,0.15);
+  --display:"Zilla Slab",Georgia,"Times New Roman",serif;
+  --body:"Schibsted Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --data:"Martian Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --gutter:clamp(1.25rem,4vw,3.5rem);
+  --band:clamp(4rem,7vw,6.5rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--room);
+  color:var(--cream);
+  font-family:var(--body);
+  font-size:1.25rem;
+  line-height:1.6;
+}
+
+/* Browser surfaces themed from the palette. */
+::selection{background:var(--amber);color:var(--room)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+html{scrollbar-color:#3B3F49 var(--room)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--room)}
+::-webkit-scrollbar-thumb{background:#3B3F49;border:3px solid var(--room)}
+::-webkit-scrollbar-thumb:hover{background:var(--grey)}
+a{color:inherit;text-underline-offset:0.24em;text-decoration-thickness:1px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-0.012em;line-height:1.08;margin:0;text-wrap:balance}
+p{margin:0}
+
+.wrap{max-width:1240px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* ---------- masthead --------------------------------------------- */
+.masthead{border-bottom:2px solid var(--cream)}
+.masthead .wrap{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem 2rem;padding-block:1.3rem 1.1rem}
+.mark{font-family:var(--display);font-weight:700;font-size:1.5625rem;letter-spacing:-0.02em;text-decoration:none;line-height:1.05}
+.mark span{display:block;font-family:var(--data);font-size:0.8rem;color:var(--grey);letter-spacing:0.01em;margin-top:0.4rem}
+.nav{display:flex;gap:clamp(1rem,2.4vw,2.1rem);font-family:var(--body);font-weight:600;font-size:1rem}
+.nav a{text-decoration:none;padding-block:0.2rem;border-bottom:2px solid transparent;transition:border-color 190ms ease}
+.nav a:hover{border-color:var(--amber)}
+
+/* ---------- the bill: the signature ------------------------------ */
+.bill{padding-block:clamp(2.75rem,5vw,4.5rem) var(--band)}
+.bill-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0.6rem 2rem;
+  font-family:var(--data);font-size:0.8rem;color:var(--amber);
+  padding-bottom:1.1rem;border-bottom:2px solid var(--cream)}
+.bill-head b{font-weight:400}
+.bill-head span{color:var(--grey)}
+.names{list-style:none;margin:0;padding:0}
+.name{
+  position:relative;
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0.4rem 2rem;
+  padding-block:clamp(0.45rem,1vw,0.8rem);
+  border-bottom:1px solid var(--hair);
+  transition:transform 300ms cubic-bezier(.22,1,.36,1);
+}
+.name b{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(2rem,5.6vw,4.25rem);letter-spacing:-0.022em;line-height:1.66;
+  text-transform:uppercase;
+}
+.name i{font-family:var(--data);font-style:normal;font-size:1rem;color:var(--grey);white-space:nowrap}
+/* an amber rule runs across the line, the way a finger runs down a poster */
+.name::after{
+  content:"";position:absolute;left:0;bottom:-1px;
+  width:0;height:2px;background:var(--amber);
+  transition:width 300ms cubic-bezier(.22,1,.36,1);
+}
+.name:hover::after,.name:focus-within::after{width:100%}
+.name:hover,.name:focus-within{transform:translateX(0.4rem)}
+.bill-foot{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 2.2rem;margin-top:2.2rem}
+.btn{
+  display:inline-block;background:var(--amber);color:var(--room);
+  font-family:var(--body);font-weight:600;font-size:1rem;
+  text-decoration:none;padding:0.9rem 1.7rem;border:0;border-radius:2px;
+  transition:transform 160ms ease,background 160ms ease;
+}
+.btn:hover{background:#F19943;transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.bill-hours{font-family:var(--data);font-size:1rem;color:var(--grey)}
+.bill-note{font-family:var(--data);font-size:0.8rem;color:var(--grey);margin-top:1.6rem;max-width:64ch;line-height:1.7}
+
+/* ---------- the wall, full bleed --------------------------------- */
+.wall{margin:0;position:relative}
+.wall img{width:100%;aspect-ratio:2000/1024;object-fit:cover}
+.wall figcaption{font-family:var(--data);font-size:0.8rem;color:var(--grey);padding:0.8rem var(--gutter) 0;max-width:1240px;margin-inline:auto}
+
+/* ---------- four trades ------------------------------------------ */
+.trades{padding-block:var(--band);border-bottom:1px solid var(--hair)}
+.trades h2{font-size:clamp(1.9rem,3.6vw,2.8rem);max-width:18ch}
+.trades .lede{margin-top:1.2rem;max-width:54ch;color:var(--grey)}
+.trade-grid{margin-top:clamp(2.2rem,4vw,3.2rem);display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:start}
+.trade-list{list-style:none;margin:0;padding:0}
+.trade{padding-block:1.35rem;border-top:1px solid var(--hair);display:grid;grid-template-columns:auto 1fr;gap:0 1.6rem;align-items:baseline}
+.trade:last-child{border-bottom:1px solid var(--hair)}
+.trade em{font-family:var(--data);font-style:normal;font-size:0.8rem;color:var(--amber);white-space:nowrap}
+.trade h3{font-family:var(--display);font-weight:700;font-size:1.5625rem;letter-spacing:-0.015em}
+.trade p{grid-column:2;margin-top:0.5rem;font-size:1rem;color:var(--grey);max-width:44ch}
+.trades figure{margin:0}
+.trades img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px}
+
+/* ---------- the alliance plate ----------------------------------- */
+.alliance{border-bottom:1px solid var(--hair);background:var(--raised)}
+.alliance .wrap{padding-block:var(--band);display:grid;grid-template-columns:1.15fr 0.85fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:center}
+.alliance h2{font-size:clamp(1.8rem,3.4vw,2.6rem);max-width:20ch}
+.alliance p{margin-top:1.25rem;max-width:52ch;color:var(--cream)}
+.alliance p + p{margin-top:1rem;color:var(--grey)}
+.alliance img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px}
+.alliance figure{margin:0}
+.alliance .tag{font-family:var(--data);font-size:0.8rem;color:var(--amber);margin-bottom:1.1rem;display:block}
+
+/* ---------- visit -------------------------------------------------- */
+.visit{padding-block:var(--band)}
+.visit-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:start}
+.visit h2{font-size:clamp(1.9rem,3.6vw,2.8rem);max-width:14ch}
+.visit p{margin-top:1.25rem;max-width:48ch;color:var(--grey)}
+.hours{font-family:var(--data);font-size:1rem}
+.hours div{display:flex;justify-content:space-between;gap:1.5rem;padding-block:0.8rem;border-bottom:1px solid var(--hair)}
+.hours div:last-child{border-bottom:0}
+.hours span:last-child{color:var(--grey)}
+.hours .shut span:last-child{color:var(--amber)}
+
+/* ---------- footer -------------------------------------------------- */
+footer{border-top:2px solid var(--cream);padding-block:2.4rem 3rem;font-size:1rem}
+.foot-top{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;align-items:baseline}
+.disclosure{margin-top:1.8rem;font-family:var(--data);font-size:0.8rem;color:var(--grey);max-width:86ch;line-height:1.75}
+
+/* ---------- responsive ---------------------------------------------- */
+@media (max-width:960px){
+  .trade-grid,.alliance .wrap,.visit-grid{grid-template-columns:1fr}
+  .trades figure,.alliance figure{order:-1}
+}
+@media (max-width:640px){
+  .name{gap:0.2rem}
+  .name b{font-size:2rem}
+  .btn{width:100%;text-align:center}
+  .trade{grid-template-columns:1fr}
+  .trade p{grid-column:1}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms !important}
+  .name:hover,.name:focus-within{transform:none}
+  .name:hover::after,.name:focus-within::after{width:0}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="#top">Drum &amp; Strum<span>102 MAIN ST &middot; WARRENTON, VIRGINIA &middot; SINCE 1990</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#trades">The shop</a>
+      <a href="#trades">Repairs</a>
+      <a href="#alliance">The Alliance</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap bill" id="top">
+  <h1 class="bill-head">
+    <b>In the Listening Room, forty seats, behind the shop</b>
+    <span>Thirty-five years on Main Street</span>
+  </h1>
+  <ul class="names">
+    <li class="name" tabindex="0"><b>Jack Dunlap</b><i>June 2025</i></li>
+    <li class="name" tabindex="0"><b>Cody Brown</b><i>bluegrass</i></li>
+    <li class="name" tabindex="0"><b>Mike Munford</b><i>banjo</i></li>
+    <li class="name" tabindex="0"><b>John Gild</b><i>35th anniversary</i></li>
+  </ul>
+  <div class="bill-foot">
+    <a class="btn" href="#visit">Visit the shop</a>
+    <span class="bill-hours">Mon to Thu 11 to 8 &middot; Fri and Sat 11 to 6 &middot; (540) 347-7484</span>
+  </div>
+  <p class="bill-note">That was the bill for our 35th anniversary in June 2025. The Listening Room
+    runs roots, blues and bluegrass on stage each month; who is playing next goes here.</p>
+</main>
+
+<figure class="wall">
+  <!-- generated illustrative imagery -->
+  <img src="images/wall.png" alt="A wall of acoustic and electric guitars hung two rows deep on dark pegboard under a string of warm lights, with amplifiers and a stool below.">
+  <figcaption>The shop the room is behind. Illustrative.</figcaption>
+</figure>
+
+<section class="wrap trades" id="trades">
+  <h2>Sell it, fix it, rent it, teach it</h2>
+  <p class="lede">Four trades out of one address on Main Street, which is the reason people who
+    could order a guitar to their door drive to Warrenton instead.</p>
+  <div class="trade-grid">
+    <ul class="trade-list">
+      <li class="trade">
+        <em>The bench</em><h3>Repairs and restorations</h3>
+        <p>Setups, fretwork, cracks, electronics. The part of this shop that cannot be shipped to
+          you, and the reason an instrument bought here plays properly when it gets home.</p>
+      </li>
+      <li class="trade">
+        <em>The floor</em><h3>Guitars and instruments</h3>
+        <p>Acoustics, electrics and basses on the wall where you can take one down and hear it in
+          the room before you decide.</p>
+      </li>
+      <li class="trade">
+        <em>The cupboard</em><h3>Rentals</h3>
+        <p>For the beginner who is not sure yet, and for the player whose own instrument is on the
+          bench.</p>
+      </li>
+      <li class="trade">
+        <em>The back rooms</em><h3>Private lessons</h3>
+        <p>With instructors who play. Booked one to one rather than sold as a package.</p>
+      </li>
+    </ul>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/bench.png" alt="A guitar neck clamped in a padded cradle on a luthier's bench, with fret files, a steel rule and spare strings laid out beside it.">
+    </figure>
+  </div>
+</section>
+
+<section class="alliance" id="alliance">
+  <div class="wrap">
+    <div>
+      <span class="tag">A REGISTERED 501(c)(3)</span>
+      <h2>The Gloria Faye Dingus Music Alliance</h2>
+      <p>Gloria Faye Dingus founded this shop in 1990 with her husband Gary and their children
+        Cheryl and Tim. The Alliance carries her name, and it puts instruments and music
+        instruction into the hands of children who could not otherwise have them.</p>
+      <p>It began in the listening room at the back of this building, with forty chairs and a
+        stage. In 2018 it opened Gloria's, a performing arts centre of its own further along Main
+        Street. The shop and the Alliance have been the same idea from the start: get instruments
+        into people's hands and give them somewhere to play them.</p>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/lesson.png" alt="A young learner's hands on a three-quarter size acoustic guitar with an adult hand guiding the fretting fingers.">
+    </figure>
+  </div>
+</section>
+
+<section class="wrap visit" id="visit">
+  <div class="visit-grid">
+    <div>
+      <h2>102 Main Street</h2>
+      <p>We are in Old Town Warrenton, and we have been at this address since 1990. Come and take
+        something off the wall. If it needs work, the bench is here too, and so is somebody who can
+        tell you whether it is worth doing.</p>
+      <div class="bill-foot">
+        <a class="btn" href="tel:+15403477484">Call (540) 347-7484</a>
+        <span class="bill-hours"><a href="mailto:info@drumnstrum.com">info@drumnstrum.com</a></span>
+      </div>
+    </div>
+    <div class="hours">
+      <div><span>Monday to Thursday</span><span>11am to 8pm</span></div>
+      <div><span>Friday and Saturday</span><span>11am to 6pm</span></div>
+      <div class="shut"><span>Sunday</span><span>Closed</span></div>
+      <div><span>Where</span><span>102 Main St, Warrenton VA</span></div>
+    </div>
+  </div>
+  <figure style="margin:clamp(2.4rem,4.5vw,3.6rem) 0 0">
+    <!-- generated illustrative imagery -->
+    <img src="images/stage.png" alt="A small listening-room stage before a set: a wooden stool, a microphone on a boom stand, a small amplifier and an acoustic guitar on a stand, lit by two warm lamps." style="width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:2px">
+    <figcaption style="font-family:var(--data);font-size:0.8rem;color:var(--grey);margin-top:0.7rem">Forty seats, at the back. Illustrative.</figcaption>
+  </figure>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span><strong>Drum &amp; Strum Music Center</strong> &middot; 102 Main St, Warrenton, VA 20186</span>
+      <span><a href="tel:+15403477484">(540) 347-7484</a> &middot; <a href="mailto:info@drumnstrum.com">info@drumnstrum.com</a></span>
+    </div>
+    <p class="disclosure">This is an unsolicited concept page prepared by Ohtari Labs to show what a
+      website for Drum &amp; Strum Music Center could look like. It is not affiliated with or
+      authorised by the shop, and it is not affiliated with the Gloria Faye Dingus Music Alliance.
+      Photography shown is illustrative art direction generated for this concept and does not depict
+      the shop, its listening room, its staff, its customers or any performer. The performers named
+      are those the shop has publicly said played its 35th anniversary Listening Room bill in June
+      2025; no upcoming dates are shown because none were published. The 1990 founding, the family
+      names, the address, phone, email, store hours, the four trades and the Alliance's charitable
+      purpose are taken from the shop's own website and from public reporting on the Alliance. No
+      prices, lesson rates, repair rates or ticket prices appear, because none are published.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Drum &amp; Strum Music Center, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
