@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Copper Cricket - Household consignment in Haymarket, Virginia</title>
+<meta name="description" content="Furniture, art and decor on consignment at 15026 Washington Street in downtown Haymarket. The floor changes every week. Open Tuesday to Saturday 10 to 5, Sunday 1 to 5.">
+<style>
+/* ---------------------------------------------------------------
+   The Copper Cricket - concept comp
+   Type: Bricolage Grotesque (display) / Newsreader (body) / Courier Prime (tag data)
+   Palette: cool gallery ground, cool ink, stamp-pad ultramarine.
+   The warmth is carried entirely by the photography, not the page.
+----------------------------------------------------------------- */
+
+@font-face{font-family:"Bricolage Grotesque";src:url("fonts/bricolage-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Bricolage Grotesque";src:url("fonts/bricolage-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Bricolage Grotesque";src:url("fonts/bricolage-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Newsreader";src:url("fonts/newsreader-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Newsreader";src:url("fonts/newsreader-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Newsreader";src:url("fonts/newsreader-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Courier Prime";src:url("fonts/courierprime-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Courier Prime";src:url("fonts/courierprime-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#F1F3F1;
+  --ink:#16181C;
+  --stamp:#1D3FBF;
+  --slate:#6B6E70;
+  --chalk:#FCFCFA;
+  --rule:#D4D8D4;
+  --display:"Bricolage Grotesque",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  --tag:"Courier Prime","Courier New",monospace;
+  --gutter:clamp(1.25rem,4vw,4.5rem);
+  --band:clamp(4.5rem,9vw,8rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:1.25rem;
+  line-height:1.62;
+  font-variant-numeric:oldstyle-nums;
+}
+
+/* Browser surfaces themed from the palette rather than left to defaults. */
+::selection{background:var(--stamp);color:var(--chalk)}
+:focus-visible{outline:2.5px solid var(--stamp);outline-offset:3px;border-radius:1px}
+html{scrollbar-color:var(--slate) var(--paper)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--paper)}
+::-webkit-scrollbar-thumb{background:var(--slate);border:3px solid var(--paper);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:var(--ink)}
+a{color:inherit;text-underline-offset:0.22em;text-decoration-thickness:1px}
+img{display:block;max-width:100%;height:auto}
+
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-0.035em;line-height:0.98;margin:0;text-wrap:balance}
+p{margin:0}
+
+.wrap{max-width:1240px;margin-inline:auto;padding-inline:var(--gutter)}
+.measure{max-width:66ch}
+
+/* ---------- tag: the signature ---------------------------------
+   A card-stock ticket hung from a punched hole. The hole is the
+   transform origin, so the whole ticket swings from it on hover.
+----------------------------------------------------------------- */
+.tag{
+  position:relative;
+  display:inline-block;
+  background:var(--chalk);
+  color:var(--ink);
+  font-family:var(--tag);
+  font-size:0.8rem;
+  line-height:1.5;
+  padding:0.6rem 0.85rem 0.55rem 1.7rem;
+  border-radius:2px;
+  box-shadow:0 7px 16px -7px rgba(22,24,28,0.5);
+  transform:rotate(-1.6deg);
+  transform-origin:1.05rem 0.95rem;
+  transition:transform 420ms cubic-bezier(.22,1,.36,1);
+  font-variant-numeric:tabular-nums;
+}
+/* the punched hole and its string */
+.tag::before{
+  content:"";
+  position:absolute;
+  left:0.72rem;top:0.62rem;
+  width:0.66rem;height:0.66rem;
+  border-radius:50%;
+  background:var(--paper);
+  box-shadow:inset 0 1px 2px rgba(22,24,28,0.34);
+}
+.tag::after{
+  content:"";
+  position:absolute;
+  left:1.02rem;top:-0.85rem;
+  width:1px;height:1rem;
+  background:var(--slate);
+  opacity:.85;
+}
+.tag b{display:block;font-weight:700;font-size:1rem;letter-spacing:-0.01em}
+.tag span{display:block;color:var(--slate)}
+.tag .price{color:var(--stamp);font-weight:700}
+
+/* ---------- header --------------------------------------------- */
+.top{
+  display:flex;align-items:baseline;justify-content:space-between;gap:1.5rem;
+  padding-block:1.4rem 1.1rem;
+  border-bottom:1px solid var(--rule);
+  flex-wrap:wrap;
+}
+.mark{font-family:var(--display);font-weight:800;font-size:1.5625rem;letter-spacing:-0.045em;text-decoration:none}
+.mark em{font-style:normal;color:var(--stamp)}
+.nav{display:flex;gap:clamp(1rem,2.4vw,2.1rem);font-family:var(--display);font-weight:500;font-size:1rem;letter-spacing:-0.01em}
+.nav a{text-decoration:none;padding-block:0.2rem;border-bottom:1.5px solid transparent;transition:border-color 180ms ease,color 180ms ease}
+.nav a:hover{border-color:var(--stamp);color:var(--stamp)}
+
+/* ---------- hero ------------------------------------------------ */
+.hero{
+  display:grid;
+  grid-template-columns:minmax(0,0.95fr) minmax(0,1.05fr);
+  gap:clamp(2rem,5vw,4.5rem);
+  align-items:end;
+  padding-block:clamp(2.75rem,5vw,4.25rem) 0;
+}
+.hero h1{font-size:clamp(2.45rem,4.5vw,3.55rem)}
+.hero h1 em{font-style:italic;font-family:var(--body);font-weight:400;letter-spacing:-0.01em;line-height:1.1;padding-bottom:0.08em;display:inline-block}
+.hero .measure{margin-top:1.5rem;color:#33363B}
+.hero-actions{display:flex;flex-wrap:wrap;gap:0.9rem 1.1rem;align-items:center;margin-top:2rem}
+.btn{
+  display:inline-block;
+  background:var(--stamp);color:var(--chalk);
+  font-family:var(--display);font-weight:700;font-size:1rem;letter-spacing:-0.015em;
+  text-decoration:none;
+  padding:0.9rem 1.6rem;
+  border-radius:2px;
+  border:0;
+  box-shadow:0 8px 18px -10px rgba(22,24,28,0.55);
+  transition:transform 160ms ease,box-shadow 160ms ease,background 160ms ease;
+}
+.btn:hover{background:#152F93;transform:translateY(-1px);box-shadow:0 12px 22px -10px rgba(22,24,28,0.6)}
+.btn:active{transform:translateY(0)}
+.btn-plain{
+  font-family:var(--display);font-weight:500;font-size:1rem;
+  text-decoration:none;border-bottom:1.5px solid var(--rule);padding-bottom:2px;
+  transition:border-color 180ms ease,color 180ms ease;
+}
+.btn-plain:hover{border-color:var(--stamp);color:var(--stamp)}
+.hero-figure{position:relative}
+.hero-figure img{border-radius:2px;box-shadow:0 26px 54px -30px rgba(22,24,28,0.6)}
+.hero-figure .tag{position:absolute;right:clamp(1rem,3vw,2.2rem);bottom:-1.5rem}
+.hero-figure:hover .tag,.hero-figure:focus-within .tag{transform:rotate(2.4deg)}
+
+/* visiting facts, set as a plain definition row rather than cards */
+.facts{
+  display:flex;flex-wrap:wrap;gap:0.4rem 2.4rem;
+  margin-top:2.4rem;padding-top:1.4rem;border-top:1px solid var(--rule);
+  font-family:var(--tag);font-size:1rem;color:var(--slate);
+}
+.facts b{color:var(--ink);font-weight:700}
+
+/* ---------- arrivals -------------------------------------------- */
+.arrivals{padding-block:var(--band) 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:2.6rem}
+.sec-head h2{font-size:clamp(2rem,4.3vw,3.2rem)}
+.sec-head p{font-family:var(--tag);font-size:1rem;color:var(--slate);max-width:30ch}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:clamp(2.4rem,4vw,3.4rem) clamp(1.5rem,2.6vw,2.4rem);
+}
+.lot{grid-column:span 5}
+.lot--wide{grid-column:span 7}
+.lot-fig{position:relative;margin:0}
+.lot-fig img{border-radius:2px;box-shadow:0 18px 38px -26px rgba(22,24,28,0.55);width:100%;object-fit:cover}
+.lot--wide .lot-fig img{aspect-ratio:3/2}
+.lot:not(.lot--wide) .lot-fig img{aspect-ratio:4/5}
+.lot-fig .tag{position:absolute;left:clamp(0.9rem,2vw,1.6rem);bottom:-1.35rem}
+.lot:hover .tag,.lot:focus-within .tag{transform:rotate(2.1deg)}
+.lot h3{font-size:1.5625rem;font-weight:700;letter-spacing:-0.025em;margin-top:3.1rem}
+.lot p{font-size:1rem;color:var(--slate);margin-top:0.5rem;max-width:42ch}
+
+/* the quiet panel that carries the rest of the floor, no photo */
+.lot--note{
+  grid-column:span 7;
+  align-self:center;
+  border-top:2px solid var(--ink);
+  padding-top:1.5rem;
+}
+.lot--note h3{margin-top:0}
+.lot--note .tag{position:static;display:inline-block;margin-top:1.5rem;transform:rotate(-1.1deg)}
+.lot--note:hover .tag{transform:rotate(1.4deg)}
+.lot--note .tag::after{display:none}
+
+.illustrative{
+  font-family:var(--tag);font-size:0.8rem;color:var(--slate);
+  margin-top:2.6rem;padding-top:1rem;border-top:1px solid var(--rule);
+}
+
+/* ---------- rooms: a plain index, not a row of cards ------------- */
+.rooms{padding-block:var(--band)}
+.rooms-inner{display:grid;grid-template-columns:minmax(0,0.7fr) minmax(0,1.3fr);gap:clamp(1.6rem,4vw,4rem);align-items:start}
+.rooms h2{font-size:clamp(1.8rem,3.4vw,2.5rem)}
+.rooms-list{display:flex;flex-wrap:wrap;gap:0.6rem 0.7rem;margin-top:0.4rem}
+.room{
+  font-family:var(--display);font-weight:500;font-size:1.5625rem;
+  letter-spacing:-0.025em;text-decoration:none;
+  padding:0.5rem 1rem 0.55rem;
+  border:1px solid var(--rule);border-radius:999px;
+  background:var(--chalk);
+  transition:border-color 180ms ease,color 180ms ease,transform 180ms ease;
+}
+.room:hover{border-color:var(--stamp);color:var(--stamp);transform:translateY(-2px)}
+.room i{font-family:var(--tag);font-style:normal;font-size:0.8rem;color:var(--slate);margin-left:0.5rem;font-variant-numeric:tabular-nums}
+.room:hover i{color:var(--stamp)}
+
+/* ---------- the other door: full-width stamp band ---------------- */
+.consign{background:var(--stamp);color:var(--chalk)}
+.consign .wrap{padding-block:var(--band)}
+.consign h2{font-size:clamp(2.1rem,4.6vw,3.4rem);max-width:16ch}
+.consign .lede{margin-top:1.35rem;max-width:56ch;color:#DDE3FA}
+.steps{
+  display:grid;grid-template-columns:1.28fr 1fr 1fr;
+  gap:2.2rem clamp(1.8rem,3.4vw,3.4rem);
+  margin-top:3rem;padding-top:2.2rem;
+  border-top:1px solid rgba(252,252,250,0.3);
+}
+.step h3{font-family:var(--display);font-size:1.5625rem;font-weight:700;letter-spacing:-0.02em;color:var(--chalk)}
+.step p{margin-top:0.7rem;font-size:1rem;color:#DDE3FA}
+.consign-actions{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center;margin-top:2.6rem}
+.btn-inv{
+  display:inline-block;background:var(--chalk);color:var(--stamp);
+  font-family:var(--display);font-weight:700;font-size:1rem;letter-spacing:-0.015em;
+  text-decoration:none;padding:0.9rem 1.6rem;border-radius:2px;border:0;
+  transition:transform 160ms ease,background 160ms ease;
+}
+.btn-inv:hover{background:#FFFFFF;transform:translateY(-1px)}
+.consign-actions a.plain-inv{color:var(--chalk);font-family:var(--display);font-weight:500;text-decoration:none;border-bottom:1.5px solid rgba(252,252,250,0.5);padding-bottom:2px}
+.consign-actions a.plain-inv:hover{border-color:var(--chalk)}
+.consign small{display:block;margin-top:2.2rem;font-family:var(--tag);font-size:0.8rem;color:#C3CDF5;max-width:60ch}
+
+/* ---------- visit ------------------------------------------------ */
+.visit{padding-block:var(--band)}
+.visit-inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,0.85fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.visit img{border-radius:2px;box-shadow:0 22px 46px -28px rgba(22,24,28,0.58);aspect-ratio:3/2;object-fit:cover;width:100%}
+.visit h2{font-size:clamp(1.9rem,3.8vw,2.7rem)}
+.visit p{margin-top:1.2rem;color:#33363B}
+.hours{margin-top:1.9rem;font-family:var(--tag);font-size:1rem;font-variant-numeric:tabular-nums}
+.hours div{display:flex;justify-content:space-between;gap:1.5rem;padding-block:0.62rem;border-bottom:1px solid var(--rule);max-width:23rem}
+.hours div:last-child{border-bottom:0}
+.hours span:last-child{color:var(--slate)}
+.hours .shut span:last-child{color:var(--stamp)}
+
+/* ---------- footer ----------------------------------------------- */
+footer{border-top:1px solid var(--rule);padding-block:2.6rem 3.2rem;font-size:1rem}
+.foot-top{display:flex;flex-wrap:wrap;gap:1.2rem 3rem;justify-content:space-between;align-items:baseline}
+.foot-top a{color:var(--stamp)}
+.disclosure{margin-top:2rem;font-family:var(--tag);font-size:0.8rem;color:var(--slate);max-width:78ch;line-height:1.65}
+
+/* ---------- responsive ------------------------------------------- */
+@media (max-width:960px){
+  .hero{grid-template-columns:1fr;gap:2.6rem;align-items:start}
+  .hero-figure .tag{right:auto;left:1rem}
+  .rooms-inner,.visit-inner,.steps{grid-template-columns:1fr}
+  .visit-inner img{order:-1}
+  .lot,.lot--wide,.lot--note{grid-column:span 12}
+}
+@media (max-width:640px){
+  body{font-size:1rem}
+  .room{font-size:1.25rem}
+  .top{gap:0.9rem}
+  .nav{gap:1.1rem;font-size:0.8rem}
+  .lot:not(.lot--wide) .lot-fig img,.lot--wide .lot-fig img{aspect-ratio:4/3}
+  .btn,.btn-inv{width:100%;text-align:center;padding-block:1rem}
+  .facts{gap:0.35rem 1.4rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms !important;animation-duration:1ms !important}
+  .hero-figure:hover .tag,.lot:hover .tag,.hero-figure:focus-within .tag,.lot:focus-within .tag{transform:rotate(-1.6deg)}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="top">
+    <a class="mark" href="#top">The Copper <em>Cricket</em></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#arrivals">On the floor</a>
+      <a href="#rooms">By room</a>
+      <a href="#consign">Consign with us</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+
+  <section class="hero">
+    <div>
+      <h1>Somebody's good furniture, looking for its <em>next house.</em></h1>
+      <p class="measure">Household consignment in downtown Haymarket. Furniture, art, lamps and the
+        odd small strange thing, arriving all week from houses around Prince William County. Most of
+        what you see here will be gone by Saturday, which is the whole point of coming in.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#visit">Visit the shop</a>
+        <a class="btn-plain" href="#consign">Or bring something in</a>
+      </div>
+      <div class="facts">
+        <span><b>15026 Washington St</b>, Haymarket</span>
+        <span><b>703-743-2346</b></span>
+        <span>Closed Mondays</span>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <!-- generated illustrative imagery -->
+      <img src="images/hero.png" alt="A walnut credenza with a brass lamp and a stack of books on top, beside a storefront window.">
+      <div class="tag">
+        <b>Walnut credenza</b>
+        <span>Lot 412 &middot; on the floor Sept 9</span>
+        <span class="price">$465</span>
+      </div>
+    </figure>
+  </section>
+
+  <section class="arrivals" id="arrivals">
+    <div class="sec-head">
+      <h2>What came in this week</h2>
+      <p>The floor changes daily. This page would be rebuilt every Tuesday, alongside Tuesday's Tea.</p>
+    </div>
+
+    <div class="grid">
+      <article class="lot lot--wide">
+        <figure class="lot-fig">
+          <!-- generated illustrative imagery -->
+          <img src="images/art.png" alt="Four framed landscape paintings and a tall gilt mirror leaning in a row against a plaster wall.">
+          <div class="tag">
+            <b>Framed landscapes</b>
+            <span>Lot 402 to 409 &middot; on the floor Sept 10</span>
+            <span class="price">$40 to $220</span>
+          </div>
+        </figure>
+        <h3>A wall's worth of pastoral, plus one gilt mirror</h3>
+        <p>Mostly Virginia scenes in mixed frames. The mirror is heavier than it looks, and yes,
+          we deliver.</p>
+      </article>
+
+      <article class="lot">
+        <figure class="lot-fig">
+          <!-- generated illustrative imagery -->
+          <img src="images/chair.png" alt="A sage-green upholstered wingback armchair on wide-plank wood flooring.">
+          <div class="tag">
+            <b>Wingback chair</b>
+            <span>Lot 418 &middot; on the floor Sept 12</span>
+            <span class="price">$180</span>
+          </div>
+        </figure>
+        <h3>Sage wingback, recently recovered</h3>
+        <p>Queen Anne legs, tight frame, one of a pair. The other went in a day.</p>
+      </article>
+
+      <article class="lot">
+        <figure class="lot-fig">
+          <!-- generated illustrative imagery -->
+          <img src="images/lamps.png" alt="A pair of brass table lamps with pleated ivory shades on a mahogany side table.">
+          <div class="tag">
+            <b>Brass lamps, pair</b>
+            <span>Lot 421 &middot; on the floor Sept 13</span>
+            <span class="price">$95</span>
+          </div>
+        </figure>
+        <h3>Pair of brass lamps</h3>
+        <p>Both rewired, both work. Shades have honest wear and are priced that way.</p>
+      </article>
+
+      <article class="lot lot--note">
+        <h3>And thirty-three more since last Tuesday</h3>
+        <p>Two estates and a downsize in Gainesville. Dining sets, a cedar chest, a walnut secretary,
+          and more lamps than we have outlets for. The rest of the week's intake would list here,
+          newest first, so a regular can tell in five seconds whether it is worth the drive.</p>
+        <div class="tag">
+          <b>Eight new consignors</b>
+          <span>Lot 396 to 431 &middot; week of Sept 15</span>
+          <span class="price">Come look</span>
+        </div>
+      </article>
+    </div>
+
+    <p class="illustrative">Sample listings. Lot numbers, dates and prices above are illustrative,
+      shown to demonstrate how a weekly arrivals page would work.</p>
+  </section>
+
+  <section class="rooms" id="rooms">
+    <div class="rooms-inner">
+      <div>
+        <h2>Or come at it by room</h2>
+        <p class="measure" style="margin-top:1.1rem;color:#33363B">Most people walk in needing one
+          thing. Counts would update as pieces sell.</p>
+      </div>
+      <div class="rooms-list">
+        <a class="room" href="#arrivals">Living room <i>34</i></a>
+        <a class="room" href="#arrivals">Dining <i>21</i></a>
+        <a class="room" href="#arrivals">Bedroom <i>18</i></a>
+        <a class="room" href="#arrivals">Lighting <i>27</i></a>
+        <a class="room" href="#arrivals">Art and mirrors <i>52</i></a>
+        <a class="room" href="#arrivals">Rugs <i>9</i></a>
+        <a class="room" href="#arrivals">Kitchen and china <i>40</i></a>
+        <a class="room" href="#arrivals">Porch and garden <i>12</i></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="consign" id="consign">
+  <div class="wrap">
+    <h2>You have a dining set. We have the floor.</h2>
+    <p class="lede">The shop runs on what other people bring in. If you are downsizing, settling an
+      estate, or just tired of looking at something, this is the door.</p>
+
+    <div class="steps">
+      <div class="step">
+        <h3>What we take</h3>
+        <p>Furniture, art, lamps, mirrors, rugs, china and household decor in good condition.
+          If you are not sure, a photo answers it faster than a description.</p>
+      </div>
+      <div class="step">
+        <h3>How to start</h3>
+        <p>Call the shop or email a few photos with rough dimensions. We will tell you what we can
+          take and when to bring it by.</p>
+      </div>
+      <div class="step">
+        <h3>What happens then</h3>
+        <p>Your piece is tagged with its own lot number and the date it hit the floor, and it goes
+          out where people can see it. Terms are gone over with you in person before anything stays.</p>
+      </div>
+    </div>
+
+    <div class="consign-actions">
+      <a class="btn-inv" href="tel:+17037432346">Call 703-743-2346</a>
+      <a class="plain-inv" href="mailto:thecoppercricket@yahoo.com">thecoppercricket@yahoo.com</a>
+    </div>
+
+    <small>This concept page deliberately does not state a consignment split, a markdown schedule or
+      a payout timeline, because the shop has not published those anywhere and they are not ours to
+      invent. On a live site this is exactly where they would go, and it is the question consignors
+      ask first.</small>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap visit-inner">
+    <!-- generated illustrative imagery -->
+    <img src="images/floor.png" alt="The interior of the shop looking down the central aisle toward the front windows.">
+    <div>
+      <h2>Washington Street, Haymarket</h2>
+      <p>We are at 15026 Washington Street, in the row of storefronts in the middle of old
+        Haymarket. The farmers market sets up next door at 15000, and the Hilton Garden Inn and Red
+        House Tavern are directly across the street, so parking on a Saturday is a matter of
+        patience. Delivery and same-day pickup can be arranged for larger pieces. The entrance and
+        parking are wheelchair accessible, and we take cards, tap and checks.</p>
+      <div class="hours">
+        <div class="shut"><span>Monday</span><span>Closed</span></div>
+        <div><span>Tuesday to Saturday</span><span>10:00 to 5:00</span></div>
+        <div><span>Sunday</span><span>1:00 to 5:00</span></div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn" href="tel:+17037432346">Call the shop</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span><strong>The Copper Cricket</strong> &middot; 15026 Washington St, Haymarket, VA 20169</span>
+      <span><a href="tel:+17037432346">703-743-2346</a> &middot;
+            <a href="mailto:thecoppercricket@yahoo.com">thecoppercricket@yahoo.com</a></span>
+    </div>
+    <p class="disclosure">This is an unsolicited concept page prepared by Ohtari Labs to show what a
+      website for The Copper Cricket could look like. It is not affiliated with or authorised by the
+      shop. Photography shown is illustrative art direction generated for this concept. The finished
+      site would use photography of The Copper Cricket, its floor and its actual inventory. Sample
+      lot numbers, dates, prices and item counts are illustrative.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for The Copper Cricket, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
