@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nokesville Winery. A small farm winery in Nokesville, Virginia, with a tasting room on Fitzwater Drive.</title>
+<meta name="description" content="Nokesville Winery is a small family-owned farm winery growing Norton, Cayuga, Sangiovese, Petit Verdot, Albariño and Tannat on three Virginia vineyards. Tasting room at 12905 Fitzwater Drive, Nokesville, open Thursday to Sunday, no reservation needed.">
+<style>
+/* ------------------------------------------------------------------
+   Nokesville Winery, concept
+   Palette: mist #ECEEEA · Norton ink #2E1F33 · vine #3F6B3A · straw #C9B36A (rules and markers only) · bloom #7A4B7E
+   Type: Sofia Sans Extra Condensed (display) · Newsreader (body) · IBM Plex Mono (utility)
+   Shape rule: everything square-cornered, buttons included.
+   ------------------------------------------------------------------ */
+@font-face { font-family: "Sofia Sans Extra Condensed"; src: url("fonts/sofiasansextracondensed-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Sofia Sans Extra Condensed"; src: url("fonts/sofiasansextracondensed-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Sofia Sans Extra Condensed"; src: url("fonts/sofiasansextracondensed-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("fonts/newsreader-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("fonts/newsreader-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("fonts/newsreader-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("fonts/newsreader-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("fonts/ibmplexmono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("fonts/ibmplexmono-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+
+:root {
+  --mist: #ECEEEA;
+  --mist-deep: #E1E5DE;
+  --ink: #2E1F33;
+  --ink-soft: #5A4A5F;
+  --vine: #3F6B3A;
+  --vine-deep: #2F5230;
+  --straw: #C9B36A;
+  --bloom: #7A4B7E;
+  --display: "Sofia Sans Extra Condensed", "Arial Narrow", sans-serif;
+  --body: "Newsreader", Georgia, serif;
+  --mono: "IBM Plex Mono", "Menlo", monospace;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: light; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--mist); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+::selection { background: var(--straw); color: var(--ink); }
+:focus-visible { outline: 2px solid var(--vine); outline-offset: 3px; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.16em; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3 { font-family: var(--display); font-weight: 800; line-height: 0.95; margin: 0; letter-spacing: 0.005em; text-transform: uppercase; text-wrap: balance; }
+h2 { font-size: clamp(2.6rem, 5vw, 4.25rem); }
+h3 { font-size: 1.5rem; font-weight: 700; }
+p { margin: 0; }
+.wrap { width: min(100% - 2 * var(--gutter), 1240px); margin-inline: auto; }
+.mono { font-family: var(--mono); font-size: 0.85rem; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3.1rem; padding: 0.8rem 1.4rem; background: var(--vine); color: var(--mist); font-family: var(--display); font-weight: 700; font-size: 1.15rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border: 2px solid var(--vine); white-space: nowrap; transition: background 220ms var(--ease-out), border-color 220ms var(--ease-out), transform 140ms var(--ease-out); }
+.btn:hover { background: var(--vine-deep); border-color: var(--vine-deep); }
+.btn:active { transform: translateY(1px); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn.ghost:hover { background: var(--ink); color: var(--mist); }
+.textlink { font-family: var(--body); font-weight: 500; color: var(--vine); text-decoration: underline; text-decoration-color: rgba(63, 107, 58, 0.45); transition: text-decoration-color 200ms var(--ease-out); }
+.textlink:hover { text-decoration-color: var(--vine); }
+
+/* Header */
+.top { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 4.5rem; padding-block: 0.75rem; }
+.wordmark { font-family: var(--display); font-weight: 800; font-size: 1.6rem; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; line-height: 1; }
+.wordmark small { display: block; font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: none; color: var(--ink-soft); margin-top: 0.3rem; }
+.top nav { display: flex; gap: 1.6rem; }
+.top nav a { text-decoration: none; font-weight: 500; color: var(--ink-soft); transition: color 200ms var(--ease-out); }
+.top nav a:hover { color: var(--ink); }
+.top .btn { min-height: 2.6rem; padding: 0.5rem 1rem; font-size: 1rem; }
+
+/* Hero */
+.hero { position: relative; isolation: isolate; }
+.hero .art { position: relative; }
+.hero .frame { position: relative; height: clamp(520px, 78vh, 760px); overflow: hidden; }
+.hero .frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
+.hero .veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(46, 31, 51, 0.72) 0%, rgba(46, 31, 51, 0.35) 45%, rgba(46, 31, 51, 0.05) 100%), linear-gradient(0deg, rgba(46, 31, 51, 0.55) 0%, rgba(46, 31, 51, 0) 40%); }
+.hero .copy { position: absolute; left: 0; right: 0; bottom: clamp(2.5rem, 7vh, 5rem); color: var(--mist); }
+.hero h1 { font-size: clamp(2.9rem, 5.6vw, 4.8rem); max-width: 19ch; text-shadow: 0 2px 24px rgba(46, 31, 51, 0.35); }
+.hero .lede { margin-top: 1rem; max-width: 38ch; font-size: clamp(1.1rem, 1.6vw, 1.35rem); line-height: 1.45; color: rgba(236, 238, 234, 0.92); }
+.hero .lede-actions { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: center; }
+.hero .lede-actions .textlink { color: var(--mist); text-decoration-color: rgba(236, 238, 234, 0.5); }
+.hours { position: absolute; right: var(--gutter); bottom: -4.5rem; width: min(24rem, calc(100% - 2 * var(--gutter))); background: var(--mist); color: var(--ink); padding: 1.5rem 1.6rem 1.6rem; box-shadow: 0 30px 50px -30px rgba(46, 31, 51, 0.55); border-top: 4px solid var(--straw); }
+.hours h2 { font-size: 2rem; }
+.hours dl { margin: 1rem 0 0; display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 1rem; align-items: baseline; }
+.hours dt { font-family: var(--display); font-weight: 700; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.hours dd { margin: 0; font-family: var(--mono); font-size: 0.9rem; }
+.hours .fine { margin-top: 0.9rem; color: var(--ink-soft); font-size: 0.95rem; }
+.hours address { font-style: normal; margin-top: 0.9rem; font-family: var(--mono); font-size: 0.85rem; line-height: 1.5; }
+.hours .btn { margin-top: 1rem; width: 100%; }
+
+/* Wines */
+.wines { padding-block: clamp(7rem, 12vw, 9.5rem) clamp(3rem, 6vw, 5rem); }
+.wines-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; min-width: 0; }
+.wines-grid > * { min-width: 0; }
+.norton { background: var(--ink); color: var(--mist); padding: 2rem 2rem 2.25rem; position: sticky; top: 1.5rem; }
+.norton h2 { font-size: clamp(2.6rem, 4.6vw, 3.6rem); }
+.norton p { margin-top: 1rem; color: rgba(236, 238, 234, 0.88); max-width: 34ch; }
+.norton .rule { width: 3.5rem; height: 4px; background: var(--straw); margin-top: 1.4rem; }
+.norton figure { margin: 1.6rem -2rem -2.25rem; }
+.norton img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 55%; }
+.ledger h2 { margin-bottom: 0.5rem; }
+.ledger .intro { color: var(--ink-soft); max-width: 52ch; margin-bottom: 1.75rem; }
+.flight { margin-top: 1.75rem; }
+.flight h3 { color: var(--vine); padding-bottom: 0.4rem; border-bottom: 2px solid var(--straw); display: inline-block; margin-bottom: 0.6rem; }
+.flight ul { list-style: none; margin: 0; padding: 0; }
+.wine { display: grid; grid-template-columns: minmax(10rem, 14rem) 1fr; gap: 0.5rem 1.25rem; align-items: baseline; padding: 0.7rem 0.5rem 0.7rem 0; border-bottom: 1px solid rgba(46, 31, 51, 0.14); position: relative; overflow: hidden; }
+.wine:last-child { border-bottom: 0; }
+.wine .name { font-weight: 600; }
+.wine .note { color: var(--ink-soft); font-size: 0.98rem; transform: translateX(0.9rem); opacity: 0.72; transition: transform 380ms var(--ease-out), opacity 380ms var(--ease-out); }
+.wine::after { content: ""; position: absolute; left: 0; bottom: -1px; height: 2px; width: 100%; background: var(--vine); transform: scaleX(0); transform-origin: left; transition: transform 420ms var(--ease-out); }
+.wine:hover .note { transform: translateX(0); opacity: 1; }
+.wine:hover::after { transform: scaleX(1); }
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .wine .note { transform: none; opacity: 1; transition: none; }
+  .wine::after { display: none; }
+}
+
+/* Vineyards */
+.vineyards { background: var(--mist-deep); padding-block: clamp(4rem, 8vw, 6.5rem); }
+.vineyards-grid { display: grid; grid-template-columns: 7fr 5fr; gap: clamp(2rem, 5vw, 5rem); align-items: stretch; min-width: 0; margin-top: 2rem; }
+.vineyards-grid > * { min-width: 0; }
+.vineyards figure { margin: 0; }
+.vineyards img { width: 100%; height: 100%; min-height: 380px; object-fit: cover; }
+.vineyards figcaption { margin-top: 0.6rem; color: var(--ink-soft); font-size: 0.92rem; }
+.sites { display: grid; gap: 1.6rem; align-content: start; }
+.site { border-top: 2px solid var(--straw); padding-top: 0.8rem; }
+.site h3 { font-size: 1.9rem; }
+.site .where { font-family: var(--mono); font-size: 0.82rem; color: var(--vine); margin-top: 0.15rem; }
+.site p { margin-top: 0.4rem; color: var(--ink-soft); max-width: 36ch; }
+
+/* Story */
+.story { padding-block: clamp(4rem, 8vw, 7rem); }
+.story-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; min-width: 0; }
+.story-grid > * { min-width: 0; }
+.story figure { margin: 0; }
+.story img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.story figcaption { margin-top: 0.6rem; color: var(--ink-soft); font-size: 0.92rem; }
+.story h2 { max-width: 12ch; }
+.story .lead { margin-top: 1.25rem; font-size: clamp(1.2rem, 1.7vw, 1.4rem); line-height: 1.45; max-width: 40ch; }
+.story .lead em { font-style: italic; }
+.story p + p { margin-top: 1rem; }
+.story .body { max-width: 58ch; color: var(--ink); }
+.story .attrib { margin-top: 1rem; font-family: var(--mono); font-size: 0.82rem; color: var(--ink-soft); }
+
+/* Clubs */
+.clubs { background: var(--mist-deep); padding-block: clamp(4rem, 8vw, 6.5rem); }
+.clubs .intro { color: var(--ink-soft); max-width: 56ch; margin-top: 0.75rem; }
+.club-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); margin-top: 2.25rem; }
+.club { border-top: 4px solid var(--vine); padding-top: 1.1rem; }
+.club h3 { font-size: 2.2rem; }
+.club .who { color: var(--ink-soft); margin-top: 0.35rem; max-width: 36ch; }
+.club dl { margin: 1.25rem 0 0; display: grid; grid-template-columns: auto 1fr; gap: 0.6rem 1.25rem; }
+.club dt { font-family: var(--mono); font-size: 0.8rem; color: var(--vine); padding-top: 0.2rem; }
+.club dd { margin: 0; }
+
+/* Evenings */
+.evenings { padding-block: clamp(4rem, 8vw, 7rem); }
+.evenings-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.evenings h2 { max-width: 12ch; }
+.evenings .block + .block { margin-top: 2rem; }
+.evenings .block p { margin-top: 0.4rem; max-width: 46ch; color: var(--ink); }
+.evenings .block .when { font-family: var(--mono); font-size: 0.85rem; color: var(--vine); }
+.pours h3 { margin-bottom: 0.9rem; }
+.pours ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+.pours li { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: baseline; padding-bottom: 0.55rem; border-bottom: 1px solid rgba(46, 31, 51, 0.14); }
+.pours li:last-child { border-bottom: 0; }
+.pours .town { font-family: var(--mono); font-size: 0.8rem; color: var(--ink-soft); }
+.pours .ship { margin-top: 1.25rem; color: var(--ink-soft); font-size: 0.98rem; }
+
+/* Footer */
+.foot { background: var(--ink); color: var(--mist); padding-block: clamp(2.5rem, 5vw, 4rem) 2rem; }
+.foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 2rem; align-items: start; }
+.foot .wordmark { color: var(--mist); }
+.foot .wordmark small { color: rgba(236, 238, 234, 0.7); }
+.foot address { font-style: normal; margin-top: 1rem; color: rgba(236, 238, 234, 0.85); line-height: 1.6; }
+.foot h3 { color: var(--straw); font-size: 1.3rem; margin-bottom: 0.7rem; }
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
+.foot a { color: rgba(236, 238, 234, 0.85); text-decoration: none; }
+.foot a:hover { color: var(--mist); text-decoration: underline; }
+.disclosure { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid rgba(236, 238, 234, 0.2); color: rgba(236, 238, 234, 0.7); font-size: 0.85rem; max-width: 70ch; }
+
+/* Mobile */
+@media (max-width: 960px) {
+  .wines-grid, .vineyards-grid, .story-grid, .club-grid, .evenings-grid { grid-template-columns: 1fr; }
+  .norton { position: static; }
+  .vineyards img { min-height: 260px; }
+  .foot-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .top nav { display: none; }
+  .hero .frame { height: clamp(440px, 72vh, 600px); }
+  .hero .copy { bottom: 4rem; }
+  .hero h1 { font-size: clamp(2.6rem, 12vw, 3.8rem); max-width: 12ch; }
+  .hours { position: relative; right: auto; bottom: auto; width: auto; margin: -2.5rem var(--gutter) 0; }
+  .wines { padding-top: 1.5rem; }
+  .wine { grid-template-columns: 1fr; gap: 0.15rem; }
+  .story-grid { gap: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="wrap top">
+  <a class="wordmark" href="#top">Nokesville Winery<small>Farm winery · Nokesville, Virginia</small></a>
+  <nav aria-label="Sections">
+    <a href="#wines">The wines</a>
+    <a href="#vineyards">Vineyards</a>
+    <a href="#clubs">Clubs</a>
+    <a href="#evenings">Evenings</a>
+  </nav>
+  <a class="btn" href="https://www.google.com/maps/search/?api=1&query=12905+Fitzwater+Dr+Suite+105+Nokesville+VA+20181">Get directions</a>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="art">
+      <div class="frame">
+      <!-- generated illustrative imagery -->
+      <img src="images/hero.png" width="2000" height="1024" alt="Rows of grapevines heavy with dark clusters at dusk on a Virginia farm, a weathered wooden post in the foreground and a wooded ridge behind">
+      <div class="veil" aria-hidden="true"></div>
+      <div class="wrap copy">
+        <h1 id="hero-title">Two acres of Norton in Nokesville, poured on Fitzwater Drive.</h1>
+        <p class="lede">A small farm winery with three vineyards and a new tasting room in town. No reservation needed, last call an hour before close.</p>
+        <div class="lede-actions">
+          <a class="textlink" href="#wines">See the wines</a>
+        </div>
+      </div>
+      </div>
+      <aside class="hours" aria-labelledby="hours-title">
+        <h2 id="hours-title">This week</h2>
+        <dl>
+          <dt>Thursday</dt><dd>4 to 10 · trivia at 7</dd>
+          <dt>Friday</dt><dd>12 to 10</dd>
+          <dt>Saturday</dt><dd>12 to 10</dd>
+          <dt>Sunday</dt><dd>12 to 7</dd>
+        </dl>
+        <p class="fine">Walk in. Holiday hours are posted on Google and Facebook.</p>
+        <address>12905 Fitzwater Drive, Suite 105<br>Nokesville, VA 20181</address>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=12905+Fitzwater+Dr+Suite+105+Nokesville+VA+20181">Get directions</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="wines" id="wines" aria-labelledby="wines-title">
+    <div class="wrap wines-grid">
+      <div class="norton">
+        <h2>Start with the Norton</h2>
+        <p>Norton is the grape Virginia can call its own, and it is the vine Tara and Dustin planted first. Ours grows on the two acres around the winery and again in Middleburg. If you only taste one thing, taste this.</p>
+        <div class="rule" aria-hidden="true"></div>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/glass.png" width="1024" height="1536" alt="A glass of dark red wine on a worn oak bar beside an unlabelled bottle, with a window and string lights behind">
+        </figure>
+      </div>
+      <div class="ledger">
+        <h2 id="wines-title">The wines</h2>
+        <p class="intro">Fifteen wines from three vineyards, sparkling to port. Flights and glasses at the bar, bottles to take home, and the online store for everywhere else.</p>
+        <div class="flight">
+          <h3>Sparkling and white</h3>
+          <ul>
+            <li class="wine"><span class="name">Lily</span><span class="note">Sparkling white blend.</span></li>
+            <li class="wine"><span class="name">Leah</span><span class="note">White sparkling, poured on tap at the bar.</span></li>
+            <li class="wine"><span class="name">Lyn</span><span class="note">Semi-sweet white blend.</span></li>
+            <li class="wine"><span class="name">Pinot Grigio</span><span class="note">Light and dry.</span></li>
+            <li class="wine"><span class="name">Cayuga</span><span class="note">Grown on the Nokesville acres.</span></li>
+            <li class="wine"><span class="name">Albariño</span><span class="note">From the Middleburg vineyard. Bright and refreshing.</span></li>
+            <li class="wine"><span class="name">Vidal</span><span class="note">Vidal Blanc, a Virginia hybrid.</span></li>
+            <li class="wine"><span class="name">Sweet Annie</span><span class="note">The sweet one.</span></li>
+          </ul>
+        </div>
+        <div class="flight">
+          <h3>Red</h3>
+          <ul>
+            <li class="wine"><span class="name">Front Porch</span><span class="note">Red blend. A visitor favourite beside the Norton and the Tannat.</span></li>
+            <li class="wine"><span class="name">Campfire Red</span><span class="note">Red blend.</span></li>
+            <li class="wine"><span class="name">Petit Verdot</span><span class="note">Grown in Purcellville. Bold, deep colour, real structure.</span></li>
+            <li class="wine"><span class="name">Sangiovese</span><span class="note">A small planting on the Nokesville acres.</span></li>
+            <li class="wine"><span class="name">Tannat</span><span class="note">From Middleburg. Bold and complex.</span></li>
+            <li class="wine"><span class="name">Norton</span><span class="note">Virginia's own grape, from the original two acres and Middleburg.</span></li>
+          </ul>
+        </div>
+        <div class="flight">
+          <h3>Port</h3>
+          <ul>
+            <li class="wine"><span class="name">Billy Bod Red</span><span class="note">Port-style red.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vineyards" id="vineyards" aria-labelledby="vineyards-title">
+    <div class="wrap">
+      <h2 id="vineyards-title">Three vineyards, one small winery</h2>
+      <div class="vineyards-grid">
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/harvest.png" width="1536" height="1024" alt="Gloved hands cutting a cluster of dark grapes from a vine into a yellow harvest bin in morning light">
+          <figcaption>Harvest is done by hand, one cluster at a time.</figcaption>
+        </figure>
+        <div class="sites">
+          <div class="site">
+            <h3>Nokesville</h3>
+            <div class="where">Two acres around the winery. Where it started.</div>
+            <p>Norton and Cayuga, with a small planting of Sangiovese. The first vines the Miners put in the ground.</p>
+          </div>
+          <div class="site">
+            <h3>Purcellville</h3>
+            <div class="where">Loudoun County</div>
+            <p>Petit Verdot, a grape that thrives in Virginia and gives the winery one of its signature reds.</p>
+          </div>
+          <div class="site">
+            <h3>Middleburg</h3>
+            <div class="where">Loudoun County</div>
+            <p>Albariño, Tannat and Norton: a bright white, a bold red and the Virginia heritage grape on one site.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story" aria-labelledby="story-title">
+    <div class="wrap story-grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/room.png" width="1024" height="1024" alt="A small storefront tasting room in the evening with a wooden bar, stools, barrel tables, string lights and a few people seen from behind">
+        <figcaption>A tasting room in town, built for an ordinary Thursday.</figcaption>
+      </figure>
+      <div>
+        <h2 id="story-title">Tara and Dustin</h2>
+        <p class="lead">Nearly twenty years ago they started visiting Virginia wineries on weekends. By the mid-2010s they had planted vines. Before they had a winery, they made wine <em>wherever they could, even in the basement.</em></p>
+        <div class="body">
+          <p>Vintage after vintage, the hobby became the calling. Tara took on building the family dream; Dustin took to the balance of science and craft in the winemaking. The winery grew from a converted shed on the Nokesville acres to a tasting room on Fitzwater Drive, and the vineyards grew from one site to three.</p>
+          <p>It is still a small farm winery. The people pouring on a Thursday are the people who pruned in February.</p>
+        </div>
+        <p class="attrib">From the winery's own story, told at the bar and on the About page.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="clubs" id="clubs" aria-labelledby="clubs-title">
+    <div class="wrap">
+      <h2 id="clubs-title">Two ways to join</h2>
+      <p class="intro">Both clubs are built around bottles you choose yourself. One is for people who want the winery delivered; the other is for people who are already here most weeks.</p>
+      <div class="club-grid">
+        <div class="club">
+          <h3>Ville Club</h3>
+          <p class="who">For the regular who wants the good stuff first, and delivered.</p>
+          <dl>
+            <dt>To start</dt><dd>A one-time $60 initiation plus four bottles.</dd>
+            <dt>Each quarter</dt><dd>Four bottles you select, $85 to $153 plus tax.</dd>
+            <dt>Discount</dt><dd>15% off wine and events bought at the winery.</dd>
+            <dt>Delivery</dt><dd>Free within Prince William County or twenty miles of the winery; pick up at the winery if you prefer.</dd>
+            <dt>Extras</dt><dd>Quarterly pick-up parties, first call on new releases, small-lot member-only wines, no deposit on private events, and two glasses, two flights or up to four tastings every visit.</dd>
+          </dl>
+        </div>
+        <div class="club">
+          <h3>Cork Club</h3>
+          <p class="who">For the neighbour who drops in on Thursdays and would like it to count.</p>
+          <dl>
+            <dt>To start</dt><dd>Any three bottles.</dd>
+            <dt>Every three months</dt><dd>Two more bottles keep the membership active.</dd>
+            <dt>Points</dt><dd>20 member points each period, spent at the bar on glasses, flights and tastings.</dd>
+            <dt>Discount</dt><dd>10% off every visit.</dd>
+            <dt>Joining</dt><dd>Ask at the bar. That is the whole form.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="evenings" id="evenings" aria-labelledby="evenings-title">
+    <div class="wrap evenings-grid">
+      <div>
+        <h2 id="evenings-title">Thursdays and other evenings</h2>
+        <div class="block" style="margin-top:1.5rem;">
+          <div class="when">Every Thursday · 7 pm</div>
+          <h3>Trivia night</h3>
+          <p>The tasting room opens at four on Thursdays and trivia starts at seven. Bring a team, or make one at the bar.</p>
+        </div>
+        <div class="block">
+          <div class="when">Up to fifty guests</div>
+          <h3>Private events at the winery</h3>
+          <p>Meetings, private dinners, birthdays, cocktail and holiday parties in the processing area, with the patio, fire pit optional, for sitting and drinking. Ville Club members book without a deposit.</p>
+        </div>
+      </div>
+      <div class="pours">
+        <h3>Where else to find it</h3>
+        <ul>
+          <li><span>Messick's Farm Market</span><span class="town">Bealeton</span></li>
+          <li><span>Nokesville Meats</span><span class="town">Nokesville</span></li>
+          <li><span>Vera's Kitchen</span><span class="town">Old Town Manassas</span></li>
+          <li><span>Carmello's</span><span class="town">Old Town Manassas</span></li>
+          <li><span>Trouville Brewery</span><span class="town">Haymarket</span></li>
+          <li><span>Maltese Brewing Company</span><span class="town">Fredericksburg</span></li>
+        </ul>
+        <p class="ship">Bottles ship through the online store on Vinoshipper, and the email list is the first to hear about new releases.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="wordmark" href="#top">Nokesville Winery<small>Farm winery · Nokesville, Virginia</small></a>
+        <address>
+          Tasting room: 12905 Fitzwater Drive, Suite 105, Nokesville, VA 20181<br>
+          Winery: 12593 Foremost Court, Nokesville, VA 20181
+        </address>
+      </div>
+      <div>
+        <h3>Get in touch</h3>
+        <ul>
+          <li><a href="tel:+17033303467">(703) 330-3467</a></li>
+          <li><a href="mailto:info@nokesvillewinery.com">info@nokesvillewinery.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Online</h3>
+        <ul>
+          <li><a href="https://vinoshipper.com/shop/nokesville_winery">Online store on Vinoshipper</a></li>
+          <li><a href="https://nokesvillewinery.com/memberships">Club details</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Nokesville Winery's own vines, tasting room and bottles.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Nokesville Winery, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
