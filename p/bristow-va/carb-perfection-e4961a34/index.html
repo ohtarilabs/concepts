@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carb Perfection Sourdough Microbakery, Bristow VA. Preorder, then pick up at the Bread Shed.</title>
+<meta name="description" content="Naturally leavened sourdough baked in Bristow, Virginia. Order ahead, then collect Saturday or Sunday at the Bread Shed, 12195 Aster Road. Loaves, focaccia, cinnamon rolls and more, fermented 20 hours on a wild culture.">
+<style>
+/* ------------------------------------------------------------------
+   Carb Perfection Sourdough Microbakery, concept
+   Palette: enamel #1E4F91 · deep enamel #163C70 · flour #F2EFE6 · milk #B8CCEA · crust #C8955A
+   Type: Alfa Slab One (display) · Familjen Grotesk (body) · Chivo Mono (utility)
+   Shape rule: interactive elements are pills; containers and images are square-cornered.
+   ------------------------------------------------------------------ */
+@font-face { font-family: "Alfa Slab One"; src: url("fonts/alfaslabone-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Familjen Grotesk"; src: url("fonts/familjengrotesk-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Familjen Grotesk"; src: url("fonts/familjengrotesk-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Familjen Grotesk"; src: url("fonts/familjengrotesk-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Familjen Grotesk"; src: url("fonts/familjengrotesk-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Familjen Grotesk"; src: url("fonts/familjengrotesk-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Chivo Mono"; src: url("fonts/chivomono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Chivo Mono"; src: url("fonts/chivomono-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+
+:root {
+  --enamel: #1E4F91;
+  --enamel-deep: #163C70;
+  --flour: #F2EFE6;
+  --milk: #B8CCEA;
+  --crust: #C8955A;
+  --display: "Alfa Slab One", "Rockwell", serif;
+  --body: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --mono: "Chivo Mono", "Menlo", monospace;
+  --measure: 62ch;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: dark; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--enamel);
+  color: var(--flour);
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+::selection { background: var(--crust); color: var(--enamel-deep); }
+:focus-visible { outline: 2px solid var(--flour); outline-offset: 4px; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.04; margin: 0; text-wrap: balance; letter-spacing: 0; }
+h2 { font-size: clamp(1.9rem, 3.4vw, 2.75rem); }
+p { margin: 0; }
+.wrap { width: min(100% - 2 * var(--gutter), 1280px); margin-inline: auto; }
+.mono { font-family: var(--mono); font-size: 0.8125rem; letter-spacing: 0.02em; }
+
+/* Buttons */
+.btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  border: 2px solid var(--flour);
+  background: transparent;
+  color: var(--flour);
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 320ms var(--ease-out), transform 160ms var(--ease-out);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--flour);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 420ms var(--ease-out);
+}
+.btn:hover { color: var(--enamel-deep); }
+.btn:hover::before { transform: scaleX(1); }
+.btn:active { transform: translateY(1px); }
+.btn.solid { background: var(--flour); color: var(--enamel-deep); }
+.btn.solid::before { background: var(--crust); }
+.btn.solid:hover { color: var(--enamel-deep); }
+@media (prefers-reduced-motion: reduce) {
+  .btn, .btn::before { transition: none; }
+}
+.textlink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3.25rem;
+  padding: 0.85rem 0.25rem;
+  font-weight: 500;
+  color: var(--milk);
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 204, 234, 0.5);
+  transition: color 200ms var(--ease-out), text-decoration-color 200ms var(--ease-out);
+}
+.textlink:hover { color: var(--flour); text-decoration-color: var(--flour); }
+
+/* Header */
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 4.5rem;
+  padding-block: 0.75rem;
+}
+.wordmark { display: flex; flex-direction: column; text-decoration: none; line-height: 1; }
+.wordmark strong { font-family: var(--display); font-weight: 400; font-size: 1.35rem; letter-spacing: 0.005em; }
+.wordmark span { margin-top: 0.3rem; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.06em; color: var(--milk); }
+.top nav { display: flex; gap: 1.75rem; }
+.top nav a { text-decoration: none; font-weight: 500; color: var(--milk); transition: color 200ms var(--ease-out); }
+.top nav a:hover { color: var(--flour); }
+.top .btn { min-height: 2.75rem; padding: 0.55rem 1.2rem; font-size: 0.95rem; }
+
+/* Hero */
+.hero { padding-block: clamp(1.5rem, 4vw, 3.5rem) 0; }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+.hero h1 { font-size: clamp(2.5rem, 5vw, 4.25rem); max-width: 14ch; }
+.hero .lede { margin-top: 1.4rem; max-width: 34ch; font-size: clamp(1.1rem, 1.5vw, 1.3rem); line-height: 1.45; color: var(--milk); }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.5rem; margin-top: 2rem; }
+.hero-art { margin: 0; position: relative; }
+.hero-art img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; box-shadow: 0 30px 60px -30px rgba(10, 22, 48, 0.8); }
+.hero-art figcaption { margin-top: 0.7rem; color: var(--milk); font-size: 0.9rem; }
+
+.timetable {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.5fr;
+  margin: clamp(2rem, 4vw, 3.5rem) 0 0;
+  border-top: 1px solid rgba(242, 239, 230, 0.35);
+}
+.timetable > div { padding: 1.5rem 1.5rem 1.6rem 0; border-right: 1px solid rgba(242, 239, 230, 0.2); }
+.timetable > div + div { padding-left: 1.5rem; }
+.timetable > div:last-child { border-right: 0; padding-right: 0; }
+.timetable dt { font-family: var(--display); font-size: clamp(1.4rem, 2.2vw, 1.9rem); line-height: 1.1; color: var(--flour); }
+.timetable dd { margin: 0.5rem 0 0; color: var(--milk); max-width: 30ch; }
+.timetable .addr { font-family: var(--mono); font-size: 0.85rem; letter-spacing: 0.02em; color: var(--flour); display: block; margin-top: 0.35rem; }
+
+/* Bakes */
+.bakes { padding-block: clamp(4rem, 8vw, 7rem) clamp(3rem, 6vw, 5rem); }
+.bakes-head { max-width: var(--measure); }
+.bakes-head p { margin-top: 1rem; color: var(--milk); max-width: 52ch; }
+.ledger {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 5fr 7fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-top: clamp(2rem, 4vw, 3rem);
+  align-items: start;
+}
+.groups { display: grid; gap: 2.5rem; }
+.group h3 { font-size: 1.05rem; font-family: var(--body); font-weight: 700; letter-spacing: 0.01em; color: var(--flour); margin: 0 0 0.9rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--crust); display: inline-block; }
+.group ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.9rem; }
+.group li { display: grid; gap: 0.15rem; padding-bottom: 0.9rem; border-bottom: 1px solid rgba(242, 239, 230, 0.16); }
+.group li:last-child { border-bottom: 0; padding-bottom: 0; }
+.group .name { font-weight: 600; font-size: 1.05rem; }
+.group .note { color: var(--milk); font-size: 0.95rem; }
+.plates { position: relative; display: grid; gap: 1.5rem; min-width: 0; }
+.plates figure, .groups { min-width: 0; }
+.plates figure { margin: 0; }
+.plates img { width: 100%; max-width: 100%; object-fit: cover; }
+.plates .tall { aspect-ratio: 4 / 3; }
+.plates .wide { aspect-ratio: 16 / 9; width: 72%; margin-left: auto; margin-top: -3rem; box-shadow: 0 24px 50px -28px rgba(10, 22, 48, 0.9); position: relative; }
+.plates figcaption { margin-top: 0.6rem; color: var(--milk); font-size: 0.9rem; }
+.plates figure:first-child figcaption { max-width: 26%; padding-right: 0.5rem; line-height: 1.35; }
+.plates .wide figcaption { text-align: right; }
+
+/* Process band */
+.process { position: relative; background: var(--enamel-deep); }
+.process .band { position: relative; }
+.process img { width: 100%; height: clamp(320px, 46vw, 620px); object-fit: cover; object-position: center 40%; }
+.process .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(22, 60, 112, 0.05) 0%, rgba(22, 60, 112, 0.0) 45%, rgba(22, 60, 112, 0.92) 100%); }
+.process .copy { position: relative; margin-top: -7rem; padding-bottom: clamp(3rem, 6vw, 5rem); }
+.process h2 { max-width: 18ch; }
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2.25rem; max-width: 62rem; }
+.facts > div { border-top: 1px solid rgba(242, 239, 230, 0.35); padding-top: 1rem; }
+.facts .num { font-family: var(--mono); font-size: 1.75rem; font-weight: 500; color: var(--crust); letter-spacing: -0.01em; }
+.facts p { margin-top: 0.4rem; color: var(--milk); max-width: 28ch; }
+
+/* Reviews */
+.reviews { padding-block: clamp(4rem, 8vw, 7rem) clamp(3rem, 5vw, 4rem); }
+.reviews-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: end; }
+.reviews blockquote { margin: 0; }
+.reviews blockquote p { font-family: var(--display); font-size: clamp(1.4rem, 2.3vw, 1.95rem); line-height: 1.22; text-wrap: balance; }
+.reviews cite { display: block; margin-top: 1rem; font-style: normal; color: var(--milk); }
+.reviews cite strong { color: var(--flour); font-weight: 600; }
+.reviews .tally { grid-column: 1 / -1; margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid rgba(242, 239, 230, 0.35); display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; align-items: baseline; color: var(--milk); }
+.reviews .tally .num { font-family: var(--mono); font-size: 1.35rem; color: var(--flour); }
+
+/* From Emily */
+.letter { padding-block: clamp(2rem, 5vw, 4rem) clamp(4rem, 8vw, 7rem); }
+.letter-grid { display: grid; grid-template-columns: 4fr 8fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.letter .quote { font-size: clamp(1.25rem, 1.9vw, 1.6rem); line-height: 1.4; max-width: 30ch; }
+.letter .quote em { font-style: italic; }
+.letter .attrib { margin-top: 1rem; color: var(--milk); }
+.letter .body { max-width: var(--measure); display: grid; gap: 1.1rem; }
+.letter .body p { color: var(--flour); }
+.letter .body .fine { color: var(--milk); font-size: 0.98rem; }
+.letter .actions { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: center; }
+
+/* Good to know */
+.know { background: var(--enamel-deep); padding-block: clamp(3.5rem, 7vw, 6rem); }
+.know dl { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 4rem; margin: 2rem 0 0; max-width: 62rem; }
+.know dt { font-weight: 700; font-size: 1.05rem; }
+.know dd { margin: 0.35rem 0 0; color: var(--milk); max-width: 40ch; }
+
+/* Footer */
+.foot { padding-block: clamp(2.5rem, 5vw, 4rem) 2rem; }
+.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; align-items: start; }
+.foot .wordmark strong { font-size: 1.6rem; }
+.foot address { font-style: normal; color: var(--milk); margin-top: 1rem; line-height: 1.6; }
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.foot h3 { font-family: var(--body); font-weight: 700; font-size: 0.95rem; color: var(--flour); margin: 0 0 0.9rem; padding-bottom: 0.3rem; border-bottom: 2px solid var(--crust); display: inline-block; }
+.foot a { color: var(--milk); text-decoration: none; }
+.foot a:hover { color: var(--flour); text-decoration: underline; }
+.disclosure { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid rgba(242, 239, 230, 0.2); color: var(--milk); font-size: 0.85rem; max-width: 70ch; }
+
+/* Mobile */
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero h1 { max-width: 12ch; }
+  .timetable { grid-template-columns: 1fr; border-top: 0; }
+  .timetable > div, .timetable > div + div { padding: 1.25rem 0; border-right: 0; border-top: 1px solid rgba(242, 239, 230, 0.25); padding-left: 0; }
+  .ledger { grid-template-columns: 1fr; }
+  .plates .wide { width: 100%; margin-top: 0; }
+  .plates figure:first-child figcaption { max-width: none; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .letter-grid { grid-template-columns: 1fr; }
+  .facts { grid-template-columns: 1fr; gap: 1.25rem; }
+  .know dl { grid-template-columns: 1fr; gap: 1.5rem; }
+  .foot-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .top nav { display: none; }
+  .top .btn { padding: 0.55rem 1rem; font-size: 0.9rem; }
+  .hero { padding-top: 1rem; }
+  .hero-actions .btn { width: 100%; }
+  .process .copy { margin-top: -4rem; }
+  .process img { height: 300px; }
+}
+</style>
+</head>
+<body>
+
+<header class="wrap top">
+  <a class="wordmark" href="#top" aria-label="Carb Perfection Sourdough Microbakery, home">
+    <strong>Carb Perfection</strong>
+    <span>Sourdough Microbakery · Bristow, VA</span>
+  </a>
+  <nav aria-label="Sections">
+    <a href="#bakes">The bakes</a>
+    <a href="#pickup">Pickup</a>
+    <a href="#know">Good to know</a>
+  </nav>
+  <a class="btn" href="https://www.hotplate.com/carbperfection">Order this week's bread</a>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Sourdough baked in Bristow, picked up from the shed.</h1>
+          <p class="lede">Order ahead. Collect Saturday or Sunday at the Bread Shed on Aster Road, still warm from the morning bake.</p>
+          <div class="hero-actions">
+            <a class="btn solid" href="https://www.hotplate.com/carbperfection">Order this week's bread</a>
+            <a class="textlink" href="#pickup">How the shed works</a>
+          </div>
+        </div>
+        <figure class="hero-art">
+          <!-- generated illustrative imagery -->
+          <img src="images/hero.png" width="1536" height="1024" alt="A round sourdough loaf with a dark blistered crust on a wooden board, beside an open blue enamelled Dutch oven in a bright kitchen">
+          <figcaption>Every loaf goes into a Dutch oven and comes out dark, blistered and caramelised.</figcaption>
+        </figure>
+      </div>
+
+      <dl class="timetable" id="pickup">
+        <div>
+          <dt>Tuesday</dt>
+          <dd>Last day to change or cancel an order for the weekend bake.</dd>
+        </div>
+        <div>
+          <dt>Saturday and Sunday</dt>
+          <dd>Baked that morning, bagged and labelled with your name, waiting at the shed.</dd>
+        </div>
+        <div>
+          <dt>The Bread Shed</dt>
+          <dd>Self-serve pickup beside the house. Street parking, fifteen minutes is plenty.
+            <span class="addr">12195 Aster Road, Bristow, VA 20136</span>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="bakes" id="bakes" aria-labelledby="bakes-title">
+    <div class="wrap">
+      <div class="bakes-head">
+        <h2 id="bakes-title">The bakes</h2>
+        <p>The basic menu stays the same, with seasonal specials on top. Each week's list and prices are on the order page, and the extras at the shed go first come, first served.</p>
+      </div>
+      <div class="ledger">
+        <div class="groups">
+          <div class="group">
+            <h3>Loaves</h3>
+            <ul>
+              <li><span class="name">The Amelia Original Sourdough</span><span class="note">The original. Naturally leavened, 100% organic flour.</span></li>
+              <li><span class="name">Classy Pan Loaf</span><span class="note">Sourdough in a pan, made for sandwiches and toast.</span></li>
+              <li><span class="name">Jalapeño &amp; Cheddar Sourdough</span><span class="note">Cheddar and jalapeño folded through the dough.</span></li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>From the oven</h3>
+            <ul>
+              <li><span class="name">Focaccia</span><span class="note">Dimpled, olive-oiled, cut to share.</span></li>
+              <li><span class="name">Pizza dough</span><span class="note">Fermented like the loaves, ready to stretch at home.</span></li>
+              <li><span class="name">Cinnamon rolls</span><span class="note">Weekend rolls on a sourdough base.</span></li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Sweet</h3>
+            <ul>
+              <li><span class="name">Sourdough Banana Bread Loaf</span><span class="note">A slight variation on the old classic.</span></li>
+              <li><span class="name">Cinnamon Streusel Coffee Cake</span><span class="note">Streusel on top, sourdough underneath.</span></li>
+              <li><span class="name">Brown Butter Chocolate Chip Cookies</span><span class="note">Browned butter, big chips, baked the day you collect.</span></li>
+              <li><span class="name">Brownies</span><span class="note">Fudgy, cut into squares.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="plates">
+          <figure>
+            <!-- generated illustrative imagery -->
+            <img class="tall" src="images/focaccia.png" width="1024" height="1024" alt="Overhead view of a pan of dimpled rosemary focaccia with one corner cut into squares">
+            <figcaption>Focaccia, cut at the corner.</figcaption>
+          </figure>
+          <figure class="wide">
+            <!-- generated illustrative imagery -->
+            <img src="images/sweet.png" width="1024" height="1024" alt="A tray of iced cinnamon rolls beside a stack of chocolate chip cookies and a blue enamel mug">
+            <figcaption>Cinnamon rolls and brown butter cookies.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" aria-labelledby="process-title">
+    <div class="band">
+      <!-- generated illustrative imagery -->
+      <img src="images/crumb.png" width="2000" height="1024" alt="Two flour-dusted hands holding a sourdough loaf cut in half to show its open crumb">
+      <div class="veil" aria-hidden="true"></div>
+    </div>
+    <div class="wrap copy">
+      <h2 id="process-title">Twenty hours on a wild culture, then the Dutch oven.</h2>
+      <div class="facts">
+        <div>
+          <div class="num">20 hr</div>
+          <p>Minimum fermentation on a wild-yeast sourdough culture. No commercial yeast, no conditioners, no preservatives.</p>
+        </div>
+        <div>
+          <div class="num">3 to 5 days</div>
+          <p>From feeding the starter to the loaf in your hands, which is why bread is ordered ahead and baked the morning of pickup.</p>
+        </div>
+        <div>
+          <div class="num">100% organic</div>
+          <p>Every classic loaf. Each product is labelled with its organic ingredients, so you know what went in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 id="reviews-title" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">What people say</h2>
+      <div class="reviews-grid">
+        <blockquote>
+          <p>“Absolutely the best sourdough I have ever had!”</p>
+          <cite><strong>Adrianne L.</strong>, ordered The Amelia Original and the Jalapeño &amp; Cheddar. Hotplate review, August 2026.</cite>
+        </blockquote>
+        <blockquote>
+          <p>“The sourdough banana bread is amazing.”</p>
+          <cite><strong>Melissa B.</strong>, ordered the banana bread and the brown butter cookies. Hotplate review, August 2026.</cite>
+        </blockquote>
+        <div class="tally">
+          <span class="num">4.9 of 5</span>
+          <span>across 85 reviews on the order page.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="letter" aria-labelledby="note-title">
+    <div class="wrap">
+      <div class="letter-grid">
+        <div>
+          <h2 id="note-title">From Emily</h2>
+          <p class="quote" style="margin-top:1.25rem;">“There is something great about turning simple ingredients into a delicious thing. That's why it has been so special for me to turn my baking into a business.”</p>
+          <p class="attrib">Emily Posey, to the Prince William Times</p>
+        </div>
+        <div class="body">
+          <p>I moved to Bristow in 2024 and started by handing loaves to the neighbours. The shed went up that summer because the neighbours kept coming back. Everything is still baked in my own kitchen, in small batches, on a schedule that starts days before you pick up.</p>
+          <p>Carb Perfection bakes under Virginia's Home Baking Bill: a home kitchen, no pets, and every product labelled with its organic ingredients. These are homemade goods, not prepared in an inspected food establishment, and I would rather tell you that plainly than not.</p>
+          <p class="fine">Sometimes I can deliver locally for a small fee, just send a message. I don't ship bread. Unclaimed orders are donated the same day. Monthly bread subscriptions are on the order page if you would rather not think about Tuesdays.</p>
+          <div class="actions">
+            <a class="btn" href="https://www.hotplate.com/carbperfection">Order this week's bread</a>
+            <a class="textlink" href="mailto:erposey@gmail.com">Email Emily</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="know" id="know" aria-labelledby="know-title">
+    <div class="wrap">
+      <h2 id="know-title">Good to know</h2>
+      <dl>
+        <div>
+          <dt>Why order ahead?</dt>
+          <dd>Sourdough takes three to five days from feeding the starter to the oven. There is no loaf to sell on the day unless it was started earlier in the week.</dd>
+        </div>
+        <div>
+          <dt>How pickup works</dt>
+          <dd>Your bread is bagged and labelled at the shed on your pickup day. Take yours, leave the rest. Orders not collected that day are donated.</dd>
+        </div>
+        <div>
+          <dt>Keeping it fresh</dt>
+          <dd>Never the fridge. Slice as you go, keep the crust intact, and store it in a tea towel or a loosely opened bag. It freezes well wrapped tight.</dd>
+        </div>
+        <div>
+          <dt>Gluten</dt>
+          <dd>No gluten-free bakes at the moment. Many people who avoid bread find long-fermented sourdough sits more comfortably.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <div class="foot-grid">
+    <div>
+      <a class="wordmark" href="#top"><strong>Carb Perfection</strong><span>Sourdough Microbakery</span></a>
+      <address>
+        The Bread Shed<br>
+        12195 Aster Road, Bristow, VA 20136<br>
+        Saturday and Sunday pickup
+      </address>
+    </div>
+    <div>
+      <h3>Get in touch</h3>
+      <ul>
+        <li><a href="mailto:erposey@gmail.com">erposey@gmail.com</a></li>
+        <li><a href="tel:+12404127595">Call or text (240) 412-7595</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Follow the bakes</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/carbperfection">Facebook</a></li>
+        <li><a href="https://www.instagram.com/carbperfection/">Instagram</a></li>
+        <li><a href="https://www.hotplate.com/carbperfection">Order page on Hotplate</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Carb Perfection's own bakes and the Bread Shed. Carb Perfection LLC, Bristow, Virginia.</p>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Carb Perfection Sourdough Microbakery, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
