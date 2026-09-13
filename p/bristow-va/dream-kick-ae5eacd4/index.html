@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dream Kick Martial Arts. Tae Kwon Do, after school and summer camp in Bristow, VA.</title>
+<meta name="description" content="Dream Kick Martial Arts teaches WTF Korean Tae Kwon Do in Bristow Center, since 2018, with an A+ before and after-school program that opens at 6:30 am, all-day summer camps with field trips, tournament classes and birthday parties. Book a trial class.">
+<style>
+/* ------------------------------------------------------------------
+   Dream Kick Martial Arts, concept
+   Palette: dobok white #F5F6F8 · belt black #17181C · amber #D48A00 (the rule under each door, never a wash) · grey #5B6470 · rule #D5D9DE
+   Type: Barlow Condensed (display) · Rubik (body) · Roboto Mono (utility)
+   Shape rule: everything is square. Controls are black so the amber never carries small text.
+   Signature: three doors. Classes, After school, Camp, as three tall typographic panels, one fact and one button each.
+   ------------------------------------------------------------------ */
+@font-face { font-family: "Barlow Condensed"; src: url("fonts/barlowcondensed-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Barlow Condensed"; src: url("fonts/barlowcondensed-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Barlow Condensed"; src: url("fonts/barlowcondensed-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Rubik"; src: url("fonts/rubik-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Rubik"; src: url("fonts/rubik-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Rubik"; src: url("fonts/rubik-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Rubik"; src: url("fonts/rubik-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Roboto Mono"; src: url("fonts/robotomono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Roboto Mono"; src: url("fonts/robotomono-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+
+:root {
+  --white: #F5F6F8;
+  --ink: #17181C;
+  --amber: #D48A00;
+  --grey: #5B6470;
+  --rule: #D5D9DE;
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "Rubik", "Helvetica Neue", Arial, sans-serif;
+  --mono: "Roboto Mono", "SF Mono", Menlo, monospace;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: light; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--white); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+::selection { background: var(--ink); color: var(--white); }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.16em; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3 { font-family: var(--display); margin: 0; line-height: 1; text-wrap: balance; }
+h2 { font-weight: 700; font-size: clamp(2.2rem, 4vw, 3.4rem); letter-spacing: -0.005em; text-transform: uppercase; }
+h3 { font-weight: 700; font-size: 1.5rem; letter-spacing: 0; text-transform: uppercase; line-height: 1.05; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+.wrap { width: min(100% - 2 * var(--gutter), 1240px); margin-inline: auto; }
+.mono { font-family: var(--mono); font-size: 0.82rem; }
+.skip { position: absolute; left: -999px; top: 0; background: var(--ink); color: var(--white); padding: 0.6rem 1rem; z-index: 10; }
+.skip:focus { left: var(--gutter); }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3.1rem; padding: 0.8rem 1.5rem; background: var(--ink); color: var(--white); font-family: var(--body); font-weight: 600; font-size: 1rem; text-decoration: none; white-space: nowrap; border: 1px solid var(--ink); cursor: pointer; transition: background 200ms var(--ease), transform 120ms var(--ease); }
+.btn:hover { background: #2B2D34; }
+.btn:active { transform: translateY(1px); }
+.btn.quiet { background: transparent; color: var(--ink); }
+.btn.quiet:hover { background: rgba(23, 24, 28, 0.06); }
+.textlink { display: inline-flex; align-items: center; min-height: 3.1rem; padding: 0.8rem 0.1rem; font-weight: 500; text-decoration: underline; text-decoration-color: var(--rule); transition: text-decoration-color 200ms var(--ease); }
+.textlink:hover { text-decoration-color: var(--ink); }
+
+/* Masthead */
+.mast { border-bottom: 1px solid var(--ink); }
+.mast .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; padding-block: 0.9rem; }
+.brand { display: flex; flex-direction: column; text-decoration: none; }
+.brand .name { font-family: var(--display); font-weight: 800; font-size: 1.55rem; text-transform: uppercase; line-height: 1; letter-spacing: 0.01em; }
+.brand .where { font-family: var(--mono); font-size: 0.78rem; color: var(--grey); margin-top: 0.3rem; }
+.mast nav { display: flex; gap: clamp(0.9rem, 2vw, 1.8rem); flex-wrap: wrap; }
+.mast nav a { font-weight: 500; font-size: 0.98rem; text-decoration: none; padding: 0.35rem 0; border-bottom: 2px solid transparent; transition: border-color 200ms var(--ease); }
+.mast nav a:hover { border-bottom-color: var(--ink); }
+
+/* The three doors */
+.doors-lead { padding-block: clamp(1.5rem, 3vw, 2.5rem) 0; }
+.doors-lead h1 { font-family: var(--body); font-weight: 500; font-size: clamp(1.05rem, 1.6vw, 1.25rem); line-height: 1.45; letter-spacing: 0; max-width: 60ch; color: var(--grey); text-wrap: pretty; }
+.doors-lead h1 strong { font-weight: 600; color: var(--ink); }
+.doors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); margin-top: clamp(1.25rem, 3vw, 2rem); }
+.door { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 2.5rem; min-height: min(72vh, 640px); padding: clamp(1.4rem, 2.6vw, 2.4rem) clamp(1.2rem, 2.4vw, 2.2rem) clamp(1.8rem, 3vw, 2.6rem); border-left: 1px solid var(--ink); }
+.door:first-child { border-left: 0; }
+.door h2 { font-weight: 800; font-size: clamp(3.4rem, 7.2vw, 7.2rem); line-height: 0.88; letter-spacing: -0.01em; text-transform: uppercase; }
+.door .fact { margin-top: 1.4rem; font-size: 1.1rem; line-height: 1.5; max-width: 30ch; text-wrap: pretty; }
+.door .fact strong { font-weight: 600; }
+.door .foot { display: flex; flex-direction: column; gap: 0.6rem; align-items: flex-start; }
+.door .who { font-family: var(--mono); font-size: 0.8rem; color: var(--grey); }
+.door .btn { align-self: flex-start; }
+/* Motion moment: the amber rule under a door extends to full width when that door is hovered. */
+.door::after { content: ""; position: absolute; left: 0; bottom: -1px; height: 5px; width: 3.5rem; background: var(--amber); transition: width 480ms var(--ease); }
+.door:hover::after, .door:focus-within::after { width: 100%; }
+@media (prefers-reduced-motion: reduce) { .door::after { transition: none; } }
+
+/* Noticeboard */
+.board { padding-block: clamp(2.5rem, 5vw, 4.5rem); border-bottom: 1px solid var(--ink); }
+.board .wrap { display: grid; grid-template-columns: 1.1fr 1fr 0.9fr; gap: clamp(1.5rem, 3vw, 3rem); align-items: start; }
+.board h2 { grid-column: 1 / -1; }
+.hours table { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 0.86rem; }
+.hours th, .hours td { text-align: left; vertical-align: top; padding: 0.6rem 0; border-bottom: 1px solid var(--rule); }
+.hours th { font-weight: 500; width: 38%; padding-right: 0.8rem; }
+.hours td { color: var(--ink); }
+.hours .open { margin-top: 1rem; font-size: 0.98rem; color: var(--grey); line-height: 1.5; }
+.where address { font-style: normal; line-height: 1.55; }
+.where .big { font-family: var(--display); font-weight: 800; font-size: clamp(1.9rem, 3vw, 2.6rem); text-decoration: none; display: inline-block; margin-top: 0.5rem; line-height: 1; }
+.where .links { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-top: 0.6rem; }
+.where p + p { margin-top: 0.9rem; }
+.boardphoto { margin: 0; }
+.boardphoto img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; }
+figcaption { font-family: var(--mono); font-size: 0.78rem; color: var(--grey); padding-top: 0.6rem; line-height: 1.5; }
+
+/* What a class is like */
+.classes { padding-block: clamp(2.5rem, 5vw, 4.5rem); border-bottom: 1px solid var(--ink); }
+.classes .wide { margin: 0; }
+.classes .wide img { width: 100%; aspect-ratio: 21 / 8; object-fit: cover; }
+.classes .split { display: grid; grid-template-columns: 1.4fr 1fr; gap: clamp(1.5rem, 3vw, 3rem); margin-top: clamp(1.5rem, 3vw, 2.5rem); align-items: start; }
+.classes .text h2 { max-width: 14ch; }
+.classes .text p { margin-top: 1.2rem; max-width: 58ch; text-wrap: pretty; }
+.classes .text ul { margin-top: 1.2rem; max-width: 58ch; }
+.classes .text li { padding: 0.65rem 0; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 9.5rem 1fr; gap: 1rem; }
+.classes .text li:last-child { border-bottom: 1px solid var(--rule); }
+.classes .text li span:first-child { font-family: var(--display); font-weight: 700; font-size: 1.15rem; text-transform: uppercase; line-height: 1.3; }
+.classes .text .actions { display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap; margin-top: 1.6rem; }
+.classes .square { margin: 0; }
+.classes .square img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+
+/* Three steps */
+.steps { padding-block: clamp(2.5rem, 5vw, 4.5rem); border-bottom: 1px solid var(--ink); }
+.steps ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: clamp(1.5rem, 3vw, 2.5rem); border-top: 1px solid var(--ink); }
+.steps li { padding: 1.4rem clamp(1rem, 2vw, 1.8rem) 1.6rem 0; border-left: 1px solid var(--rule); padding-left: clamp(1rem, 2vw, 1.8rem); }
+.steps li:first-child { border-left: 0; padding-left: 0; }
+.steps .num { font-family: var(--display); font-weight: 800; font-size: 3.2rem; line-height: 1; display: block; }
+.steps h3 { margin-top: 0.6rem; }
+.steps p { margin-top: 0.6rem; max-width: 34ch; text-wrap: pretty; }
+.steps .textlink { margin-top: 0.4rem; }
+
+/* Birthday parties */
+.party { padding-block: clamp(2.5rem, 5vw, 4.5rem); border-bottom: 1px solid var(--ink); }
+.party .wrap { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(1.5rem, 3vw, 3rem); align-items: center; }
+.party figure { margin: 0; }
+.party img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.party .text p { margin-top: 1.2rem; max-width: 52ch; text-wrap: pretty; }
+.party .text .actions { display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap; margin-top: 1.6rem; }
+
+/* Footer */
+.foot { padding-block: clamp(2rem, 4vw, 3rem) 1.5rem; }
+.foot .wrap { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: clamp(1.5rem, 3vw, 3rem); }
+.foot .fbrand p { color: var(--grey); font-size: 0.95rem; margin-top: 0.5rem; max-width: 30ch; }
+.foot h3 { font-size: 1.05rem; }
+.foot ul { margin-top: 0.5rem; }
+.foot li { padding: 0.15rem 0; font-size: 0.98rem; }
+.foot a { text-decoration-color: var(--rule); }
+.foot a:hover { text-decoration-color: var(--ink); }
+.disclosure { grid-column: 1 / -1; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 0.76rem; color: var(--grey); line-height: 1.5; }
+
+/* Mobile: the doors stack as three bands, each with its button */
+@media (max-width: 900px) {
+  .doors { grid-template-columns: 1fr; }
+  .door { border-left: 0; border-top: 1px solid var(--ink); min-height: 0; gap: 1.6rem; }
+  .door:first-child { border-top: 0; }
+  .door h2 { font-size: clamp(3rem, 15vw, 4.6rem); }
+  .board .wrap { grid-template-columns: 1fr; }
+  .boardphoto { max-width: 26rem; }
+  .classes .split { grid-template-columns: 1fr; }
+  .classes .square { max-width: 26rem; }
+  .steps ol { grid-template-columns: 1fr; }
+  .steps li { border-left: 0; border-top: 1px solid var(--rule); padding-left: 0; padding-right: 0; }
+  .steps li:first-child { border-top: 0; }
+  .party .wrap { grid-template-columns: 1fr; }
+  .party figure { max-width: 26rem; }
+  .foot .wrap { grid-template-columns: 1fr 1fr; }
+  .foot .fbrand { grid-column: 1 / -1; }
+}
+@media (max-width: 480px) {
+  .classes .text li { grid-template-columns: 1fr; gap: 0.2rem; }
+  .btn { width: 100%; }
+  .door .btn { width: auto; }
+  .foot .wrap { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#doors">Skip to the programs</a>
+<header class="mast">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="name">Dream Kick Martial Arts</span>
+      <span class="where">Bristow Center, Bristow, VA. Since 2018.</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#doors">Programs</a>
+      <a href="#hours">Hours</a>
+      <a href="#class">A class</a>
+      <a href="#parties">Parties</a>
+    </nav>
+    <a class="btn" href="https://cp.mystudio.io/t/?=5bE7G6/8375/19946//1758168153" rel="noopener">Book a trial class</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="doors-lead wrap">
+    <h1><strong>WTF Korean Tae Kwon Do in Bristow Center since 2018,</strong> with a before and after-school program, all-day summer camp and tournament classes. Three doors. Pick the one that fits, and the button takes you to the school's own sign-up page.</h1>
+  </section>
+  <section class="doors wrap" id="doors" aria-label="Programs">
+    <article class="door">
+      <div>
+        <h2>Classes</h2>
+        <p class="fact">Tae Kwon Do for <strong>all ages and experience levels,</strong> with tournament classes for students who want to compete.</p>
+      </div>
+      <div class="foot">
+        <span class="who">Start with a trial class</span>
+        <a class="btn" href="https://cp.mystudio.io/t/?=5bE7G6/8375/19946//1758168153" rel="noopener">Book a trial class</a>
+      </div>
+    </article>
+    <article class="door">
+      <div>
+        <h2>After school</h2>
+        <p class="fact">The A+ program: before and after-school care with Tae Kwon Do lessons included, and <strong>doors open at 6:30 am.</strong></p>
+      </div>
+      <div class="foot">
+        <span class="who">2026 to 2027 school year</span>
+        <a class="btn" href="https://cp.mystudio.io/m/?=5bE7G6/8375/84826//1758168458" rel="noopener">Register for A+</a>
+      </div>
+    </article>
+    <article class="door">
+      <div>
+        <h2>Camp</h2>
+        <p class="fact">All-day summer camp over the school break, with <strong>field trips and Tae Kwon Do lessons</strong> built into every week.</p>
+      </div>
+      <div class="foot">
+        <span class="who">Early-bird pricing when sign-up opens</span>
+        <a class="btn" href="https://cp.mystudio.io/e/?=5bE7G6/8375/653823//1761329760" rel="noopener">Summer camp sign-up</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="board" id="hours" aria-labelledby="hours-title">
+    <div class="wrap">
+      <h2 id="hours-title">Hours and where</h2>
+      <div class="hours">
+        <table>
+          <caption class="mono" style="text-align:left;padding-bottom:0.6rem;color:var(--grey)">Building hours</caption>
+          <tbody>
+            <tr><th scope="row">Monday to Friday</th><td>6:30 am to 9:00 am<br>12:00 pm to 8:00 pm</td></tr>
+            <tr><th scope="row">Saturday</th><td>10:00 am to 1:00 pm</td></tr>
+            <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <p class="open">The 6:30 am opening is for before-school drop-off. Class times by age group are not on this page; the desk confirms the hour when you book.</p>
+      </div>
+      <div class="where">
+        <address>
+          10306 Bristow Center Dr<br>
+          Bristow, VA 20136<br>
+          In the Bristow Center shops, a few minutes from Braemar, Victory Lakes and Linton Hall
+        </address>
+        <a class="big" href="tel:+17033304925">(703) 330-4925</a>
+        <div class="links">
+          <a class="textlink" href="https://www.google.com/maps/search/?api=1&query=10306+Bristow+Center+Dr+Bristow+VA+20136" rel="noopener">Directions</a>
+          <a class="textlink" href="https://www.facebook.com/300570983808375" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <figure class="boardphoto">
+        <!-- generated illustrative imagery -->
+        <img src="images/belt.png" width="1024" height="1536" alt="An instructor's hands tying a green belt around the waist of a student's white Tae Kwon Do uniform." loading="lazy">
+        <figcaption>A green belt, tied at the waist.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="classes" id="class" aria-labelledby="class-title">
+    <div class="wrap">
+      <figure class="wide">
+        <!-- generated illustrative imagery -->
+        <img src="images/doboks.png" width="1536" height="1024" alt="A row of white Tae Kwon Do uniforms with coloured belts hanging on wooden hooks along a training-hall wall, with blue and red puzzle mats on the floor." loading="eager">
+        <figcaption>Uniforms on the hooks before an afternoon class.</figcaption>
+      </figure>
+      <div class="split">
+        <div class="text">
+          <h2 id="class-title">What a class is like</h2>
+          <p>The school's own line is "self-confidence through self-defense training", and a class is built to earn it. Students bow in, warm up, and work through the parts of WTF Tae Kwon Do in order.</p>
+          <ul>
+            <li><span>Basics</span><span>Stances, blocks, strikes and the kicks the style is known for, drilled in lines.</span></li>
+            <li><span>Forms</span><span>Set patterns of movement, learned one at a time as a student moves up.</span></li>
+            <li><span>Sparring</span><span>Controlled and padded, with tournament classes for students who want to compete.</span></li>
+            <li><span>Breaking</span><span>Boards, at the right moments, and at birthday parties.</span></li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="https://cp.mystudio.io/t/?=5bE7G6/8375/19946//1758168153" rel="noopener">Book a trial class</a>
+            <a class="textlink" href="tel:+17033304925">Or call the desk</a>
+          </div>
+        </div>
+        <figure class="square">
+          <!-- generated illustrative imagery -->
+          <img src="images/stance.png" width="1024" height="1024" alt="A student's bare feet in a fighting stance on blue puzzle mats, with other students' feet blurred behind." loading="lazy">
+          <figcaption>Feet first. The stance comes before the kick.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="steps-title">
+    <div class="wrap">
+      <h2 id="steps-title">Three steps to start</h2>
+      <ol>
+        <li>
+          <span class="num">1</span>
+          <h3>Book a trial class</h3>
+          <p>Pick a time on the school's own sign-up page, or call the desk and ask for one.</p>
+          <a class="textlink" href="https://cp.mystudio.io/t/?=5bE7G6/8375/19946//1758168153" rel="noopener">Book a trial class</a>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <h3>Come to Bristow Center</h3>
+          <p>Try the class, meet the instructors, and see the room and the mats for yourself.</p>
+          <a class="textlink" href="https://www.google.com/maps/search/?api=1&query=10306+Bristow+Center+Dr+Bristow+VA+20136" rel="noopener">Directions</a>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <h3>Pick a door</h3>
+          <p>Classes, the A+ after-school program, or summer camp. Registration for all three runs through the school's MyStudio pages.</p>
+          <a class="textlink" href="#doors">See the programs</a>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="party" id="parties" aria-labelledby="party-title">
+    <div class="wrap">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/boards.png" width="1024" height="1024" alt="A stack of thin pine breaking boards on a blue mat, two of them snapped in half, beside a red kicking paddle." loading="lazy">
+        <figcaption>Two boards down.</figcaption>
+      </figure>
+      <div class="text">
+        <h2 id="party-title">Birthday parties</h2>
+        <p>For ages five and up. Tae Kwon Do games and activities on the mats, board breaking, and the cake cut with a sword.</p>
+        <p>Parties are booked by phone, so the desk can check the date against the class schedule.</p>
+        <div class="actions">
+          <a class="btn" href="tel:+17033304925">Call to book a party</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="fbrand">
+      <span class="brand"><span class="name">Dream Kick Martial Arts</span></span>
+      <p>WTF Korean Tae Kwon Do, before and after-school care, summer camp and birthday parties in Bristow, Virginia.</p>
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <ul>
+        <li>10306 Bristow Center Dr</li>
+        <li>Bristow, VA 20136</li>
+        <li><a href="tel:+17033304925">(703) 330-4925</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <ul>
+        <li>Mon to Fri 6:30 to 9 am, 12 to 8 pm</li>
+        <li>Saturday 10 am to 1 pm</li>
+        <li>Sunday closed</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Sign up</h3>
+      <ul>
+        <li><a href="https://cp.mystudio.io/t/?=5bE7G6/8375/19946//1758168153" rel="noopener">Trial class</a></li>
+        <li><a href="https://cp.mystudio.io/m/?=5bE7G6/8375/84826//1758168458" rel="noopener">A+ after school</a></li>
+        <li><a href="https://cp.mystudio.io/e/?=5bE7G6/8375/653823//1761329760" rel="noopener">Summer camp</a></li>
+        <li><a href="https://www.facebook.com/300570983808375" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Dream Kick Martial Arts' own studio, students and instructors, with families' permission.</p>
+  </div>
+</footer>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Dream Kick Martial Arts, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
