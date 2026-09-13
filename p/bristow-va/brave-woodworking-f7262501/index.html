@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brave Custom Woodworking Solutions - Built-in cabinetry, Manassas, Virginia</title>
+<meta name="description" content="Built-in closets, mudrooms, home offices and entertainment walls, designed, manufactured in our Manassas shop and installed across Northern Virginia. Building since 2006.">
+<style>
+/* ---------------------------------------------------------------
+   Brave Custom Woodworking Solutions - concept comp
+   Type: Familjen Grotesk (display) / Hanken Grotesk (body) / Spline Sans Mono (measurement)
+   Drenched in a single deep forest-charcoal. No third accent colour:
+   the wood in the photography is the accent.
+----------------------------------------------------------------- */
+
+@font-face{font-family:"Familjen Grotesk";src:url("fonts/familjen-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Familjen Grotesk";src:url("fonts/familjen-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Familjen Grotesk";src:url("fonts/familjen-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("fonts/hanken-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("fonts/hanken-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("fonts/hanken-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Spline Sans Mono";src:url("fonts/splinemono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Spline Sans Mono";src:url("fonts/splinemono-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  --field:#15211B;
+  --raised:#1E2E26;
+  --bone:#E9E7DE;
+  --sage:#9AA894;
+  --chalk:#F5F3EC;
+  --hair:rgba(233,231,222,0.17);
+  --display:"Familjen Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --meas:"Spline Sans Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --gutter:clamp(1.25rem,4vw,4rem);
+  --band:clamp(4.5rem,8vw,7.5rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--field);
+  color:var(--bone);
+  font-family:var(--body);
+  font-size:1.25rem;
+  line-height:1.6;
+}
+
+/* Browser surfaces themed from the palette. */
+::selection{background:var(--bone);color:var(--field)}
+:focus-visible{outline:2.5px solid var(--chalk);outline-offset:3px}
+html{scrollbar-color:var(--sage) var(--field)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--field)}
+::-webkit-scrollbar-thumb{background:#3A4A40;border:3px solid var(--field);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:var(--sage)}
+a{color:inherit;text-underline-offset:0.24em;text-decoration-thickness:1px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-0.035em;line-height:1;margin:0;text-wrap:balance}
+p{margin:0}
+
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:var(--gutter)}
+.measure{max-width:62ch}
+
+/* ---------- hero: one installation, edge to edge ---------------- */
+.hero{position:relative;min-height:min(92vh,860px);display:flex;flex-direction:column;isolation:isolate}
+.hero-img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+/* the type sits in the dark of the photograph, so the ground is graded, not scrimmed flat */
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(185deg,rgba(21,33,27,0.82) 0%,rgba(21,33,27,0.34) 34%,rgba(21,33,27,0.58) 68%,rgba(21,33,27,0.95) 100%);
+}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding-block:1.5rem;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:700;font-size:1.5625rem;letter-spacing:-0.05em;text-decoration:none}
+.mark span{font-family:var(--meas);font-size:0.8rem;letter-spacing:0.06em;font-weight:400;color:var(--sage);display:block;margin-top:0.1rem}
+.nav{display:flex;gap:clamp(1.1rem,2.4vw,2.2rem);font-family:var(--display);font-weight:500;font-size:1rem}
+.nav a{text-decoration:none;padding-block:0.25rem;border-bottom:1.5px solid transparent;transition:border-color 200ms ease}
+.nav a:hover{border-color:var(--bone)}
+
+.hero-body{margin-top:auto;padding-block:0 clamp(2.5rem,5vw,4rem)}
+.hero h1{font-size:clamp(2.4rem,4.9vw,4rem);max-width:19ch}
+.hero h1 em{font-style:italic;font-family:var(--body);font-weight:400;letter-spacing:-0.015em;line-height:1.08;padding-bottom:0.06em;display:inline-block}
+.hero-sub{margin-top:1.4rem;max-width:46ch;color:var(--bone)}
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;margin-top:2.2rem}
+.btn{
+  display:inline-block;background:var(--chalk);color:var(--field);
+  font-family:var(--display);font-weight:700;font-size:1rem;
+  text-decoration:none;padding:0.95rem 1.7rem;border:0;border-radius:2px;
+  transition:transform 160ms ease,background 160ms ease;
+}
+.btn:hover{background:#FFFFFF;transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn-plain{font-family:var(--display);font-weight:500;font-size:1rem;text-decoration:none;border-bottom:1.5px solid var(--hair);padding-bottom:3px;transition:border-color 200ms ease}
+.btn-plain:hover{border-color:var(--bone)}
+/* the caption sits where a real photo caption would, not floating over the middle */
+.hero-caption{font-family:var(--meas);font-size:0.8rem;color:var(--sage);padding-block:0 1.6rem}
+
+/* ---------- the measured band ----------------------------------- */
+.measured{border-block:1px solid var(--hair);background:var(--raised)}
+.measured .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem clamp(1.5rem,3vw,3rem);padding-block:clamp(2.4rem,4vw,3.4rem)}
+.fig{display:flex;flex-direction:column;gap:0.5rem}
+.fig b{font-family:var(--display);font-weight:700;font-size:clamp(2rem,3.4vw,2.9rem);letter-spacing:-0.045em;line-height:1;font-variant-numeric:tabular-nums}
+.fig span{font-family:var(--meas);font-size:0.8rem;color:var(--sage);line-height:1.5}
+
+/* ---------- project plates -------------------------------------- */
+.plates{padding-block:var(--band)}
+.plates-head{max-width:56ch;margin-bottom:clamp(2.6rem,5vw,4rem)}
+.plates-head h2{font-size:clamp(2.1rem,4.2vw,3.2rem)}
+.plates-head p{margin-top:1.2rem;color:var(--sage)}
+
+.plate{margin-bottom:clamp(3rem,6vw,5.5rem)}
+.plate:last-of-type{margin-bottom:0}
+.plate-fig{position:relative;overflow:hidden;border-radius:2px;margin:0}
+.plate-fig img{width:100%;object-fit:cover;transition:transform 620ms cubic-bezier(.22,1,.36,1)}
+.plate:hover .plate-fig img,.plate:focus-within .plate-fig img{transform:scale(1.022)}
+.plate-cap{
+  display:flex;flex-wrap:wrap;gap:0.6rem 2.4rem;align-items:baseline;
+  margin-top:1.4rem;padding-top:1.1rem;border-top:1px solid var(--hair);
+  transform:translateY(6px);opacity:0.86;
+  transition:transform 620ms cubic-bezier(.22,1,.36,1),opacity 620ms ease;
+}
+.plate:hover .plate-cap,.plate:focus-within .plate-cap{transform:translateY(0);opacity:1}
+.plate-cap h3{font-size:1.5625rem;flex:1 1 18ch}
+.plate-cap dl{display:flex;flex-wrap:wrap;gap:0.35rem 2rem;margin:0;font-family:var(--meas);font-size:0.8rem;color:var(--sage)}
+.plate-cap dt{clip-path:inset(50%);position:absolute;white-space:nowrap}
+.plate-cap dd{margin:0}
+
+/* alternating rhythm: two wide full-bleed plates, one paired row */
+.plate--wide .plate-fig img{aspect-ratio:16/9}
+.plate-pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,3vw,2.6rem)}
+.plate-pair .plate-fig img{aspect-ratio:1/1}
+
+/* ---------- process --------------------------------------------- */
+.process{border-top:1px solid var(--hair);padding-block:var(--band)}
+.process h2{font-size:clamp(1.9rem,3.6vw,2.7rem);max-width:18ch}
+.steps{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:2.4rem clamp(1.5rem,3vw,3rem);margin-top:clamp(2.4rem,4vw,3.4rem)}
+.step{display:flex;flex-direction:column;gap:0.7rem}
+.step em{font-family:var(--meas);font-style:normal;font-size:0.8rem;color:var(--sage)}
+.step h3{font-size:1.5625rem}
+.step p{font-size:1rem;color:var(--sage)}
+
+/* ---------- booking band ---------------------------------------- */
+.book{background:var(--raised);border-top:1px solid var(--hair)}
+.book .wrap{padding-block:var(--band);display:grid;grid-template-columns:1.15fr 0.85fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.book h2{font-size:clamp(2rem,4vw,3rem);max-width:14ch}
+.book p{margin-top:1.3rem;color:var(--sage);max-width:48ch}
+.book-facts{font-family:var(--meas);font-size:1rem;display:flex;flex-direction:column;gap:0.75rem}
+.book-facts div{display:flex;justify-content:space-between;gap:1.5rem;padding-bottom:0.75rem;border-bottom:1px solid var(--hair)}
+.book-facts div:last-child{border-bottom:0}
+.book-facts span:last-child{color:var(--sage)}
+.book-facts a{text-decoration:none;border-bottom:1px solid var(--hair)}
+.book .btn{margin-top:2rem}
+
+/* ---------- footer ---------------------------------------------- */
+footer{border-top:1px solid var(--hair);padding-block:2.6rem 3.2rem;font-size:1rem}
+.foot-top{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;align-items:baseline}
+.disclosure{margin-top:2rem;font-family:var(--meas);font-size:0.8rem;color:var(--sage);max-width:80ch;line-height:1.7}
+
+/* ---------- responsive ------------------------------------------ */
+@media (max-width:960px){
+  .measured .wrap{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .book .wrap{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .nav{gap:1rem}
+  .hero{min-height:auto;padding-bottom:1rem}
+  .plate-pair{grid-template-columns:1fr}
+  .measured .wrap,.steps{grid-template-columns:1fr}
+  .btn{width:100%;text-align:center}
+  .plate--wide .plate-fig img{aspect-ratio:4/3}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms !important;animation-duration:1ms !important}
+  .plate:hover .plate-fig img,.plate:focus-within .plate-fig img{transform:none}
+  .plate-cap{transform:none;opacity:1}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <!-- generated illustrative imagery -->
+  <img class="hero-img" src="images/hero.png" alt="A built-in oak library fitted into the wall beneath a staircase, its top shelf tapering with the stair stringer.">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="mark" href="#top">BRAVE<span>CUSTOM WOODWORKING</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="#projects">Projects</a>
+        <a href="#process">Process</a>
+        <a href="#shop">The shop</a>
+        <a href="#book">Contact</a>
+      </nav>
+    </div>
+  </div>
+  <div class="wrap hero-body" id="top">
+    <h1>We build into the wall, to the <em>sixteenth of an inch.</em></h1>
+    <p class="hero-sub">Built-in closets, mudrooms, home offices and entertainment walls. Designed,
+      made in our own Manassas shop, and installed across Northern Virginia.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#book">Book a measure</a>
+      <a class="btn-plain" href="#projects">See recent work</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="hero-caption">Under-stair library, white oak and painted poplar. Illustrative.</p>
+  </div>
+</header>
+
+<section class="measured">
+  <div class="wrap">
+    <div class="fig"><b>1/16"</b><span>the tolerance we design and measure to</span></div>
+    <div class="fig"><b>2006</b><span>building and installing since</span></div>
+    <div class="fig"><b>1</b><span>shop on Redoubt Road, where everything is made</span></div>
+    <div class="fig"><b>7am</b><span>weekdays, when the phone starts being answered</span></div>
+  </div>
+</section>
+
+<main class="wrap plates" id="projects">
+  <div class="plates-head">
+    <h2>The awkward spaces are the job</h2>
+    <p>Under a staircase, around a chimney, the bonus room with the sloped ceiling. Those are the
+      walls nobody can buy furniture for, and they are the ones worth building into.</p>
+  </div>
+
+  <article class="plate plate--wide">
+    <figure class="plate-fig">
+      <!-- generated illustrative imagery -->
+      <img src="images/media.png" alt="A built-in entertainment wall around a fireplace, cabinetry flanking the firebox and shelving above the mantel.">
+    </figure>
+    <div class="plate-cap">
+      <h3>Entertainment wall, built around the firebox</h3>
+      <dl>
+        <dt>Room</dt><dd>Family room</dd>
+        <dt>Material</dt><dd>White oak and painted frame-and-panel</dd>
+        <dt>Constraint</dt><dd>Television recessed flush, no visible cable</dd>
+      </dl>
+    </div>
+  </article>
+
+  <div class="plate-pair">
+    <article class="plate">
+      <figure class="plate-fig">
+        <!-- generated illustrative imagery -->
+        <img src="images/office.png" alt="A built-in home office with a floating oak desk spanning an alcove between two towers of shelving.">
+      </figure>
+      <div class="plate-cap">
+        <h3>Home office, wall to wall in an alcove</h3>
+        <dl>
+          <dt>Room</dt><dd>Alcove off a landing</dd>
+          <dt>Material</dt><dd>White oak</dd>
+          <dt>Constraint</dt><dd>Desk floats, so the floor still reads</dd>
+        </dl>
+      </div>
+    </article>
+    <article class="plate">
+      <figure class="plate-fig">
+        <!-- generated illustrative imagery -->
+        <img src="images/shop.png" alt="A white oak cabinet face frame clamped on a workbench with a block plane and folding rule beside it.">
+      </figure>
+      <div class="plate-cap">
+        <h3>Face frames, cut on Redoubt Road</h3>
+        <dl>
+          <dt>Where</dt><dd>Our Manassas shop</dd>
+          <dt>Material</dt><dd>White oak</dd>
+          <dt>Constraint</dt><dd>Built here, not ordered in</dd>
+        </dl>
+      </div>
+    </article>
+  </div>
+
+  <article class="plate plate--wide" id="shop" style="margin-top:clamp(3rem,6vw,5.5rem)">
+    <figure class="plate-fig">
+      <!-- generated illustrative imagery -->
+      <img src="images/mudroom.png" alt="A built-in mudroom bench running wall to wall under a window, with drawers below and cubbies and hooks above.">
+    </figure>
+    <div class="plate-cap">
+      <h3>Mudroom bench, wall to wall under the window</h3>
+      <dl>
+        <dt>Room</dt><dd>Back hall</dd>
+        <dt>Material</dt><dd>White oak, painted beadboard back</dd>
+        <dt>Constraint</dt><dd>Bench height set under the sill</dd>
+      </dl>
+    </div>
+  </article>
+</main>
+
+<section class="wrap process" id="process">
+  <h2>How a job actually goes</h2>
+  <div class="steps">
+    <div class="step">
+      <em>First visit</em>
+      <h3>We measure the wall</h3>
+      <p>Every wall is out of square somewhere. We find out by how much before anything is drawn,
+        which is where the sixteenth of an inch comes from.</p>
+    </div>
+    <div class="step">
+      <em>Then</em>
+      <h3>We draw it</h3>
+      <p>You see the piece in the actual opening, with the real dimensions, before we cut anything.</p>
+    </div>
+    <div class="step">
+      <em>Then</em>
+      <h3>We build it</h3>
+      <p>Made on Redoubt Road in Manassas. Nothing is ordered in and assembled on your floor.</p>
+    </div>
+    <div class="step">
+      <em>Last</em>
+      <h3>We install and finish</h3>
+      <p>Scribed to the wall, trimmed, and finished so it reads as part of the house.</p>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Send us the wall you cannot solve.</h2>
+      <p>A photograph and a rough measurement is enough to start. We will tell you what is possible
+        in the space and what it would take, before anybody commits to anything.</p>
+      <a class="btn" href="tel:+17033670477">Call 703-367-0477</a>
+    </div>
+    <div class="book-facts">
+      <div><span>Email</span><span><a href="mailto:carrie@cwcabinet.com">carrie@cwcabinet.com</a></span></div>
+      <div><span>Shop</span><span>10595 Redoubt Road, Manassas VA</span></div>
+      <div><span>Hours</span><span>Weekdays from 7:00 am</span></div>
+      <div><span>We build</span><span>Closets, mudrooms, offices, media walls, kitchen and bath, millwork</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span><strong>Brave Custom Woodworking Solutions</strong> &middot; 10595 Redoubt Road, Manassas, VA 20110</span>
+      <span><a href="tel:+17033670477">703-367-0477</a> &middot; <a href="mailto:carrie@cwcabinet.com">carrie@cwcabinet.com</a></span>
+    </div>
+    <p class="disclosure">This is an unsolicited concept page prepared by Ohtari Labs to show what a
+      website for Brave Custom Woodworking Solutions could look like. It is not affiliated with or
+      authorised by the company. Photography shown is illustrative art direction generated for this
+      concept and does not depict Brave installations, their shop or their staff. Project titles,
+      rooms, materials and constraints in the captions are illustrative examples, not real
+      commissions.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Brave Custom Woodworking Solutions, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
