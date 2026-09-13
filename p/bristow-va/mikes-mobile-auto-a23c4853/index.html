@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mike's Mobile Auto Services - Mobile mechanic in Bristow, Virginia</title>
+<meta name="description" content="Repairs, oil changes, routine maintenance and detailing, done at your house. Mobile auto service based in Bristow, Virginia since 2020. Call or text 703-853-5430.">
+<style>
+/* ---------------------------------------------------------------
+   Mike's Mobile Auto Services - concept comp
+   Type: Chivo (display) / Source Sans 3 (body) / JetBrains Mono (data)
+   Plain paper, one deep pine-teal. Deliberately not the dark-page-plus-
+   hot-orange look every mobile-mechanic template ships with.
+----------------------------------------------------------------- */
+
+@font-face{font-family:"Chivo";src:url("fonts/chivo-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Chivo";src:url("fonts/chivo-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("fonts/sourcesans-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("fonts/sourcesans-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("fonts/sourcesans-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#F5F6F4;
+  --ink:#111418;
+  --pine:#1F5D4C;
+  --slate:#5C6361;
+  --white:#FFFFFF;
+  --rule:#D6D9D5;
+  --display:"Chivo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --data:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --gutter:clamp(1.25rem,4vw,3.5rem);
+  --band:clamp(3.5rem,6vw,5.5rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:1.25rem;
+  line-height:1.58;
+}
+
+/* Browser surfaces themed from the palette. */
+::selection{background:var(--pine);color:var(--paper)}
+:focus-visible{outline:3px solid var(--pine);outline-offset:2px}
+html{scrollbar-color:var(--slate) var(--paper)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--paper)}
+::-webkit-scrollbar-thumb{background:var(--slate);border:3px solid var(--paper)}
+::-webkit-scrollbar-thumb:hover{background:var(--ink)}
+a{color:inherit;text-underline-offset:0.2em;text-decoration-thickness:1px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-0.028em;line-height:1.02;margin:0;text-wrap:balance}
+p{margin:0}
+
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* ---------- masthead, number above everything ------------------- */
+.masthead{border-bottom:2px solid var(--ink);background:var(--white)}
+.masthead .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem;padding-block:1.15rem}
+.mark{font-family:var(--display);font-weight:700;font-size:1.5625rem;letter-spacing:-0.038em;text-decoration:none;line-height:1.05}
+.mark span{display:block;font-family:var(--data);font-size:0.8rem;color:var(--slate);letter-spacing:0.01em;margin-top:0.25rem}
+.btn{
+  display:inline-block;background:var(--pine);color:var(--paper);
+  font-family:var(--display);font-weight:700;font-size:1rem;
+  text-decoration:none;padding:0.8rem 1.5rem;border:0;border-radius:3px;
+  transition:background 150ms ease,transform 150ms ease;
+}
+.btn:hover{background:#174437;transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+
+/* ---------- hero ------------------------------------------------- */
+.hero{border-bottom:1px solid var(--rule)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:clamp(1.75rem,4vw,3.25rem);align-items:center;padding-block:clamp(2.25rem,4vw,3.5rem)}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4rem);max-width:13ch}
+.hero h1 em{font-style:italic;font-family:var(--body);font-weight:400;letter-spacing:-0.01em;line-height:1.1;padding-bottom:0.06em;display:inline-block}
+.hero p{margin-top:1.2rem;max-width:42ch;color:#2C3230}
+.hero-actions{display:flex;flex-wrap:wrap;gap:0.85rem 1.3rem;align-items:center;margin-top:1.8rem}
+.hero-note{font-family:var(--data);font-size:0.8rem;color:var(--slate)}
+.hero-fig{margin:0}
+.hero-fig img{aspect-ratio:3/2;object-fit:cover;width:100%;border-radius:3px}
+.hero-cap{font-family:var(--data);font-size:0.8rem;color:var(--slate);margin-top:0.6rem}
+
+/* ---------- the visit: the signature ---------------------------- */
+.visit{padding-block:var(--band);border-bottom:1px solid var(--rule)}
+.visit h2{font-size:clamp(2rem,3.8vw,2.9rem);max-width:18ch}
+.visit .lede{margin-top:1.1rem;max-width:52ch;color:var(--slate)}
+.stages{margin-top:clamp(2.2rem,4vw,3rem);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,0.85fr);gap:clamp(1.75rem,4vw,3.5rem);align-items:start}
+.run{list-style:none;margin:0;padding:0;position:relative}
+/* the hairline that connects the stages, like a docket */
+.run::before{content:"";position:absolute;left:0.5rem;top:0.75rem;bottom:0.75rem;width:2px;background:var(--rule)}
+.stage{position:relative;padding-left:2.6rem;padding-bottom:1.9rem}
+.stage:last-child{padding-bottom:0}
+.stage::before{
+  content:"";position:absolute;left:0;top:0.45rem;
+  width:1.125rem;height:1.125rem;border-radius:50%;
+  background:var(--paper);border:2px solid var(--pine);
+}
+.stage:last-child::before{background:var(--pine)}
+.stage h3{font-family:var(--display);font-weight:700;font-size:1.5625rem;letter-spacing:-0.025em}
+.stage p{margin-top:0.45rem;font-size:1rem;color:var(--slate);max-width:44ch}
+.stages img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px}
+.stages figure{margin:0}
+
+/* ---------- job index ------------------------------------------- */
+.jobs{padding-block:var(--band);border-bottom:1px solid var(--rule)}
+.sec-head{margin-bottom:1.8rem}
+.sec-head h2{font-size:clamp(2rem,3.8vw,2.9rem)}
+/* the note stacks under the heading; a small paragraph floated to the
+   top right of a section header is a generated-page signature */
+.sec-head p{font-family:var(--data);font-size:0.8rem;color:var(--slate);max-width:44ch;margin-top:0.9rem}
+.job-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(1.5rem,3vw,3rem)}
+.job{border-top:1px solid var(--rule);padding:1.15rem 0 1.15rem 0;display:block;text-decoration:none;position:relative;transition:transform 200ms cubic-bezier(.22,1,.36,1)}
+.job::before{
+  content:"";position:absolute;left:-0.9rem;top:1.45rem;
+  width:0;height:2px;background:var(--pine);
+  transition:width 200ms cubic-bezier(.22,1,.36,1);
+}
+.job:hover,.job:focus-visible{transform:translateX(0.55rem)}
+.job:hover::before,.job:focus-visible::before{width:0.55rem}
+.job b{display:block;font-family:var(--display);font-weight:700;font-size:1.5625rem;letter-spacing:-0.025em}
+.job span{display:block;font-size:1rem;color:var(--slate);margin-top:0.25rem;max-width:40ch}
+
+/* ---------- coverage --------------------------------------------- */
+.coverage{padding-block:var(--band);border-bottom:1px solid var(--rule)}
+.cov-grid{display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:clamp(1.75rem,4vw,3.5rem);align-items:start}
+.towns{display:flex;flex-wrap:wrap;gap:0.55rem 0.6rem;margin-top:0.3rem}
+.town{
+  font-family:var(--data);font-size:1rem;
+  border:1px solid var(--rule);background:var(--white);
+  padding:0.45rem 0.85rem;border-radius:3px;
+}
+.town.base{border-color:var(--pine);color:var(--pine);font-weight:500}
+.marked{font-family:var(--data);font-size:0.8rem;color:var(--slate);margin-top:1.4rem;border-top:1px solid var(--rule);padding-top:1rem;max-width:60ch}
+
+/* ---------- why he started --------------------------------------- */
+.why{background:var(--white);border-bottom:1px solid var(--rule)}
+.why .wrap{padding-block:var(--band);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:clamp(1.75rem,4vw,3.5rem);align-items:center}
+.why h2{font-size:clamp(1.9rem,3.5vw,2.6rem);max-width:16ch}
+.why p{margin-top:1.2rem;max-width:50ch;color:#2C3230}
+.why img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px}
+.why figure{margin:0}
+.why-facts{margin-top:1.8rem;font-family:var(--data);font-size:1rem;display:flex;flex-wrap:wrap;gap:0.5rem 2.2rem;color:var(--slate)}
+.why-facts b{color:var(--ink);font-weight:500}
+
+/* ---------- contact ---------------------------------------------- */
+.contact{padding-block:var(--band)}
+.contact-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem 3rem}
+.contact h2{font-size:clamp(2rem,4vw,3rem);max-width:16ch}
+.contact .num{font-family:var(--data);font-size:1.5625rem;font-weight:500;margin-top:0.8rem;display:block;text-decoration:none;border-bottom:2px solid var(--pine);padding-bottom:2px}
+
+/* ---------- footer ------------------------------------------------ */
+footer{border-top:2px solid var(--ink);padding-block:2.2rem 3rem;font-size:1rem;background:var(--white)}
+.foot-top{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;align-items:baseline}
+.disclosure{margin-top:1.8rem;font-family:var(--data);font-size:0.8rem;color:var(--slate);max-width:84ch;line-height:1.65}
+
+/* ---------- responsive -------------------------------------------- */
+@media (max-width:960px){
+  .hero .wrap,.stages,.cov-grid,.why .wrap{grid-template-columns:1fr}
+  .stages figure,.why figure{order:-1}
+}
+@media (max-width:640px){
+  .job-list{grid-template-columns:1fr}
+  .btn{width:100%;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms !important}
+  .job:hover,.job:focus-visible{transform:none}
+  .job:hover::before,.job:focus-visible::before{width:0}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="#top">Mike's Mobile Auto Services<span>Bristow, Virginia</span></a>
+    <a class="btn" href="tel:+17038535430">Call or text 703-853-5430</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>I come to <em>your driveway.</em></h1>
+      <p>Repairs, oil changes, routine maintenance and detailing, done at your house instead of
+        yours-for-the-day at a shop. Based in Bristow since 2020.</p>
+      <div class="hero-actions">
+        <a class="btn" href="tel:+17038535430">Call or text 703-853-5430</a>
+        <span class="hero-note">Text is usually faster. I am under a car most of the day.</span>
+      </div>
+    </div>
+    <figure class="hero-fig">
+      <!-- generated illustrative imagery -->
+      <img src="images/hero.png" alt="An unmarked white work van parked on a suburban driveway beside a sedan with its hood raised and a rolling tool chest open between them.">
+      <figcaption class="hero-cap">A visit, in a Bristow driveway. Illustrative.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="wrap visit">
+  <h2>What a visit actually looks like</h2>
+  <p class="lede">The part people want to know before they call a mechanic they found on the
+    internet is not whether he is any good. It is what happens when he turns up.</p>
+  <div class="stages">
+    <ol class="run">
+      <li class="stage">
+        <h3>You text me what the car is doing</h3>
+        <p>Noise, light on the dash, something that started last Tuesday. Photos help. So does the
+          year and the mileage.</p>
+      </li>
+      <li class="stage">
+        <h3>I tell you what it will cost before I start</h3>
+        <p>You get the number first. If it turns out to be something else once I am in there, you
+          hear about it before I carry on, not after.</p>
+      </li>
+      <li class="stage">
+        <h3>I come to you</h3>
+        <p>Your driveway, your office car park, wherever the car is sitting. You can stand there
+          and watch the whole thing if you want to. Most people do, the first time.</p>
+      </li>
+      <li class="stage">
+        <h3>You pay when it is done</h3>
+        <p>Car finished, in your own driveway, and nobody drove it anywhere but you.</p>
+      </li>
+    </ol>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/oil.png" alt="An oil change in progress on a driveway, with a drain pan under the engine bay and gloved hands at the drain plug.">
+    </figure>
+  </div>
+</section>
+
+<main class="wrap jobs">
+  <div class="sec-head">
+    <h2>What I come out for</h2>
+    <p>Four things, done properly, rather than a list of forty.</p>
+  </div>
+  <div class="job-list">
+    <a class="job" href="tel:+17038535430">
+      <b>Repairs</b>
+      <span>The thing that is actually wrong with it. Tell me what it is doing and I will tell you
+        whether it is a driveway job.</span>
+    </a>
+    <a class="job" href="tel:+17038535430">
+      <b>Oil changes</b>
+      <span>The one nobody should be losing a Saturday morning to. Done where the car is parked.</span>
+    </a>
+    <a class="job" href="tel:+17038535430">
+      <b>Routine maintenance</b>
+      <span>The scheduled work that keeps the expensive failures from happening, on the interval
+        your car actually asks for.</span>
+    </a>
+    <a class="job" href="tel:+17038535430">
+      <b>Detailing</b>
+      <span>Inside and out. Worth doing in the same visit as the mechanical work, since the car is
+        already sitting still and so am I.</span>
+    </a>
+  </div>
+</main>
+
+<section class="wrap coverage">
+  <div class="sec-head">
+    <h2>Where I come out to</h2>
+  </div>
+  <div class="cov-grid">
+    <div>
+      <figure style="margin:0">
+        <!-- generated illustrative imagery -->
+        <img src="images/detail.png" alt="A dual-action polisher being worked across the door panel of a dark blue sedan on a driveway." style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px">
+      </figure>
+    </div>
+    <div>
+      <p style="color:#2C3230;max-width:46ch">I am based in Bristow, so that is the middle of the
+        circle. If you are further out than this, it is still worth asking, because I am often
+        already somewhere near you.</p>
+      <div class="towns">
+        <span class="town base">Bristow</span>
+        <span class="town">Gainesville</span>
+        <span class="town">Haymarket</span>
+        <span class="town">Nokesville</span>
+        <span class="town">Manassas</span>
+        <span class="town">Manassas Park</span>
+        <span class="town">Linton Hall</span>
+        <span class="town">Braemar</span>
+      </div>
+      <p class="marked">Sample coverage list, shown to demonstrate the section. Mike sets the real
+        radius, and the live site would carry his own list.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div>
+      <h2>Why I started doing it this way</h2>
+      <p>I spent about ten years working in auto shops. I got tired of working for places that took
+        advantage of the people who walked in. When Covid hit and nobody wanted to sit in a waiting
+        room anyway, it seemed like the right moment to go out on my own and bring the work to
+        people instead.</p>
+      <p style="margin-top:1rem">So there is no waiting room, no service adviser, and no upsell
+        sitting between you and the person doing the work. It is just me, in your driveway, and you
+        can see exactly what I am doing to your car.</p>
+      <div class="why-facts">
+        <span><b>Since 2020</b></span>
+        <span><b>Based in Bristow, VA</b></span>
+        <span><b>Repairs, oil, maintenance, detailing</b></span>
+      </div>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/tools.png" alt="A socket set, torque wrench, multimeter and work light laid out neatly on a padded fender mat over a car wing.">
+    </figure>
+  </div>
+</section>
+
+<section class="wrap contact">
+  <div class="contact-inner">
+    <div>
+      <h2>Tell me what the car is doing.</h2>
+      <a class="num" href="tel:+17038535430">703-853-5430</a>
+    </div>
+    <a class="btn" href="tel:+17038535430">Call or text</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span><strong>Mike's Mobile Auto Services</strong> &middot; Mobile service, based in Bristow, VA</span>
+      <span><a href="tel:+17038535430">703-853-5430</a></span>
+    </div>
+    <p class="disclosure">This is an unsolicited concept page prepared by Ohtari Labs to show what a
+      website for Mike's Mobile Auto Services could look like. It is not affiliated with or
+      authorised by the business. Photography shown is illustrative art direction generated for this
+      concept and does not depict Mike, his van, his tools or his customers' vehicles. The coverage
+      list is a marked sample rather than a stated service area. This page deliberately states no
+      prices, no response times, no hours and no certifications, because none are published and none
+      are ours to invent. The trade, the Bristow base, the 2020 start and the four service
+      categories are as the business describes itself in its own public listings.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Mike's Mobile Auto Services, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
