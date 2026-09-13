@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vita Nova Creatives &amp; Coffee - Upcycled furniture, paint and coffee in Nokesville, Virginia</title>
+<meta name="description" content="Upcycled furniture, home decor and local artisan goods, furniture-painting workshops, and a coffee bar, all in one room at 13051 Fitzwater Drive, Nokesville. Open 6:30am weekdays.">
+<style>
+/* ---------------------------------------------------------------
+   Vita Nova Creatives & Coffee - concept comp
+   Type: Gabarito (display) / Karla (body) / Space Mono (dates and prices)
+   The page is chalk duck-egg and near-silent so the painted furniture is
+   the only saturated colour on it. One accent, a chalk-paint raspberry,
+   at two values: #B5316B for fills, #96285A when it has to be text.
+----------------------------------------------------------------- */
+
+@font-face{font-family:"Gabarito";src:url("fonts/gabarito-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Gabarito";src:url("fonts/gabarito-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Karla";src:url("fonts/karla-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Karla";src:url("fonts/karla-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Karla";src:url("fonts/karla-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Space Mono";src:url("fonts/spacemono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Space Mono";src:url("fonts/spacemono-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+
+:root{
+  --chalk:#DFE6E4;
+  --ink:#191D1C;
+  --rasp:#B5316B;
+  --rasp-ink:#96285A;
+  --slate:#525B59;
+  --white:#FBFBF9;
+  --rule:#C2CDCA;
+  --display:"Gabarito",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --data:"Space Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --gutter:clamp(1.25rem,4vw,3.5rem);
+  --band:clamp(4rem,7vw,6.5rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--chalk);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:1.25rem;
+  line-height:1.6;
+}
+
+/* Browser surfaces themed from the palette. */
+::selection{background:var(--rasp);color:var(--white)}
+:focus-visible{outline:3px solid var(--rasp-ink);outline-offset:3px}
+html{scrollbar-color:var(--slate) var(--chalk)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--chalk)}
+::-webkit-scrollbar-thumb{background:var(--slate);border:3px solid var(--chalk);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:var(--ink)}
+a{color:inherit;text-underline-offset:0.22em;text-decoration-thickness:1px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-0.028em;line-height:1.02;margin:0;text-wrap:balance}
+p{margin:0}
+
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* ---------- masthead --------------------------------------------- */
+.masthead .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem;padding-block:1.3rem}
+.mark{font-family:var(--display);font-weight:800;font-size:1.5625rem;letter-spacing:-0.04em;text-decoration:none;line-height:1.05}
+.mark span{display:block;font-family:var(--data);font-size:0.8rem;color:var(--slate);letter-spacing:0.02em;margin-top:0.2rem}
+.nav{display:flex;gap:clamp(1rem,2.4vw,2.1rem);font-family:var(--display);font-weight:600;font-size:1rem}
+.nav a{text-decoration:none;padding-block:0.2rem;border-bottom:2px solid transparent;transition:border-color 180ms ease}
+.nav a:hover{border-color:var(--rasp)}
+
+/* ---------- hero: both halves of the room, tagline on the seam --- */
+.hero{padding-bottom:var(--band)}
+.split{display:grid;grid-template-columns:1.12fr 0.88fr;gap:0;position:relative}
+.split figure{margin:0;overflow:hidden}
+.split img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.seam{
+  border-top:2px solid var(--ink);
+  margin-top:2.1rem;padding-top:2.1rem;
+}
+.seam h1{font-size:clamp(2.1rem,4.6vw,3.6rem);max-width:22ch}
+.seam h1 em{font-style:italic;font-family:var(--body);font-weight:400;letter-spacing:-0.005em;line-height:1.08;padding-bottom:0.06em;display:inline-block}
+.seam-row{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 2.2rem;margin-top:1.9rem}
+.btn{
+  display:inline-block;background:var(--rasp);color:var(--white);
+  font-family:var(--display);font-weight:800;font-size:1rem;
+  text-decoration:none;padding:0.85rem 1.6rem;border:0;border-radius:2px;
+  transition:background 160ms ease,transform 160ms ease;
+}
+.btn:hover{background:var(--rasp-ink);transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.seam-facts{font-family:var(--data);font-size:1rem;color:var(--slate)}
+.seam-facts b{color:var(--ink);font-weight:400}
+
+/* ---------- ways in: their own vocabulary ------------------------ */
+.ways{border-top:1px solid var(--rule);padding-block:var(--band)}
+.ways h2{font-size:clamp(1.9rem,3.6vw,2.7rem);max-width:20ch}
+.ways .lede{margin-top:1.1rem;max-width:56ch;color:var(--slate)}
+.words{display:flex;flex-wrap:wrap;gap:0.6rem 2.4rem;margin-top:2.2rem}
+.word{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-0.03em;
+  text-decoration:none;position:relative;padding-bottom:0.35rem;
+  transition:transform 220ms cubic-bezier(.22,1,.36,1);
+  display:inline-block;
+}
+.word::after{
+  content:"";position:absolute;left:0;bottom:0;
+  width:0;height:4px;background:var(--rasp);
+  transition:width 220ms cubic-bezier(.22,1,.36,1);
+}
+.word:hover,.word:focus-visible{transform:translateY(-3px)}
+.word:hover::after,.word:focus-visible::after{width:100%}
+.ways-fig{margin:clamp(2.4rem,4.5vw,3.6rem) 0 0}
+.ways-fig img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.ways-fig figcaption{font-family:var(--data);font-size:0.8rem;color:var(--slate);margin-top:0.7rem}
+
+/* ---------- workshops plate -------------------------------------- */
+.shops{border-top:1px solid var(--rule);padding-block:var(--band)}
+.shops-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:stretch}
+.plate{
+  border:2px solid var(--ink);background:var(--white);
+  padding:clamp(1.6rem,3vw,2.4rem);
+  display:flex;flex-direction:column;
+}
+.plate h2{font-size:clamp(1.9rem,3.4vw,2.6rem);max-width:18ch}
+.plate p{margin-top:1.1rem;color:var(--slate);max-width:46ch}
+.dates{list-style:none;margin:1.9rem 0 0;padding:0;font-family:var(--data);font-size:1rem}
+.dates li{display:flex;flex-wrap:wrap;gap:0.4rem 1.2rem;justify-content:space-between;padding-block:0.8rem;border-bottom:1px solid var(--rule)}
+.dates li:last-of-type{border-bottom:0}
+.dates b{font-weight:700;font-family:var(--body);font-size:1.25rem}
+.dates span{color:var(--slate)}
+.plate .btn{margin-top:1.9rem;align-self:flex-start}
+.plate .marked{font-family:var(--data);font-size:0.8rem;color:var(--slate);margin-top:1.4rem}
+.shops figure{margin:0;display:flex}
+.shops figure img{width:100%;object-fit:cover}
+
+/* ---------- coffee inset ----------------------------------------- */
+.coffee{border-top:1px solid var(--rule);padding-block:var(--band)}
+.coffee-inner{display:grid;grid-template-columns:0.8fr 1.2fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:center}
+.coffee h2{font-size:clamp(1.9rem,3.4vw,2.6rem);max-width:16ch}
+.coffee p{margin-top:1.1rem;max-width:52ch;color:var(--slate)}
+.coffee img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.coffee figure{margin:0}
+.coffee-note{font-family:var(--data);font-size:1rem;margin-top:1.5rem;padding-top:1.1rem;border-top:1px solid var(--rule);color:var(--slate)}
+.coffee-note b{color:var(--ink);font-weight:400}
+
+/* ---------- visit ------------------------------------------------- */
+.visit{border-top:1px solid var(--rule);padding-block:var(--band)}
+.visit-grid{display:grid;grid-template-columns:1.25fr 0.75fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:start}
+.visit h2{font-size:clamp(1.9rem,3.6vw,2.7rem);max-width:14ch}
+.visit p{margin-top:1.2rem;max-width:50ch;color:var(--slate)}
+.hours{font-family:var(--data);font-size:1rem;margin-top:0.2rem}
+.hours div{display:flex;justify-content:space-between;gap:1.5rem;padding-block:0.75rem;border-bottom:1px solid var(--rule)}
+.hours div:last-child{border-bottom:0}
+.hours span:last-child{color:var(--slate)}
+
+/* ---------- footer ------------------------------------------------ */
+footer{border-top:2px solid var(--ink);padding-block:2.4rem 3rem;font-size:1rem;background:var(--white)}
+.foot-top{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;align-items:baseline}
+.foot-top a{color:var(--rasp-ink)}
+.disclosure{margin-top:1.8rem;font-family:var(--data);font-size:0.8rem;color:var(--slate);max-width:84ch;line-height:1.7}
+
+/* ---------- responsive -------------------------------------------- */
+@media (max-width:960px){
+  .split{grid-template-columns:1fr 1fr}
+  .split img{aspect-ratio:3/4}
+  .shops-grid,.coffee-inner,.visit-grid{grid-template-columns:1fr}
+  .coffee figure,.shops figure{order:-1}
+  .shops figure img{aspect-ratio:16/9}
+}
+@media (max-width:640px){
+  .split{grid-template-columns:1fr}
+  .split img{aspect-ratio:4/3}
+  .btn{width:100%;text-align:center}
+  .words{gap:0.4rem 1.5rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms !important}
+  .word:hover,.word:focus-visible{transform:none}
+  .word:hover::after,.word:focus-visible::after{width:0}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="#top">Vita Nova<span>CREATIVES &amp; COFFEE &middot; NOKESVILLE</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#ways">The shop</a>
+      <a href="#workshops">Workshops</a>
+      <a href="#coffee">Coffee</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap" id="top">
+  <div class="split">
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/dresser.png" alt="A vintage four-drawer dresser refinished in chalk-painted teal with a floral decor transfer across the top drawer and original brass pulls.">
+    </figure>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/pour.png" alt="A double espresso pouring into a cream stoneware mug on a reclaimed-wood counter.">
+    </figure>
+  </div>
+  <div class="seam">
+    <h1>Bringing new life to old things, and to <em>your day.</em></h1>
+    <div class="seam-row">
+      <a class="btn" href="#visit">Come and see the shop</a>
+      <span class="seam-facts"><b>13051 Fitzwater Drive, Nokesville</b> &middot; open 6:30am weekdays</span>
+    </div>
+  </div>
+</section>
+
+<section class="wrap ways" id="ways">
+  <h2>Furniture, decor and things made by people who live here</h2>
+  <p class="lede">Upcycled pieces, home decor and local artisan goods, plus the paint and the
+    transfers to do it yourself. Most people already know which of these words is theirs.</p>
+  <div class="words">
+    <a class="word" href="#visit">Vintage</a>
+    <a class="word" href="#visit">Chippy</a>
+    <a class="word" href="#visit">Rustic</a>
+    <a class="word" href="#visit">Boho</a>
+    <a class="word" href="#visit">Colorful</a>
+    <a class="word" href="#visit">Industrial</a>
+    <a class="word" href="#visit">Farmhouse</a>
+  </div>
+  <figure class="ways-fig">
+    <!-- generated illustrative imagery -->
+    <img src="images/floor.png" alt="The length of the shop: chalk-painted dressers, a farmhouse table and painted chairs along one side, open shelving of paint tins and ceramics along the other.">
+    <figcaption>Both halves of the room, which is the whole point. Illustrative.</figcaption>
+  </figure>
+</section>
+
+<section class="wrap shops" id="workshops">
+  <div class="shops-grid">
+    <div class="plate">
+      <h2>Learn it here, and buy the paint here too</h2>
+      <p>We run workshops in the same room the materials are sold in, so you can start a piece on a
+        Saturday and come back for another tin on Tuesday. We stock DIY Paint, Iron Orchid Designs
+        and Paint Pixie Brushes.</p>
+      <ul class="dates">
+        <li><b>Chalk paint, start to finish</b><span>Saturday morning</span></li>
+        <li><b>Decor transfers and moulds</b><span>Weeknight</span></li>
+        <li><b>Bring your own small piece</b><span>Sunday afternoon</span></li>
+      </ul>
+      <a class="btn" href="#visit">Book a seat</a>
+      <p class="marked">Sample class titles and days, shown to demonstrate the calendar. The live
+        site would carry the real schedule.</p>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/workshop.png" alt="Hands working a flat brush along the turned leg of an upturned wooden chair, with open tins of chalk paint and a roll of decor transfers on the table.">
+    </figure>
+  </div>
+</section>
+
+<section class="wrap coffee" id="coffee">
+  <div class="coffee-inner">
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/goods.png" alt="A shelf of local artisan goods: hand-thrown stoneware mugs, a small painted wooden box, poured candles and a bundle of dried lavender.">
+    </figure>
+    <div>
+      <h2>And the coffee, which is why people stay</h2>
+      <p>Seasonal drinks, frozen options, a long list of loose leaf teas, and pastries and snacks
+        from people nearby. There are gluten free and vegan options because we would rather
+        everybody got a treat. There is a small play area for the energetic ones, and nobody is
+        going to move you along.</p>
+      <p class="coffee-note"><b>Wander the shop, linger.</b> That is the whole idea, and it is
+        why the coffee bar and the furniture share a room instead of a wall.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap visit" id="visit">
+  <div class="visit-grid">
+    <div>
+      <h2>Come out to Fitzwater Drive</h2>
+      <p>We are at 13051 Fitzwater Drive in Nokesville, out where Route 28 meets Fitzwater. Early
+        enough on weekdays to catch you before work, and open late enough that an evening browse is
+        a real option. Call the shop on (703) 594-0111.</p>
+      <p style="margin-top:1.1rem">If you want to hear when new pieces land and when classes open,
+        that is what Friends of Vita Nova is for.</p>
+      <div class="seam-row">
+        <a class="btn" href="tel:+17035940111">Call (703) 594-0111</a>
+      </div>
+    </div>
+    <div class="hours">
+      <div><span>Monday to Friday</span><span>6:30am to 8:00pm</span></div>
+      <div><span>Saturday</span><span>8:00am to 6:00pm</span></div>
+      <div><span>Sunday</span><span>Call ahead</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span><strong>Vita Nova Creatives &amp; Coffee</strong> &middot; 13051 Fitzwater Drive, Nokesville, VA 20181</span>
+      <span><a href="tel:+17035940111">(703) 594-0111</a></span>
+    </div>
+    <p class="disclosure">This is an unsolicited concept page prepared by Ohtari Labs to show what a
+      website for Vita Nova Creatives &amp; Coffee could look like. It is not affiliated with or
+      authorised by the shop. Photography shown is illustrative art direction generated for this
+      concept and does not depict the shop's actual room, staff or inventory. Workshop titles and
+      days are marked illustrative samples, not a real schedule, and no menu items or prices are
+      shown because none were ours to invent. The address, phone, weekday and Saturday hours, the
+      style vocabulary, the stocked paint lines and the descriptions of the coffee bar are taken
+      from the shop's own published website. Sunday hours are not published, so the page says to
+      call rather than stating one.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Vita Nova Creatives &amp; Coffee, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
