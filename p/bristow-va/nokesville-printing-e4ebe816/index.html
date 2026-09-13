@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nokesville Printing Solutions. Print shop in Nokesville, VA, across from the Post Office.</title>
+<meta name="description" content="Nokesville Printing Solutions is a family print shop on Fitzwater Drive in Nokesville, Virginia: business cards, booklets, forms, signs and custom jobs, designed and printed in house. Most jobs in 24 to 48 hours. Free delivery to businesses within 45 minutes.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nokesville Printing Solutions",
+  "telephone": "+1-703-594-2000",
+  "email": "print@nokesprinting.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12914 Fitzwater Dr, Unit C",
+    "addressLocality": "Nokesville",
+    "addressRegion": "VA",
+    "postalCode": "20181",
+    "addressCountry": "US"
+  },
+  "areaServed": ["Nokesville", "Bristow", "Manassas", "Gainesville", "Warrenton"],
+  "foundingDate": "2018"
+}
+</script>
+<style>
+/* ------------------------------------------------------------------
+   Nokesville Printing Solutions, concept
+   Palette: paper #F6F6F3 · ink #141416 · process cyan #0A8FC2 (rules, marks) with #0B76A0 for fills and small text · grey #6E6E6A · rule #D9D9D4
+   Type: Libre Franklin (display) · Source Serif 4 (body) · Azeret Mono (utility)
+   Shape rule: everything is square. A job ticket has no rounded corners.
+   Signature: the page is a job ticket. Registration marks in the corners, an eight-column ruled grid, the shop's facts set as a specimen table.
+   ------------------------------------------------------------------ */
+@font-face { font-family: "Libre Franklin"; src: url("fonts/librefranklin-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Libre Franklin"; src: url("fonts/librefranklin-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Libre Franklin"; src: url("fonts/librefranklin-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Serif 4"; src: url("fonts/sourceserif4-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Serif 4"; src: url("fonts/sourceserif4-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Source Serif 4"; src: url("fonts/sourceserif4-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Azeret Mono"; src: url("fonts/azeretmono-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Azeret Mono"; src: url("fonts/azeretmono-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+
+:root {
+  --paper: #F6F6F3;
+  --ink: #141416;
+  --cyan: #0A8FC2;
+  --cyan-deep: #0B76A0;
+  --cyan-press: #095F82;
+  --grey: #6E6E6A;
+  --rule: #D9D9D4;
+  --display: "Libre Franklin", "Franklin Gothic Medium", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono: "Azeret Mono", "SF Mono", Menlo, monospace;
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --cell: clamp(1rem, 2vw, 1.6rem);
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: light; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+::selection { background: var(--cyan); color: var(--paper); }
+:focus-visible { outline: 2px solid var(--cyan-deep); outline-offset: 3px; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.16em; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3 { font-family: var(--display); margin: 0; letter-spacing: -0.02em; line-height: 1; text-wrap: balance; }
+h1 { font-weight: 800; font-size: clamp(2.5rem, 4.9vw, 4.4rem); letter-spacing: -0.035em; line-height: 0.98; }
+h2 { font-weight: 800; font-size: clamp(1.9rem, 3.2vw, 2.7rem); letter-spacing: -0.03em; }
+h3 { font-weight: 700; font-size: 1.2rem; letter-spacing: -0.01em; line-height: 1.15; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+.mono { font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.01em; }
+.skip { position: absolute; left: -999px; top: 0; background: var(--ink); color: var(--paper); padding: 0.6rem 1rem; z-index: 10; }
+.skip:focus { left: var(--gutter); }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: 0.75rem 1.4rem; background: var(--cyan-deep); color: #FFFFFF; font-family: var(--display); font-weight: 700; font-size: 0.98rem; letter-spacing: 0.005em; text-decoration: none; white-space: nowrap; border: 1px solid var(--cyan-deep); cursor: pointer; transition: background 200ms var(--ease), border-color 200ms var(--ease), transform 120ms var(--ease); }
+.btn:hover { background: var(--cyan-press); border-color: var(--cyan-press); }
+.btn:active { transform: translateY(1px); }
+.btn.ink { background: var(--ink); border-color: var(--ink); }
+.btn.ink:hover { background: #2A2A2E; border-color: #2A2A2E; }
+.textlink { display: inline-flex; align-items: center; min-height: 3rem; padding: 0.75rem 0.1rem; font-family: var(--display); font-weight: 500; color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); transition: text-decoration-color 200ms var(--ease); }
+.textlink:hover { text-decoration-color: var(--ink); }
+
+/* The sheet: an eight-column ruled grid with registration marks */
+.page { padding: clamp(1.5rem, 3vw, 2.75rem) var(--gutter) clamp(2rem, 4vw, 3.5rem); }
+.sheet { position: relative; width: min(100%, 1240px); margin-inline: auto; border: 1px solid var(--ink); background-color: var(--paper); background-image: linear-gradient(to right, var(--rule) 1px, transparent 1px); background-size: calc(100% / 8) 100%; background-position: -1px 0; }
+.reg { position: absolute; width: 30px; height: 30px; color: var(--cyan); transition: transform 420ms var(--ease); pointer-events: none; }
+.reg.tl { top: -15px; left: -15px; }
+.reg.tr { top: -15px; right: -15px; }
+.reg.bl { bottom: -15px; left: -15px; }
+.reg.br { bottom: -15px; right: -15px; }
+.reg svg { display: block; width: 100%; height: 100%; }
+/* Motion moment: the four registration marks rotate a quarter turn when the quote button is hovered. */
+.page:has(.btn-quote:hover) .reg { transform: rotate(90deg); }
+@media (prefers-reduced-motion: reduce) { .reg { transition: none; } .page:has(.btn-quote:hover) .reg { transform: none; } }
+
+.row { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); border-top: 1px solid var(--ink); }
+.row:first-child { border-top: 0; }
+.cell { padding: var(--cell); min-width: 0; }
+
+/* Masthead */
+.mast { align-items: center; }
+.mast .brand { grid-column: 1 / 4; font-family: var(--display); font-weight: 800; font-size: 1.05rem; letter-spacing: -0.01em; text-decoration: none; text-transform: uppercase; line-height: 1.3; }
+.mast nav { grid-column: 4 / 7; display: flex; gap: clamp(0.8rem, 2vw, 1.6rem); flex-wrap: wrap; }
+.mast nav a { font-family: var(--display); font-weight: 500; font-size: 0.95rem; text-decoration: none; padding: 0.35rem 0; border-bottom: 1px solid transparent; transition: border-color 200ms var(--ease); }
+.mast nav a:hover { border-bottom-color: var(--ink); }
+.mast .mast-cta { grid-column: 7 / 9; display: flex; justify-content: flex-end; }
+
+/* Hero: headline block and the job ticket */
+.hero .lead { grid-column: 1 / 6; padding-block: clamp(2rem, 5vw, 4.5rem) clamp(1.6rem, 4vw, 3.5rem); display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; }
+.hero .lead p { max-width: 52ch; font-size: 1.15rem; line-height: 1.55; margin-top: 1.4rem; }
+.hero .actions { display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap; }
+.ticket { grid-column: 6 / 9; border-left: 1px solid var(--ink); padding: var(--cell); display: flex; flex-direction: column; gap: 1rem; }
+.ticket table { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 0.8rem; line-height: 1.4; }
+.ticket caption { text-align: left; font-family: var(--mono); font-size: 0.8rem; font-weight: 500; color: var(--cyan-deep); padding: 0 0 0.6rem; border-bottom: 1px solid var(--cyan); text-transform: uppercase; letter-spacing: 0.06em; }
+.ticket th, .ticket td { text-align: left; vertical-align: top; padding: 0.55rem 0; border-bottom: 1px solid var(--cyan); }
+.ticket th { font-weight: 400; color: var(--grey); width: 34%; padding-right: 0.6rem; }
+.ticket td { font-weight: 500; }
+.ticket .btn { align-self: flex-start; margin-top: 0.2rem; }
+
+/* Photo band */
+.band .fig { grid-column: 1 / 9; margin: 0; }
+.band img { width: 100%; aspect-ratio: 21 / 8; object-fit: cover; }
+.band figcaption, figcaption { font-family: var(--mono); font-size: 0.78rem; color: var(--grey); padding: 0.6rem var(--cell) 0.75rem; }
+
+/* Section heads */
+.head { grid-column: 1 / 9; padding: var(--cell); padding-top: clamp(1.4rem, 3vw, 2.4rem); }
+.head p { max-width: 58ch; margin-top: 0.75rem; color: var(--grey); }
+
+/* Products: three groups and a photograph */
+.group { border-left: 1px solid var(--rule); }
+.group:first-of-type { border-left: 0; }
+.group ul { margin-top: 0.8rem; }
+.group li { padding: 0.5rem 0; border-top: 1px solid var(--rule); line-height: 1.4; }
+.group li:last-child { border-bottom: 1px solid var(--rule); }
+.group .textlink { margin-top: 0.4rem; }
+.g1 { grid-column: 1 / 3; }
+.g2 { grid-column: 3 / 5; }
+.g3 { grid-column: 5 / 7; }
+.gphoto { grid-column: 7 / 9; margin: 0; padding: var(--cell); display: flex; flex-direction: column; }
+.gphoto img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.gphoto figcaption { padding-inline: 0; }
+
+/* Process rail */
+.rail { grid-column: 1 / 7; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.rail li { padding: var(--cell); border-left: 1px solid var(--rule); }
+.rail li:first-child { border-left: 0; }
+.rail .num { font-family: var(--mono); font-size: 2rem; font-weight: 500; line-height: 1; color: var(--cyan-deep); display: block; }
+.rail h3 { margin-top: 0.6rem; font-size: 1.05rem; }
+.rail p { font-size: 0.9rem; line-height: 1.42; margin-top: 0.4rem; color: var(--grey); }
+.railphoto { grid-column: 7 / 9; grid-row: span 2; margin: 0; padding: var(--cell); border-left: 1px solid var(--rule); }
+.railphoto img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.railphoto figcaption { padding-inline: 0; }
+.notes { grid-column: 1 / 7; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-top: 1px solid var(--rule); }
+.note { grid-column: span 2; padding: var(--cell); border-left: 1px solid var(--rule); }
+.note:first-child { border-left: 0; }
+.note h3 { font-size: 1.05rem; }
+.note p { margin-top: 0.4rem; font-size: 0.98rem; line-height: 1.5; }
+.note .mono { display: block; margin-top: 0.4rem; color: var(--ink); font-weight: 500; }
+
+/* Story */
+.story .col { padding: var(--cell); }
+.story .c1 { grid-column: 1 / 4; }
+.story .c2 { grid-column: 4 / 7; border-left: 1px solid var(--rule); }
+.story p + p { margin-top: 1rem; }
+.story .sig { grid-column: 1 / 7; padding: 0 var(--cell) var(--cell); }
+.story .sig p { font-family: var(--display); font-weight: 700; font-size: 1.25rem; line-height: 1.32; max-width: 40ch; }
+.story .sig em { font-style: normal; color: var(--cyan-deep); }
+.storyphoto { grid-column: 7 / 9; grid-row: 1 / 3; margin: 0; padding: var(--cell); border-left: 1px solid var(--rule); }
+.storyphoto img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; }
+.storyphoto figcaption { padding-inline: 0; }
+
+/* Quote form */
+.quote form { grid-column: 1 / 6; padding: var(--cell); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.2rem; }
+.field { display: flex; flex-direction: column; gap: 0.35rem; }
+.field.wide { grid-column: 1 / 3; }
+label { font-family: var(--display); font-weight: 500; font-size: 0.9rem; }
+input, select, textarea { width: 100%; font: inherit; font-size: 1rem; color: var(--ink); background: #FFFFFF; border: 1px solid var(--ink); padding: 0.7rem 0.8rem; border-radius: 0; }
+input[type="file"] { padding: 0.55rem 0.8rem; font-family: var(--mono); font-size: 0.8rem; }
+select { appearance: none; -webkit-appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%), linear-gradient(135deg, var(--ink) 50%, transparent 50%); background-position: calc(100% - 18px) 55%, calc(100% - 12px) 55%; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 2.2rem; }
+textarea { min-height: 7rem; resize: vertical; }
+.hint { font-family: var(--mono); font-size: 0.76rem; color: var(--grey); }
+.quote .submit { grid-column: 1 / 3; display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap; margin-top: 0.4rem; }
+.counter { grid-column: 6 / 9; padding: var(--cell); border-left: 1px solid var(--ink); display: flex; flex-direction: column; gap: 1.4rem; }
+.counter h3 { font-size: 1.15rem; }
+.counter address { font-style: normal; line-height: 1.55; margin-top: 0.5rem; }
+.counter a { text-decoration-color: var(--rule); }
+.counter a:hover { text-decoration-color: var(--ink); }
+.counter .big { font-family: var(--display); font-weight: 800; font-size: clamp(1.5rem, 2.4vw, 2rem); letter-spacing: -0.02em; text-decoration: none; display: inline-block; margin-top: 0.3rem; }
+
+/* Footer */
+.foot { align-items: start; }
+.foot .fbrand { grid-column: 1 / 3; }
+.foot .fbrand .brand { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1rem; line-height: 1.15; }
+.foot .fbrand p { color: var(--grey); font-size: 0.95rem; margin-top: 0.4rem; }
+.foot .fcol { grid-column: span 2; border-left: 1px solid var(--rule); }
+.foot .fcol h3 { font-size: 0.95rem; }
+.foot .fcol ul { margin-top: 0.5rem; }
+.foot .fcol li { padding: 0.15rem 0; font-size: 0.98rem; }
+.foot .fcol a { text-decoration-color: var(--rule); }
+.foot .fcol a:hover { text-decoration-color: var(--ink); }
+.foot .fcol.pages { grid-column: 7 / 9; }
+.disclosure { grid-column: 1 / 9; padding: var(--cell); border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 0.76rem; color: var(--grey); line-height: 1.5; }
+
+/* Mobile: four hairlines, everything stacks, the rail becomes a list */
+@media (max-width: 900px) {
+  .sheet { background-size: 25% 100%; }
+  .row { grid-template-columns: 1fr; }
+  .mast .brand, .mast nav, .mast .mast-cta { grid-column: 1; }
+  .mast nav { margin-top: 0.4rem; }
+  .mast .mast-cta { justify-content: flex-start; margin-top: 0.8rem; }
+  .hero .lead { grid-column: 1; padding: var(--cell); padding-top: clamp(1.6rem, 6vw, 2.8rem); }
+  .ticket { grid-column: 1; border-left: 0; border-top: 1px solid var(--ink); }
+  .band .fig, .head { grid-column: 1; }
+  .g1, .g2, .g3, .gphoto { grid-column: 1; }
+  .group { border-left: 0; border-top: 1px solid var(--rule); }
+  .group:first-of-type { border-top: 0; }
+  .gphoto { border-top: 1px solid var(--rule); }
+  .rail { grid-column: 1; grid-template-columns: 1fr; }
+  .rail li { border-left: 0; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 3rem 1fr; column-gap: 0.6rem; align-items: start; }
+  .rail li:first-child { border-top: 0; }
+  .rail .num { font-size: 1.4rem; grid-row: 1 / 3; }
+  .rail h3 { margin-top: 0.15rem; }
+  .rail p { grid-column: 2; }
+  .railphoto { grid-column: 1; grid-row: auto; border-left: 0; border-top: 1px solid var(--rule); }
+  .notes { grid-column: 1; grid-template-columns: 1fr; }
+  .note { grid-column: 1; border-left: 0; border-top: 1px solid var(--rule); }
+  .note:first-child { border-top: 0; }
+  .story .c1, .story .c2, .story .sig, .storyphoto { grid-column: 1; grid-row: auto; border-left: 0; }
+  .story .c2 { padding-top: 0; }
+  .storyphoto { border-top: 1px solid var(--rule); }
+  .quote form { grid-column: 1; grid-template-columns: 1fr; }
+  .field.wide, .quote .submit { grid-column: 1; }
+  .counter { grid-column: 1; border-left: 0; border-top: 1px solid var(--ink); }
+  .foot .fbrand, .foot .fcol, .foot .fcol.pages { grid-column: 1; border-left: 0; }
+  .foot .fcol { border-top: 1px solid var(--rule); }
+  .disclosure { grid-column: 1; }
+}
+@media (max-width: 480px) {
+  h1 { font-size: 2.35rem; }
+  .hero .actions .textlink { padding-left: 0; }
+  .btn { width: 100%; }
+  .ticket .btn { width: auto; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#products">Skip to what we print</a>
+<div class="page">
+  <div class="sheet">
+    <span class="reg tl" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1"><circle cx="15" cy="15" r="7"/><line x1="15" y1="0" x2="15" y2="30"/><line x1="0" y1="15" x2="30" y2="15"/></svg></span>
+    <span class="reg tr" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1"><circle cx="15" cy="15" r="7"/><line x1="15" y1="0" x2="15" y2="30"/><line x1="0" y1="15" x2="30" y2="15"/></svg></span>
+    <span class="reg bl" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1"><circle cx="15" cy="15" r="7"/><line x1="15" y1="0" x2="15" y2="30"/><line x1="0" y1="15" x2="30" y2="15"/></svg></span>
+    <span class="reg br" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1"><circle cx="15" cy="15" r="7"/><line x1="15" y1="0" x2="15" y2="30"/><line x1="0" y1="15" x2="30" y2="15"/></svg></span>
+
+    <header class="row mast">
+      <a class="brand cell" href="#top">Nokesville Printing Solutions</a>
+      <nav class="cell" aria-label="Sections">
+        <a href="#products">What we print</a>
+        <a href="#process">Turnaround</a>
+        <a href="#story">Story</a>
+      </nav>
+      <div class="mast-cta cell"><a class="btn btn-quote" href="#quote">Request a quote</a></div>
+    </header>
+
+    <section class="row hero" id="top" aria-labelledby="hero-title">
+      <div class="lead cell">
+        <div>
+          <h1 id="hero-title">Nokesville's print shop, across from the Post Office.</h1>
+          <p>Business cards, booklets, forms, signs and custom jobs, designed and printed in house on Fitzwater Drive since 2018. Most jobs are ready in 24 to 48 hours, and delivery to businesses within 45 minutes of the shop is free.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-quote" href="#quote">Request a quote</a>
+          <a class="textlink" href="tel:+17035942000">Call (703) 594-2000</a>
+        </div>
+      </div>
+      <aside class="ticket" aria-label="Job ticket">
+        <table>
+          <caption>Job ticket, already filled in</caption>
+          <tbody>
+            <tr><th scope="row">Turnaround</th><td>24 to 48 hours on most jobs</td></tr>
+            <tr><th scope="row">Larger jobs</th><td>3 to 5 business days</td></tr>
+            <tr><th scope="row">Rush</th><td>Same day or next day, ask first</td></tr>
+            <tr><th scope="row">Delivery</th><td>Free to businesses within 45 minutes</td></tr>
+            <tr><th scope="row">Design</th><td>In house</td></tr>
+            <tr><th scope="row">Files</th><td>PDF, AI, EPS, PSD, JPG, PNG, TIFF</td></tr>
+            <tr><th scope="row">Bulk</th><td>Discounts on large orders</td></tr>
+            <tr><th scope="row">Counter</th><td>12914 Fitzwater Dr, Unit C, Nokesville</td></tr>
+          </tbody>
+        </table>
+        <a class="btn btn-quote" href="#quote">Send the job</a>
+      </aside>
+    </section>
+
+    <section class="row band" aria-label="The press">
+      <figure class="fig">
+        <!-- generated illustrative imagery -->
+        <img src="images/press.png" width="1536" height="1024" alt="A wide sheet of plain white card coming off a digital production press in a small print shop, with stacks of paper on a steel cart beside it." loading="eager">
+        <figcaption>Printed here, on the shop's own press, not sent out of state.</figcaption>
+      </figure>
+    </section>
+
+    <section class="row products" id="products" aria-labelledby="products-title">
+      <div class="head">
+        <h2 id="products-title">What we print</h2>
+        <p>Eleven things the shop prints every week, in three groups. If the job is not on the list, it goes under custom projects, and the designer will talk it through.</p>
+      </div>
+    </section>
+    <div class="row" aria-label="Product groups">
+      <div class="group g1 cell">
+        <h3>Cards and stationery</h3>
+        <ul>
+          <li>Business cards</li>
+          <li>Greeting cards</li>
+          <li>Business envelopes</li>
+          <li>Engravings and promotional products</li>
+        </ul>
+        <a class="textlink" href="#quote">Quote a card job</a>
+      </div>
+      <div class="group g2 cell">
+        <h3>Booklets and forms</h3>
+        <ul>
+          <li>Saddle-stitch pamphlets and booklets</li>
+          <li>Journals and magazines</li>
+          <li>Spiral or padded job forms</li>
+          <li>Carbon-copy tickets and forms</li>
+        </ul>
+        <a class="textlink" href="#quote">Quote a booklet or form</a>
+      </div>
+      <div class="group g3 cell">
+        <h3>Signs and custom work</h3>
+        <ul>
+          <li>Aluminum realty signs</li>
+          <li>Door hangers</li>
+          <li>Custom projects</li>
+        </ul>
+        <a class="textlink" href="#quote">Quote a sign or custom job</a>
+      </div>
+      <figure class="gphoto">
+        <!-- generated illustrative imagery -->
+        <img src="images/cards.png" width="1024" height="1024" alt="A fanned stack of thick blank white business cards with a blind-debossed border on a green cutting mat beside a steel ruler." loading="lazy">
+        <figcaption>Thick stock, blind deboss, trimmed on the cutter.</figcaption>
+      </figure>
+    </div>
+
+    <section class="row process" id="process" aria-labelledby="process-title">
+      <div class="head">
+        <h2 id="process-title">How a job moves through the shop</h2>
+        <p>Six steps, in the order they happen. Most jobs clear all six in 24 to 48 hours.</p>
+      </div>
+    </section>
+    <div class="row" aria-label="Process and notes">
+      <ol class="rail">
+        <li><span class="num">1</span><h3>Order</h3><p>Send the file, or tell the counter the job and the quantity.</p></li>
+        <li><span class="num">2</span><h3>Design</h3><p>The in-house designer sets it up, or builds it from scratch.</p></li>
+        <li><span class="num">3</span><h3>Proof</h3><p>You see it before it prints, and nothing runs until you say so.</p></li>
+        <li><span class="num">4</span><h3>Print</h3><p>On the shop's own press, on the stock you picked.</p></li>
+        <li><span class="num">5</span><h3>Finish</h3><p>Cutting, folding, stitching or laminating, as the job needs.</p></li>
+        <li><span class="num">6</span><h3>Deliver</h3><p>Pick it up at the counter, or the van brings it, free within 45 minutes.</p></li>
+      </ol>
+      <figure class="railphoto">
+        <!-- generated illustrative imagery -->
+        <img src="images/booklet.png" width="1024" height="1024" alt="A saddle-stitched booklet with blank pages lying open at the centre staples, with a bone folder and a stack of folded pages beside it." loading="lazy">
+        <figcaption>Saddle-stitched, folded and squared by hand.</figcaption>
+      </figure>
+      <div class="notes">
+        <div class="note">
+          <h3>Files</h3>
+          <p>A high-resolution PDF with the fonts embedded works best. The shop also takes AI, EPS, PSD, JPG, PNG and TIFF.</p>
+        </div>
+        <div class="note">
+          <h3>Turnaround</h3>
+          <p>24 to 48 hours for most jobs, 3 to 5 business days for larger ones. Same-day and next-day rush options are available, so ask when you order.</p>
+        </div>
+        <div class="note">
+          <h3>Bulk orders</h3>
+          <p>Large quantities are priced lower per piece. Send the quantity with the quote request and the counter will price it.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="row story" id="story" aria-labelledby="story-title">
+      <div class="head">
+        <h2 id="story-title">Three generations in Nokesville</h2>
+      </div>
+    </section>
+    <div class="row story" aria-label="The family story">
+      <div class="col c1">
+        <p>George Reaves Sr. ran an appliance and electronics store in Nokesville in the 1950s and 60s, and later the Brentsville Superette, a little country store on the family's land just outside town. His son, George Reaves Jr., spent forty years in the paper supply business before buying Nokesville Print and Copy in 2018, on Main Street, across from the Post Office.</p>
+      </div>
+      <div class="col c2">
+        <p>After George Jr.'s death, his daughter Shelly reopened the shop as Nokesville Printing Solutions LLC to finish the expansion he had planned. She bought the Century Press of Manassas book of business and brought its owner, with thirty-five years at the press, into the shop.</p>
+        <p>It is the third print shop on Main Street in twenty years, and the neighbours like having one in town.</p>
+      </div>
+      <div class="sig">
+        <p>A father's plan, a daughter's shop, <em>and a printer with thirty-five years of ink on his hands.</em></p>
+      </div>
+      <figure class="storyphoto">
+        <!-- generated illustrative imagery -->
+        <img src="images/paper.png" width="1024" height="1536" alt="Stacked reams and fanned swatch books of coated and uncoated paper on a wooden work table, one ream wrapped in plain brown kraft, by a window." loading="lazy">
+        <figcaption>Forty years in paper, and the shop still chooses the stock by hand.</figcaption>
+      </figure>
+    </div>
+
+    <section class="row quote" id="quote" aria-labelledby="quote-title">
+      <div class="head">
+        <h2 id="quote-title">Quote a job</h2>
+        <p>Attach the file, say how many and when you need it, and the counter will reply with a price. No account, no portal.</p>
+      </div>
+    </section>
+    <div class="row quote" aria-label="Quote request">
+      <form action="mailto:print@nokesprinting.com" method="post" enctype="text/plain">
+        <div class="field">
+          <label for="q-name">Your name</label>
+          <input id="q-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="q-company">Business or organisation</label>
+          <input id="q-company" name="company" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="q-email">Email</label>
+          <input id="q-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="q-phone">Phone</label>
+          <input id="q-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="q-job">What is the job</label>
+          <select id="q-job" name="job" required>
+            <option value="">Choose one</option>
+            <option>Business cards</option>
+            <option>Greeting cards</option>
+            <option>Envelopes</option>
+            <option>Booklet or pamphlet</option>
+            <option>Journal or magazine</option>
+            <option>Forms or carbon-copy tickets</option>
+            <option>Door hangers</option>
+            <option>Realty signs</option>
+            <option>Engraving or promotional products</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="q-qty">Quantity</label>
+          <input id="q-qty" name="quantity" type="number" min="1" inputmode="numeric" placeholder="500">
+        </div>
+        <div class="field">
+          <label for="q-date">Needed by</label>
+          <input id="q-date" name="needed_by" type="date">
+        </div>
+        <div class="field">
+          <label for="q-file">Your file</label>
+          <input id="q-file" name="file" type="file" accept=".pdf,.ai,.eps,.psd,.jpg,.jpeg,.png,.tif,.tiff">
+          <span class="hint">PDF with fonts embedded works best</span>
+        </div>
+        <div class="field wide">
+          <label for="q-notes">Anything the counter should know</label>
+          <textarea id="q-notes" name="notes" placeholder="Stock, size, colour, folding, or a job you have had printed before."></textarea>
+        </div>
+        <div class="submit">
+          <button class="btn btn-quote" type="submit">Send the job</button>
+          <span class="hint">The counter replies by email or phone, usually the same business day.</span>
+        </div>
+      </form>
+      <aside class="counter" aria-label="Bring it to the counter">
+        <div>
+          <h3>Or bring it to the counter</h3>
+          <address>
+            12914 Fitzwater Dr, Unit C<br>
+            Nokesville, VA 20181<br>
+            Across from the Post Office
+          </address>
+          <a class="textlink" href="https://www.google.com/maps/search/?api=1&query=12914+Fitzwater+Dr+Unit+C+Nokesville+VA+20181" rel="noopener">Directions</a>
+        </div>
+        <div>
+          <h3>Call the shop</h3>
+          <a class="big" href="tel:+17035942000">(703) 594-2000</a>
+        </div>
+        <div>
+          <h3>Email the file</h3>
+          <a href="mailto:print@nokesprinting.com">print@nokesprinting.com</a>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="row foot">
+      <div class="fbrand cell">
+        <p class="brand">Nokesville Printing Solutions</p>
+        <p>Family owned. Printed in Nokesville, Virginia.</p>
+      </div>
+      <div class="fcol cell">
+        <h3>Shop</h3>
+        <ul>
+          <li>12914 Fitzwater Dr, Unit C</li>
+          <li>Nokesville, VA 20181</li>
+        </ul>
+      </div>
+      <div class="fcol cell">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+17035942000">(703) 594-2000</a></li>
+          <li><a href="mailto:print@nokesprinting.com">print@nokesprinting.com</a></li>
+        </ul>
+      </div>
+      <div class="fcol pages cell">
+        <h3>Page</h3>
+        <ul>
+          <li><a href="#products">What we print</a></li>
+          <li><a href="#process">Turnaround</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#quote">Quote</a></li>
+        </ul>
+      </div>
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Nokesville Printing Solutions' own shop, press and work.</p>
+    </footer>
+  </div>
+</div>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Nokesville Printing Solutions, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
