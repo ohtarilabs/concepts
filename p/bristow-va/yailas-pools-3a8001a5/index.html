@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yailas Pools - Pool renovation, construction and service in Northern Virginia</title>
+<meta name="description" content="Family-run pool company in Haymarket. Complete renovations, new pool construction, and weekly service across Northern Virginia. Ask for an estimate: (571) 353-9297.">
+<style>
+/* ---------------------------------------------------------------
+   Yailas Pools LLC - concept comp
+   Type: Epilogue (display) / Be Vietnam Pro (body) / Azeret Mono (measures)
+   The category runs deep navy plus pool blue on every site in it. This
+   goes greener and deeper, and stays quiet so the water in the photographs
+   is the most saturated thing on the page.
+----------------------------------------------------------------- */
+
+@font-face{font-family:"Epilogue";src:url("fonts/epilogue-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Epilogue";src:url("fonts/epilogue-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Be Vietnam Pro";src:url("fonts/bevietnam-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Be Vietnam Pro";src:url("fonts/bevietnam-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Be Vietnam Pro";src:url("fonts/bevietnam-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Azeret Mono";src:url("fonts/azeret-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Azeret Mono";src:url("fonts/azeret-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  --deck:#E7EEEF;
+  --ink:#0F1E22;
+  --water:#0E6B72;
+  --slate:#4E5F63;
+  --white:#FFFFFF;
+  --rule:#C6D2D4;
+  --display:"Epilogue",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:"Be Vietnam Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --data:"Azeret Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --gutter:clamp(1.25rem,4vw,3.5rem);
+  --band:clamp(3.5rem,6vw,5.5rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--deck);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:1.25rem;
+  line-height:1.6;
+}
+
+/* Browser surfaces themed from the palette. */
+::selection{background:var(--water);color:var(--white)}
+:focus-visible{outline:3px solid var(--water);outline-offset:3px}
+html{scrollbar-color:var(--slate) var(--deck)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--deck)}
+::-webkit-scrollbar-thumb{background:var(--slate);border:3px solid var(--deck);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:var(--ink)}
+a{color:inherit;text-underline-offset:0.22em;text-decoration-thickness:1px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-0.028em;line-height:1.06;margin:0;text-wrap:balance}
+p{margin:0}
+
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* ---------- masthead --------------------------------------------- */
+.masthead{background:var(--white);border-bottom:1px solid var(--rule)}
+.masthead .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.9rem 2rem;padding-block:1.15rem}
+.mark{font-family:var(--display);font-weight:700;font-size:1.5625rem;letter-spacing:-0.042em;text-decoration:none;line-height:1.05}
+.mark span{display:block;font-family:var(--data);font-size:0.8rem;color:var(--slate);letter-spacing:-0.01em;margin-top:0.3rem}
+.nav{display:flex;gap:clamp(0.9rem,2.2vw,1.9rem);font-family:var(--display);font-weight:600;font-size:1rem}
+.nav a{text-decoration:none;padding-block:0.2rem;border-bottom:2px solid transparent;transition:border-color 170ms ease}
+.nav a:hover{border-color:var(--water)}
+
+/* ---------- the pair: the signature ------------------------------ */
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative}
+.pair figure{margin:0;position:relative;overflow:hidden}
+.pair img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;transition:transform 420ms cubic-bezier(.22,1,.36,1)}
+.pair .side{
+  position:absolute;left:0;bottom:0;
+  font-family:var(--data);font-size:0.8rem;
+  background:var(--ink);color:var(--deck);
+  padding:0.5rem 0.9rem;
+}
+.pair .after-side{background:var(--water);color:var(--white)}
+/* the seam thickens and the after side lifts, so the two read as one comparison */
+.pair::after{
+  content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;
+  background:var(--deck);transform:translateX(-50%);
+  transition:width 420ms cubic-bezier(.22,1,.36,1);z-index:2;
+}
+.pair:hover::after,.pair:focus-within::after{width:8px}
+.pair:hover .after-fig img,.pair:focus-within .after-fig img{transform:scale(1.03)}
+
+.pair-under{padding-block:clamp(1.9rem,3.5vw,3rem) var(--band)}
+.pair-under h1{font-size:clamp(2.1rem,4.6vw,3.5rem);max-width:20ch}
+.pair-under h1 em{font-style:italic;font-family:var(--body);font-weight:400;letter-spacing:-0.005em;padding-bottom:0.05em;display:inline-block}
+.pair-under .lede{margin-top:1.2rem;max-width:54ch;color:var(--slate)}
+.pair-actions{display:flex;flex-wrap:wrap;gap:0.9rem 1.8rem;align-items:center;margin-top:1.9rem}
+.btn{
+  display:inline-block;background:var(--water);color:var(--white);
+  font-family:var(--display);font-weight:700;font-size:1rem;
+  text-decoration:none;padding:0.9rem 1.7rem;border:0;border-radius:2px;
+  transition:background 160ms ease,transform 160ms ease;
+}
+.btn:hover{background:#0A5057;transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.pair-actions span{font-family:var(--data);font-size:1rem;color:var(--slate)}
+.pair-note{font-family:var(--data);font-size:0.8rem;color:var(--slate);margin-top:1.5rem;max-width:66ch;line-height:1.7}
+
+/* ---------- three doors, three sizes ------------------------------ */
+.doors{border-top:1px solid var(--rule);padding-block:var(--band)}
+.doors h2{font-size:clamp(1.9rem,3.8vw,2.9rem);max-width:16ch}
+.doors .lede{margin-top:1.1rem;max-width:52ch;color:var(--slate)}
+.door-grid{margin-top:clamp(2rem,3.5vw,2.9rem);display:grid;grid-template-columns:1.5fr 1.15fr 0.85fr;gap:clamp(1.2rem,2.4vw,2rem);align-items:stretch}
+.door{background:var(--white);border:1px solid var(--rule);padding:clamp(1.3rem,2.4vw,1.9rem);display:flex;flex-direction:column}
+.door--big{border:2px solid var(--water)}
+.door em{font-family:var(--data);font-style:normal;font-size:0.8rem;color:var(--water);display:block;margin-bottom:0.8rem}
+.door h3{font-family:var(--display);font-weight:700;letter-spacing:-0.026em}
+.door--big h3{font-size:clamp(1.5625rem,2.6vw,2rem)}
+.door--mid h3{font-size:1.5625rem}
+.door--small h3{font-size:1.25rem}
+.door p{margin-top:0.8rem;font-size:1rem;color:var(--slate)}
+.door a{margin-top:auto;padding-top:1.3rem;font-family:var(--display);font-weight:600;font-size:1rem;text-decoration:none;color:var(--water);border-bottom:0}
+.door a:hover{text-decoration:underline}
+
+/* ---------- renovation scope --------------------------------------- */
+.scope{border-top:1px solid var(--rule);padding-block:var(--band)}
+.scope-grid{display:grid;grid-template-columns:1.25fr 0.75fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:start}
+.scope h2{font-size:clamp(1.9rem,3.8vw,2.9rem);max-width:18ch}
+.scope .lede{margin-top:1.1rem;max-width:50ch;color:var(--slate)}
+.steps{list-style:none;margin:1.9rem 0 0;padding:0}
+.step{display:grid;grid-template-columns:auto 1fr;gap:0 1.4rem;padding-block:1rem;border-top:1px solid var(--rule);align-items:baseline}
+.step:last-child{border-bottom:1px solid var(--rule)}
+.step b{font-family:var(--data);font-size:0.8rem;color:var(--water);font-weight:500;white-space:nowrap}
+.step h3{font-family:var(--display);font-weight:600;font-size:1.25rem;letter-spacing:-0.02em}
+.step p{grid-column:2;margin-top:0.35rem;font-size:1rem;color:var(--slate);max-width:46ch}
+.scope figure{margin:0}
+.scope img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px}
+
+/* ---------- the cost question --------------------------------------- */
+.cost{background:var(--water);color:var(--white);border-block:1px solid var(--rule)}
+.cost .wrap{padding-block:var(--band);display:grid;grid-template-columns:1.1fr 0.9fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:center}
+.cost h2{font-size:clamp(1.9rem,4vw,3rem);max-width:14ch;color:var(--white)}
+.cost p{margin-top:1.3rem;max-width:50ch;color:#CFE6E8}
+.cost ul{list-style:none;margin:1.7rem 0 0;padding:0;font-family:var(--data);font-size:1rem}
+.cost li{padding-block:0.7rem;border-bottom:1px solid rgba(255,255,255,0.28);color:#CFE6E8}
+.cost li:last-child{border-bottom:0}
+.cost .btn{background:var(--white);color:var(--water);margin-top:2rem}
+.cost .btn:hover{background:#F2FAFA}
+
+/* ---------- coverage and estimate ------------------------------------ */
+.reach{padding-block:var(--band)}
+.reach-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:start}
+.reach h2{font-size:clamp(1.9rem,3.8vw,2.9rem);max-width:14ch}
+.reach p{margin-top:1.2rem;max-width:44ch;color:var(--slate)}
+.towns{display:flex;flex-wrap:wrap;gap:0.5rem 0.55rem;margin-top:1.6rem}
+.town{font-family:var(--data);font-size:1rem;border:1px solid var(--rule);background:var(--white);padding:0.45rem 0.85rem;border-radius:2px}
+.town.base{border-color:var(--water);color:var(--water)}
+.marked{font-family:var(--data);font-size:0.8rem;color:var(--slate);margin-top:1.4rem;padding-top:1rem;border-top:1px solid var(--rule);max-width:56ch;line-height:1.7}
+.reach img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px}
+.reach figure{margin:0}
+.contact-facts{margin-top:1.7rem;font-family:var(--data);font-size:1rem}
+.contact-facts div{display:flex;justify-content:space-between;gap:1.5rem;padding-block:0.75rem;border-bottom:1px solid var(--rule)}
+.contact-facts div:last-child{border-bottom:0}
+.contact-facts span:last-child{color:var(--slate)}
+
+/* ---------- footer ------------------------------------------------------ */
+footer{border-top:1px solid var(--rule);padding-block:2.3rem 3rem;font-size:1rem;background:var(--white)}
+.foot-top{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;align-items:baseline}
+.disclosure{margin-top:1.8rem;font-family:var(--data);font-size:0.8rem;color:var(--slate);max-width:86ch;line-height:1.75}
+
+/* ---------- responsive --------------------------------------------------- */
+@media (max-width:980px){
+  .door-grid{grid-template-columns:1fr}
+  .scope-grid,.cost .wrap,.reach-grid{grid-template-columns:1fr}
+  .scope figure,.reach figure{order:-1}
+}
+@media (max-width:640px){
+  .pair{grid-template-columns:1fr}
+  .pair::after{display:none}
+  .btn{width:100%;text-align:center}
+  .step{grid-template-columns:1fr}
+  .step p{grid-column:1}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms !important}
+  .pair:hover::after,.pair:focus-within::after{width:3px}
+  .pair:hover .after-fig img,.pair:focus-within .after-fig img{transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="#top">Yailas Pools<span>HAYMARKET, VA &middot; SERVING NORTHERN VIRGINIA &middot; (571) 353-9297</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#doors">What we do</a>
+      <a href="#scope">Renovations</a>
+      <a href="#cost">What it costs</a>
+      <a href="#reach">Estimate</a>
+    </nav>
+  </div>
+</header>
+
+<div class="pair" id="top" tabindex="0">
+  <figure>
+    <!-- generated illustrative imagery -->
+    <img src="images/before.png" alt="A tired in-ground pool with green water, stained plaster at the waterline and a cracked concrete deck, behind a brick house.">
+    <span class="side">BEFORE</span>
+  </figure>
+  <figure class="after-fig">
+    <!-- generated illustrative imagery -->
+    <img src="images/after.png" alt="The same pool after renovation: clear blue water, new plaster and waterline tile, new stone coping and a paver deck.">
+    <span class="side after-side">AFTER</span>
+  </figure>
+</div>
+
+<main class="wrap pair-under">
+  <h1>Same hole in the ground. <em>Everything else is new.</em></h1>
+  <p class="lede">We are a family-run pool company in Haymarket. We clean pools, we open and close
+    them, and we rebuild the ones that have stopped being worth swimming in. Resurfacing, tile,
+    coping, decks, plumbing and equipment.</p>
+  <div class="pair-actions">
+    <a class="btn" href="#reach">Ask for an estimate</a>
+    <span>Or call (571) 353-9297</span>
+  </div>
+  <p class="pair-note">The pair above is illustrative art direction, not a project of ours. On the
+    live site this is where your own before and after photographs would go, and they would be worth
+    more than anything written on this page.</p>
+</main>
+
+<section class="wrap doors" id="doors">
+  <h2>Three very different jobs</h2>
+  <p class="lede">They are not the same conversation, so they should not be the same button.</p>
+  <div class="door-grid">
+    <article class="door door--big">
+      <em>the twelve month one</em>
+      <h3>A new pool</h3>
+      <p>From the first conversation about where it goes to the first swim. Design, excavation,
+        plumbing, equipment, decking and finish.</p>
+      <a href="#reach">Start a new pool estimate</a>
+    </article>
+    <article class="door door--mid">
+      <em>the one most people need</em>
+      <h3>A renovation</h3>
+      <p>Your pool is fine. Its surface, tile, coping and deck are twenty years old. This is the job
+        we do most and the one with the biggest difference at the end.</p>
+      <a href="#scope">See what is involved</a>
+    </article>
+    <article class="door door--small">
+      <em>every week</em>
+      <h3>Service</h3>
+      <p>Cleaning, chemistry, openings, closings, covers, heaters and equipment repairs.</p>
+      <a href="#reach">Get on the schedule</a>
+    </article>
+  </div>
+</section>
+
+<section class="wrap scope" id="scope">
+  <div class="scope-grid">
+    <div>
+      <h2>What a renovation actually involves</h2>
+      <p class="lede">People are usually surprised that the pool itself stays. The shell is the
+        expensive part and it is almost always fine. Everything you can see is what gets replaced.</p>
+      <ul class="steps">
+        <li class="step">
+          <b>01</b><h3>Drain and strip</h3>
+          <p>Old plaster comes off, old tile comes off, and we find out what the shell is really
+            like underneath. Anything structural gets discussed before it gets fixed.</p>
+        </li>
+        <li class="step">
+          <b>02</b><h3>Plumbing and equipment</h3>
+          <p>The right moment to deal with lines, returns, the pump and the heater, because the
+            water is out and the deck is open.</p>
+        </li>
+        <li class="step">
+          <b>03</b><h3>Tile and coping</h3>
+          <p>New waterline tile and new coping stones. This is the part everybody's eye actually
+            lands on.</p>
+        </li>
+        <li class="step">
+          <b>04</b><h3>Surface</h3>
+          <p>New plaster or an aggregate finish. This is what makes the water look the colour it
+            looks.</p>
+        </li>
+        <li class="step">
+          <b>05</b><h3>Deck</h3>
+          <p>Pavers, stone or a resurfaced slab. Often the difference between a repaired pool and a
+            new garden.</p>
+        </li>
+      </ul>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/tile.png" alt="A gloved hand setting a sheet of blue-green glass mosaic waterline tile onto combed white thinset at a pool's waterline.">
+    </figure>
+  </div>
+</section>
+
+<section class="cost" id="cost">
+  <div class="wrap">
+    <div>
+      <h2>What does it cost?</h2>
+      <p>Most companies in this trade will not answer that until they are standing in your garden.
+        We would rather tell you what actually drives the number, so you can work out roughly where
+        you sit before you ring anybody.</p>
+      <a class="btn" href="#reach">Ask for an estimate</a>
+    </div>
+    <ul>
+      <li>The size of the pool, and its shape</li>
+      <li>Whether the deck is being replaced or kept</li>
+      <li>Plaster, or an aggregate finish</li>
+      <li>How much tile, and which tile</li>
+      <li>Whether the plumbing and equipment come with it</li>
+      <li>What we find once the old surface is off</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap reach" id="reach">
+  <div class="reach-grid">
+    <div>
+      <h2>Where we go</h2>
+      <p>We are based in Haymarket, so that is the middle of it. Send a couple of photographs of
+        the pool and roughly how old it is, and we will tell you honestly whether it is a
+        renovation or a repair.</p>
+      <div class="towns">
+        <span class="town base">Haymarket</span>
+        <span class="town">Gainesville</span>
+        <span class="town">Bristow</span>
+        <span class="town">Nokesville</span>
+        <span class="town">Manassas</span>
+        <span class="town">Warrenton</span>
+        <span class="town">The Plains</span>
+      </div>
+      <p class="marked">Sample coverage list, shown to demonstrate the section. Yailas sets the real
+        radius, and the live site would carry their own.</p>
+      <div class="contact-facts">
+        <div><span>Phone</span><span><a href="tel:+15713539297">(571) 353-9297</a></span></div>
+        <div><span>Email</span><span><a href="mailto:yailaspools@gmail.com">yailaspools@gmail.com</a></span></div>
+        <div><span>Based</span><span>Haymarket, VA 20169</span></div>
+      </div>
+      <div class="pair-actions">
+        <a class="btn" href="tel:+15713539297">Call (571) 353-9297</a>
+      </div>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/deck.png" alt="The edge of a finished pool: cut-stone coping meeting a band of blue-green glass tile and clear still water, with a paver deck beyond.">
+    </figure>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span><strong>Yailas Pools LLC</strong> &middot; Haymarket, VA &middot; Serving Northern Virginia</span>
+      <span><a href="tel:+15713539297">(571) 353-9297</a> &middot; <a href="mailto:yailaspools@gmail.com">yailaspools@gmail.com</a></span>
+    </div>
+    <p class="disclosure">This is an unsolicited concept page prepared by Ohtari Labs to show what a
+      website for Yailas Pools could look like. It is not affiliated with or authorised by the
+      company. Photography shown is illustrative art direction generated for this concept; the
+      before and after pair does not depict a Yailas project, a real client's property or real work
+      performed, and no faces are shown. The trade, the Haymarket base, the phone number, the email
+      and the service categories are taken from the company's own published website. This page
+      states no prices, no timelines, no warranty terms, no licence or insurance claims, no review
+      ratings and no number of years in business, because those are either unpublished or, in the
+      case of the years, given inconsistently on the company's own site. The coverage list is a
+      marked sample rather than a stated service area.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Yailas Pools LLC, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
