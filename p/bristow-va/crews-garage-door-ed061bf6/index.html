@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crews Garage Door Company - Nokesville and Manassas, Virginia - Since 1958</title>
+<meta name="description" content="Residential and commercial garage doors, sales, installation, repair and service across Northern Virginia. Clopay and Amarr dealer. Making doors work since 1958. Call 703-330-8225.">
+<style>
+/* ---------------------------------------------------------------
+   Crews Garage Door Company - concept comp
+   Type: Big Shoulders Display / Public Sans / IBM Plex Mono
+   Warm concrete ground, true neutral black, one committed signal red
+   used at full strength in the year band and on the call buttons.
+   Bands stack like the panels of a sectional door.
+----------------------------------------------------------------- */
+
+@font-face{font-family:"Big Shoulders Display";src:url("fonts/bigshoulders-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Big Shoulders Display";src:url("fonts/bigshoulders-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url("fonts/publicsans-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url("fonts/publicsans-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url("fonts/publicsans-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url("fonts/plexmono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url("fonts/plexmono-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  --concrete:#E4E4E0;
+  --ink:#151515;
+  --signal:#B3341E;
+  --steel:#5E5E58;
+  --chalk:#FAFAF8;
+  --rule:#C7C7C2;
+  --display:"Big Shoulders Display",Impact,-apple-system,sans-serif;
+  --body:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --data:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --gutter:clamp(1.25rem,4vw,3.5rem);
+  --band:clamp(3.5rem,6vw,5.5rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--concrete);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:1.25rem;
+  line-height:1.55;
+}
+
+/* Browser surfaces themed from the palette. */
+::selection{background:var(--signal);color:var(--chalk)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+html{scrollbar-color:var(--steel) var(--concrete)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--concrete)}
+::-webkit-scrollbar-thumb{background:var(--steel);border:3px solid var(--concrete)}
+::-webkit-scrollbar-thumb:hover{background:var(--ink)}
+a{color:inherit;text-underline-offset:0.2em;text-decoration-thickness:1px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-0.005em;line-height:0.92;margin:0;text-transform:uppercase}
+p{margin:0}
+
+.wrap{max-width:1240px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* ---------- dispatch header ------------------------------------- */
+.dispatch{background:var(--ink);color:var(--chalk)}
+.dispatch .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.5rem 2rem;padding-block:0.65rem;font-family:var(--data);font-size:1rem}
+.dispatch a{text-decoration:none;border-bottom:1px solid rgba(250,250,248,0.4)}
+.dispatch a:hover{border-color:var(--chalk)}
+.dispatch .em{color:#F3A192}
+
+.masthead{border-bottom:3px solid var(--ink);background:var(--chalk)}
+.masthead .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem;padding-block:1.1rem}
+.mark{font-family:var(--display);font-weight:800;font-size:2rem;letter-spacing:0.002em;text-decoration:none;line-height:0.9}
+.mark span{display:block;font-family:var(--data);font-size:1rem;letter-spacing:0.02em;color:var(--steel);text-transform:none;margin-top:0.2rem}
+.nav{display:flex;gap:clamp(1rem,2.3vw,2rem);font-family:var(--display);font-weight:600;font-size:1.5625rem;text-transform:uppercase}
+.nav a{text-decoration:none;border-bottom:3px solid transparent;transition:border-color 160ms ease}
+.nav a:hover{border-color:var(--signal)}
+
+/* ---------- hero ------------------------------------------------- */
+.hero{border-bottom:1px solid var(--rule)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(1.75rem,4vw,3.5rem);align-items:center;padding-block:clamp(2.25rem,4vw,3.5rem)}
+.hero h1{font-size:clamp(2.75rem,6vw,4.75rem);max-width:14ch}
+.hero p{margin-top:1.2rem;max-width:44ch;color:#2F2F2D}
+.hero-actions{display:flex;flex-wrap:wrap;gap:0.85rem 1.2rem;align-items:center;margin-top:1.9rem}
+.btn{
+  display:inline-block;background:var(--signal);color:var(--chalk);
+  font-family:var(--display);font-weight:800;font-size:1.5625rem;text-transform:uppercase;
+  text-decoration:none;padding:0.7rem 1.5rem 0.6rem;border:0;
+  box-shadow:0 6px 14px -8px rgba(21,21,21,0.7);
+  transition:background 150ms ease,transform 150ms ease;
+}
+.btn:hover{background:#8F2817;transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn-plain{font-family:var(--body);font-weight:600;font-size:1rem;text-decoration:none;border-bottom:2px solid var(--rule);padding-bottom:2px;transition:border-color 160ms ease}
+.btn-plain:hover{border-color:var(--signal)}
+.hero-fig{margin:0}
+.hero-fig img{aspect-ratio:3/2;object-fit:cover;width:100%;border:1px solid var(--rule)}
+.hero-cap{font-family:var(--data);font-size:1rem;color:var(--steel);margin-top:0.6rem}
+
+/* ---------- the year band: the signature ------------------------- */
+.year{background:var(--signal);color:var(--chalk)}
+.year .wrap{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:center;padding-block:clamp(2rem,4vw,3.25rem)}
+.year b{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(5.5rem,15vw,12rem);line-height:0.78;
+  letter-spacing:-0.01em;display:block;
+  font-variant-numeric:tabular-nums;
+}
+.year h2{font-size:clamp(1.75rem,3.2vw,2.75rem);max-width:20ch}
+.year p{margin-top:0.9rem;max-width:46ch;color:#FBE3DE;font-size:1rem}
+
+/* ---------- doors by style --------------------------------------- */
+.doors{padding-block:var(--band);border-bottom:1px solid var(--rule)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0.75rem 2rem;margin-bottom:2rem}
+.sec-head h2{font-size:clamp(2.1rem,4vw,3.1rem)}
+.sec-head p{font-family:var(--data);font-size:1rem;color:var(--steel);max-width:38ch}
+.door-grid{display:grid;grid-template-columns:1.26fr 1fr 1fr;gap:clamp(1.1rem,2.2vw,1.9rem)}
+.door{position:relative;overflow:hidden;border:1px solid var(--rule);background:var(--chalk);transition:transform 200ms ease,box-shadow 200ms ease}
+.door:hover,.door:focus-within{transform:translateY(-3px);box-shadow:0 12px 26px -16px rgba(21,21,21,0.7)}
+.door img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.door-bar{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding:0.85rem 1.1rem 0.95rem;border-top:1px solid var(--rule)}
+.door-bar h3{font-size:1.5625rem}
+.door-bar span{font-family:var(--data);font-size:1rem;color:var(--steel)}
+.door p{padding:0 1.1rem 1.1rem;font-size:1rem;color:#3A3A38}
+.door--text{display:flex;flex-direction:column;background:var(--concrete);border-color:var(--ink)}
+.door--text .door-bar{border-top:0;border-bottom:1px solid var(--rule);padding-top:1.1rem}
+.door--text p:first-of-type{padding-top:1.1rem}
+
+/* ---------- coverage as a table, not a link dump ------------------ */
+.coverage{padding-block:var(--band);border-bottom:1px solid var(--rule)}
+.cov-table{width:100%;border-collapse:collapse;font-size:1rem;margin-top:1.5rem}
+.cov-table th{
+  text-align:left;font-family:var(--display);font-weight:800;font-size:1.5625rem;
+  text-transform:uppercase;padding:0.75rem 1rem 0.75rem 0;
+  border-bottom:3px solid var(--ink);white-space:nowrap;vertical-align:bottom;
+}
+.cov-table td{padding:0.85rem 1rem 0.85rem 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.cov-table td:first-child{font-family:var(--display);font-weight:600;font-size:1.5625rem;text-transform:uppercase;white-space:nowrap;width:1%;padding-right:2rem}
+.cov-table tr:last-child td{border-bottom:0}
+.cov-note{font-family:var(--data);font-size:1rem;color:var(--steel);margin-top:1.25rem}
+
+/* ---------- commercial band -------------------------------------- */
+.commercial{background:var(--ink);color:var(--chalk)}
+.commercial .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:clamp(1.75rem,4vw,3.5rem);align-items:center;padding-block:var(--band)}
+.commercial h2{font-size:clamp(2.1rem,4vw,3.1rem);max-width:16ch}
+.commercial p{margin-top:1.1rem;max-width:46ch;color:#CFCFC9}
+.commercial ul{margin:1.6rem 0 0;padding:0;list-style:none;font-family:var(--data);font-size:1rem}
+.commercial li{padding-block:0.6rem;border-bottom:1px solid rgba(250,250,248,0.2)}
+.commercial li:last-child{border-bottom:0}
+.commercial img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.commercial .btn{margin-top:1.8rem}
+
+/* ---------- proof ------------------------------------------------- */
+.proof{padding-block:var(--band)}
+.proof-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(1.75rem,4vw,3.5rem);align-items:start}
+.quote{border-left:3px solid var(--signal);padding-left:1.5rem}
+.quote p{font-size:1.5625rem;line-height:1.35}
+.quote cite{display:block;margin-top:1rem;font-family:var(--data);font-size:1rem;font-style:normal;color:var(--steel)}
+.illustrative{font-family:var(--data);font-size:1rem;color:var(--steel);margin-top:1.5rem}
+.hours{font-family:var(--data);font-size:1rem}
+.hours div{display:flex;justify-content:space-between;gap:1.5rem;padding-block:0.7rem;border-bottom:1px solid var(--rule)}
+.hours div:last-child{border-bottom:0}
+.hours span:last-child{color:var(--steel)}
+
+/* ---------- footer ------------------------------------------------ */
+footer{background:var(--ink);color:var(--chalk);padding-block:2.4rem 3rem;font-size:1rem}
+.foot-top{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;align-items:baseline}
+.foot-top a{color:var(--chalk)}
+.disclosure{margin-top:1.8rem;font-family:var(--data);font-size:1rem;color:#9E9E98;max-width:82ch;line-height:1.6}
+
+/* ---------- responsive -------------------------------------------- */
+@media (max-width:980px){
+  .hero .wrap,.commercial .wrap,.proof-grid{grid-template-columns:1fr}
+  .door-grid{grid-template-columns:1fr 1fr}
+  .year .wrap{grid-template-columns:1fr;gap:1rem}
+}
+@media (max-width:640px){
+  .door-grid{grid-template-columns:1fr}
+  .btn{width:100%;text-align:center}
+  .nav{gap:0.9rem}
+  .cov-table td:first-child{padding-right:1rem}
+  .cov-table th,.cov-table td{display:block;width:auto}
+  .cov-table th{border-bottom:0;padding-bottom:0.25rem}
+  .cov-table td{border-bottom:1px solid var(--rule)}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms !important;animation-duration:1ms !important}
+  .door:hover,.door:focus-within{transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="dispatch">
+  <div class="wrap">
+    <span>Door will not close? <a href="tel:+17033308225" class="em">Call 703-330-8225</a></span>
+    <span>Toll free <a href="tel:+18005893900">800-589-3900</a> &middot; 14419 Aden Road, Nokesville VA</span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="#top">Crews Garage Door<span>Nokesville, Virginia</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#doors">Doors</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#commercial">Commercial</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Sales, installation, repair and service.</h1>
+      <p>Residential and commercial garage doors across eight Northern Virginia counties.
+        Authorized dealer for Clopay and Amarr. The shop is on Aden Road in Nokesville and the
+        phone is answered by the people who do the work.</p>
+      <div class="hero-actions">
+        <a class="btn" href="tel:+17033308225">Call 703-330-8225</a>
+        <a class="btn-plain" href="#doors">Or look at doors first</a>
+      </div>
+    </div>
+    <figure class="hero-fig">
+      <!-- generated illustrative imagery -->
+      <img src="images/hero.png" alt="A white carriage-house style two-car garage door on a red brick colonial house, seen from the driveway.">
+      <figcaption class="hero-cap">Carriage house door, two-car opening. Illustrative.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="year">
+  <div class="wrap">
+    <b>1958</b>
+    <div>
+      <h2>Making doors work since</h2>
+      <p>Same family, same trade, same shop on Aden Road. We were fitting garage doors in Prince
+        William County before most of the houses we work on were built, and we still answer the
+        phone ourselves.</p>
+    </div>
+  </div>
+</section>
+
+<main class="wrap doors" id="doors">
+  <div class="sec-head">
+    <h2>Doors, by style</h2>
+    <p>We fit Clopay and Amarr. Steel, insulated steel and wood grain, in the three styles most
+      houses around here take.</p>
+  </div>
+  <div class="door-grid">
+    <article class="door">
+      <!-- generated illustrative imagery -->
+      <img src="images/carriage.png" alt="A walnut wood-grain carriage-house garage door with arched windows and black strap hinges on a brick house.">
+      <div class="door-bar"><h3>Carriage House</h3><span>most asked for</span></div>
+      <p>Wood-grain or painted, with the hardware fitted. Suits the brick colonials through
+        Bristow, Gainesville and Haymarket.</p>
+    </article>
+    <article class="door">
+      <!-- generated illustrative imagery -->
+      <img src="images/traditional.png" alt="A traditional almond raised-panel steel garage door on a vinyl-sided colonial house.">
+      <div class="door-bar"><h3>Traditional</h3><span>raised panel</span></div>
+      <p>Short or long panel, insulated or not. The workhorse, and the quickest to get in.</p>
+    </article>
+    <article class="door door--text">
+      <div class="door-bar"><h3>Modern</h3><span>flush and glazed</span></div>
+      <p>Flush panels, full-view glazing, aluminium frames. More of these going on the new builds
+        off Linton Hall every year. Come by the shop on Aden Road and we will show you the samples,
+        because a full-view door is one you want to see in person before you buy it.</p>
+      <p style="padding-top:0"><a class="btn-plain" href="tel:+17033308225">Ask about modern doors</a></p>
+    </article>
+  </div>
+</main>
+
+<section class="wrap coverage" id="coverage">
+  <div class="sec-head">
+    <h2>Where we go</h2>
+    <p>Eight counties plus the independent cities. If your town is not listed, call and ask.</p>
+  </div>
+  <table class="cov-table">
+    <thead>
+      <tr><th>County</th><th>Towns we cover</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Prince William</td><td>Bristow, Gainesville, Haymarket, Manassas, Nokesville, Manassas Park</td></tr>
+      <tr><td>Fairfax</td><td>Centreville, Chantilly, Clifton, Fair Lakes, Fairfax, Falls Church, Great Falls, Herndon, McLean, Oakton, Reston, Tysons Corner</td></tr>
+      <tr><td>Loudoun</td><td>Aldie, Ashburn, Brambleton, Broadlands, Cascades, Countryside, Dulles, Lansdowne, Leesburg, Potomac Falls, Purcellville, Round Hill, South Riding, Sterling, Stone Ridge, Waterford</td></tr>
+      <tr><td>And also</td><td>Arlington, Fauquier, Stafford, Culpeper, Rappahannock, Warren and Clarke counties, plus Alexandria</td></tr>
+    </tbody>
+  </table>
+  <p class="cov-note">Shop and yard: 14419 Aden Road, Nokesville VA 20181. Office 703-330-0416.</p>
+</section>
+
+<section class="commercial" id="commercial">
+  <div class="wrap">
+    <div>
+      <h2>The commercial side is half the business</h2>
+      <p>Sectional dock doors, rolling steel, grilles and counter doors, plus service calls on
+        equipment somebody else installed. We work with property managers, general contractors and
+        facilities teams across the same eight counties.</p>
+      <ul>
+        <li>Sectional and rolling steel doors</li>
+        <li>Service calls on residential and commercial equipment</li>
+        <li>Operators, springs, cables and track</li>
+        <li>We are hiring experienced commercial technicians</li>
+      </ul>
+      <a class="btn" href="tel:+17033308225">Call 703-330-8225</a>
+    </div>
+    <figure style="margin:0">
+      <!-- generated illustrative imagery -->
+      <img src="images/commercial.png" alt="A raised galvanised sectional dock door on a small commercial warehouse unit with a box truck alongside.">
+    </figure>
+  </div>
+</section>
+
+<section class="wrap proof" id="contact">
+  <div class="proof-grid">
+    <div>
+      <blockquote class="quote">
+        <p>Spring went on a Saturday morning and the door was stuck half up with the car inside.
+          Called and somebody actually picked up. Back on the road the same weekend, and they
+          showed me what had worn rather than just swapping it.</p>
+        <cite>Sample review, Gainesville</cite>
+      </blockquote>
+      <p class="illustrative">Illustrative sample review, written to show placement. Real
+        testimonials already on the company's site would go here.</p>
+    </div>
+    <div>
+      <div class="hours">
+        <div><span>Emergency</span><span><a href="tel:+17033308225">703-330-8225</a></span></div>
+        <div><span>Office</span><span><a href="tel:+17033300416">703-330-0416</a></span></div>
+        <div><span>Toll free</span><span><a href="tel:+18005893900">800-589-3900</a></span></div>
+        <div><span>Shop</span><span>14419 Aden Road, Nokesville VA</span></div>
+        <div><span>We carry</span><span>Clopay and Amarr</span></div>
+      </div>
+      <a class="btn" href="tel:+17033308225" style="margin-top:1.6rem">Call the shop</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span><strong>Crews Garage Door Company</strong> &middot; 14419 Aden Road, Nokesville, VA 20181</span>
+      <span><a href="tel:+17033308225">703-330-8225</a> &middot; <a href="tel:+18005893900">800-589-3900</a></span>
+    </div>
+    <p class="disclosure">This is an unsolicited concept page prepared by Ohtari Labs to show what a
+      website for Crews Garage Door Company could look like. It is not affiliated with or authorised
+      by the company. Photography shown is illustrative art direction generated for this concept and
+      does not depict Crews installations, vehicles, premises or staff. The review shown is a
+      clearly marked illustrative sample, not a real customer statement. Company facts shown,
+      including the 1958 founding, the Clopay and Amarr dealerships, the phone numbers, the Aden
+      Road address and the service area, are taken from the company's own published website.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Crews Garage Door Company, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
