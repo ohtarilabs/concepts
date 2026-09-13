@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comics &amp; Gaming Outpost - Game shop and play space in Gainesville, Virginia</title>
+<meta name="description" content="Comics, Magic, Pokemon, D&amp;D, HeroClix and board games, with tables to play on, at 7556 Gardner Park Drive in Gainesville. Call (571) 248-6722.">
+<style>
+/* ---------------------------------------------------------------
+   Comics & Gaming Outpost - concept comp
+   Type: Archivo (display) / Asap (body) / Fira Code (schedule)
+   Flat print register: cool newsprint ground, ink, one comic red.
+   The red is a fill colour; it drops to a darker value whenever it
+   has to be text, because the bright value is under the contrast floor.
+   No gradients, no glow, no soft shadows. A thing is inked or it is not.
+----------------------------------------------------------------- */
+
+@font-face{font-family:"Archivo";src:url("fonts/archivo-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Archivo";src:url("fonts/archivo-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Asap";src:url("fonts/asap-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Asap";src:url("fonts/asap-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Asap";src:url("fonts/asap-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Fira Code";src:url("fonts/firacode-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Fira Code";src:url("fonts/firacode-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+
+:root{
+  --news:#ECEEEF;
+  --ink:#17171A;
+  --red:#D62828;
+  --red-ink:#BE2020;
+  --grey:#5E5E58;
+  --white:#FFFFFF;
+  --rule:#CBCED0;
+  --display:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:"Asap",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --data:"Fira Code",ui-monospace,"SF Mono",Menlo,monospace;
+  --gutter:clamp(1.25rem,4vw,3.5rem);
+  --band:clamp(3.5rem,6vw,5.5rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--news);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:1.25rem;
+  line-height:1.58;
+}
+
+/* Browser surfaces themed from the palette. */
+::selection{background:var(--red);color:var(--white)}
+:focus-visible{outline:3px solid var(--red-ink);outline-offset:2px}
+html{scrollbar-color:var(--grey) var(--news)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--news)}
+::-webkit-scrollbar-thumb{background:var(--grey);border:3px solid var(--news)}
+::-webkit-scrollbar-thumb:hover{background:var(--ink)}
+a{color:inherit;text-underline-offset:0.2em;text-decoration-thickness:1px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-0.024em;line-height:1.04;margin:0;text-wrap:balance}
+p{margin:0}
+
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* ---------- masthead --------------------------------------------- */
+.masthead{border-bottom:3px solid var(--ink);background:var(--white)}
+.masthead .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.9rem 2rem;padding-block:1.1rem}
+.mark{font-family:var(--display);font-weight:800;font-size:1.5625rem;letter-spacing:-0.036em;text-decoration:none;line-height:1.05}
+.mark span{display:block;font-family:var(--data);font-size:0.8rem;color:var(--grey);letter-spacing:-0.01em;margin-top:0.3rem;font-weight:400}
+.nav{display:flex;gap:clamp(0.9rem,2.2vw,1.9rem);font-family:var(--display);font-weight:700;font-size:1rem}
+.nav a{text-decoration:none;padding-block:0.2rem;border-bottom:3px solid transparent;transition:border-color 150ms ease}
+.nav a:hover{border-color:var(--red)}
+
+/* ---------- the week strip: the signature ------------------------ */
+.week{padding-block:clamp(2.25rem,4vw,3.5rem) var(--band)}
+.week h1{font-size:clamp(2.1rem,4.6vw,3.4rem);max-width:18ch}
+.week h1 em{font-style:italic;font-family:var(--body);font-weight:400;letter-spacing:-0.005em;padding-bottom:0.05em;display:inline-block}
+.week .lede{margin-top:1.1rem;max-width:52ch;color:var(--grey)}
+.strip{
+  display:grid;grid-template-columns:repeat(7,1fr);
+  margin-top:clamp(1.9rem,3.5vw,2.8rem);
+  border:3px solid var(--ink);background:var(--white);
+}
+.day{
+  border-right:1px solid var(--rule);
+  padding:0.95rem 0.85rem 1.15rem;
+  display:flex;flex-direction:column;gap:0.55rem;
+  transition:transform 180ms ease,background 180ms ease;
+}
+.day:last-child{border-right:0}
+.day b{font-family:var(--data);font-size:0.8rem;font-weight:600;color:var(--grey);letter-spacing:-0.02em}
+.day-title{font-family:var(--display);font-weight:700;font-size:1rem;letter-spacing:-0.018em;line-height:1.4;margin:0}
+.day i{font-family:var(--data);font-style:normal;font-size:0.8rem;color:var(--grey);margin-top:auto;padding-top:0.5rem}
+/* a finger landing on a wall calendar */
+.day:hover,.day:focus-within{transform:translateY(-4px);background:var(--news)}
+.day:hover b,.day:focus-within b{color:var(--red-ink)}
+.day--now{background:var(--red);border-right-color:var(--red)}
+.day--now b,.day--now i{color:#FFF6F6}
+.day--now .day-title{color:var(--white)}
+.day--now:hover,.day--now:focus-within{background:var(--red-ink)}
+.day--now:hover b,.day--now:focus-within b{color:#FFF6F6}
+.week-note{font-family:var(--data);font-size:0.8rem;color:var(--grey);margin-top:1.3rem;max-width:70ch;line-height:1.7}
+.week-actions{display:flex;flex-wrap:wrap;gap:0.9rem 1.6rem;align-items:center;margin-top:1.8rem}
+.btn{
+  display:inline-block;background:var(--red);color:var(--white);
+  font-family:var(--display);font-weight:700;font-size:1rem;
+  text-decoration:none;padding:0.85rem 1.6rem;border:0;
+  transition:background 150ms ease,transform 150ms ease;
+}
+.btn:hover{background:var(--red-ink);transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.week-actions span{font-family:var(--data);font-size:1rem;color:var(--grey)}
+
+/* ---------- the room --------------------------------------------- */
+.room{border-top:3px solid var(--ink);padding-block:var(--band)}
+.room-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(1.75rem,4vw,3.4rem);align-items:center}
+.room h2{font-size:clamp(1.9rem,3.8vw,2.9rem);max-width:15ch}
+.room p{margin-top:1.2rem;max-width:46ch;color:var(--grey)}
+.room p + p{margin-top:1rem}
+.room img{width:100%;aspect-ratio:3/2;object-fit:cover;border:3px solid var(--ink)}
+.room figure{margin:0}
+.room figcaption{font-family:var(--data);font-size:0.8rem;color:var(--grey);margin-top:0.6rem}
+
+/* ---------- the counters ------------------------------------------ */
+.counters{border-top:1px solid var(--rule);padding-block:var(--band)}
+.counters h2{font-size:clamp(1.9rem,3.8vw,2.9rem);max-width:16ch}
+.counters .lede{margin-top:1.1rem;max-width:52ch;color:var(--grey)}
+.counter-grid{margin-top:clamp(2rem,3.5vw,2.8rem);display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:start}
+.counter-list{list-style:none;margin:0;padding:0}
+.ct{padding-block:1.1rem;border-top:1px solid var(--rule);display:grid;grid-template-columns:auto 1fr;gap:0 1.4rem;align-items:baseline}
+.ct:last-child{border-bottom:1px solid var(--rule)}
+.ct em{font-family:var(--data);font-style:normal;font-size:0.8rem;color:var(--red-ink);white-space:nowrap}
+.ct h3{font-family:var(--display);font-weight:700;font-size:1.5625rem;letter-spacing:-0.022em}
+.ct p{grid-column:2;margin-top:0.4rem;font-size:1rem;color:var(--grey);max-width:44ch}
+.counters figure{margin:0}
+.counters img{width:100%;aspect-ratio:1/1;object-fit:cover;border:3px solid var(--ink)}
+
+/* ---------- new player band ---------------------------------------- */
+.newbie{background:var(--red);color:var(--white);border-block:3px solid var(--ink)}
+.newbie .wrap{padding-block:var(--band)}
+.newbie h2{font-size:clamp(2rem,4.2vw,3.1rem);max-width:16ch;color:var(--white)}
+.newbie p{margin-top:1.3rem;max-width:54ch;color:#FFF6F6}
+.newbie .btn{background:var(--white);color:var(--red-ink);margin-top:2rem}
+.newbie .btn:hover{background:#FFF3F3}
+
+/* ---------- visit ---------------------------------------------------- */
+.visit{padding-block:var(--band)}
+.visit-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:start}
+.visit h2{font-size:clamp(1.9rem,3.8vw,2.9rem);max-width:14ch}
+.visit p{margin-top:1.2rem;max-width:46ch;color:var(--grey)}
+.hours{font-family:var(--data);font-size:1rem}
+.hours div{display:flex;justify-content:space-between;gap:1.5rem;padding-block:0.75rem;border-bottom:1px solid var(--rule)}
+.hours div:last-of-type{border-bottom:0}
+.hours span:last-child{color:var(--grey)}
+.hours .flag span:last-child{color:var(--red-ink)}
+.hours-note{font-family:var(--data);font-size:0.8rem;color:var(--grey);margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--rule);line-height:1.7}
+
+/* ---------- footer ---------------------------------------------------- */
+footer{border-top:3px solid var(--ink);padding-block:2.2rem 3rem;font-size:1rem;background:var(--white)}
+.foot-top{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;align-items:baseline}
+.disclosure{margin-top:1.7rem;font-family:var(--data);font-size:0.8rem;color:var(--grey);max-width:88ch;line-height:1.75}
+
+/* ---------- responsive ------------------------------------------------ */
+@media (max-width:1080px){
+  .strip{grid-template-columns:repeat(4,1fr)}
+  .day{border-bottom:1px solid var(--rule)}
+}
+@media (max-width:820px){
+  .room-grid,.counter-grid,.visit-grid{grid-template-columns:1fr}
+  .room figure,.counters figure{order:-1}
+}
+@media (max-width:640px){
+  .strip{grid-template-columns:1fr 1fr}
+  .btn{width:100%;text-align:center}
+  .ct{grid-template-columns:1fr}
+  .ct p{grid-column:1}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms !important}
+  .day:hover,.day:focus-within{transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="#top">Comics &amp; Gaming Outpost<span>7556 GARDNER PARK DR &middot; GAINESVILLE VA &middot; (571) 248-6722</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#top">The week</a>
+      <a href="#room">The room</a>
+      <a href="#counters">What we carry</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap week" id="top">
+  <h1>There are tables in the back, and something is on <em>most nights.</em></h1>
+  <p class="lede">Comics, Magic, Pokemon, Dungeons &amp; Dragons, HeroClix and board games, and a
+    room to actually play them in. Here is the week.</p>
+
+  <div class="strip">
+    <div class="day" tabindex="0">
+      <b>MON</b><p class="day-title">Open play</p><i>tables free</i>
+    </div>
+    <div class="day" tabindex="0">
+      <b>TUE</b><p class="day-title">Board game night</p><i>all welcome</i>
+    </div>
+    <div class="day" tabindex="0">
+      <b>WED</b><p class="day-title">Commander</p><i>casual pods</i>
+    </div>
+    <div class="day" tabindex="0">
+      <b>THU</b><p class="day-title">Pokemon league</p><i>all ages</i>
+    </div>
+    <div class="day day--now" tabindex="0">
+      <b>FRI &middot; TONIGHT</b><p class="day-title">Friday Night Magic</p><i>doors from 6</i>
+    </div>
+    <div class="day" tabindex="0">
+      <b>SAT</b><p class="day-title">Draft, plus a new player table</p><i>afternoon</i>
+    </div>
+    <div class="day" tabindex="0">
+      <b>SUN</b><p class="day-title">D&amp;D at the long table</p><i>drop in</i>
+    </div>
+  </div>
+
+  <p class="week-note">Illustrative schedule, shown to demonstrate how the week would work. The
+    shop sets the real one, and on a live site the highlighted column would move to whatever day
+    you are reading this.</p>
+
+  <div class="week-actions">
+    <a class="btn" href="tel:+15712486722">Call (571) 248-6722</a>
+    <span>7556 Gardner Park Dr, Gainesville</span>
+  </div>
+</main>
+
+<section class="room" id="room">
+  <div class="wrap room-grid">
+    <div>
+      <h2>The room is the point</h2>
+      <p>Plenty of places will sell you a booster box. What you cannot order to your door is four
+        other people, a table, and somebody behind the counter who knows the rules well enough to
+        settle it.</p>
+      <p>That is what the back of this shop is for. Bring a deck, bring a board game, or turn up
+        with nothing and we will find you a seat at something.</p>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/tables.png" alt="Two long cloth-covered tables in a game shop's play area, set up mid-session with cards, dice and counters, players seated around them seen from behind.">
+      <figcaption>The play space. Illustrative.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="wrap counters" id="counters">
+  <h2>What is on the shelves</h2>
+  <p class="lede">And if it is a comic we do not have, we will order it in for you. People seem to
+    mention that one a lot.</p>
+  <div class="counter-grid">
+    <ul class="counter-list">
+      <li class="ct">
+        <em>cards</em><h3>Magic: The Gathering</h3>
+        <p>Singles, sealed and supplies, and the formats people actually play round here rather
+          than everything in print.</p>
+      </li>
+      <li class="ct">
+        <em>cards</em><h3>Pokemon</h3>
+        <p>For the collectors and for the nine-year-olds, who are frequently the same customer at
+          different ages.</p>
+      </li>
+      <li class="ct">
+        <em>books and dice</em><h3>Dungeons &amp; Dragons</h3>
+        <p>Rulebooks, dice, minis and the bits you lose. Ask if you are starting a campaign and do
+          not know where to begin.</p>
+      </li>
+      <li class="ct">
+        <em>minis</em><h3>HeroClix</h3>
+        <p>Still going, still here, still a proper shelf of it.</p>
+      </li>
+      <li class="ct">
+        <em>boxes</em><h3>Board games</h3>
+        <p>Family games, strategy games and the heavy ones. We will tell you honestly which is
+          which before you buy it for someone.</p>
+      </li>
+      <li class="ct">
+        <em>bagged and boarded</em><h3>Comics</h3>
+        <p>A lot of them, in a lot of variety, and a pull list if you want one.</p>
+      </li>
+    </ul>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/counter.png" alt="Two open long boxes of bagged and boarded comics on a shop counter beside a wooden tray of polyhedral dice.">
+    </figure>
+  </div>
+</section>
+
+<section class="newbie">
+  <div class="wrap">
+    <h2>Never played any of this before?</h2>
+    <p>That is the most common way people walk in here, and it is genuinely fine. Tell whoever is
+      behind the counter what you are curious about and roughly who it is for. Nobody is going to
+      sell you a four-hundred-page rulebook when a starter set would do.</p>
+    <a class="btn" href="tel:+15712486722">Ring the shop and ask</a>
+  </div>
+</section>
+
+<section class="wrap visit" id="visit">
+  <div class="visit-grid">
+    <div>
+      <h2>7556 Gardner Park Drive</h2>
+      <p>We are in the Gardner Park Drive units in Gainesville. Parking is right outside, the
+        tables are through the back, and there is no minimum spend to sit at one.</p>
+      <figure style="margin:1.6rem 0 0">
+        <!-- generated illustrative imagery -->
+        <img src="images/shelves.png" alt="Shelves of boxed board games stacked and stood on end beside a row of thick hardback rulebooks and a tub of dice." style="width:100%;aspect-ratio:3/2;object-fit:cover;border:3px solid var(--ink)">
+      </figure>
+    </div>
+    <div>
+      <div class="hours">
+        <div><span>Monday to Saturday</span><span>11:00am to 8:00pm</span></div>
+        <div><span>Sunday</span><span>12:00pm to 6:00pm</span></div>
+        <div><span>Phone</span><span><a href="tel:+15712486722">(571) 248-6722</a></span></div>
+        <div class="flag"><span>Also listed as</span><span>(571) 222-7179</span></div>
+      </div>
+      <p class="hours-note">Hours as published on directory listings and worth confirming. Right
+        now different sites give different answers, including whether Mondays are open at all,
+        which is exactly the sort of thing one page of your own settles for good.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span><strong>Comics &amp; Gaming Outpost</strong> &middot; 7556 Gardner Park Dr, Gainesville, VA 20155</span>
+      <span><a href="tel:+15712486722">(571) 248-6722</a></span>
+    </div>
+    <p class="disclosure">This is an unsolicited concept page prepared by Ohtari Labs to show what a
+      website for Comics &amp; Gaming Outpost could look like. It is not affiliated with or
+      authorised by the shop. The weekly schedule shown is an illustrative sample, not a real
+      programme; no real schedule is published anywhere and the shop sets its own. Hours are as
+      given on third-party directory listings, which currently disagree with each other, and are
+      marked for confirmation rather than asserted. Photography is illustrative art direction
+      generated for this concept; it does not depict the real shop, its staff or its customers, no
+      faces are shown, and no card, comic or game artwork is reproduced. Game titles are named only
+      as lines the shop is listed as carrying; no logos, trade dress or official-retailer status are
+      shown or claimed. No prices, entry fees or prize support appear, because none are published.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Comics &amp; Gaming Outpost, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
