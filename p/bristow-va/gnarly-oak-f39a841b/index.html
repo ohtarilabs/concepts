@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gnarly Oak Physical Therapy - Mobile PT in Warrenton, Nokesville and Gainesville</title>
+<meta name="description" content="One-on-one mobile physical therapy in your own home or office. Sixty minutes with a Doctor of Physical Therapy, every session. Serving Warrenton, Nokesville and Gainesville.">
+<style>
+/* ---------------------------------------------------------------
+   Gnarly Oak Physical Therapy and Wellness - concept comp
+   Type: Spectral (display) / Manrope (body) / Overpass Mono (data)
+   Drenched in a warm oak-bark dark with no accent colour at all.
+   The only warmth beyond the ground comes from one photograph.
+   Chosen from the use scene, not the category: someone in pain,
+   on a phone, in the evening.
+----------------------------------------------------------------- */
+
+@font-face{font-family:"Spectral";src:url("fonts/spectral-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Spectral";src:url("fonts/spectral-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Spectral";src:url("fonts/spectral-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Manrope";src:url("fonts/manrope-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("fonts/manrope-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Overpass Mono";src:url("fonts/overpassmono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Overpass Mono";src:url("fonts/overpassmono-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+
+:root{
+  --bark:#1E1A17;
+  --raised:#2A2521;
+  --bone:#EFEAE2;
+  --warm:#A79C90;
+  --white:#FAF7F2;
+  --hair:rgba(239,234,226,0.16);
+  --display:"Spectral",Georgia,"Times New Roman",serif;
+  --body:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --data:"Overpass Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --gutter:clamp(1.25rem,4vw,3.5rem);
+  --band:clamp(4rem,7vw,6.5rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bark);
+  color:var(--bone);
+  font-family:var(--body);
+  font-size:1.25rem;
+  line-height:1.62;
+}
+
+/* Browser surfaces themed from the palette. */
+::selection{background:var(--bone);color:var(--bark)}
+:focus-visible{outline:2.5px solid var(--white);outline-offset:3px}
+html{scrollbar-color:#4A433C var(--bark)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--bark)}
+::-webkit-scrollbar-thumb{background:#4A433C;border:3px solid var(--bark);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:var(--warm)}
+a{color:inherit;text-underline-offset:0.24em;text-decoration-thickness:1px}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-0.018em;line-height:1.12;margin:0;text-wrap:balance}
+p{margin:0}
+
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* ---------- masthead --------------------------------------------- */
+.masthead .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem;padding-block:1.4rem;border-bottom:1px solid var(--hair)}
+.mark{font-family:var(--display);font-weight:600;font-size:1.5625rem;letter-spacing:-0.022em;text-decoration:none;line-height:1.1}
+.mark span{display:block;font-family:var(--data);font-size:0.8rem;color:var(--warm);letter-spacing:0.02em;margin-top:0.25rem}
+.nav{display:flex;gap:clamp(1rem,2.4vw,2.1rem);font-family:var(--body);font-weight:600;font-size:1rem}
+.nav a{text-decoration:none;padding-block:0.2rem;border-bottom:1.5px solid transparent;transition:border-color 200ms ease}
+.nav a:hover{border-color:var(--bone)}
+
+/* ---------- opening statement: the signature --------------------- */
+.opening{padding-block:clamp(3.5rem,7vw,6.5rem) var(--band)}
+.opening h1{font-size:clamp(2.3rem,5.2vw,4.25rem);max-width:20ch;letter-spacing:-0.022em}
+.opening h1 em{font-style:italic;font-weight:400;padding-bottom:0.06em;display:inline-block}
+.who{
+  margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--hair);
+  font-family:var(--data);font-size:1rem;color:var(--warm);
+  display:flex;flex-wrap:wrap;gap:0.5rem 2.2rem;
+}
+.who b{color:var(--bone);font-weight:400}
+.btn{
+  display:inline-block;background:var(--white);color:var(--bark);
+  font-family:var(--body);font-weight:600;font-size:1rem;
+  text-decoration:none;padding:0.9rem 1.7rem;border:0;border-radius:2px;
+  transition:transform 160ms ease,background 160ms ease;
+}
+.btn:hover{background:#FFFFFF;transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.opening .btn{margin-top:2.2rem}
+
+/* ---------- the hour --------------------------------------------- */
+.hour{border-top:1px solid var(--hair);padding-block:var(--band)}
+.hour-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:clamp(1.75rem,4vw,3.5rem);align-items:center}
+.hour h2{font-size:clamp(1.9rem,3.6vw,2.8rem);max-width:16ch}
+.hour p{margin-top:1.2rem;color:var(--warm);max-width:48ch}
+.hour-facts{margin-top:2rem;font-family:var(--data);font-size:1rem}
+.hour-facts div{display:flex;justify-content:space-between;gap:1.5rem;padding-block:0.85rem;border-bottom:1px solid var(--hair)}
+.hour-facts div:last-child{border-bottom:0}
+.hour-facts span:last-child{color:var(--warm);text-align:right}
+.hour figure{margin:0}
+.hour img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px}
+
+/* ---------- what does not happen: struck-through column ---------- */
+.absences{border-top:1px solid var(--hair);padding-block:var(--band)}
+.absences h2{font-size:clamp(1.9rem,3.6vw,2.8rem);max-width:18ch}
+.absences .lede{margin-top:1.2rem;max-width:52ch;color:var(--warm)}
+.nots{list-style:none;margin:clamp(2.2rem,4vw,3rem) 0 0;padding:0;max-width:40ch}
+.not{
+  position:relative;font-family:var(--display);font-weight:500;
+  font-size:clamp(1.5625rem,2.8vw,1.95rem);letter-spacing:-0.015em;line-height:1.62;
+  padding-block:0.85rem;border-bottom:1px solid var(--hair);
+}
+.not:last-child{border-bottom:0}
+/* the strike draws across on hover; it is the one authored moment */
+.not::after{
+  content:"";position:absolute;left:0;top:50%;
+  width:0;height:2px;background:var(--warm);
+  transition:width 420ms cubic-bezier(.22,1,.36,1);
+}
+.not:hover::after,.not:focus-within::after{width:100%}
+.nots-note{font-family:var(--data);font-size:0.8rem;color:var(--warm);margin-top:1.8rem;max-width:46ch}
+.room-fig{margin:clamp(2.4rem,4.5vw,3.6rem) 0 0}
+.room-fig img{width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:2px}
+.room-fig figcaption{font-family:var(--data);font-size:0.8rem;color:var(--warm);margin-top:0.7rem}
+
+/* ---------- what I treat ----------------------------------------- */
+.treat{border-top:1px solid var(--hair);padding-block:var(--band)}
+.treat h2{font-size:clamp(1.9rem,3.6vw,2.8rem);max-width:16ch}
+.treat-list{
+  list-style:none;margin:2rem 0 0;padding:0;
+  display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(1.5rem,3vw,3rem);
+  font-family:var(--data);font-size:1rem;
+}
+.treat-list li{padding-block:0.8rem;border-bottom:1px solid var(--hair)}
+.treat-how{margin-top:clamp(2.4rem,4vw,3.2rem);display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(1.75rem,4vw,3.4rem);align-items:center}
+.treat-how h3{font-family:var(--display);font-size:1.5625rem;font-weight:600}
+.treat-how p{margin-top:0.9rem;color:var(--warm);max-width:50ch}
+.treat-how p + h3{margin-top:1.8rem}
+.treat-how img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px}
+.treat-how figure{margin:0}
+
+/* ---------- why the practice exists ------------------------------ */
+.why{border-top:1px solid var(--hair)}
+.why-fig{position:relative;margin:0}
+.why-fig img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.why .wrap{padding-block:var(--band)}
+.why h2{font-size:clamp(1.9rem,3.6vw,2.8rem);max-width:18ch}
+.why p{margin-top:1.3rem;max-width:58ch;color:var(--bone)}
+.why p + p{margin-top:1.1rem;color:var(--warm)}
+.pull{
+  font-family:var(--display);font-weight:600;
+  font-size:clamp(1.75rem,3.4vw,2.5rem);line-height:1.62;letter-spacing:-0.018em;
+  margin-top:2.2rem;padding-top:1.8rem;border-top:1px solid var(--hair);max-width:22ch;
+}
+
+/* ---------- contact ---------------------------------------------- */
+.contact{border-top:1px solid var(--hair);padding-block:var(--band)}
+.contact-inner{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:1.75rem 3rem}
+.contact h2{font-size:clamp(1.9rem,3.8vw,2.9rem);max-width:16ch}
+.contact p{margin-top:1.2rem;color:var(--warm);max-width:44ch}
+.contact-facts{font-family:var(--data);font-size:1rem;min-width:min(100%,20rem)}
+.contact-facts div{display:flex;justify-content:space-between;gap:1.5rem;padding-block:0.8rem;border-bottom:1px solid var(--hair)}
+.contact-facts div:last-child{border-bottom:0}
+.contact-facts span:last-child{color:var(--warm)}
+.contact-facts a{text-decoration:none;border-bottom:1px solid var(--hair)}
+
+/* ---------- footer ------------------------------------------------ */
+footer{border-top:1px solid var(--hair);padding-block:2.4rem 3rem;font-size:1rem;background:var(--raised)}
+.foot-top{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;align-items:baseline}
+.disclosure{margin-top:1.8rem;font-family:var(--data);font-size:0.8rem;color:var(--warm);max-width:84ch;line-height:1.7}
+
+/* ---------- responsive -------------------------------------------- */
+@media (max-width:960px){
+  .hour-grid,.treat-how,.contact-inner{grid-template-columns:1fr}
+  .hour figure,.treat-how figure{order:-1}
+  .contact-inner{display:grid}
+}
+@media (max-width:640px){
+  .treat-list{grid-template-columns:1fr}
+  .btn{width:100%;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms !important}
+  .not:hover::after,.not:focus-within::after{width:0}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="mark" href="#top">Gnarly Oak<span>PHYSICAL THERAPY AND WELLNESS</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#hour">The hour</a>
+      <a href="#treat">What I treat</a>
+      <a href="#why">Why</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="wrap opening" id="top">
+  <h1>Your life belongs to you. I'm here to help you <em>take it back.</em></h1>
+  <div class="who">
+    <span><b>Nicole A. Smith, PT, DPT, GTS</b></span>
+    <span>18+ years outpatient orthopedic</span>
+    <span>Warrenton &middot; Nokesville &middot; Gainesville</span>
+  </div>
+  <a class="btn" href="mailto:gnarlyoakpt@gmail.com">Tell me what is going on</a>
+</section>
+
+<section class="wrap hour" id="hour">
+  <div class="hour-grid">
+    <div>
+      <h2>An hour, and nobody else in the room</h2>
+      <p>I come to your house or your office. For the whole session it is you and a Doctor of
+        Physical Therapy, hands on, working the actual problem. That is the practice. Everything
+        else about how it runs follows from protecting that hour.</p>
+      <div class="hour-facts">
+        <div><span>First visit</span><span>60 to 75 minutes, full body assessment</span></div>
+        <div><span>Every visit after</span><span>60 minutes, one to one</span></div>
+        <div><span>Where</span><span>Your home or your office</span></div>
+        <div><span>Who treats you</span><span>Me, every time</span></div>
+      </div>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/hands.png" alt="A therapist's hands working along the back of a seated person's shoulder in a home living room.">
+    </figure>
+  </div>
+</section>
+
+<section class="wrap absences">
+  <h2>What does not happen here</h2>
+  <p class="lede">Most of what makes physical therapy frustrating is not the therapy. It is
+    everything arranged around it. So here is the list of things this practice does not do to you.</p>
+  <ul class="nots">
+    <li class="not" tabindex="0">No crowded waiting room</li>
+    <li class="not" tabindex="0">No sitting on a hot pack while your therapist treats three other people</li>
+    <li class="not" tabindex="0">No being passed off to a tech for exercises you already know</li>
+    <li class="not" tabindex="0">No finding child care to get to your appointment</li>
+    <li class="not" tabindex="0">No sitting in traffic trying to arrive on time</li>
+  </ul>
+  <p class="nots-note">Every line above is drawn from how this practice actually works, in Nicole's
+    own description of it.</p>
+  <figure class="room-fig">
+    <!-- generated illustrative imagery -->
+    <img src="images/room.png" alt="An ordinary living room cleared for a session: a mat unrolled between the sofa and a pushed-aside coffee table, a rolled towel and a resistance band set out on it.">
+    <figcaption>This is the room instead. Illustrative.</figcaption>
+  </figure>
+</section>
+
+<section class="wrap treat" id="treat">
+  <h2>What I treat</h2>
+  <ul class="treat-list">
+    <li>Neck and back pain</li>
+    <li>Thoracic outlet syndrome</li>
+    <li>Shoulder pain</li>
+    <li>Frozen shoulder</li>
+    <li>Rotator cuff injuries</li>
+    <li>Myofascial pain</li>
+    <li>TMJ</li>
+    <li>Overuse injuries</li>
+    <li>Headaches</li>
+    <li>Sacro-iliac pain</li>
+    <li>Hip and knee pain</li>
+  </ul>
+
+  <div class="treat-how">
+    <div>
+      <h3>Manual therapy</h3>
+      <p>Soft tissue mobilisation, joint mobilisation, muscle energy, trigger point release,
+        myofascial release, passive stretching and kinesiotaping.</p>
+      <h3>Graston Technique</h3>
+      <p>An evidence-based form of instrument-assisted soft tissue mobilisation. The GTS after my
+        name means I am certified in it.</p>
+      <h3>Therapeutic and corrective exercise</h3>
+      <p>Built around what your assessment actually showed, not a photocopied sheet.</p>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/graston.png" alt="A stainless instrument-assisted soft tissue tool drawn along a forearm resting on a folded towel.">
+    </figure>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <figure class="why-fig">
+    <!-- generated illustrative imagery -->
+    <img src="images/oak.png" alt="A lone old oak leaning in a Virginia field in late autumn light, its lower limbs twisting outward.">
+  </figure>
+  <div class="wrap">
+    <h2>Why this practice exists</h2>
+    <p>I spent more than eighteen years in outpatient orthopedics. After years in traditional
+      clinic settings I found myself frustrated as the demand to see more patients in shorter
+      periods of time increased, and as insurance company control of patient care increased along
+      with it. So I built this instead.</p>
+    <p>A gnarly oak is a tree that grew through something and is stronger for the shape it took.
+      That seemed like the right name for what I do.</p>
+    <p class="pull">I work for you, not insurance companies.</p>
+  </div>
+</section>
+
+<section class="wrap contact" id="contact">
+  <div class="contact-inner">
+    <div>
+      <h2>Tell me a little about what is going on</h2>
+      <p>Email me and describe what hurts, how long it has been going on, and what you are trying
+        to get back to doing. I will tell you honestly whether I can help.</p>
+      <a class="btn" href="mailto:gnarlyoakpt@gmail.com" style="margin-top:1.8rem">Email Nicole</a>
+    </div>
+    <div class="contact-facts">
+      <div><span>Email</span><span><a href="mailto:gnarlyoakpt@gmail.com">gnarlyoakpt@gmail.com</a></span></div>
+      <div><span>Phone</span><span><a href="tel:+17036009516">703-600-9516</a></span></div>
+      <div><span>Fax</span><span>703-977-2811</span></div>
+      <div><span>Serving</span><span>Warrenton, Nokesville, Gainesville</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span><strong>Gnarly Oak Physical Therapy and Wellness PLLC</strong> &middot; Mobile practice, Northern Virginia</span>
+      <span><a href="mailto:gnarlyoakpt@gmail.com">gnarlyoakpt@gmail.com</a> &middot; <a href="tel:+17036009516">703-600-9516</a></span>
+    </div>
+    <p class="disclosure">This is an unsolicited concept page prepared by Ohtari Labs to show what a
+      website for Gnarly Oak Physical Therapy and Wellness could look like. It is not affiliated
+      with or authorised by the practice. Photography shown is illustrative art direction generated
+      for this concept; it does not depict Nicole, any patient, any real treatment session or any
+      outcome, and no faces are shown. The credentials, the session lengths, the treatment
+      techniques, the conditions listed, the service area and the account of why the practice was
+      founded are taken from the practice's own published website. This page states no prices, no
+      insurance or reimbursement terms, no recovery timelines and no clinical outcomes, because
+      none are published and none are ours to invent.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Gnarly Oak Physical Therapy and Wellness, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
