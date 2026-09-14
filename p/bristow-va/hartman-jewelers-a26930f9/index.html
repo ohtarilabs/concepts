@@ -1,0 +1,265 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hartman Jewelers — Warrenton's jeweler for over thirty years</title>
+<meta name="description" content="Independent fine jeweler in Warrenton, Virginia. Engagement rings, wedding bands, coloured gemstones and custom design, from $25 to $25,000. Over thirty years in the trade. Call (540) 349-4123.">
+<style>
+@font-face{font-family:"Marcellus";src:url("fonts/marcellus-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Jost";src:url("fonts/jost-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Jost";src:url("fonts/jost-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Fira Mono";src:url("fonts/fira-mono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --field:#0F1714;
+  --panel:#17211D;
+  --edge:#2A3630;
+  --paper:#ECEFEC;
+  --muted:#A8B0AB;
+  --gold:#C9A34E;
+  --gold-hi:#D4B05C;
+  --display:"Marcellus",Georgia,serif;
+  --body:"Jost",system-ui,sans-serif;
+  --mono:"Fira Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--field);color:var(--paper);
+  font-family:var(--body);font-size:18px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin-left:auto;margin-right:auto;padding-left:32px;padding-right:32px}
+
+/* ── bar ──────────────────────────────────────────────── */
+.bar{border-bottom:1px solid var(--edge)}
+.bar-in{display:flex;align-items:baseline;gap:30px;padding-top:18px;padding-bottom:18px}
+.mark{font-family:var(--display);font-size:24px;line-height:1.2;letter-spacing:0.02em;white-space:nowrap}
+.bar nav{margin-left:auto;display:flex;gap:26px;flex-wrap:wrap}
+.bar nav a{
+  font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:0.09em;
+  color:var(--muted);text-decoration:none;padding-top:8px;padding-bottom:8px;transition:color .18s ease;
+}
+.bar nav a:hover{color:var(--gold-hi)}
+.bar .tel{font-family:var(--mono);font-size:13px;color:var(--gold);text-decoration:none;white-space:nowrap}
+
+/* ── colour-field masthead (signature) ────────────────── */
+.mast{position:relative;overflow:hidden;border-bottom:1px solid var(--edge)}
+.mast::before{
+  content:"";position:absolute;top:-30%;left:-10%;width:90%;height:170%;
+  background:linear-gradient(107deg,rgba(201,163,78,0) 0%,rgba(201,163,78,.16) 38%,rgba(212,176,92,.05) 62%,rgba(201,163,78,0) 78%);
+  transform:rotate(-7deg);pointer-events:none;transition:width .5s ease;
+}
+.mast:hover::before{width:104%}
+.mast-in{position:relative;padding-top:132px;padding-bottom:132px}
+h1{
+  font-family:var(--display);font-size:62px;line-height:1.14;letter-spacing:0.005em;
+  margin-top:0;margin-bottom:26px;max-width:15ch;
+}
+h1 em{font-style:italic;color:var(--gold-hi)}
+.sub{font-size:21px;line-height:1.6;color:var(--muted);margin-top:0;margin-bottom:38px;max-width:44ch}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.09em;text-transform:uppercase;
+  text-decoration:none;padding:17px 28px;min-height:44px;display:inline-flex;align-items:center;
+  transition:transform .18s ease,background .18s ease,color .18s ease,border-color .18s ease;
+}
+.btn-solid{background:var(--gold);color:#0F1714}
+.btn-solid:hover{transform:translateY(-2px);background:var(--gold-hi)}
+.btn-ghost{color:var(--paper);border:1px solid var(--edge)}
+.btn-ghost:hover{transform:translateY(-2px);border-color:var(--gold);color:var(--gold-hi)}
+
+/* ── service row ──────────────────────────────────────── */
+.services{padding-top:92px;padding-bottom:92px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.svc{padding-top:26px;border-top:1px solid var(--gold)}
+.svc h2{font-family:var(--display);font-size:28px;line-height:1.25;margin-top:0;margin-bottom:12px}
+.svc p{margin:0;color:var(--muted);font-size:17px;line-height:1.65;min-height:5.6em}
+.svc figure{margin:22px 0 0;overflow:hidden}
+.svc figure img{width:100%;height:230px;object-fit:cover;transition:transform .4s ease}
+.svc:hover figure img{transform:scale(1.03)}
+
+/* ── provenance band ──────────────────────────────────── */
+.prov{background:var(--panel);border-top:1px solid var(--edge);border-bottom:1px solid var(--edge)}
+.prov-in{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:center;padding-top:92px;padding-bottom:92px}
+.prov figure{margin:0}
+.prov figure img{width:100%;height:520px;object-fit:cover}
+.prov h2{font-family:var(--display);font-size:42px;line-height:1.16;margin-top:0;margin-bottom:22px}
+.prov p{margin-top:0;margin-bottom:18px;color:#CFD5D1;max-width:54ch}
+.prov p:last-child{margin-bottom:0}
+.range{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.09em;text-transform:uppercase;
+  color:var(--gold);margin-top:28px;margin-bottom:0;
+}
+
+/* ── appointment panel (motion moment) ────────────────── */
+.appt{padding-top:92px;padding-bottom:92px}
+.appt-in{
+  display:grid;grid-template-columns:1.3fr auto;gap:52px;align-items:center;
+  background:var(--panel);border:1px solid var(--edge);
+  padding-top:52px;padding-bottom:52px;padding-left:52px;padding-right:52px;
+  transition:border-color .24s ease,transform .24s ease;
+}
+.appt-in:hover{border-color:var(--gold);transform:translateY(-2px)}
+.appt-in .rule{display:block;height:2px;width:60px;background:var(--gold);margin-bottom:24px;transition:width .4s ease}
+.appt-in:hover .rule{width:100%}
+.appt h2{font-family:var(--display);font-size:38px;line-height:1.2;margin-top:0;margin-bottom:16px}
+.appt p{margin-top:0;margin-bottom:0;color:#CFD5D1;max-width:52ch}
+.bignum{
+  font-family:var(--display);font-size:38px;line-height:1.2;color:var(--gold-hi);
+  text-decoration:none;white-space:nowrap;display:block;margin-bottom:10px;
+}
+.appt aside p{font-family:var(--mono);font-size:13px;color:var(--muted);margin:0;letter-spacing:0.05em}
+
+/* ── footer ───────────────────────────────────────────── */
+footer{border-top:1px solid var(--edge);padding-top:54px;padding-bottom:54px}
+.f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:44px}
+.f-grid p{margin-top:0;margin-bottom:10px;color:var(--muted);font-size:16px;line-height:1.65}
+.f-mark{font-family:var(--display);font-size:22px;color:var(--paper);margin-bottom:14px}
+.f-lab{font-family:var(--mono);font-size:13px;letter-spacing:0.09em;text-transform:uppercase;color:var(--gold);margin-top:0;margin-bottom:12px}
+.f-grid a{color:var(--muted);text-decoration:none}
+.f-grid a:hover{color:var(--paper)}
+.disclosure{border-top:1px solid var(--edge);margin-top:42px;padding-top:22px;font-size:16px;line-height:1.65;color:#8D948F;max-width:80ch}
+
+@media (max-width:900px){
+  .wrap{padding-left:22px;padding-right:22px}
+  .mast-in{padding-top:76px;padding-bottom:76px}
+  h1{font-size:38px}
+  .svc-grid{grid-template-columns:1fr;gap:34px}
+  .svc p{min-height:0}
+  .services{padding-top:60px;padding-bottom:60px}
+  .prov-in{grid-template-columns:1fr;gap:36px;padding-top:60px;padding-bottom:60px}
+  .prov figure img{height:340px}
+  .prov h2{font-size:30px}
+  .appt-in{grid-template-columns:1fr;gap:30px;padding-left:28px;padding-right:28px}
+  .appt{padding-top:60px;padding-bottom:60px}
+  .appt h2{font-size:28px}
+  .bignum{font-size:30px}
+  .f-grid{grid-template-columns:1fr;gap:28px}
+  .bar nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <div class="mark">Hartman Jewelers</div>
+    <nav>
+      <a href="#services">What we do</a>
+      <a href="#provenance">Our diamonds</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="tel" href="tel:+15403494123">(540) 349-4123</a>
+  </div>
+</header>
+
+<section class="mast">
+  <div class="wrap mast-in">
+    <h1>Jewelry from twenty-five dollars to <em>twenty-five thousand</em></h1>
+    <p class="sub">Warrenton's jeweler for over thirty years. Engagement rings, wedding bands,
+      coloured gemstones, and custom work made at our own bench.</p>
+    <div class="cta">
+      <a class="btn btn-solid" href="tel:+15403494123">Call (540) 349-4123</a>
+      <a class="btn btn-ghost" href="#visit">Book an appointment</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="services" id="services">
+    <div class="svc-grid">
+      <article class="svc">
+        <h2>Engagement</h2>
+        <p>Rings and bands in every shape, chosen with you rather than pointed at from behind a
+          counter. Bring an idea, or bring nothing at all.</p>
+        <!-- generated illustrative imagery -->
+        <figure><img src="images/ring.png" alt="A solitaire diamond ring standing on dark green velvet under a narrow beam of warm light."></figure>
+      </article>
+      <article class="svc">
+        <h2>Custom design</h2>
+        <p>Our master craftsman builds one-of-a-kind pieces on site — including remounting stones
+          you already own into something you will actually wear.</p>
+        <!-- generated illustrative imagery -->
+        <figure><img src="images/bench.png" alt="Hands at a jeweller's bench working a partly finished gold ring with fine pliers under a task lamp."></figure>
+      </article>
+      <article class="svc">
+        <h2>Repair &amp; remount</h2>
+        <p>Sizing, restringing, stone tightening and restoration. The unglamorous work that keeps a
+          jeweler honest, done in-house.</p>
+        <!-- generated illustrative imagery -->
+        <figure><img src="images/tray.png" alt="Loose cut diamonds scattered on a dark green velvet tray beside a brass loupe and fine tweezers."></figure>
+      </article>
+    </div>
+  </section>
+</div>
+
+<section class="prov" id="provenance">
+  <div class="wrap prov-in">
+    <!-- generated illustrative imagery -->
+    <figure>
+      <img src="images/case.png" alt="The interior of a lit jewellery display case with glass shelves, velvet pads and warm concealed lighting.">
+    </figure>
+    <div>
+      <h2>Hand-selected, bought direct</h2>
+      <p>We travel to Belgium — the diamond capital of the world — to hand-select the best cut and
+        most vibrant stones we can find. Buying straight from the master cutters means there is no
+        middleman between the stone and you.</p>
+      <p>Thirty years of doing it this way is why we can sit down with someone who has never bought
+        a diamond before and get them to a decision they feel good about, without the intimidation
+        that usually comes with it.</p>
+      <p>And it is why we have been voted Best Jeweler in Warrenton for more than a decade.</p>
+      <p class="range">Jewelry from $25 to $25,000</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="appt" id="visit">
+    <div class="appt-in">
+      <div>
+        <span class="rule"></span>
+        <h2>Come and see them in person</h2>
+        <p>A stone photographs one way and looks another in the hand. Call and we will set aside a
+          time — no appointment fee, no obligation, and someone who knows the stock will sit with
+          you rather than hand you a tray.</p>
+      </div>
+      <aside>
+        <a class="bignum" href="tel:+15403494123">(540) 349-4123</a>
+        <p>Warrenton, Virginia</p>
+      </aside>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <p class="f-mark">Hartman Jewelers</p>
+        <p>An independent jeweler in Warrenton, Virginia. Engagement rings, wedding bands, coloured
+          gemstones, custom design, and repair — for over thirty years.</p>
+      </div>
+      <div>
+        <p class="f-lab">Speak to us</p>
+        <p><a href="tel:+15403494123">(540) 349-4123</a></p>
+      </div>
+      <div>
+        <p class="f-lab">What we do</p>
+        <p>Engagement &amp; bridal<br>Custom design<br>Repair &amp; remount<br>Coloured gemstones</p>
+      </div>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use
+      photography of Hartman Jewelers' own pieces, bench and showroom.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Hartman Jewelers, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
