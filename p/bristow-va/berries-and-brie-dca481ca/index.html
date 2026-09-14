@@ -1,0 +1,308 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Berries &amp; Brie — Luxury charcuterie boards and grazing tables, Bristow VA and Orlando FL</title>
+<meta name="description" content="Custom charcuterie boards and grazing tables by Bianca. Signature boards from $100, flat-lay grazing tables from $380. Free delivery within 10 miles of Bristow, Virginia and Orlando, Florida.">
+<style>
+@font-face{font-family:"Bodoni Moda";src:url("fonts/bodoni-moda-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Bodoni Moda";src:url("fonts/bodoni-moda-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("fonts/manrope-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Manrope";src:url("fonts/manrope-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"IBM Plex Mono";src:url("fonts/ibm-plex-mono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#EDF0EA;
+  --panel:#E1E7DC;
+  --ink:#1B1F1A;
+  --muted:#54594F;
+  --fig:#4A1F33;
+  --olive:#455233;
+  --line:#C7CFC2;
+  --display:"Bodoni Moda",Georgia,serif;
+  --body:"Manrope",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:18px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin-left:auto;margin-right:auto;padding-left:32px;padding-right:32px}
+
+/* ── bar ──────────────────────────────────────────────── */
+.bar{border-bottom:1px solid var(--line)}
+.bar-in{display:flex;align-items:baseline;gap:28px;padding-top:18px;padding-bottom:18px}
+.mark{font-family:var(--display);font-weight:700;font-size:27px;line-height:1.15;white-space:nowrap}
+.bar nav{margin-left:auto;display:flex;gap:26px;flex-wrap:wrap}
+.bar nav a{
+  font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:0.06em;
+  color:var(--muted);text-decoration:none;padding-top:8px;padding-bottom:8px;transition:color .18s ease;
+}
+.bar nav a:hover{color:var(--fig)}
+
+/* ── masthead ─────────────────────────────────────────── */
+.mast{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:center;padding-top:76px;padding-bottom:76px}
+h1{
+  font-family:var(--display);font-weight:700;
+  font-size:62px;line-height:1.06;letter-spacing:-0.012em;
+  margin-top:0;margin-bottom:22px;
+}
+.lede{font-size:21px;line-height:1.6;color:var(--muted);margin-top:0;margin-bottom:26px;max-width:46ch}
+.markets{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;
+  color:var(--olive);margin:0;
+}
+.mast figure{margin:0}
+.mast figure img{width:100%;height:520px;object-fit:cover}
+
+/* ── two doors (structural signature) ─────────────────── */
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:26px;padding-bottom:84px}
+.door{
+  background:var(--panel);
+  padding-top:32px;padding-bottom:32px;padding-left:32px;padding-right:32px;
+  display:flex;flex-direction:column;
+  transition:transform .22s ease;
+}
+.door:hover{transform:translateY(-2px)}
+.door .sweep{display:block;height:2px;width:56px;background:var(--fig);margin-bottom:20px;transition:width .34s ease}
+.door:hover .sweep{width:100%}
+.door h2{margin-top:0;margin-bottom:10px}
+.door p{margin-top:0;margin-bottom:22px;color:var(--muted);min-height:5em}
+.door figure{margin-top:0;margin-bottom:22px;overflow:hidden;flex-grow:1}
+.door figure img{width:100%;height:240px;object-fit:cover}
+h2{
+  font-family:var(--display);font-weight:600;font-size:30px;line-height:1.2;
+  letter-spacing:-0.01em;margin-top:0;margin-bottom:16px;
+}
+.btn{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;
+  text-decoration:none;padding:15px 26px;min-height:44px;display:inline-flex;align-items:center;
+  justify-content:center;background:var(--fig);color:#F2D6E2;align-self:flex-start;
+  transition:transform .18s ease,background .18s ease;
+}
+.btn:hover{transform:translateY(-2px);background:#5E2A42}
+.btn-olive{background:var(--olive);color:#EDF0EA}
+.btn-olive:hover{background:#55653F}
+
+/* ── price ladder ─────────────────────────────────────── */
+.ladder{border-top:1px solid var(--line);padding-top:76px;padding-bottom:76px}
+.ladder-in{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:start}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:440px}
+caption{text-align:left;font-size:18px;line-height:1.6;color:var(--muted);margin-bottom:22px;max-width:56ch}
+th,td{text-align:left;padding-top:16px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+thead th{
+  font-family:var(--mono);font-size:13px;font-weight:400;letter-spacing:0.06em;
+  text-transform:uppercase;color:var(--muted);
+}
+tbody th{font-family:var(--body);font-weight:600;font-size:18px}
+td{font-family:var(--display);font-weight:600;font-size:27px;color:var(--fig)}
+td.small{font-family:var(--body);font-weight:400;font-size:18px;color:var(--muted)}
+.ladder figure{margin:0}
+.ladder figure img{width:100%;height:330px;object-fit:cover}
+.ladder-note{font-size:16px;line-height:1.6;color:var(--muted);margin-top:20px;margin-bottom:0}
+
+/* ── two-market band ──────────────────────────────────── */
+.band{background:var(--fig);color:#F2D6E2}
+.band-in{padding-top:72px;padding-bottom:72px}
+.band h2{color:#F2D6E2;margin-bottom:14px}
+.band p{color:#E8D4DD;margin-top:0;margin-bottom:0;max-width:62ch;font-size:21px;line-height:1.6}
+.mkts{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px}
+.mkt{background:rgba(242,227,233,.10);padding-top:26px;padding-bottom:26px;padding-left:28px;padding-right:28px}
+.mkt p:first-child{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;
+  color:#E5BFCF;margin-top:0;margin-bottom:8px;
+}
+.mkt p:last-child{font-family:var(--display);font-weight:600;font-size:27px;color:#F2D6E2;margin:0;line-height:1.25}
+
+/* ── terms ────────────────────────────────────────────── */
+.terms{padding-top:76px;padding-bottom:76px}
+.terms-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.terms ul{margin:0;padding-left:20px;color:var(--muted)}
+.terms li{margin-bottom:12px;line-height:1.6}
+.terms li:last-child{margin-bottom:0}
+.terms .cta-row{margin-top:30px}
+.terms figure{margin:0}
+.terms figure img{width:100%;height:340px;object-fit:cover}
+
+/* ── footer ───────────────────────────────────────────── */
+footer{background:var(--panel);padding-top:44px;padding-bottom:44px}
+footer p{margin-top:0;margin-bottom:10px;color:var(--muted);font-size:16px;line-height:1.6}
+.f-mark{font-family:var(--display);font-weight:700;font-size:24px;color:var(--ink);margin-bottom:12px}
+.disclosure{border-top:1px solid var(--line);margin-top:24px;padding-top:20px;font-size:16px;line-height:1.6;color:#54594F;max-width:80ch}
+
+@media (max-width:900px){
+  .wrap{padding-left:22px;padding-right:22px}
+  .mast{grid-template-columns:1fr;gap:36px;padding-top:48px;padding-bottom:48px}
+  h1{font-size:38px}
+  .mast figure img{height:360px}
+  .doors{grid-template-columns:1fr;gap:22px;padding-bottom:56px}
+  .door p{min-height:0}
+  .ladder-in{grid-template-columns:1fr;gap:36px}
+  .ladder{padding-top:56px;padding-bottom:56px}
+  .ladder figure img{height:260px}
+  .mkts{grid-template-columns:1fr;gap:18px}
+  .band-in{padding-top:52px;padding-bottom:52px}
+  .terms-in{grid-template-columns:1fr;gap:36px}
+  .terms{padding-top:56px;padding-bottom:56px}
+  .terms figure img{height:260px}
+  h2{font-size:26px}
+  .bar nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <div class="mark">Berries &amp; Brie</div>
+    <nav>
+      <a href="#boards">The Boards</a>
+      <a href="#events">Events</a>
+      <a href="#delivery">Delivery</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="mast">
+    <div>
+      <h1>Luxury charcuterie, thoughtfully curated</h1>
+      <p class="lede">Intimate boards to statement tables, styled to order — cheeses, charcuterie,
+        seasonal fruit and the finishing details that make a table worth photographing.</p>
+      <p class="markets">Bristow, VA &nbsp;·&nbsp; Orlando, FL</p>
+    </div>
+    <!-- generated illustrative imagery -->
+    <figure>
+      <img src="images/hero.png" alt="A styled charcuterie board with brie, folded salami, grapes, blackberries, almonds and a bowl of honey, with eucalyptus laid alongside.">
+    </figure>
+  </section>
+
+  <section class="doors">
+    <article class="door" id="boards">
+      <span class="sweep"></span>
+      <h2>Order a board</h2>
+      <p>Know what you would like? Boards for two to fourteen, from $100. Forty-eight hours notice is
+        all we need.</p>
+      <!-- generated illustrative imagery -->
+      <figure><img src="images/board.png" alt="A small round charcuterie board with brie, prosciutto, honeycomb, blackberries and almonds."></figure>
+      <a class="btn" href="#ladder">See board sizes and prices</a>
+    </article>
+    <article class="door" id="events">
+      <span class="sweep"></span>
+      <h2>Plan an event</h2>
+      <p>Flat-lay grazing tables for twenty guests and up, from $380. Styled on site, an hour or so
+        before your first guest arrives.</p>
+      <!-- generated illustrative imagery -->
+      <figure><img src="images/flatlay.png" alt="A long grazing table runner of cheeses, charcuterie, figs, berries and crackers with eucalyptus threaded through it."></figure>
+      <a class="btn btn-olive" href="#terms">Start an event enquiry</a>
+    </article>
+  </section>
+</div>
+
+<div class="wrap">
+  <section class="ladder" id="ladder">
+    <div class="ladder-in">
+      <div>
+        <h2>The boards</h2>
+        <div class="tablewrap">
+          <table>
+            <caption>Every board is built to the same standard — the size just changes how many
+              people it feeds. Prices are what you pay; the add-on is optional.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Size</th>
+                <th scope="col">Up to 6</th>
+                <th scope="col">Up to 12</th>
+                <th scope="col">Up to 14</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Signature board</th>
+                <td>$100</td>
+                <td>$170</td>
+                <td>$220</td>
+              </tr>
+              <tr>
+                <th scope="row">Bread &amp; crackers</th>
+                <td class="small">+$15</td>
+                <td class="small">+$22</td>
+                <td class="small">+$28</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="ladder-note">Choose cheese, cheese and charcuterie, or cheese and crudités. Grazing
+          tables are priced separately and start at $380 for twenty guests, plus a 20% service charge.</p>
+      </div>
+      <!-- generated illustrative imagery -->
+      <figure>
+        <img src="images/box.png" alt="An open kraft grazing box filled with sliced cheeses, folded salami, grapes, raspberries and crackers.">
+      </figure>
+    </div>
+  </section>
+</div>
+
+<section class="band" id="delivery">
+  <div class="wrap band-in">
+    <h2>Where we deliver</h2>
+    <p>Free delivery within ten miles of either home base. Beyond five miles outside that radius a
+      minimum delivery fee applies, and we will tell you what it is before you pay anything.</p>
+    <div class="mkts">
+      <div class="mkt">
+        <p>Virginia</p>
+        <p>Bristow &amp; Northern Virginia</p>
+      </div>
+      <div class="mkt">
+        <p>Florida</p>
+        <p>Orlando &amp; Lake Nona</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="terms" id="terms">
+    <div class="terms-in">
+      <div>
+        <h2>Good to know</h2>
+        <ul>
+          <li>Boards need forty-eight hours notice. Grazing tables and larger bookings are best given one to two months.</li>
+          <li>Payment confirms the date. You have a day from the invoice to lock it in.</li>
+          <li>Grazing tables are styled on site, an hour to ninety minutes before guests arrive.</li>
+          <li>Dietary needs are straightforward — just say so when you order.</li>
+        </ul>
+        <div class="cta-row"><a class="btn" href="mailto:berriesandbrieboards@gmail.com">Start an order</a></div>
+      </div>
+      <!-- generated illustrative imagery -->
+      <figure>
+        <img src="images/detail.png" alt="Close detail of a wedge of brie with honey drizzling from a wooden dipper, blackberries and a halved fig.">
+      </figure>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="f-mark">Berries &amp; Brie</p>
+    <p>Luxury charcuterie boards and grazing tables, by Bianca. Serving Bristow, Virginia and Orlando, Florida.</p>
+    <p>berriesandbrieboards@gmail.com</p>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use
+      photography of Berries &amp; Brie's own boards and tables. Prices and terms shown are taken from
+      the current order form and would be confirmed before the site went live.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Berries &amp; Brie, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
