@@ -1,0 +1,280 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goodness &amp; Grace — coffee and gluten-free baking, open 6am, Old Town Warrenton</title>
+<meta name="description" content="Independent cafe and bakery at 20 N 5th Street, Old Town Warrenton. Open Monday to Saturday from 6am. Coffee, cinnamon rolls, blueberry muffins and a proper gluten-free menu baked here every day.">
+<style>
+@font-face{font-family:"Bricolage Grotesque";src:url("fonts/bricolage-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Bricolage Grotesque";src:url("fonts/bricolage-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Rubik";src:url("fonts/rubik-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Rubik";src:url("fonts/rubik-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Anonymous Pro";src:url("fonts/anonymous-pro-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#F0F1F1;
+  --panel:#E4E6E5;
+  --ink:#1C1A18;
+  --muted:#565250;
+  --espresso:#3E2B20;
+  --honey:#7A4F10;
+  --rule:#CBCECD;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Rubik",system-ui,sans-serif;
+  --mono:"Anonymous Pro",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:18px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin-left:auto;margin-right:auto;padding-left:32px;padding-right:32px}
+
+/* ── bar ──────────────────────────────────────────────── */
+.bar{border-bottom:1px solid var(--rule)}
+.bar-in{display:flex;align-items:baseline;gap:28px;padding-top:16px;padding-bottom:16px}
+.mark{font-family:var(--display);font-weight:700;font-size:24px;line-height:1.2;white-space:nowrap}
+.bar nav{margin-left:auto;display:flex;gap:24px;flex-wrap:wrap}
+.bar nav a{
+  font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:0.06em;
+  color:var(--muted);text-decoration:none;padding-top:8px;padding-bottom:8px;transition:color .18s ease;
+}
+.bar nav a:hover{color:var(--honey)}
+.bar .addr{font-family:var(--mono);font-size:13px;color:var(--honey);white-space:nowrap}
+
+/* ── image-led masthead (signature) ───────────────────── */
+.hero{position:relative;background:var(--espresso)}
+.hero>img{width:100%;height:600px;object-fit:cover;object-position:center 58%}
+.hero-scrim{
+  position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(to top,rgba(20,14,10,.90) 0%,rgba(20,14,10,.70) 46%,rgba(20,14,10,0) 100%);
+  padding-top:130px;padding-bottom:46px;
+}
+.hero-scrim .wrap{color:#F4F3F1}
+h1{
+  font-family:var(--display);font-weight:700;font-size:62px;line-height:1.08;
+  letter-spacing:-0.018em;margin-top:0;margin-bottom:18px;
+}
+.gf-line{font-size:21px;line-height:1.55;color:#E6DFD6;margin-top:0;margin-bottom:30px;max-width:44ch}
+.gf-line em{font-style:italic;color:#F4D9A8}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;
+  text-decoration:none;padding:15px 26px;min-height:44px;display:inline-flex;align-items:center;
+  transition:transform .18s ease,background .18s ease,color .18s ease,border-color .18s ease;
+  border:1px solid transparent;
+}
+.btn-solid{background:#F4D9A8;color:#2A1C12}
+.btn-solid:hover{transform:translateY(-2px);background:#FBE5BC}
+.btn-ghost{color:#F4F3F1;border-color:rgba(244,243,241,.5)}
+.btn-ghost:hover{transform:translateY(-2px);background:rgba(244,243,241,.12)}
+
+/* ── hours strip ──────────────────────────────────────── */
+.strip{border-bottom:1px solid var(--rule)}
+.strip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-top:0;padding-bottom:44px}
+.cell{padding-top:26px;position:relative}
+.cell::before{
+  content:"";position:absolute;top:0;left:0;width:48px;height:2px;background:var(--honey);
+  transition:width .4s ease;
+}
+.strip-grid:hover .cell::before{width:100%}
+.cell p:first-child{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;
+  color:var(--muted);margin-top:0;margin-bottom:8px;
+}
+.cell p:last-child{font-family:var(--display);font-weight:600;font-size:27px;line-height:1.25;margin:0}
+.cell a{text-decoration:none}
+
+/* ── gluten-free promise band ─────────────────────────── */
+.gf{padding-top:88px;padding-bottom:88px}
+.gf-in{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center}
+.gf figure{margin:0}
+.gf figure img{width:100%;height:440px;object-fit:cover}
+h2{font-family:var(--display);font-weight:700;font-size:42px;line-height:1.14;letter-spacing:-0.015em;margin-top:0;margin-bottom:20px}
+.gf p{margin-top:0;margin-bottom:18px;color:var(--muted);max-width:52ch}
+.gf p:last-child{margin-bottom:0}
+
+/* ── this week panel ──────────────────────────────────── */
+.week{background:var(--panel)}
+.week-in{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center;padding-top:80px;padding-bottom:80px}
+.week h2{margin-bottom:16px}
+.week p{margin-top:0;margin-bottom:0;color:var(--muted);max-width:50ch}
+.week figure{margin:0}
+.week figure img{width:100%;height:360px;object-fit:cover}
+.lab{font-family:var(--mono);font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--honey);margin-top:0;margin-bottom:12px}
+
+/* ── room & story ─────────────────────────────────────── */
+.story{padding-top:88px;padding-bottom:88px}
+.story-in{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:center}
+.story p{margin-top:0;margin-bottom:18px;color:var(--muted);max-width:52ch}
+.story p:last-child{margin-bottom:0}
+.story figure{margin:0}
+.story figure img{width:100%;height:380px;object-fit:cover}
+
+/* ── footer ───────────────────────────────────────────── */
+footer{border-top:1px solid var(--rule);padding-top:48px;padding-bottom:48px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px}
+footer p{margin-top:0;margin-bottom:10px;color:var(--muted);font-size:16px;line-height:1.6}
+.f-mark{font-family:var(--display);font-weight:700;font-size:22px;color:var(--ink);margin-bottom:12px}
+.hrs{margin:0}
+.hrs div{display:flex;justify-content:space-between;gap:16px;font-size:16px;padding-top:5px;padding-bottom:5px;color:var(--muted)}
+.hrs div span:last-child{color:var(--ink)}
+.disclosure{border-top:1px solid var(--rule);margin-top:36px;padding-top:20px;font-size:16px;line-height:1.6;color:#565250;max-width:80ch}
+
+@media (max-width:900px){
+  .wrap{padding-left:22px;padding-right:22px}
+  .hero>img{height:420px}
+  .hero-scrim{padding-top:96px;padding-bottom:32px}
+  h1{font-size:36px}
+  .strip-grid{grid-template-columns:1fr;gap:0;padding-bottom:30px}
+  .cell{padding-top:22px}
+  .gf-in{grid-template-columns:1fr;gap:34px}
+  .gf figure img{height:300px}
+  .gf{padding-top:56px;padding-bottom:56px}
+  h2{font-size:30px}
+  .week-in{grid-template-columns:1fr;gap:32px;padding-top:56px;padding-bottom:56px}
+  .week figure img{height:260px}
+  .story-in{grid-template-columns:1fr;gap:32px}
+  .story{padding-top:56px;padding-bottom:56px}
+  .story figure img{height:280px}
+  .f-grid{grid-template-columns:1fr;gap:28px}
+  .bar nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <div class="mark">Goodness &amp; Grace</div>
+    <nav>
+      <a href="#glutenfree">Gluten free</a>
+      <a href="#thisweek">This week</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <span class="addr">20 N 5th St, Warrenton</span>
+  </div>
+</header>
+
+<section class="hero">
+  <!-- generated illustrative imagery -->
+  <img src="images/counter.png" alt="A reclaimed-timber cafe counter with stacked cups and a cake stand, low golden morning sun falling across the floor.">
+  <div class="hero-scrim">
+    <div class="wrap">
+      <h1>Open at six. Closed Sundays.</h1>
+      <p class="gf-line">Coffee, cinnamon rolls, blueberry muffins — and <em>a proper gluten-free
+        menu, baked here, every day.</em></p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="https://maps.google.com/?q=20+N+5th+St+Warrenton+VA+20186">Get directions</a>
+        <a class="btn btn-ghost" href="tel:+15402163395">Call (540) 216-3395</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip" id="visit">
+  <div class="wrap strip-grid">
+    <div class="cell">
+      <p>Open</p>
+      <p>Mon – Sat, 6am – 3pm</p>
+    </div>
+    <div class="cell">
+      <p>Find us</p>
+      <p>20 N 5th Street, Old Town Warrenton</p>
+    </div>
+    <div class="cell">
+      <p>Call</p>
+      <p><a href="tel:+15402163395">(540) 216-3395</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="gf" id="glutenfree">
+    <div class="gf-in">
+      <!-- generated illustrative imagery -->
+      <figure>
+        <img src="images/pastry.png" alt="A tray of freshly baked cinnamon rolls and blueberry muffins cooling on a reclaimed wooden counter.">
+      </figure>
+      <div>
+        <h2>A proper gluten-free menu, baked here</h2>
+        <p>Not one sad option at the end of the counter. A real range, baked in the same kitchen as
+          everything else, every day we are open.</p>
+        <p>If you have spent years asking the same careful questions in cafes, you already know how
+          rare that is. Ask us anything — we would rather you asked than wondered.</p>
+        <p>And if you have no idea what any of that is about: the cinnamon rolls are very good.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="week" id="thisweek">
+  <div class="wrap week-in">
+    <div>
+      <h2>A new specialty drink every week</h2>
+      <p>We change the specialty menu weekly — seasonal syrups, a rotating pour, whatever the
+        morning seems to want. It goes up here as well as on social, so you can check before you
+        come rather than after.</p>
+    </div>
+    <!-- generated illustrative imagery -->
+    <figure>
+      <img src="images/latte.png" alt="A latte with leaf art in a plain stoneware cup on a reclaimed timber tabletop beside a glass of water.">
+    </figure>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="story">
+    <div class="story-in">
+      <div>
+        <h2>Built out of barn boards</h2>
+        <p>The room was put together from barn scraps and leftover timber, by hand, before the first
+          coffee was ever poured. It is a small place and it is meant to feel like one.</p>
+        <p>We opened in January 2024. Come early — most people do.</p>
+      </div>
+      <!-- generated illustrative imagery -->
+      <figure>
+        <img src="images/room.png" alt="A corner of a cafe with mismatched wooden chairs and a plain table against a wall of weathered barn boards.">
+      </figure>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <p class="f-mark">Goodness &amp; Grace</p>
+        <p>Coffee and gluten-free baking at 20 N 5th Street, Old Town Warrenton, VA 20186.
+          <a href="tel:+15402163395">(540) 216-3395</a></p>
+      </div>
+      <div>
+        <p class="lab">Hours</p>
+        <div class="hrs">
+          <div><span>Monday – Saturday</span><span>6am – 3pm</span></div>
+          <div><span>Sunday</span><span>Closed</span></div>
+        </div>
+      </div>
+      <div>
+        <p class="lab">Good to know</p>
+        <p>Gluten-free range daily. Weekly specialty drinks. Earliest opening in Old Town.</p>
+      </div>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use
+      photography of Goodness &amp; Grace's own counter, bakes and room. Hours and contact details shown
+      are drawn from current public listings and would be confirmed with the owner before the site
+      went live.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Goodness &amp; Grace, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
