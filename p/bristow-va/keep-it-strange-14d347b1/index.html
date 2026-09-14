@@ -1,0 +1,385 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keep It Strange Comics &amp; Collectibles — Manassas Park, Virginia</title>
+<meta name="description" content="Comics, trading cards and tabletop gaming at 9133 Manassas Drive, Manassas Park, Virginia. Friday Night Magic, miniature gaming Tuesday and Thursday, Heroclix Wednesday. We buy, sell and trade.">
+<style>
+@font-face{font-family:"Anton";src:url("fonts/anton-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Barlow";src:url("fonts/barlow-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Barlow";src:url("fonts/barlow-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Spline Sans Mono";src:url("fonts/spline-sans-mono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#F4F5F7;
+  --ink:#16161D;
+  --muted:#575A66;
+  --cobalt:#1B2F9E;
+  --blush:#FFE0E6;
+  --pulp:#FFC53D;
+  --rule:#D7DAE0;
+  --display:"Anton","Arial Narrow",sans-serif;
+  --body:"Barlow",system-ui,sans-serif;
+  --mono:"Spline Sans Mono",ui-monospace,monospace;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+figure{margin:0}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin-left:auto;margin-right:auto;padding-left:30px;padding-right:30px}
+
+/* ── bar ─────────────────────────────────────────────── */
+.bar{background:var(--ink);color:var(--paper)}
+.bar-in{display:flex;align-items:center;gap:26px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-size:22px;letter-spacing:0.01em;text-transform:uppercase;white-space:nowrap}
+.mark span{color:var(--pulp)}
+.bar nav{margin-left:auto;display:flex;gap:24px;flex-wrap:wrap}
+.bar nav a{font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:0.07em;color:#C9CBD4;text-decoration:none;padding-top:11px;padding-bottom:11px;transition:color .18s ease}
+.bar nav a:hover{color:var(--pulp)}
+.bar .tel{font-family:var(--mono);font-size:13px;color:var(--pulp);text-decoration:none;padding-top:11px;padding-bottom:11px;white-space:nowrap}
+
+/* ── masthead: drenched cobalt halftone field ────────── */
+.mast{
+  background-color:var(--cobalt);
+  background-image:radial-gradient(circle, rgba(255,255,255,.16) 1px, transparent 1.3px);
+  background-size:9px 9px;
+  color:var(--blush);
+}
+.mast-in{padding-top:96px;padding-bottom:96px}
+.mast h1{
+  font-family:var(--display);font-size:76px;line-height:1.0;letter-spacing:0.004em;
+  margin-top:0;margin-bottom:22px;text-transform:uppercase;color:var(--paper);max-width:15ch;
+}
+.mast h1 em{font-style:italic;color:var(--pulp)}
+.mast .sub{font-size:22px;line-height:1.5;margin-top:0;margin-bottom:30px;max-width:46ch;color:var(--blush)}
+.tonight{
+  display:inline-block;font-family:var(--mono);font-size:13px;letter-spacing:0.09em;
+  text-transform:uppercase;color:var(--ink);background:var(--pulp);
+  padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;margin-top:0;margin-bottom:30px;
+}
+.mast-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.07em;text-transform:uppercase;text-decoration:none;
+  padding:15px 24px;min-height:44px;display:inline-flex;align-items:center;border:2px solid transparent;
+  transition:transform .18s ease,background .18s ease,color .18s ease,border-color .18s ease;
+}
+.btn-solid{background:var(--paper);color:var(--cobalt)}
+.btn-solid:hover{transform:translateY(-2px);background:var(--pulp);color:var(--ink)}
+.btn-ghost{color:var(--paper);border-color:rgba(244,245,247,.55)}
+.btn-ghost:hover{transform:translateY(-2px);border-color:var(--pulp);color:var(--pulp)}
+
+/* ── section furniture ───────────────────────────────── */
+h2{font-family:var(--display);font-size:40px;line-height:1.1;letter-spacing:0.006em;text-transform:uppercase;margin-top:0;margin-bottom:8px}
+.sec{padding-top:76px;padding-bottom:76px}
+.sec-note{font-family:var(--mono);font-size:13px;color:var(--muted);letter-spacing:0.04em;margin-top:0;margin-bottom:34px}
+
+/* ── week strip ──────────────────────────────────────── */
+.week{border-top:1px solid var(--rule)}
+.row{
+  display:grid;grid-template-columns:78px 116px 1fr 96px;gap:20px;align-items:baseline;
+  padding-top:15px;padding-bottom:15px;border-bottom:1px solid var(--rule);
+}
+.row .d{font-family:var(--display);font-size:22px;text-transform:uppercase;line-height:1.2}
+.row .h{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.row .e{font-size:18px;line-height:1.45}
+.row .t{font-family:var(--mono);font-size:13px;color:var(--cobalt);text-align:right}
+.row.closed .e,.row.closed .d{color:var(--muted)}
+.week-foot{font-size:16px;color:var(--muted);margin-top:20px;margin-bottom:0}
+
+/* ── full-bleed room band ────────────────────────────── */
+.band img{width:100%;height:460px;object-fit:cover}
+.band figcaption{
+  font-family:var(--mono);font-size:13px;color:var(--muted);
+  padding-top:12px;padding-bottom:0;
+}
+
+/* ── four doors (deliberately text, not pictures) ────── */
+.doors{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.door{
+  --door-fg:var(--muted);
+  display:block;text-decoration:none;background:var(--paper);
+  border:1px solid var(--ink);
+  padding-top:34px;padding-bottom:34px;padding-left:30px;padding-right:30px;
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+.door h3{font-family:var(--display);font-size:30px;line-height:1.14;text-transform:uppercase;margin-top:0;margin-bottom:9px;letter-spacing:0.006em}
+.door p{margin:0;font-size:16px;line-height:1.5;color:var(--door-fg);transition:color .2s ease}
+.door:hover{
+  --door-fg:var(--blush);
+  transform:translateY(-2px);
+  background-color:var(--cobalt);color:var(--paper);
+  background-image:radial-gradient(circle, rgba(255,255,255,.18) 1px, transparent 1.3px);
+  background-size:9px 9px;
+}
+
+/* ── inside strip ────────────────────────────────────── */
+.inside{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{border:1px solid var(--rule);background:#fff}
+.card img{width:100%;height:210px;object-fit:cover}
+.card-txt{padding-top:17px;padding-bottom:19px;padding-left:18px;padding-right:18px}
+.card-name{font-family:var(--mono);font-size:13px;letter-spacing:0.07em;text-transform:uppercase;color:var(--cobalt);margin-top:0;margin-bottom:7px}
+.card-note{font-size:16px;line-height:1.5;color:var(--muted);margin:0}
+
+/* ── buy panel ───────────────────────────────────────── */
+.buy{background:var(--ink);color:var(--paper)}
+.buy-in{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;padding-top:70px;padding-bottom:70px}
+.buy h2{color:var(--paper)}
+.buy p{color:#C9CBD4;margin-top:0;margin-bottom:18px;max-width:46ch}
+.buy ul{list-style:none;margin:0;padding:0}
+.buy li{font-family:var(--mono);font-size:16px;padding-top:11px;padding-bottom:11px;border-bottom:1px solid #2C2C36;color:var(--paper)}
+.buy li:first-child{border-top:1px solid #2C2C36}
+
+/* ── two locations ───────────────────────────────────── */
+.locs{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.loc{border:1px solid var(--ink);padding-top:30px;padding-bottom:30px;padding-left:28px;padding-right:28px}
+.loc.here{background:var(--cobalt);color:var(--blush);border-color:var(--cobalt)}
+.loc h3{font-family:var(--display);font-size:22px;text-transform:uppercase;margin-top:0;margin-bottom:12px;letter-spacing:0.006em}
+.loc.here h3{color:var(--paper)}
+.loc p{margin-top:0;margin-bottom:8px;font-size:18px;line-height:1.55}
+.loc .meta{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.loc.here .meta{color:var(--blush)}
+
+/* ── footer ──────────────────────────────────────────── */
+footer{border-top:1px solid var(--rule);padding-top:48px;padding-bottom:48px}
+.f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:38px}
+.f-grid p{margin-top:0;margin-bottom:9px;font-size:16px;line-height:1.55;color:var(--muted)}
+.f-mark{font-family:var(--display);font-size:22px;color:var(--ink);text-transform:uppercase;margin-bottom:12px}
+.f-lab{font-family:var(--mono);font-size:13px;letter-spacing:0.07em;text-transform:uppercase;color:var(--cobalt);margin-top:0;margin-bottom:11px}
+.f-grid a{color:var(--muted);text-decoration:none}
+.f-grid a:hover{color:var(--ink)}
+.disclosure{border-top:1px solid var(--rule);margin-top:34px;padding-top:20px;font-size:16px;line-height:1.55;color:var(--muted);max-width:80ch}
+
+@media (max-width:900px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .mast-in{padding-top:58px;padding-bottom:58px}
+  .mast h1{font-size:44px}
+  .mast .sub{font-size:19px}
+  .sec{padding-top:54px;padding-bottom:54px}
+  h2{font-size:30px}
+  .row{grid-template-columns:62px 1fr;gap:10px 16px}
+  .row .t{text-align:left}
+  .doors{grid-template-columns:1fr}
+  .inside{grid-template-columns:repeat(2,1fr)}
+  .band img{height:280px}
+  .buy-in{grid-template-columns:1fr;gap:32px;padding-top:50px;padding-bottom:50px}
+  .locs{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr;gap:26px}
+  .bar nav{display:none}
+}
+@media (max-width:560px){ .inside{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <div class="mark">Keep It <span>Strange</span></div>
+    <nav>
+      <a href="#week">This week</a>
+      <a href="#doors">What we stock</a>
+      <a href="#buy">We buy</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="tel" href="tel:+15714266780">(571) 426-6780</a>
+  </div>
+</header>
+
+<section class="mast">
+  <div class="wrap mast-in">
+    <h1>Comics, cards and tabletop on <em>Manassas Drive</em></h1>
+    <p class="sub">A comic shop and game room in Manassas Park, Virginia. Open six days, with tables
+      running most nights of the week.</p>
+    <p class="tonight">Fridays · Magic Draft 6:30pm</p>
+    <div class="mast-cta">
+      <a class="btn btn-solid" href="#week">See this week</a>
+      <a class="btn btn-ghost" href="#visit">Find the shop</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="sec week" id="week">
+    <h2>This week at the tables</h2>
+    <p class="sec-note">Manassas Park store · recurring weekly programme</p>
+
+    <div class="row closed">
+      <span class="d">Mon</span><span class="h">Closed</span>
+      <span class="e">No tables today</span><span class="t">—</span>
+    </div>
+    <div class="row">
+      <span class="d">Tue</span><span class="h">1pm – 8pm</span>
+      <span class="e">Miniature Gaming, plus two more events</span><span class="t">5:00pm</span>
+    </div>
+    <div class="row">
+      <span class="d">Wed</span><span class="h">1pm – 8pm</span>
+      <span class="e">Casual Heroclix</span><span class="t">7:00pm</span>
+    </div>
+    <div class="row">
+      <span class="d">Thu</span><span class="h">12pm – 8pm</span>
+      <span class="e">Miniature Gaming, plus two more events</span><span class="t">5:00pm</span>
+    </div>
+    <div class="row">
+      <span class="d">Fri</span><span class="h">12pm – 10pm</span>
+      <span class="e">Friday Night Magic: Draft, plus one more</span><span class="t">6:30pm</span>
+    </div>
+    <div class="row">
+      <span class="d">Sat</span><span class="h">11am – 10pm</span>
+      <span class="e">Open tables, no scheduled event</span><span class="t">—</span>
+    </div>
+    <div class="row">
+      <span class="d">Sun</span><span class="h">1pm – 7pm</span>
+      <span class="e">Riftbound Casual Nexus Night, plus three more</span><span class="t">1:00pm</span>
+    </div>
+    <p class="week-foot">Several evenings run more than one table at once. Ring the shop if you want to
+      know what is going on tonight before you drive over.</p>
+  </section>
+</div>
+
+<section class="band">
+  <!-- generated illustrative imagery -->
+  <figure>
+    <img src="images/hero.png" alt="A tabletop game in progress on a dark mat with painted miniatures, modular terrain and scattered dice, two players' hands at the edge of frame.">
+    <div class="wrap"><figcaption>The game room, mid-session</figcaption></div>
+  </figure>
+</section>
+
+<div class="wrap">
+  <section class="sec" id="doors">
+    <h2>Four doors in</h2>
+    <p class="sec-note">Every one of these is a word you can search for, and read</p>
+    <div class="doors">
+      <a class="door" href="#visit">
+        <h3>Pokémon</h3>
+        <p>Singles, sealed and league play, for the nine-year-olds and the thirty-nine-year-olds alike.</p>
+      </a>
+      <a class="door" href="#visit">
+        <h3>Magic: The Gathering</h3>
+        <p>Draft every Friday at 6:30, plus singles and sealed across the counter.</p>
+      </a>
+      <a class="door" href="#visit">
+        <h3>Warhammer</h3>
+        <p>Miniature gaming Tuesday and Thursday from 5pm, with tables and terrain provided.</p>
+      </a>
+      <a class="door" href="#visit">
+        <h3>Dungeons &amp; Dragons</h3>
+        <p>Books, dice and a room with space to actually sit and play a session through.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec" id="stock">
+    <h2>And the rest of the shop</h2>
+    <p class="sec-note">New and vintage comics, toys, statues, sports memorabilia, arcade machines and consoles</p>
+    <div class="inside">
+      <article class="card">
+        <!-- generated illustrative imagery -->
+        <figure><img src="images/boxes.png" alt="Rows of white cardboard long boxes on a shelf, filled with comics in clear bags and backing boards."></figure>
+        <div class="card-txt">
+          <p class="card-name">Comics</p>
+          <p class="card-note">New books every week, and long boxes of back issues worth losing an hour in.</p>
+        </div>
+      </article>
+      <article class="card">
+        <!-- generated illustrative imagery -->
+        <figure><img src="images/minis.png" alt="Part-painted grey plastic miniatures on a cutting mat beside fine brushes and open pots of paint."></figure>
+        <div class="card-txt">
+          <p class="card-name">Miniatures</p>
+          <p class="card-note">Kits, paints and brushes — and a table to sit and paint at on a Tuesday.</p>
+        </div>
+      </article>
+      <article class="card">
+        <!-- generated illustrative imagery -->
+        <figure><img src="images/cards.png" alt="Trading cards in clear plastic sleeves fanned across a dark cloth play mat, showing plain backs."></figure>
+        <div class="card-txt">
+          <p class="card-name">Trading cards</p>
+          <p class="card-note">Sports, Pokémon, Magic and more, sleeved and sorted behind the counter.</p>
+        </div>
+      </article>
+      <article class="card">
+        <!-- generated illustrative imagery -->
+        <figure><img src="images/case.png" alt="A lit glass retail display case holding vintage-styled plastic toys, small statues and boxed collectibles."></figure>
+        <div class="card-txt">
+          <p class="card-name">The case</p>
+          <p class="card-note">Vintage toys, statues and the things that do not go on an open shelf.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+
+<section class="buy" id="buy">
+  <div class="wrap buy-in">
+    <div>
+      <h2>We buy, sell and trade</h2>
+      <p>Got an old comic run, a shoebox of cards, or some Star Wars figures collecting dust? Bring it
+        in. We will look at it across the counter and tell you what it is worth, whether or not you
+        sell it to us.</p>
+      <p>No appointment. No listing fees. No posting it to a stranger.</p>
+    </div>
+    <div>
+      <ul>
+        <li>Comic collections and back-issue runs</li>
+        <li>Trading cards — sports, Pokémon, Magic</li>
+        <li>Vintage and modern toys, still boxed or not</li>
+        <li>Statues and collectibles</li>
+        <li>Video game consoles and cartridges</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="sec" id="visit">
+    <h2>Two shops, two states</h2>
+    <p class="sec-note">This site is the Virginia store. The South Carolina store is its own room.</p>
+    <div class="locs">
+      <div class="loc here">
+        <h3>Manassas Park, VA</h3>
+        <p>9133 Manassas Drive<br>Manassas Park, VA 20111</p>
+        <p class="meta">Tue–Wed 1–8 · Thu 12–8 · Fri 12–10 · Sat 11–10 · Sun 1–7 · Mon closed</p>
+        <p class="meta">(571) 426-6780</p>
+      </div>
+      <div class="loc">
+        <h3>Myrtle Beach, SC</h3>
+        <p>4001 Howard Avenue<br>Myrtle Beach, SC 29577</p>
+        <p class="meta">A separate store with its own hours and its own events calendar.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <p class="f-mark">Keep It Strange</p>
+        <p>Comics, collectibles and tabletop gaming on Manassas Drive. Buy, sell and trade across the
+          counter six days a week.</p>
+      </div>
+      <div>
+        <p class="f-lab">Find us</p>
+        <p>9133 Manassas Drive<br>Manassas Park, VA 20111</p>
+        <p><a href="tel:+15714266780">(571) 426-6780</a></p>
+      </div>
+      <div>
+        <p class="f-lab">Tables</p>
+        <p>Tue &amp; Thu &nbsp;Miniature gaming<br>Wed &nbsp;Heroclix<br>Fri &nbsp;Magic Draft<br>Sun &nbsp;Riftbound</p>
+      </div>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use
+      photography of Keep It Strange's own shop, shelves and game room. The weekly programme is taken
+      from the shop's published events calendar in September 2026; opening hours and the telephone
+      number are as listed and would be confirmed with the shop before the site went live.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Keep It Strange Comics &amp; Collectibles, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
