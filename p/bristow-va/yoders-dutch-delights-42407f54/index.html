@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yoder's Dutch Delights | Sourdough donuts in Manassas Park, VA</title>
+<meta name="description" content="Pennsylvania Dutch sourdough donuts fried every morning at Park Central in Manassas Park. Open 6am Tuesday through Friday, 8am weekends. 9145 Manassas Drive.">
+<style>
+@font-face{font-family:"Darker Grotesque";src:url("fonts/darker-grotesque-500.woff2") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Darker Grotesque";src:url("fonts/darker-grotesque-700.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Darker Grotesque";src:url("fonts/darker-grotesque-900.woff2") format("woff2");font-weight:900;font-display:swap}
+@font-face{font-family:"Figtree";src:url("fonts/figtree-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Figtree";src:url("fonts/figtree-600.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"DM Mono";src:url("fonts/dm-mono-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"DM Mono";src:url("fonts/dm-mono-500.woff2") format("woff2");font-weight:500;font-display:swap}
+
+:root{
+  --ground:#E8EBF0;
+  --ink:#14161C;
+  --indigo:#2B3F8C;
+  --indigo-lift:#223272;
+  --red:#B02A26;
+  --red-lift:#9A2420;
+  --muted:#5A6070;
+  --white:#FFFFFF;
+  --on-indigo:#C6CFEC;
+  --on-red:#FAE6E5;
+  --display:"Darker Grotesque",Georgia,serif;
+  --body:"Figtree",system-ui,-apple-system,sans-serif;
+  --mono:"DM Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --gap:3px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--body);font-size:16px;line-height:1.62;
+  font-weight:400;
+}
+img{max-width:100%;display:block}
+a{color:var(--indigo);text-underline-offset:3px}
+
+/* ---------- shell ---------- */
+.wrap{max-width:1220px;margin:0 auto;padding-inline:20px}
+
+/* ---------- top bar ---------- */
+.bar{padding-block:22px 26px}
+.bar-in{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:baseline;justify-content:space-between}
+.mark{
+  font-family:var(--display);font-weight:900;font-size:25px;line-height:1.2;
+  letter-spacing:-0.015em;text-transform:uppercase;color:var(--ink);
+  text-decoration:none;
+}
+.mark span{color:var(--indigo)}
+.nav{display:flex;flex-wrap:wrap;gap:22px;margin:0;padding:0;list-style:none}
+.nav a{
+  font-family:var(--mono);font-size:12.8px;letter-spacing:0.04em;
+  text-transform:uppercase;color:var(--muted);text-decoration:none;
+  padding-block:4px;border-bottom:2px solid transparent;
+  transition:color 320ms var(--ease),border-color 320ms var(--ease);
+}
+.nav a:hover,.nav a:focus-visible{color:var(--indigo);border-bottom-color:var(--indigo)}
+
+/* ---------- the quilt ---------- */
+.quilt{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.cell{
+  position:relative;display:flex;flex-direction:column;justify-content:flex-end;
+  min-height:270px;padding:26px;overflow:hidden;
+  transition:background-color 320ms var(--ease);
+}
+.cell.indigo{background:var(--indigo);color:var(--on-indigo)}
+.cell.indigo:hover,.cell.indigo:focus-within{background:var(--indigo-lift)}
+.cell.red{background:var(--red);color:var(--on-red)}
+.cell.red:hover,.cell.red:focus-within{background:var(--red-lift)}
+.cell.ink{background:var(--ink);color:#CFD2DA}
+.cell.paper{background:var(--white);color:var(--ink)}
+.cell.photo{padding:0;min-height:270px;background:var(--indigo)}
+.cell.photo img{width:100%;height:100%;object-fit:cover;
+  transition:transform 320ms var(--ease)}
+.cell.photo:hover img,.cell.photo:focus-within img{transform:scale(1.03)}
+
+/* ---------- hero band ---------- */
+.hero .cell{min-height:clamp(300px,40vw,430px)}
+.hero h1{
+  font-family:var(--display);font-weight:900;
+  font-size:clamp(2.1rem,4.6vw,3.5rem);line-height:1.06;
+  letter-spacing:-0.02em;margin:0;color:var(--white);text-transform:uppercase;
+}
+.hero .sub{margin:14px 0 0;font-size:16px;max-width:26ch;color:var(--on-indigo)}
+.open-k{font-family:var(--mono);font-size:12.8px;letter-spacing:0.06em;
+  text-transform:uppercase;margin:0 0 10px;color:var(--on-red)}
+.open-t{font-family:var(--display);font-weight:900;
+  font-size:clamp(2.6rem,6vw,4.3rem);line-height:1.0;margin:0;color:var(--white)}
+.open-d{margin:8px 0 0;font-size:16px;color:var(--on-red)}
+
+/* ---------- strips ---------- */
+.strip{
+  font-family:var(--mono);font-size:clamp(12.8px,1.5vw,15px);
+  letter-spacing:0.06em;text-transform:uppercase;color:var(--ink);
+  padding:20px 26px;background:var(--ground);
+  display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between;
+}
+.strip .r{color:var(--muted)}
+.strip-h{font:inherit;margin:0;font-weight:400;letter-spacing:inherit;
+  text-transform:inherit;color:inherit}
+
+/* ---------- flavours ---------- */
+.sec-h{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(1.9rem,3.6vw,2.75rem);line-height:1.1;
+  letter-spacing:-0.015em;margin:0;text-transform:uppercase;
+}
+.flav h3{
+  font-family:var(--display);font-weight:900;
+  font-size:clamp(1.65rem,2.9vw,2.3rem);line-height:1.1;
+  letter-spacing:-0.012em;margin:0;text-transform:uppercase;color:var(--white);
+}
+.cell.paper h3{color:var(--ink)}
+.flav p{margin:8px 0 0;font-size:16px}
+.tag{font-family:var(--mono);font-size:12.8px;letter-spacing:0.06em;
+  text-transform:uppercase;margin:0 0 auto;padding-bottom:14px}
+
+/* ---------- story ---------- */
+.story{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--gap);margin-top:var(--gap)}
+.story .box{background:var(--white);padding:44px}
+.story .box.deep{background:var(--ink);color:#CFD2DA}
+.story p{margin:0 0 16px;max-width:58ch}
+.story p:last-child{margin-bottom:0}
+.pull{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(1.5rem,2.7vw,2.05rem);line-height:1.34;
+  letter-spacing:-0.01em;color:var(--white);margin:0 0 18px;max-width:20ch;
+}
+.pull em{font-style:italic}
+.sig{font-family:var(--mono);font-size:12.8px;letter-spacing:0.04em;
+  color:var(--muted);margin-top:20px}
+.story .box.deep .sig{color:#9AA0AE}
+
+/* ---------- visit ---------- */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);margin-top:var(--gap)}
+.visit .box{background:var(--white);padding:44px}
+.addr{font-family:var(--display);font-weight:700;
+  font-size:clamp(1.6rem,2.8vw,2.15rem);line-height:1.24;margin:14px 0 0;
+  letter-spacing:-0.012em}
+.hours{width:100%;border-collapse:collapse;margin-top:14px;font-size:16px}
+.hours th,.hours td{text-align:left;padding:9px 0;border-bottom:1px solid #DCE0E8}
+.hours th{font-family:var(--mono);font-size:12.8px;letter-spacing:0.05em;
+  text-transform:uppercase;font-weight:400;color:var(--muted)}
+.hours tr:last-child th,.hours tr:last-child td{border-bottom:0}
+.hours td{font-variant-numeric:tabular-nums}
+.closed{color:var(--red);font-weight:600}
+.call{
+  display:inline-block;margin-top:22px;background:var(--indigo);color:var(--white);
+  font-family:var(--mono);font-size:12.8px;letter-spacing:0.05em;text-transform:uppercase;
+  padding:16px 26px;text-decoration:none;
+  transition:background-color 320ms var(--ease),transform 120ms var(--ease);
+}
+.call:hover,.call:focus-visible{background:var(--indigo-lift)}
+.call:active{transform:translateY(1px)}
+
+/* ---------- footer ---------- */
+.foot{margin-top:var(--gap);background:var(--ink);color:#9AA0AE;padding:44px 0}
+.foot-in{display:flex;flex-wrap:wrap;gap:18px 40px;justify-content:space-between}
+.foot p{margin:0;font-size:16px;max-width:60ch}
+.foot a{color:#C6CFEC}
+.disclosure{margin-top:18px;font-size:12.8px;color:#8E94A4;max-width:70ch}
+
+@media (max-width:900px){
+  .story .box,.visit .box{padding:28px}
+  .foot{padding:30px 0}
+  .quilt{grid-template-columns:repeat(2,1fr)}
+  .story,.visit{grid-template-columns:1fr}
+  .cell{min-height:230px}
+}
+@media (max-width:560px){
+  .quilt{grid-template-columns:1fr}
+  .cell{min-height:210px}
+  .cell.photo{min-height:250px}
+  .hero .cell{min-height:270px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:0.01ms !important}
+  .cell.photo:hover img,.cell.photo:focus-within img{transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="mark" href="#top">Yoder's <span>Dutch Delights</span></a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="#flavours">Flavours</a></li>
+        <li><a href="#story">Our story</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#visit">Order takeout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- hero: the top row of the quilt, read as one pieced band -->
+  <section class="wrap">
+    <div class="quilt hero">
+      <div class="cell indigo">
+        <h1>Donuts fried every morning</h1>
+        <p class="sub">Sourdough and yeast, a family recipe from Central Pennsylvania, rolled and cut at Park Central in Manassas Park.</p>
+      </div>
+      <!-- generated illustrative imagery -->
+      <div class="cell photo"><img src="images/tray.png" alt="A bakery tray of eight large glazed ring donuts, photographed from directly overhead on a deep blue surface."></div>
+      <div class="cell red">
+        <p class="open-k">Doors open</p>
+        <p class="open-t">6 AM</p>
+        <p class="open-d">Tuesday to Friday. Weekends from 8. Closed Mondays.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="flavours">
+    <div class="strip">
+      <h2 class="strip-h">Seven flavours on the board</h2>
+      <span class="r">and one more every week</span>
+    </div>
+    <div class="quilt flav">
+      <div class="cell indigo">
+        <p class="tag">The best seller</p>
+        <h3>Original Glazed</h3>
+        <p>The one the food truck was built on. Thin glaze, still warm if you get here early.</p>
+      </div>
+      <!-- generated illustrative imagery -->
+      <div class="cell photo"><img src="images/glaze.png" alt="Close view of a donut lifted from a tray of clear glaze, with a ribbon of glaze running off the lower edge."></div>
+      <div class="cell paper">
+        <p class="tag">Tied for second</p>
+        <h3>Raspberry</h3>
+        <p>Filled to the edge, so the first bite is the filling rather than the dough.</p>
+      </div>
+      <div class="cell red">
+        <p class="tag">Tied for second</p>
+        <h3>Chocolate Cream</h3>
+        <p>The other half of the vote. Nobody here has settled the argument yet.</p>
+      </div>
+      <div class="cell ink">
+        <p class="tag">On the board</p>
+        <h3>Cream Filled</h3>
+        <p>Plain outside, and deliberately so. The dough carries almost no sugar of its own.</p>
+      </div>
+      <!-- generated illustrative imagery -->
+      <div class="cell photo"><img src="images/counter.png" alt="A baker seen from behind reaching into a glass case holding three trays of donuts, with a main street visible through the window."></div>
+      <div class="cell indigo">
+        <p class="tag">On the board</p>
+        <h3>Dutch Apple Fritter</h3>
+        <p>Craggy, folded rather than piped, and the heaviest thing we make.</p>
+      </div>
+      <div class="cell paper">
+        <p class="tag">Also today</p>
+        <h3>Two More</h3>
+        <p>The board carries seven. The last two change with what the morning called for, so they are written up rather than printed.</p>
+      </div>
+      <div class="cell red">
+        <p class="tag">Flavour of the week</p>
+        <h3>Ask at the Counter</h3>
+        <p>One extra every week, on top of the seven. It goes up Tuesday and it is gone when it is gone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="story">
+    <div class="story">
+      <div class="box">
+        <h2 class="sec-h">Two of five, from Central Pennsylvania</h2>
+        <p style="margin-top:18px">We grew up as the youngest two of five siblings in an Amish-Mennonite community in Central Pennsylvania. From our parents we learned the value of home-cooked meals, strong family ties and hard work.</p>
+        <p>When we left our childhood community we entered the real world with no connections, no formal experience and no college degrees. What we did have was work ethic, resilience and a determination to build something of our own.</p>
+        <p>In 2018 we bought a food truck and a cherished donut recipe from our cousin at Mrs. Yoder's Kitchen in Richmond. After six years of farmers markets, festivals and private events across Northern Virginia, we opened our first brick-and-mortar shop in Manassas Park in February 2025. Our cousin Kimberly runs it with us.</p>
+        <p class="sig">Sam and Jules Yoder</p>
+      </div>
+      <div class="box deep">
+        <p class="pull">It feels crazy to think about the days we did <em>fifty dollars</em>, and now we have the shop.</p>
+        <p>The recipe is sourdough and yeast with very little sugar in the dough, which is why ours come out of the fryer looking like a cake donut and eating like something lighter. The sweetness is in the glaze and the filling, not the ring.</p>
+        <p>The truck still runs. Find us at the Manassas City farmers market on Saturdays and the Dale City farmers market on Sundays.</p>
+        <p class="sig">Jules Yoder, quoted in the Prince William Times, March 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="strip">
+      <h2 class="strip-h">Alongside the donuts</h2>
+      <span class="r">and still out on the road</span>
+    </div>
+    <div class="quilt flav">
+      <!-- generated illustrative imagery -->
+      <div class="cell photo"><img src="images/cone.png" alt="A hand-rolled waffle cone held up against a deep blue background with a scoop of vanilla above a scoop of chocolate."></div>
+      <div class="cell ink">
+        <p class="tag">Next to the donut counter</p>
+        <h3>Kreider Farms Ice Cream</h3>
+        <p>From a dairy in Lancaster County, Pennsylvania, scooped into waffle cones we roll here.</p>
+      </div>
+      <div class="cell paper">
+        <p class="tag">Still on the road</p>
+        <h3>The Truck</h3>
+        <p>Manassas City farmers market on Saturdays. Dale City farmers market on Sundays.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="visit">
+    <div class="visit">
+      <div class="box">
+        <h2 class="sec-h">Come see us</h2>
+        <p class="addr">9145 Manassas Drive<br>Manassas Park, VA 20111</p>
+        <p style="margin-top:14px;color:var(--muted)">At Park Central, a short walk from the library.</p>
+        <a class="call" href="tel:+15406185174">Call (540) 618-5174</a>
+      </div>
+      <div class="box">
+        <h2 class="sec-h">Hours</h2>
+        <table class="hours">
+          <tbody>
+            <tr><th scope="row">Tuesday to Friday</th><td>6:00 am to 4:00 pm</td></tr>
+            <tr><th scope="row">Saturday and Sunday</th><td>8:00 am to 6:00 pm</td></tr>
+            <tr><th scope="row">Monday</th><td class="closed">Closed</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:16px;color:var(--muted)">Takeout ordering runs through ChowNow. Large orders are easier by phone.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <p><strong>Yoder's Dutch Delights</strong><br>9145 Manassas Drive, Manassas Park, VA 20111<br><a href="tel:+15406185174">(540) 618-5174</a><br><a href="mailto:yodersdutchdelights@gmail.com">yodersdutchdelights@gmail.com</a></p>
+      <p>Tuesday to Friday, 6:00 am to 4:00 pm<br>Saturday and Sunday, 8:00 am to 6:00 pm<br>Closed Mondays</p>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Yoder's Dutch Delights.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Bakery",
+  "name":"Yoder's Dutch Delights",
+  "address":{"@type":"PostalAddress","streetAddress":"9145 Manassas Drive","addressLocality":"Manassas Park","addressRegion":"VA","postalCode":"20111","addressCountry":"US"},
+  "telephone":"+1-540-618-5174",
+  "email":"yodersdutchdelights@gmail.com",
+  "servesCuisine":"Donuts",
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"06:00","closes":"16:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"08:00","closes":"18:00"}
+  ]
+}
+</script>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Yoder's Dutch Delights, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
