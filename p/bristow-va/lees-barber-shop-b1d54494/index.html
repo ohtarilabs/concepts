@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lee's Barber Shop | Main Street, Warrenton VA | Haircuts $18, cash</title>
+<meta name="description" content="Walk-in barbershop on Main Street in Old Town Warrenton. Haircut $18, flat top $21, cash only, no appointment needed. Open Monday to Saturday. Call (540) 341-2772.">
+<meta property="og:title" content="Lee's Barber Shop, Main Street, Warrenton VA">
+<meta property="og:description" content="Haircut $18. Flat top $21. Cash only. Walk in, no appointment. Main Street, Old Town Warrenton.">
+<meta property="og:type" content="website">
+<style>
+@font-face{font-family:"Hepta Slab";src:url("fonts/hepta-slab-700.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Hepta Slab";src:url("fonts/hepta-slab-800.woff2") format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Mulish";src:url("fonts/mulish-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Mulish";src:url("fonts/mulish-600.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Chivo Mono";src:url("fonts/chivo-mono-400.woff2") format("woff2");font-weight:400;font-display:swap}
+
+:root{
+  --ground:#EDEDEB;
+  --ink:#171717;
+  --amber:#9E5408;
+  --muted:#5A5A56;
+  --white:#FFFFFF;
+  --rule:#D2D2CE;
+  --display:"Hepta Slab",Georgia,serif;
+  --body:"Mulish",system-ui,-apple-system,sans-serif;
+  --mono:"Chivo Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--body);font-size:16px;line-height:1.62;font-weight:400}
+img{max-width:100%;display:block}
+a{color:var(--ink)}
+.wrap{max-width:920px;margin:0 auto;padding-left:20px;padding-right:20px}
+
+/* ---------- bar ---------- */
+.bar{padding-top:22px;padding-bottom:22px;border-bottom:2px solid var(--ink)}
+.bar-in{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:baseline;justify-content:space-between}
+.mark{font-family:var(--display);font-weight:800;font-size:28px;line-height:1.16;
+  letter-spacing:-0.01em;color:var(--ink);text-decoration:none}
+.where-top{font-family:var(--mono);font-size:12.8px;letter-spacing:0.02em;
+  color:var(--muted)}
+
+/* ---------- the price board ---------- */
+.board{padding-top:64px;padding-bottom:56px;border-bottom:2px solid var(--ink)}
+.board h1{font-family:var(--display);font-weight:800;
+  font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.1;letter-spacing:-0.018em;margin:0 0 40px}
+.prices{margin:0;padding:0;list-style:none}
+.price{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;
+  justify-content:space-between;padding-top:10px;padding-bottom:10px}
+.price .what{font-family:var(--display);font-weight:700;
+  font-size:clamp(1.5rem,3.4vw,2.4rem);line-height:1.14;letter-spacing:-0.012em}
+.price .num{position:relative;font-family:var(--display);font-weight:800;
+  font-size:clamp(3.4rem,11vw,7.5rem);line-height:1;letter-spacing:-0.035em;
+  color:var(--amber);text-decoration:none;display:inline-block}
+.price .num::after{content:"";position:absolute;left:0;bottom:0.08em;width:0;height:5px;
+  background:var(--amber);transition:width 300ms var(--ease)}
+.price:hover .num::after,.price:focus-within .num::after{width:100%}
+.cash{margin-top:44px;display:flex;flex-wrap:wrap;gap:14px 22px;align-items:baseline}
+.cash b{font-family:var(--display);font-weight:800;
+  font-size:clamp(1.7rem,4.4vw,3rem);line-height:1.1;letter-spacing:-0.02em;color:var(--ink)}
+.cash span{font-size:16px;color:var(--muted)}
+.walkin{margin:18px 0 0;font-size:clamp(1.05rem,2vw,1.3rem);color:var(--ink)}
+
+/* ---------- fact rows ---------- */
+.facts{border-bottom:2px solid var(--ink)}
+.fact{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px 28px;
+  padding-top:26px;padding-bottom:26px;border-bottom:1px solid var(--rule)}
+.fact:last-child{border-bottom:0}
+.fact h2{font-family:var(--mono);font-size:12.8px;letter-spacing:0.06em;text-transform:uppercase;
+  font-weight:400;color:var(--muted);margin:0;padding-top:6px}
+.fact .val{margin:0;font-family:var(--display);font-weight:700;
+  font-size:clamp(1.2rem,2.4vw,1.7rem);line-height:1.34;letter-spacing:-0.01em}
+.fact .note{margin:8px 0 0;font-size:16px;color:var(--muted);font-family:var(--body);font-weight:400}
+.hours{margin:0;font-family:var(--display);font-weight:700;
+  font-size:clamp(1.2rem,2.4vw,1.7rem);line-height:1.5;letter-spacing:-0.01em}
+.hours .d{display:inline-block;min-width:9.5ch;color:var(--muted);font-weight:700}
+.shut{color:var(--amber)}
+.chairs{margin:0;font-family:var(--display);font-weight:700;
+  font-size:clamp(1.2rem,2.4vw,1.7rem);line-height:1.4;letter-spacing:-0.01em}
+.tel{color:var(--amber);text-decoration:none;border-bottom:2px solid var(--amber)}
+.tel:hover,.tel:focus-visible{background:var(--amber);color:var(--white)}
+
+/* ---------- plates ---------- */
+.plates{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2px;
+  padding-top:56px;padding-bottom:56px}
+.plate{overflow:hidden;background:var(--rule);aspect-ratio:1/1;margin:0}
+.plate.lead{aspect-ratio:auto}
+.plate img{width:100%;height:100%;object-fit:cover;transition:transform 300ms var(--ease)}
+.plate:hover img,.plate:focus-within img{transform:scale(1.03)}
+
+/* ---------- closing note ---------- */
+.note-sec{border-top:2px solid var(--ink);padding-top:44px;padding-bottom:44px}
+.note-sec h2{font-family:var(--display);font-weight:800;
+  font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.16;letter-spacing:-0.015em;margin:0 0 16px}
+.note-sec p{margin:0 0 14px;max-width:60ch}
+.note-sec p:last-child{margin-bottom:0}
+
+/* ---------- footer ---------- */
+.foot{border-top:1px solid var(--rule);padding-top:32px;padding-bottom:40px}
+.foot-in{display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:space-between}
+.foot p{margin:0;font-size:16px;color:var(--muted);max-width:52ch}
+.disclosure{margin-top:20px;font-size:12.8px;color:var(--muted);max-width:70ch}
+
+@media (max-width:760px){
+  .plates{grid-template-columns:1fr;padding-top:40px;padding-bottom:40px}
+  .plate.lead{aspect-ratio:16/10}
+  .fact{grid-template-columns:1fr;gap:4px}
+  .fact h2{padding-top:0}
+  .board{padding-top:44px;padding-bottom:40px}
+  .price{padding-top:6px;padding-bottom:6px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:0.01ms !important}
+  .plate:hover img,.plate:focus-within img{transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="mark" href="#top">Lee's Barber Shop</a>
+    <span class="where-top">Main Street &middot; Warrenton, Virginia</span>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="wrap board">
+    <h1>Lee's Barber Shop, Main Street, Warrenton</h1>
+    <ul class="prices">
+      <li class="price">
+        <span class="what">Haircut</span>
+        <a class="num" href="tel:+15403412772">$18</a>
+      </li>
+      <li class="price">
+        <span class="what">Flat top</span>
+        <a class="num" href="tel:+15403412772">$21</a>
+      </li>
+    </ul>
+    <p class="cash"><b>Cash only</b> <span>No cards. It is part of why the haircut is eighteen dollars.</span></p>
+    <p class="walkin">Walk in. There are no appointments and there is no app.</p>
+  </section>
+
+  <section class="wrap facts">
+    <div class="fact">
+      <h2>Open</h2>
+      <p class="hours">
+        <span class="d">Mon to Fri</span> 9:30 am to 6:00 pm<br>
+        <span class="d">Saturday</span> 8:30 am to 5:00 pm<br>
+        <span class="d">Sunday</span> <span class="shut">Closed</span>
+      </p>
+    </div>
+    <div class="fact">
+      <h2>Where</h2>
+      <p class="val">44 Main Street, Warrenton, VA 20186</p>
+      <p class="note">In Old Town, on the Main Street block. We are not the other Warrenton barbershop with a Lee in the name, which is over on 5th Street.</p>
+    </div>
+    <div class="fact">
+      <h2>Call</h2>
+      <p class="val"><a class="tel" href="tel:+15403412772">(540) 341-2772</a></p>
+    </div>
+    <div class="fact">
+      <h2>The chairs</h2>
+      <p class="chairs">Lee &middot; Cindy &middot; Ms. Lee &middot; Miss Kim</p>
+      <p class="note">Ask for anyone, or take whoever is free. Children are welcome and nobody will rush them.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="plates">
+      <!-- generated illustrative imagery -->
+      <figure class="plate lead"><img src="images/chair.png" alt="An empty classic barber chair with worn black leather and chrome arms, on a checkerboard floor in a plain shop."></figure>
+      <!-- generated illustrative imagery -->
+      <figure class="plate"><img src="images/tools.png" alt="Clippers, two combs, barber shears and a folded white towel laid in a row on a worn wooden counter."></figure>
+      <!-- generated illustrative imagery -->
+      <figure class="plate"><img src="images/street.png" alt="The view from inside a shop window onto a small-town main street of low brick storefronts on an overcast morning."></figure>
+    </div>
+  </section>
+
+  <section class="wrap note-sec">
+    <h2>That is the whole website</h2>
+    <p>A barbershop does not need much of one. You wanted to know what it costs, when we are open, where we are and whether we take cards. Those four answers are above, and they are the reason this page exists.</p>
+    <p>Everything else you would find out by sitting down. We cut men's and boys' hair, we have been on Main Street a long time, and the wait on a Saturday morning is usually shorter than it looks.</p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <div class="foot-in">
+    <p><strong>Lee's Barber Shop</strong><br>44 Main Street, Warrenton, VA 20186<br><a href="tel:+15403412772">(540) 341-2772</a></p>
+    <p>Mon to Fri 9:30 am to 6:00 pm<br>Saturday 8:30 am to 5:00 pm<br>Closed Sunday &middot; Cash only</p>
+  </div>
+  <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Lee's Barber Shop.</p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HairSalon",
+  "name":"Lee's Barber Shop",
+  "address":{"@type":"PostalAddress","streetAddress":"44 Main Street","addressLocality":"Warrenton","addressRegion":"VA","postalCode":"20186","addressCountry":"US"},
+  "telephone":"+1-540-341-2772",
+  "paymentAccepted":"Cash",
+  "priceRange":"$",
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:30","closes":"18:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:30","closes":"17:00"}
+  ]
+}
+</script>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Lee's Barber Shop, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
