@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Katerina's Greek Cuisine — Greek food on Center Street, Old Town Manassas since 2011</title>
+<meta name="description" content="Family-owned Greek taverna at 9212 Center Street in Old Town Manassas since 2011. Moussaka, souvlaki, spanakopita, pastitsio and dolmades, plus takeout and catering. Open Tuesday through Sunday.">
+<style>
+@font-face{font-family:"Petrona";src:url("fonts/petrona-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Petrona";src:url("fonts/petrona-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Epilogue";src:url("fonts/epilogue-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Epilogue";src:url("fonts/epilogue-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Spline Sans Mono";src:url("fonts/spline-sans-mono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#F0F2F3;
+  --panel:#E3E7E8;
+  --ink:#171A1C;
+  --muted:#55595C;
+  --aegean:#0F4C5C;
+  --terra:#963F1C;
+  --line:#C9D0D2;
+  --display:"Petrona",Georgia,serif;
+  --body:"Epilogue",system-ui,sans-serif;
+  --mono:"Spline Sans Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:18px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin-left:auto;margin-right:auto;padding-left:32px;padding-right:32px}
+
+/* ── bar ──────────────────────────────────────────────── */
+.bar{background:var(--paper);border-bottom:1px solid var(--line)}
+.bar-in{display:flex;align-items:center;gap:28px;padding-top:16px;padding-bottom:16px}
+.mark{font-family:var(--display);font-weight:700;font-size:26px;line-height:1.15;white-space:nowrap}
+.bar nav{margin-left:auto;display:flex;gap:26px;flex-wrap:wrap}
+.bar nav a{
+  font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:0.07em;
+  color:var(--muted);text-decoration:none;padding-top:10px;padding-bottom:10px;transition:color .18s ease;
+}
+.bar nav a:hover{color:var(--aegean)}
+.bar .tel{font-family:var(--mono);font-size:13px;color:var(--terra);text-decoration:none;white-space:nowrap;padding-top:10px;padding-bottom:10px}
+
+/* ── hero (image-led signature) ───────────────────────── */
+.hero{position:relative;background:var(--ink)}
+.hero>img{width:100%;height:640px;object-fit:cover;object-position:center 55%}
+.hero-scrim{
+  position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(to top,rgba(12,16,18,.90) 0%,rgba(12,16,18,.72) 45%,rgba(12,16,18,0) 100%);
+  padding-top:120px;padding-bottom:48px;
+}
+.hero-scrim .wrap{color:var(--paper)}
+.hero h1{
+  font-family:var(--display);font-weight:700;
+  font-size:60px;line-height:1.08;letter-spacing:-0.015em;
+  margin-top:0;margin-bottom:16px;max-width:17ch;
+}
+.standing{
+  font-family:var(--mono);font-size:13px;line-height:1.5;letter-spacing:0.03em;
+  color:#D5DDDF;margin-top:0;margin-bottom:28px;
+}
+.standing b{color:#F0F2F3;font-weight:400}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.07em;text-transform:uppercase;
+  text-decoration:none;padding:15px 26px;min-height:44px;display:inline-flex;align-items:center;
+  transition:transform .18s ease,background .18s ease,color .18s ease;border:1px solid transparent;
+}
+.btn-solid{background:var(--terra);color:#FDF6F2}
+.btn-solid:hover{transform:translateY(-2px);background:#AD4A22}
+.btn-ghost{color:var(--paper);border-color:rgba(240,242,243,.55)}
+.btn-ghost:hover{transform:translateY(-2px);background:rgba(240,242,243,.12)}
+
+/* ── dish strip ───────────────────────────────────────── */
+.dishes{padding-top:84px;padding-bottom:84px}
+.sec-head{margin-bottom:36px}
+h2{
+  font-family:var(--display);font-weight:700;font-size:44px;line-height:1.15;
+  letter-spacing:-0.015em;margin-top:0;margin-bottom:12px;
+}
+.sec-head p{font-size:21px;line-height:1.55;color:var(--muted);margin:0;max-width:58ch}
+.dish-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.dish{background:var(--paper)}
+.dish .frame{overflow:hidden;background:var(--panel)}
+.dish .frame img{width:100%;height:400px;object-fit:cover;transition:transform .35s ease}
+.dish:hover .frame img{transform:scale(1.03)}
+.dish h3{
+  font-family:var(--display);font-weight:600;font-size:30px;line-height:1.2;
+  margin-top:20px;margin-bottom:8px;
+}
+.dish p{font-size:18px;line-height:1.6;color:var(--muted);margin:0}
+
+/* ── story band ───────────────────────────────────────── */
+.band{background:var(--aegean);color:var(--paper)}
+.band-in{
+  display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center;
+  padding-top:84px;padding-bottom:84px;
+}
+.band h2{color:var(--paper);margin-bottom:20px}
+.band p{color:#C3E0E8;margin-top:0;margin-bottom:18px;max-width:56ch}
+.band p:last-of-type{margin-bottom:28px}
+.proof{background:rgba(226,180,74,.14);padding-top:22px;padding-bottom:22px;padding-left:24px;padding-right:24px}
+.proof .big{font-family:var(--display);font-weight:700;font-size:30px;line-height:1.2;color:var(--paper);margin-top:0;margin-bottom:6px}
+.proof .src{font-family:var(--mono);font-size:13px;color:#BCDCE4;margin:0}
+.band figure{margin:0}
+.band figure img{width:100%;height:400px;object-fit:cover}
+
+/* ── find us ──────────────────────────────────────────── */
+.find{padding-top:84px;padding-bottom:84px}
+.find-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:44px}
+.find h3{font-family:var(--display);font-weight:600;font-size:30px;line-height:1.2;margin-top:0;margin-bottom:16px}
+.lab{font-family:var(--mono);font-size:13px;letter-spacing:0.07em;text-transform:uppercase;color:var(--terra);margin-top:0;margin-bottom:12px}
+.find p{margin-top:0;margin-bottom:10px;color:var(--muted)}
+.hrs{margin:0;border-top:1px solid var(--line);padding-top:14px}
+.hrs div{display:flex;justify-content:space-between;gap:16px;font-size:16px;padding-top:6px;padding-bottom:6px;color:var(--muted)}
+.hrs div span:last-child{color:var(--ink)}
+.find a{color:var(--aegean);text-decoration:none}
+
+/* ── footer ───────────────────────────────────────────── */
+footer{background:var(--panel);padding-top:44px;padding-bottom:44px}
+footer .f-in{display:flex;gap:32px;flex-wrap:wrap;align-items:baseline}
+footer p{margin:0;color:var(--muted);font-size:16px;line-height:1.6}
+.disclosure{border-top:1px solid var(--line);margin-top:28px;padding-top:20px;font-size:16px;line-height:1.6;color:#55595C;max-width:78ch}
+
+@media (max-width:900px){
+  .wrap{padding-left:22px;padding-right:22px}
+  .hero>img{height:440px}
+  .hero-scrim{padding-top:90px;padding-bottom:34px}
+  .hero h1{font-size:36px}
+  .dish-grid{grid-template-columns:1fr;gap:34px}
+  .dish .frame img{height:300px}
+  .band-in{grid-template-columns:1fr;gap:36px;padding-top:56px;padding-bottom:56px}
+  .band figure img{height:280px}
+  .find-grid{grid-template-columns:1fr;gap:32px}
+  .dishes{padding-top:56px;padding-bottom:56px}
+  .find{padding-top:56px;padding-bottom:56px}
+  h2{font-size:32px}
+  .bar nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <div class="mark">Katerina's</div>
+    <nav>
+      <a href="#dishes">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#find">Visit</a>
+    </nav>
+    <a class="tel" href="tel:+17033614976">(703) 361-4976</a>
+  </div>
+</header>
+
+<section class="hero">
+  <!-- generated illustrative imagery -->
+  <img src="images/hero.png" alt="A taverna table laid with Greek mezze — stuffed grape leaves, olives, tzatziki, spanakopita and warm pita — seen from above.">
+  <div class="hero-scrim">
+    <div class="wrap">
+      <h1>Greek food on Center Street since 2011</h1>
+      <p class="standing"><b>Ranked #1 of all Manassas restaurants on Tripadvisor</b> · Travelers' Choice · 4.7 from 651 reviews</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#dishes">See the menu</a>
+        <a class="btn btn-ghost" href="tel:+17033614976">Call to order</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="dishes" id="dishes">
+    <div class="sec-head">
+      <h2>What to get</h2>
+      <p>Family recipes, made the way they were handed down. The full menu runs from Greek classics
+        through pasta, steaks and seafood — but if it is your first time, start here.</p>
+    </div>
+    <div class="dish-grid">
+      <article class="dish">
+        <!-- generated illustrative imagery -->
+        <div class="frame"><img src="images/spanakopita.png" alt="A wedge of spanakopita with flaky golden phyllo and a spinach and feta filling, with a lemon wedge."></div>
+        <h3>Spanakopita</h3>
+        <p>Spinach and feta folded into phyllo and baked until the layers shatter.</p>
+      </article>
+      <article class="dish">
+        <!-- generated illustrative imagery -->
+        <div class="frame"><img src="images/souvlaki.png" alt="A souvlaki platter with two grilled chicken skewers, warm pita, tzatziki and a salad of tomato, cucumber and red onion."></div>
+        <h3>Souvlaki</h3>
+        <p>Skewers off the grill with warm pita, tzatziki, and a plate of salad alongside.</p>
+      </article>
+      <article class="dish">
+        <!-- generated illustrative imagery -->
+        <div class="frame"><img src="images/moussaka.png" alt="A square portion of moussaka showing layers of aubergine and spiced meat under a browned béchamel top."></div>
+        <h3>Moussaka</h3>
+        <p>Aubergine and spiced meat under a béchamel top, browned in the oven.</p>
+      </article>
+    </div>
+  </section>
+</div>
+
+<section class="band" id="story">
+  <div class="wrap band-in">
+    <div>
+      <h2>A cultural experience, not just a meal</h2>
+      <p>Our mission is simple: to honour our Greek heritage, to share our family recipes with everyone
+        who walks through our doors, and to make our food feel like home.</p>
+      <p>It begins with the food itself. Olive oil is a staple of the Mediterranean table and it runs
+        through nearly everything we cook. Fifteen years on Center Street, and that has not changed.</p>
+      <div class="proof">
+        <p class="big">#1 restaurant in Manassas</p>
+        <p class="src">Tripadvisor Travelers' Choice · 4.7 from 651 reviews · verified September 2026</p>
+      </div>
+    </div>
+    <!-- generated illustrative imagery -->
+    <figure>
+      <img src="images/room.png" alt="A corner of a small Greek taverna dining room with white linen tables, wooden chairs and afternoon light from a window.">
+    </figure>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="find" id="find">
+    <div class="find-grid">
+      <div>
+        <h3>Come in</h3>
+        <p>9212 Center Street<br>Manassas, VA 20110</p>
+        <p><a href="tel:+17033614976">(703) 361-4976</a></p>
+        <p><a href="https://maps.google.com/?q=9212+Center+St+Manassas+VA+20110">Get directions</a></p>
+      </div>
+      <div>
+        <p class="lab">Hours</p>
+        <div class="hrs">
+          <div><span>Monday</span><span>Closed</span></div>
+          <div><span>Tuesday – Thursday</span><span>11am – 9pm</span></div>
+          <div><span>Friday – Saturday</span><span>11am – 9pm</span></div>
+          <div><span>Sunday</span><span>11am – 9pm</span></div>
+        </div>
+      </div>
+      <div>
+        <p class="lab">First Fridays</p>
+        <p>Center Street closes for First Friday from February through November, 6–9pm. We are right on
+          the block — come for dinner before you walk it, or after.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <p>Katerina's Greek Cuisine · 9212 Center Street, Manassas, VA 20110 · (703) 361-4976</p>
+      <p>Dine in · Takeout · Catering</p>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use
+      photography of Katerina's Greek Cuisine. The Tripadvisor ranking and review count shown were
+      verified in September 2026 and would be refreshed before the site went live.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Katerina's Greek Cuisine, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
