@@ -1,0 +1,334 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Open Book — independent bookstore on Main Street, Old Town Warrenton, VA</title>
+<meta name="description" content="Warrenton's independent, woman-owned bookstore at 104 Main Street since 2019. Nine book clubs, a drop-in knitting circle, and children's story time every Friday at 11am. Building community word by word.">
+<style>
+@font-face{font-family:"Young Serif";src:url("fonts/young-serif-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Work Sans";src:url("fonts/work-sans-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Work Sans";src:url("fonts/work-sans-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("fonts/jetbrains-mono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#EFF0EC;
+  --panel:#E3E5DE;
+  --ink:#1A1C19;
+  --muted:#4F534D;
+  --red:#8F2B22;
+  --rule:#C8CCC3;
+  --display:"Young Serif",Georgia,serif;
+  --body:"Work Sans",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:18px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin-left:auto;margin-right:auto;padding-left:32px;padding-right:32px}
+
+/* ── bar ──────────────────────────────────────────────── */
+.bar{border-bottom:1px solid var(--rule)}
+.bar-in{display:flex;align-items:baseline;gap:28px;padding-top:18px;padding-bottom:18px}
+.mark{font-family:var(--display);font-size:25px;line-height:1.2;white-space:nowrap}
+.bar nav{margin-left:auto;display:flex;gap:26px;flex-wrap:wrap}
+.bar nav a{
+  font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:0.06em;
+  color:var(--muted);text-decoration:none;padding-top:8px;padding-bottom:8px;transition:color .18s ease;
+}
+.bar nav a:hover{color:var(--red)}
+.bar .where{font-family:var(--mono);font-size:13px;color:var(--red);white-space:nowrap}
+
+/* ── type-led masthead (signature) ────────────────────── */
+.mast{padding-top:104px;padding-bottom:104px;border-bottom:1px solid var(--rule)}
+h1{
+  font-family:var(--display);font-size:66px;line-height:1.1;letter-spacing:-0.012em;
+  margin-top:0;margin-bottom:34px;max-width:17ch;
+}
+h1 em{font-style:italic;color:var(--red)}
+.count{
+  border-top:1px solid var(--ink);padding-top:20px;margin-top:0;margin-bottom:34px;
+  font-family:var(--mono);font-size:13px;letter-spacing:0.02em;
+  color:var(--muted);
+}
+.count span{color:var(--ink)}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.07em;text-transform:uppercase;
+  text-decoration:none;padding:16px 26px;min-height:44px;display:inline-flex;align-items:center;
+  transition:transform .18s ease,background .18s ease,color .18s ease,border-color .18s ease;
+}
+.btn-solid{background:var(--red);color:#F3EFEE}
+.btn-solid:hover{transform:translateY(-2px);background:#A33328}
+.btn-ghost{color:var(--ink);border:1px solid var(--rule)}
+.btn-ghost:hover{transform:translateY(-2px);border-color:var(--red);color:var(--red)}
+
+/* ── club programme (centrepiece) ─────────────────────── */
+.prog{padding-top:88px;padding-bottom:88px}
+.prog-head{display:flex;align-items:baseline;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+h2{font-family:var(--display);font-size:40px;line-height:1.16;margin-top:0;margin-bottom:0}
+.prog-head p{font-family:var(--mono);font-size:13px;color:var(--muted);margin:0;letter-spacing:0.04em}
+.clubs{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.club{
+  display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;
+  border-top:1px solid var(--rule);padding-top:18px;padding-bottom:18px;position:relative;
+}
+.club::before{
+  content:"";position:absolute;top:-1px;left:0;width:0;height:1px;background:var(--red);
+  transition:width .35s ease;
+}
+.club:hover::before{width:100%}
+.club-name{font-family:var(--display);font-size:22px;line-height:1.3;margin:0}
+.club-when{font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:5px;margin-bottom:0;letter-spacing:0.03em}
+.club-go{
+  font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:0.07em;
+  color:var(--red);text-decoration:none;white-space:nowrap;transition:transform .2s ease;display:inline-block;
+}
+.club:hover .club-go{transform:translateX(3px)}
+.prog-note{
+  margin-top:34px;margin-bottom:0;background:var(--panel);
+  padding-top:22px;padding-bottom:22px;padding-left:26px;padding-right:26px;
+  color:var(--muted);font-size:17px;line-height:1.6;
+}
+
+/* ── shelf strip ──────────────────────────────────────── */
+.strip{border-top:1px solid var(--rule);padding-top:80px;padding-bottom:80px}
+.strip-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr .8fr;gap:22px}
+.strip figure{margin:0}
+.strip figure img{width:100%;height:320px;object-fit:cover}
+.strip figcaption{font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:12px;letter-spacing:0.03em}
+
+/* ── find us ──────────────────────────────────────────── */
+.find{border-top:1px solid var(--rule);padding-top:80px;padding-bottom:80px}
+.find-in{display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px}
+.find h3{font-family:var(--display);font-size:26px;line-height:1.25;margin-top:0;margin-bottom:14px}
+.lab{font-family:var(--mono);font-size:13px;letter-spacing:0.07em;text-transform:uppercase;color:var(--red);margin-top:0;margin-bottom:12px}
+.find p{margin-top:0;margin-bottom:10px;color:var(--muted)}
+.hrs{margin:0;border-top:1px solid var(--rule);padding-top:14px}
+.hrs div{display:flex;justify-content:space-between;gap:16px;font-size:16px;padding-top:5px;padding-bottom:5px;color:var(--muted)}
+.hrs div span:last-child{color:var(--ink)}
+.find a{color:var(--red);text-decoration:none}
+.verify{font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:14px;margin-bottom:0;letter-spacing:0.02em}
+
+/* ── footer ───────────────────────────────────────────── */
+footer{background:var(--panel);padding-top:44px;padding-bottom:44px}
+footer p{margin-top:0;margin-bottom:10px;color:var(--muted);font-size:16px;line-height:1.6}
+.f-mark{font-family:var(--display);font-size:24px;color:var(--ink);margin-bottom:12px}
+.disclosure{border-top:1px solid var(--rule);margin-top:26px;padding-top:20px;font-size:16px;line-height:1.6;color:#4F534D;max-width:80ch}
+
+@media (max-width:900px){
+  .wrap{padding-left:22px;padding-right:22px}
+  .mast{padding-top:60px;padding-bottom:60px}
+  h1{font-size:38px}
+  .clubs{grid-template-columns:1fr;gap:0}
+  .prog{padding-top:56px;padding-bottom:56px}
+  h2{font-size:30px}
+  .strip-grid{grid-template-columns:1fr;gap:26px}
+  .strip figure img{height:260px}
+  .strip{padding-top:56px;padding-bottom:56px}
+  .find-in{grid-template-columns:1fr;gap:32px}
+  .find{padding-top:56px;padding-bottom:56px}
+  .bar nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <div class="mark">The Open Book</div>
+    <nav>
+      <a href="#whatson">What's on</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <span class="where">104 Main St, Warrenton</span>
+  </div>
+</header>
+
+<section class="mast">
+  <div class="wrap">
+    <h1>We are building community <em>word by word</em></h1>
+    <p class="count">Nine book clubs &nbsp;·&nbsp; <span>One knitting circle</span> &nbsp;·&nbsp;
+      Story time every Friday &nbsp;·&nbsp; <span>Independent since 2019</span></p>
+    <div class="cta">
+      <a class="btn btn-solid" href="#whatson">See what's on</a>
+      <a class="btn btn-ghost" href="#visit">Visit the shop</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="prog" id="whatson">
+    <div class="prog-head">
+      <h2>What's on</h2>
+      <p>Drop in, or come every month — both are normal here</p>
+    </div>
+    <div class="clubs">
+      <article class="club">
+        <div>
+          <p class="club-name">Mostly Fiction</p>
+          <p class="club-when">Third Wednesday · 6:30pm · the shop's longest-running club</p>
+        </div>
+        <a class="club-go" href="#visit">Join</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Banned Books</p>
+          <p class="club-when">First Wednesday · 6:30pm</p>
+        </div>
+        <a class="club-go" href="#visit">Join</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Spinning Yarns</p>
+          <p class="club-when">First &amp; third Tuesday · 5:30–7pm · knitting and crochet, no skills required</p>
+        </div>
+        <a class="club-go" href="#visit">Drop in</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Pages of the Past</p>
+          <p class="club-when">Second Thursday · 6:30pm</p>
+        </div>
+        <a class="club-go" href="#visit">Join</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Sizzle &amp; Spice</p>
+          <p class="club-when">Third Thursday · 6:30pm</p>
+        </div>
+        <a class="club-go" href="#visit">Join</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Read Between the Crimes</p>
+          <p class="club-when">Fourth Thursday · 6:30pm</p>
+        </div>
+        <a class="club-go" href="#visit">Join</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Swords &amp; Swoons</p>
+          <p class="club-when">Second Tuesday · 6:30pm</p>
+        </div>
+        <a class="club-go" href="#visit">Join</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Open Minds</p>
+          <p class="club-when">Last Sunday · 5pm</p>
+        </div>
+        <a class="club-go" href="#visit">Join</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Utopias &amp; Dystopias</p>
+          <p class="club-when">Monthly · see the calendar</p>
+        </div>
+        <a class="club-go" href="#visit">Join</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Parent / Child Classics</p>
+          <p class="club-when">Monthly · read it together</p>
+        </div>
+        <a class="club-go" href="#visit">Join</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Book Club for Writers</p>
+          <p class="club-when">Wednesdays through the autumn · 6:30pm</p>
+        </div>
+        <a class="club-go" href="#visit">Join</a>
+      </article>
+      <article class="club">
+        <div>
+          <p class="club-name">Story Time</p>
+          <p class="club-when">Every Friday · 11am · for the little ones</p>
+        </div>
+        <a class="club-go" href="#visit">Bring them</a>
+      </article>
+    </div>
+    <p class="prog-note">Book club members get 10% off the month's title when they buy it here.
+      Audiobook readers can pick up the same selections on Libro.fm and the shop still gets the sale.</p>
+  </section>
+</div>
+
+<div class="wrap">
+  <section class="strip">
+    <div class="strip-grid">
+      <!-- generated illustrative imagery -->
+      <figure>
+        <img src="images/shelves.png" alt="A narrow aisle between tall sage-green painted bookshelves, daylight falling from a shopfront window.">
+        <figcaption>Main Street, since 2019</figcaption>
+      </figure>
+      <!-- generated illustrative imagery -->
+      <figure>
+        <img src="images/circle.png" alt="Eight mismatched chairs drawn into a circle in the corner of a bookshop, ready for an evening meeting.">
+        <figcaption>Where the clubs meet</figcaption>
+      </figure>
+      <!-- generated illustrative imagery -->
+      <figure>
+        <img src="images/table.png" alt="Stacks of hardback books on a front table with small blank card holders, reading glasses and a cup of tea.">
+        <figcaption>What we are reading</figcaption>
+      </figure>
+      <!-- generated illustrative imagery -->
+      <figure>
+        <img src="images/window.png" alt="A bookshop front window seen from inside, morning light across a display shelf and a potted plant.">
+        <figcaption>Looking out on Main</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="find" id="visit">
+    <div class="find-in">
+      <div>
+        <h3>Come and find us</h3>
+        <p>104 Main Street<br>Old Town Warrenton, VA 20186</p>
+        <p><a href="tel:+15408785358">(540) 878-5358</a></p>
+        <p><a href="https://maps.google.com/?q=104+Main+St+Warrenton+VA+20186">Get directions</a></p>
+      </div>
+      <div>
+        <p class="lab">Opening hours</p>
+        <div class="hrs">
+          <div><span>Monday</span><span>11am – 4pm</span></div>
+          <div><span>Tuesday</span><span>10am – 5pm</span></div>
+          <div><span>Wednesday – Thursday</span><span>10am – 6pm</span></div>
+          <div><span>Friday</span><span>10am – 6:30pm</span></div>
+          <div><span>Saturday</span><span>10am – 5pm</span></div>
+          <div><span>Sunday</span><span>11am – 4pm</span></div>
+        </div>
+        <p class="verify">Hours as listed with the Fauquier Chamber — worth confirming before a long drive.</p>
+      </div>
+      <div>
+        <p class="lab">Also here</p>
+        <p>A woman-owned independent, and a member of the New Atlantic Independent Booksellers
+          Association. Gift cards, special orders, and local authors on their own shelf.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="f-mark">The Open Book</p>
+    <p>104 Main Street, Old Town Warrenton, VA 20186 · (540) 878-5358 · building community word by word since 2019.</p>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use
+      photography of The Open Book's own shelves, reading corner and front table. Opening hours and
+      club meeting times shown are drawn from current public listings and would be confirmed with the
+      shop before the site went live.</p>
+  </div>
+</footer>
+
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for The Open Book, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
