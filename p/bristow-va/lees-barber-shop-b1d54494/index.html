@@ -87,10 +87,10 @@ a{color:var(--ink)}
 .tel:hover,.tel:focus-visible{background:var(--amber);color:var(--white)}
 
 /* ---------- plates ---------- */
-.plates{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2px;
+.plates{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2px;align-items:stretch;
   padding-top:56px;padding-bottom:56px}
-.plate{overflow:hidden;background:var(--rule);aspect-ratio:1/1;margin:0}
-.plate.lead{aspect-ratio:auto}
+.plate{overflow:hidden;background:var(--rule);aspect-ratio:1/1;margin:0;min-width:0}
+.plate.lead{aspect-ratio:auto;height:100%}
 .plate img{width:100%;height:100%;object-fit:cover;transition:transform 300ms var(--ease)}
 .plate:hover img,.plate:focus-within img{transform:scale(1.03)}
 
@@ -159,8 +159,10 @@ a{color:var(--ink)}
     </div>
     <div class="fact">
       <h2>Where</h2>
-      <p class="val">44 Main Street, Warrenton, VA 20186</p>
-      <p class="note">In Old Town, on the Main Street block. We are not the other Warrenton barbershop with a Lee in the name, which is over on 5th Street.</p>
+      <div>
+        <p class="val">44 Main Street, Warrenton, VA 20186</p>
+        <p class="note">In Old Town, on the Main Street block. We are not the other Warrenton barbershop with a Lee in the name, which is over on 5th Street.</p>
+      </div>
     </div>
     <div class="fact">
       <h2>Call</h2>
@@ -168,8 +170,10 @@ a{color:var(--ink)}
     </div>
     <div class="fact">
       <h2>The chairs</h2>
-      <p class="chairs">Lee &middot; Cindy &middot; Ms. Lee &middot; Miss Kim</p>
-      <p class="note">Ask for anyone, or take whoever is free. Children are welcome and nobody will rush them.</p>
+      <div>
+        <p class="chairs">Lee &middot; Cindy &middot; Ms. Lee &middot; Miss Kim</p>
+        <p class="note">Ask for anyone, or take whoever is free. Children are welcome and nobody will rush them.</p>
+      </div>
     </div>
   </section>
 
