@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guitar Repair and Setups in Historic Occoquan, VA | Union Street Guitar Works</title>
+<meta name="description" content="Stringed-instrument repair in Historic Occoquan, Virginia. Setups, fretwork, nuts and saddles, electronics, bridges, cracks and neck resets. All fretwork on an Erlewine neck jig. No appointment necessary.">
+<style>
+@font-face{font-family:"Familjen";src:url("fonts/familjen-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Familjen";src:url("fonts/familjen-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Newsreader";src:url("fonts/newsreader-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Newsreader";src:url("fonts/newsreader-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"JB Mono";src:url("fonts/jetbrains-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  --bench:#ECEEF0;
+  --card:#F8FAFB;
+  --ink:#15181B;
+  --muted:#5D666E;
+  --enamel:#0E6B5E;
+  --on-enamel:#D6F2EA;
+  --hair:#CFD6DB;
+  --display:"Familjen",system-ui,sans-serif;
+  --text:"Newsreader",Georgia,serif;
+  --mono:"JB Mono",ui-monospace,monospace;
+  --gutter:28px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bench);
+  color:var(--ink);
+  font-family:var(--text);
+  font-size:17px;
+  line-height:1.66;
+  caret-color:var(--enamel);
+  accent-color:var(--enamel);
+}
+::selection{background:var(--enamel);color:var(--on-enamel)}
+:focus-visible{outline:2px solid var(--enamel);outline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+a{color:var(--enamel);text-underline-offset:3px;text-decoration-thickness:1px}
+
+.wrap{
+  max-width:1180px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--hair);background:var(--card)}
+.mast .wrap{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:8px 26px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+}
+.mast p{margin:0;color:var(--muted)}
+.mast .here{color:var(--ink)}
+.mast-spacer{flex:1 1 auto}
+.mast a{
+  color:var(--enamel);
+  text-decoration:none;
+  border-bottom:1px solid var(--enamel);
+  padding-bottom:2px;
+  white-space:nowrap;
+}
+
+/* ---------- hero ---------- */
+.hero{
+  padding-top:74px;
+  padding-bottom:64px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,62fr) minmax(0,38fr);
+  gap:56px;
+  align-items:end;
+}
+h1{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:62px;
+  line-height:1.02;
+  letter-spacing:-0.028em;
+  margin:0 0 24px 0;
+  max-width:13ch;
+}
+.lede{
+  font-size:20px;
+  line-height:1.55;
+  color:var(--muted);
+  margin:0;
+  max-width:46ch;
+}
+.creds{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.55;
+}
+.creds li{
+  border-top:1px solid var(--hair);
+  padding-top:13px;
+  padding-bottom:13px;
+}
+.creds li:last-child{border-bottom:1px solid var(--hair)}
+.creds b{font-weight:500;color:var(--enamel)}
+
+.bench-shot img{
+  width:100%;
+  height:430px;
+  object-fit:cover;
+  object-position:center 56%;
+}
+
+/* ---------- symptom table (signature) ---------- */
+.table-section{
+  background:var(--card);
+  border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  padding-top:80px;
+  padding-bottom:80px;
+}
+h2{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:38px;
+  line-height:1.1;
+  letter-spacing:-0.022em;
+  margin:0 0 16px 0;
+}
+.table-lead{
+  color:var(--muted);
+  margin:0 0 40px 0;
+  max-width:62ch;
+}
+.thead{
+  display:grid;
+  grid-template-columns:minmax(0,34fr) minmax(0,34fr) minmax(0,32fr);
+  gap:30px;
+  font-family:var(--mono);
+  font-size:12px;
+  line-height:1.5;
+  color:var(--muted);
+  padding-bottom:12px;
+  padding-left:22px;
+  padding-right:6px;
+}
+.thead span{display:block}
+.rows{list-style:none;margin:0;padding-left:0}
+.srow{
+  --fix:var(--ink);
+  --draw:0;
+  display:grid;
+  grid-template-columns:minmax(0,34fr) minmax(0,34fr) minmax(0,32fr);
+  gap:8px 30px;
+  padding-top:22px;
+  padding-bottom:22px;
+  padding-left:22px;
+  padding-right:6px;
+  border-top:1px solid var(--hair);
+  position:relative;
+}
+.rows .srow:last-child{border-bottom:1px solid var(--hair)}
+.srow:hover,.srow:focus-within{--fix:var(--enamel);--draw:1}
+.srow::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:22px;
+  bottom:22px;
+  width:2px;
+  background:var(--enamel);
+  opacity:var(--draw);
+  transform:scaleY(var(--draw));
+  transform-origin:top center;
+  transition:opacity 360ms cubic-bezier(0.16,1,0.3,1),transform 360ms cubic-bezier(0.16,1,0.3,1);
+}
+.sym{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:21px;
+  line-height:1.32;
+  margin:0;
+}
+.cause{
+  font-size:16px;
+  line-height:1.55;
+  color:var(--muted);
+  margin:0;
+}
+.fix{
+  font-family:var(--mono);
+  font-size:14px;
+  line-height:1.55;
+  color:var(--fix);
+  margin:0;
+  transition:color 360ms cubic-bezier(0.16,1,0.3,1);
+}
+.fix .price{
+  display:block;
+  color:var(--muted);
+  padding-top:5px;
+}
+.table-foot{
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.7;
+  margin:30px 0 0 0;
+  max-width:72ch;
+}
+.table-foot b{color:var(--ink);font-weight:600}
+
+/* ---------- photo pair ---------- */
+.pair{
+  padding-top:78px;
+  padding-bottom:72px;
+}
+.pair-lead{max-width:60ch;margin:0 0 40px 0}
+.pair-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:34px;
+}
+.pair-grid img{width:100%;height:auto;border-radius:2px}
+.pair-grid figcaption{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  padding-top:13px;
+}
+
+/* ---------- waiting strip ---------- */
+.waiting img{
+  width:100%;
+  height:330px;
+  object-fit:cover;
+  object-position:center 56%;
+}
+.waiting figcaption{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  padding-top:14px;
+  padding-bottom:56px;
+}
+
+/* ---------- bench footer ---------- */
+.foot{
+  border-top:1px solid var(--hair);
+  padding-top:70px;
+  padding-bottom:40px;
+}
+.foot-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  gap:40px;
+}
+.foot h3{
+  font-family:var(--mono);
+  font-weight:500;
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0 0 14px 0;
+}
+.foot address{
+  font-style:normal;
+  font-size:19px;
+  line-height:1.55;
+  margin:0 0 12px 0;
+}
+.foot-mail{font-family:var(--mono);font-size:14px;line-height:1.6}
+.foot .tel{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:31px;
+  line-height:1.2;
+  letter-spacing:-0.018em;
+  color:var(--enamel);
+  text-decoration:none;
+  display:inline-block;
+  padding-top:2px;
+  padding-bottom:4px;
+  border-bottom:2px solid rgba(14,107,94,0.3);
+  transition:border-color 260ms cubic-bezier(0.16,1,0.3,1);
+}
+.foot .tel:hover,.foot .tel:focus-visible{border-bottom-color:var(--enamel)}
+.hours{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+  font-family:var(--mono);
+  font-size:14px;
+  line-height:1.6;
+}
+.hours li{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  border-bottom:1px solid var(--hair);
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.hours li:last-child{border-bottom:0}
+.hours .shut{color:var(--enamel)}
+.colophon{
+  border-top:1px solid var(--hair);
+  margin-top:50px;
+  padding-top:22px;
+  padding-bottom:18px;
+}
+.disclosure{
+  font-family:var(--mono);
+  font-size:12px;
+  line-height:1.8;
+  color:var(--muted);
+  margin:0;
+  max-width:94ch;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:36px;align-items:start}
+  h1{font-size:48px;max-width:18ch}
+  .bench-shot img{height:340px}
+  .thead{display:none}
+  .srow{grid-template-columns:minmax(0,1fr) minmax(0,1fr);row-gap:10px}
+  .sym{grid-column:1 / -1}
+  .foot-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:680px){
+  :root{--gutter:20px}
+  h1{font-size:36px;max-width:20ch}
+  h2{font-size:29px}
+  .lede{font-size:18px}
+  .bench-shot img{height:240px}
+  .srow{grid-template-columns:minmax(0,1fr)}
+  .srow::before{opacity:1;transform:none}
+  .sym{font-size:20px}
+  .pair-grid{grid-template-columns:minmax(0,1fr)}
+  .waiting img{height:220px}
+  .foot-grid{grid-template-columns:minmax(0,1fr)}
+  .foot .tel{font-size:27px}
+}
+@media (prefers-reduced-motion:reduce){
+  .srow::before,.fix,.foot .tel{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="here">Union Street Guitar Works</p>
+    <p>205-C Union Street, Occoquan</p>
+    <span class="mast-spacer"></span>
+    <a href="tel:+17037319785">(703) 731-9785</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>If it is fighting you, bring it in.</h1>
+        <p class="lede">A repair bench in Historic Occoquan. At most shops setups are an afterthought. Here they are the whole job, and you do not need an appointment to walk in with a guitar under your arm.</p>
+      </div>
+      <div>
+        <ul class="creds">
+          <li><b>Authorized</b> Silver Service Center</li>
+          <li><b>Erlewine neck jig</b> for all fretwork</li>
+          <li><b>No appointment</b> necessary</li>
+          <li><b>Neck resets</b> taken on</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <figure class="bench-shot">
+    <!-- generated illustrative imagery -->
+    <img src="images/jig.png" alt="An acoustic guitar clamped face up in a steel and wood neck jig on a worn workbench, with a fret levelling beam, a steel rule and a small hammer beside it." width="1536" height="1024">
+  </figure>
+
+  <section class="table-section">
+    <div class="wrap">
+      <h2>Tell me what it is doing.</h2>
+      <p class="table-lead">You do not need to know the name of the repair. Almost nobody does. Say what the instrument is doing and the bench works backwards from there.</p>
+      <div class="thead">
+        <span>What it is doing</span>
+        <span>What that usually is</span>
+        <span>On the bench, and what it runs</span>
+      </div>
+      <ul class="rows">
+        <li class="srow" tabindex="0">
+          <p class="sym">The action is too high and it hurts to play</p>
+          <p class="cause">Neck relief has moved, or the saddle and nut were never cut for the strings you use.</p>
+          <p class="fix">Full setup<span class="price">$100</span></p>
+        </li>
+        <li class="srow" tabindex="0">
+          <p class="sym">It buzzes, but only in one place on the neck</p>
+          <p class="cause">One or two frets are standing proud of the others. It is almost never the truss rod.</p>
+          <p class="fix">Level, crown and polish, on the jig<span class="price">from $175</span></p>
+        </li>
+        <li class="srow" tabindex="0">
+          <p class="sym">Open strings ring sharp and the first fret is worse</p>
+          <p class="cause">The nut slots are cut too high, which is the most common fault on a factory instrument.</p>
+          <p class="fix">New bone nut, slotted to the strings<span class="price">$100 plus material</span></p>
+        </li>
+        <li class="srow" tabindex="0">
+          <p class="sym">It crackles, cuts out, or the volume jumps</p>
+          <p class="cause">A worn pot, a dry joint, or a jack that has been half plugged in for years.</p>
+          <p class="fix">Electronics<span class="price">$100 an hour</span></p>
+        </li>
+        <li class="srow" tabindex="0">
+          <p class="sym">The top is lifting behind the bridge</p>
+          <p class="cause">A loose bridge or a failing brace. This one gets worse while you wait.</p>
+          <p class="fix">Bridge off under a heat blanket, reglued<span class="price">on inspection</span></p>
+        </li>
+        <li class="srow" tabindex="0">
+          <p class="sym">It played well for twenty years and now nothing helps</p>
+          <p class="cause">The neck angle has moved. No setup can reach this, which is why most shops send it away.</p>
+          <p class="fix">Neck reset<span class="price">from $550</span></p>
+        </li>
+      </ul>
+      <p class="table-foot">Every price here is an estimate until the instrument is on the bench, and anything not on the list is <b>a hundred dollars an hour</b>. A setup usually takes two to seven days. Parts are on the shelf with <b>twenty per cent off installation</b> when they are bought here, and there is a three per cent card fee. If it turns out to be something not on this list, that is normal, and you will be told what it is before anything is done to it.</p>
+    </div>
+  </section>
+
+  <section class="pair">
+    <div class="wrap">
+      <h2>Why the jig matters.</h2>
+      <p class="pair-lead">Frets are levelled with the neck held under simulated string tension, because a neck at rest is not the shape it is in when you are playing it. Level it flat on the bench and it is not flat when you put the strings back on.</p>
+      <div class="pair-grid">
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/frets.png" alt="A macro view along a rosewood fretboard with a steel straightedge laid across the frets, light catching the polished crowns in a receding line." width="1024" height="1024">
+          <figcaption>Checked with a straightedge before anything is cut</figcaption>
+        </figure>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/nut.png" alt="Four bone nut blanks in a row on a bench with a fan of nut slotting files and a pair of open steel calipers." width="1024" height="1024">
+          <figcaption>Nuts cut from bone, to the strings you actually use</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <figure class="waiting">
+    <!-- generated illustrative imagery -->
+    <img src="images/bodies.png" alt="Three acoustic guitars hanging by their necks from a grey workshop wall, seen from behind so the backs and sides show, beside a rack of clamps." width="1024" height="1024">
+    <figcaption class="wrap">Waiting on the wall. Most work goes out inside the week.</figcaption>
+  </figure>
+
+  <section class="foot">
+    <div class="wrap foot-grid">
+      <div>
+        <h3>The bench</h3>
+        <address>
+          205-C Union Street<br>
+          Occoquan, Virginia 22125
+        </address>
+        <p class="foot-mail">service@unionstreetguitars.com</p>
+      </div>
+      <div>
+        <h3>Call the shop</h3>
+        <a class="tel" href="tel:+17037319785">(703) 731-9785</a>
+      </div>
+      <div>
+        <h3>Open</h3>
+        <ul class="hours">
+          <li><span>Tue to Fri</span><span>12 to 6</span></li>
+          <li><span>Saturday</span><span>12 to 4</span></li>
+          <li><span>Sun and Mon</span><span class="shut">Closed</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap colophon">
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Union Street Guitar Works, its own bench and its own work in progress. The symptom table is written from the services already listed on unionstreetguitars.com; the hours, the prices and the parts discount are the shop's own, as published on unionstreetguitars.com in September 2026.</p>
+    </div>
+  </section>
+
+</main>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Union Street Guitar Works, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
