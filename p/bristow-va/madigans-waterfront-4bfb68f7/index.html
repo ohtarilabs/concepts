@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madigan's Waterfront | Seafood and Steaks on the Occoquan River</title>
+<meta name="description" content="Waterfront seafood and steaks at 201 Mill Street, Occoquan. A dining room, a bar, a deck and tiki bar over the river, and a private upstairs room. Public boat docking. Weekend brunch from 10:30.">
+<style>
+@font-face{font-family:"Bricolage";src:url("fonts/bricolage-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Bricolage";src:url("fonts/bricolage-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Figtree";src:url("fonts/figtree-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Figtree";src:url("fonts/figtree-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Azeret";src:url("fonts/azeret-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  --river:#12202B;
+  --panel:#1B2E3B;
+  --light:#E8EEF2;
+  --soft:#9BB0BF;
+  --buoy:#F2B705;
+  --hair:rgba(155,176,191,0.26);
+  --display:"Bricolage",system-ui,sans-serif;
+  --text:"Figtree",system-ui,sans-serif;
+  --mono:"Azeret",ui-monospace,monospace;
+  --gutter:28px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--river);
+  color:var(--light);
+  font-family:var(--text);
+  font-size:17px;
+  line-height:1.66;
+  caret-color:var(--buoy);
+  accent-color:var(--buoy);
+  scrollbar-color:var(--panel) var(--river);
+}
+::selection{background:var(--buoy);color:var(--river)}
+:focus-visible{outline:2px solid var(--buoy);outline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+a{color:var(--buoy);text-underline-offset:3px;text-decoration-thickness:1px}
+
+.wrap{
+  max-width:1180px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--hair)}
+.mast .wrap{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:8px 26px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+}
+.mast p{margin:0;color:var(--soft)}
+.mast .here{color:var(--light)}
+.mast-spacer{flex:1 1 auto}
+.mast a{
+  color:var(--buoy);
+  text-decoration:none;
+  border-bottom:1px solid var(--buoy);
+  padding-bottom:2px;
+  white-space:nowrap;
+}
+
+/* ---------- type-led first screen ---------- */
+.claim{
+  padding-top:92px;
+  padding-bottom:86px;
+}
+.claim-grid{
+  display:grid;
+  grid-template-columns:minmax(0,62fr) minmax(0,38fr);
+  gap:56px;
+  align-items:end;
+}
+h1{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:104px;
+  line-height:0.94;
+  letter-spacing:-0.036em;
+  margin:0 0 28px 0;
+  max-width:11ch;
+}
+.claim-sub{
+  font-size:21px;
+  line-height:1.5;
+  color:var(--soft);
+  margin:0;
+  max-width:42ch;
+}
+.slab{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.55;
+}
+.slab li{
+  border-top:1px solid var(--hair);
+  padding-top:13px;
+  padding-bottom:13px;
+}
+.slab li:last-child{border-bottom:1px solid var(--hair)}
+.slab b{font-weight:500;color:var(--buoy)}
+
+/* ---------- deck ---------- */
+.deck img{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  object-position:center 48%;
+}
+
+/* ---------- four rooms ---------- */
+.rooms{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+h2{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:40px;
+  line-height:1.08;
+  letter-spacing:-0.026em;
+  margin:0 0 16px 0;
+}
+.rooms-lead{
+  color:var(--soft);
+  margin:0 0 40px 0;
+  max-width:62ch;
+}
+.rooms-band{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:0;
+  border-top:1px solid var(--hair);
+}
+.room{
+  --tag:var(--soft);
+  --lift:0;
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-left:26px;
+  padding-right:26px;
+  border-left:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  position:relative;
+}
+.rooms-band .room:last-child{border-right:1px solid var(--hair)}
+.room:hover,.room:focus-within{--tag:var(--buoy);--lift:1}
+.room::before{
+  content:"";
+  position:absolute;
+  top:-1px;
+  left:0;
+  right:0;
+  height:2px;
+  background:var(--buoy);
+  opacity:var(--lift);
+  transform:scaleX(var(--lift));
+  transform-origin:left center;
+  transition:opacity 360ms cubic-bezier(0.16,1,0.3,1),transform 360ms cubic-bezier(0.16,1,0.3,1);
+}
+.room h3{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:23px;
+  line-height:1.24;
+  letter-spacing:-0.014em;
+  margin:0 0 12px 0;
+}
+.room p{
+  font-size:15px;
+  line-height:1.6;
+  color:var(--soft);
+  margin:0 0 14px 0;
+}
+.room .rule{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.55;
+  color:var(--tag);
+  margin:0;
+  transition:color 360ms cubic-bezier(0.16,1,0.3,1);
+}
+
+/* ---------- menu ---------- */
+.menu{
+  background:var(--panel);
+  border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.menu-head{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px 30px;
+  margin-bottom:34px;
+}
+.menu-head h2{margin-bottom:0}
+.menu-note{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--soft);
+  margin:0;
+}
+.dishes{list-style:none;margin:0;padding-left:0}
+.dish{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:6px 16px;
+  padding-top:18px;
+  padding-bottom:18px;
+  padding-left:4px;
+  padding-right:4px;
+  border-top:1px solid var(--hair);
+}
+.dishes .dish:last-child{border-bottom:1px solid var(--hair)}
+.dish-name{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:22px;
+  line-height:1.3;
+  margin:0;
+}
+.dish-note{
+  font-size:15px;
+  line-height:1.55;
+  color:var(--soft);
+  margin:0;
+  flex:1 1 230px;
+}
+.dish-price{
+  font-family:var(--mono);
+  font-size:16px;
+  line-height:1.5;
+  color:var(--buoy);
+  margin:0;
+  white-space:nowrap;
+}
+.menu-foot{
+  color:var(--soft);
+  font-size:15px;
+  line-height:1.7;
+  margin:30px 0 0 0;
+  max-width:70ch;
+}
+.menu-foot b{color:var(--light);font-weight:600}
+
+/* ---------- photo pair ---------- */
+.pair{
+  padding-top:78px;
+  padding-bottom:72px;
+}
+.pair-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:28px;
+}
+.pair-grid img{width:100%;height:auto;border-radius:2px}
+.pair-grid figcaption{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--soft);
+  padding-top:13px;
+}
+
+/* ---------- river footer ---------- */
+.foot{
+  border-top:1px solid var(--hair);
+  padding-top:70px;
+  padding-bottom:40px;
+}
+.foot-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  gap:40px;
+}
+.foot h3{
+  font-family:var(--mono);
+  font-weight:500;
+  font-size:13px;
+  line-height:1.6;
+  color:var(--soft);
+  margin:0 0 14px 0;
+}
+.foot address{
+  font-style:normal;
+  font-size:19px;
+  line-height:1.55;
+  margin:0;
+}
+.foot .tel{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:31px;
+  line-height:1.2;
+  letter-spacing:-0.024em;
+  color:var(--buoy);
+  text-decoration:none;
+  display:inline-block;
+  padding-top:2px;
+  padding-bottom:4px;
+  border-bottom:2px solid rgba(242,183,5,0.32);
+  transition:border-color 260ms cubic-bezier(0.16,1,0.3,1);
+}
+.foot .tel:hover,.foot .tel:focus-visible{border-bottom-color:var(--buoy)}
+.foot-grid p{margin:0;font-size:16px;line-height:1.66;color:var(--soft);max-width:34ch}
+.award{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--light);
+  margin:14px 0 0 0;
+}
+.colophon{
+  border-top:1px solid var(--hair);
+  margin-top:50px;
+  padding-top:22px;
+  padding-bottom:18px;
+}
+.disclosure{
+  font-family:var(--mono);
+  font-size:12px;
+  line-height:1.8;
+  color:var(--soft);
+  margin:0;
+  max-width:94ch;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .claim-grid{grid-template-columns:minmax(0,1fr);gap:38px;align-items:start}
+  h1{font-size:68px;max-width:14ch}
+  .deck img{height:380px}
+  .rooms-band{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pair-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rooms-band .room:last-child{border-right:0}
+  .rooms-band .room:nth-child(2n){border-right:1px solid var(--hair)}
+  .foot-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:680px){
+  :root{--gutter:20px}
+  h1{font-size:44px;max-width:16ch}
+  h2{font-size:30px}
+  .claim-sub{font-size:19px}
+  .deck img{height:250px}
+  .rooms-band{grid-template-columns:minmax(0,1fr)}
+  .rooms-band .room{border-right:1px solid var(--hair)}
+  .room::before{opacity:1;transform:none}
+  .dish-note{flex:1 1 100%}
+  .pair-grid{grid-template-columns:minmax(0,1fr);gap:34px}
+  .foot-grid{grid-template-columns:minmax(0,1fr)}
+  .foot .tel{font-size:27px}
+}
+@media (prefers-reduced-motion:reduce){
+  .room::before,.room .rule,.foot .tel{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="here">Madigan's Waterfront</p>
+    <p>201 Mill Street, Occoquan</p>
+    <span class="mast-spacer"></span>
+    <a href="tel:+17034946373">(703) 494-6373</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="claim">
+    <div class="wrap claim-grid">
+      <div>
+        <h1>You can get here by boat.</h1>
+        <p class="claim-sub">Seafood and steaks on the Occoquan River, with a dining room, a bar, a deck over the water and a private room upstairs. Tie up at the dock and walk in.</p>
+      </div>
+      <div>
+        <ul class="slab">
+          <li><b>Public boat docking</b> and dock rentals</li>
+          <li><b>Brunch</b> Saturday and Sunday from 10:30</li>
+          <li><b>Book</b> on Tock, or call for seven or more</li>
+          <li><b>Happy hour</b> every day</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <figure class="deck">
+    <!-- generated illustrative imagery -->
+    <img src="images/deck.png" alt="A covered wooden restaurant deck built out over a river at dusk, string lights along the rafters, empty tables and a wooded bank across the dark water." width="1536" height="1024">
+  </figure>
+
+  <section class="rooms">
+    <div class="wrap">
+      <h2>Four rooms, four ways in.</h2>
+      <p class="rooms-lead">They are not the same evening and they do not work the same way, so here is how you get a table in each one.</p>
+      <div class="rooms-band">
+        <div class="room" tabindex="0">
+          <h3>The dining room</h3>
+          <p>Seafood and steaks, white tablecloths, the river through the window.</p>
+          <p class="rule">Book on Tock, one to six. Seven or more, call the host.</p>
+        </div>
+        <div class="room" tabindex="0">
+          <h3>The bar</h3>
+          <p>Big room, televisions, happy hour every day, live music and karaoke.</p>
+          <p class="rule">No booking. Open from 11am to last call.</p>
+        </div>
+        <div class="room" tabindex="0">
+          <h3>The deck and tiki bar</h3>
+          <p>Out over the water, with fire pits. The best seat here, and the one everybody wants.</p>
+          <p class="rule">First come, weather permitting. Reservations cover inside only.</p>
+        </div>
+        <div class="room" tabindex="0">
+          <h3>Upstairs</h3>
+          <p>A private room with its own bar, its own deck and a dance floor.</p>
+          <p class="rule">Private parties. Call and ask for the banquet packet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu">
+    <div class="wrap">
+      <div class="menu-head">
+        <h2>What people order</h2>
+        <p class="menu-note">Dinner menu. Brunch runs Saturday and Sunday from 10:30 to 2.</p>
+      </div>
+      <ul class="dishes">
+        <li class="dish">
+          <p class="dish-name">Crab chowder</p>
+          <p class="dish-note">The one the town's own visitor guide singles out.</p>
+          <p class="dish-price">$9 a cup</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Oysters on the half shell</p>
+          <p class="dish-note">Raw, cold, and the right way to start on the deck.</p>
+          <p class="dish-price">$20</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Crab cake platter</p>
+          <p class="dish-note">Also as a sandwich at $25, and as an add to any salad at $15.</p>
+          <p class="dish-price">$37</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Steak medallions and shrimp</p>
+          <p class="dish-note">The reason it is not only a seafood restaurant.</p>
+          <p class="dish-price">$36</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Stuffed flounder</p>
+          <p class="dish-note">Quiet, generous, and what the regulars order twice.</p>
+          <p class="dish-price">$32</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Seafood boil</p>
+          <p class="dish-note">Whatever came in. Ask what is in it tonight.</p>
+          <p class="dish-price">market price</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Crab benedict</p>
+          <p class="dish-note">Weekend brunch, from half past ten.</p>
+          <p class="dish-price">$26</p>
+        </li>
+      </ul>
+      <p class="menu-foot">After <b>10pm Monday to Saturday</b> and <b>9pm on Sunday</b> the kitchen runs the bar menu only. Worth knowing before a late drive.</p>
+    </div>
+  </section>
+
+  <section class="pair">
+    <div class="wrap">
+      <div class="pair-grid">
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/crab.png" alt="Two golden crab cakes on a white plate with a lemon wedge and a cup of remoulade, on a dark wooden table under warm light." width="1024" height="1024">
+          <figcaption>Crab is the house specialty, on the menu six ways</figcaption>
+        </figure>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/oysters.png" alt="Oysters on the half shell on crushed ice in a shallow stainless tray with lemon wedges and a cup of mignonette." width="1024" height="1024">
+          <figcaption>Raw bar, and the right way to start on the deck</figcaption>
+        </figure>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/dock.png" alt="A weathered floating dock at water level with galvanised cleats and a coiled mooring line, dark choppy river beyond." width="1024" height="1024">
+          <figcaption>The dock. Call ahead about rentals and space</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="foot">
+    <div class="wrap foot-grid">
+      <div>
+        <h3>On the river</h3>
+        <address>
+          201 Mill Street<br>
+          Occoquan, Virginia 22125
+        </address>
+        <p class="award">The Knot Best of Weddings, 2026</p>
+      </div>
+      <div>
+        <h3>Book a table</h3>
+        <a class="tel" href="tel:+17034946373">(703) 494-6373</a>
+      </div>
+      <div>
+        <h3>Arriving by water</h3>
+        <p>There is public docking at the restaurant and dock rentals. Call before you come so somebody knows to expect you.</p>
+      </div>
+    </div>
+    <div class="wrap colophon">
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Madigan's Waterfront, its own deck and its own kitchen. Prices are from the dinner menu published on madiganswaterfront.com in September 2026. The reservation rule shown is the one live on the restaurant's Tock page, which currently contradicts the rule printed on the website.</p>
+    </div>
+  </section>
+
+</main>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Madigan's Waterfront, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
