@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Golden Plum | Pie in Occoquan, formerly Mom's Apple Pie</title>
+<meta name="description" content="Scratch pie bakery at 126A Commerce Street in the Occoquan historic district. Formerly the Occoquan Mom's Apple Pie: same kitchen, same recipes, same family. Whole pies $29, a slice $5.75. Open nine to six, seven days.">
+<style>
+@font-face{font-family:"Bodoni M";src:url("fonts/bodoni-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Bodoni M";src:url("fonts/bodoni-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Karla";src:url("fonts/karla-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Karla";src:url("fonts/karla-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Courier P";src:url("fonts/courierprime-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#F7F2F5;
+  --card:#FDFBFC;
+  --ink:#1E1218;
+  --muted:#6E5A62;
+  --damson:#A81F5C;
+  --on-damson:#FCE3EE;
+  --hair:#DFD2D9;
+  --display:"Bodoni M",Georgia,serif;
+  --text:"Karla",system-ui,sans-serif;
+  --mono:"Courier P",ui-monospace,monospace;
+  --gutter:28px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--text);
+  font-size:17px;
+  line-height:1.65;
+  caret-color:var(--damson);
+  accent-color:var(--damson);
+}
+::selection{background:var(--damson);color:var(--on-damson)}
+:focus-visible{outline:2px solid var(--damson);outline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+a{color:var(--damson);text-underline-offset:3px;text-decoration-thickness:1px}
+
+.wrap{
+  max-width:1160px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--hair)}
+.mast .wrap{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:8px 26px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+}
+.mast p{margin:0;color:var(--muted)}
+.mast .here{color:var(--ink)}
+.mast-spacer{flex:1 1 auto}
+.mast a{
+  color:var(--damson);
+  text-decoration:none;
+  border-bottom:1px solid var(--damson);
+  padding-bottom:2px;
+  white-space:nowrap;
+}
+
+/* ---------- type-only first screen ---------- */
+.name{
+  padding-top:96px;
+  padding-bottom:88px;
+}
+.wordmark{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:128px;
+  line-height:0.94;
+  letter-spacing:-0.022em;
+  margin:0 0 34px 0;
+  max-width:11ch;
+}
+.correction{
+  font-size:24px;
+  line-height:1.5;
+  margin:0 0 30px 0;
+  max-width:36ch;
+  border-top:1px solid var(--hair);
+  padding-top:28px;
+}
+.correction b{font-weight:600}
+.since{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0;
+  max-width:52ch;
+}
+
+/* ---------- full bleed lattice ---------- */
+.lattice img{
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  object-position:center 46%;
+}
+
+/* ---------- call ahead panel ---------- */
+.ahead{
+  background:var(--damson);
+  color:var(--on-damson);
+  padding-top:52px;
+  padding-bottom:52px;
+}
+.ahead h2{color:var(--on-damson);margin-bottom:26px;max-width:16ch}
+.ahead-cols{
+  display:grid;
+  grid-template-columns:minmax(0,58fr) minmax(0,42fr);
+  gap:44px;
+  align-items:start;
+}
+.ahead p{margin:0 0 16px 0;color:var(--on-damson);max-width:52ch}
+.ahead p:last-child{margin-bottom:0}
+.ahead .seasonal{
+  font-family:var(--mono);
+  font-size:15px;
+  line-height:1.9;
+}
+
+h2{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:38px;
+  line-height:1.08;
+  letter-spacing:-0.012em;
+  margin:0 0 20px 0;
+}
+
+/* ---------- the pie list ---------- */
+.list{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.list-head{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px 30px;
+  margin-bottom:34px;
+}
+.list-head h2{margin-bottom:0}
+.list-rule{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0;
+}
+.pies{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+}
+.pie{
+  --price-color:var(--ink);
+  --draw:0;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:6px 14px;
+  padding-top:17px;
+  padding-bottom:17px;
+  padding-left:4px;
+  padding-right:4px;
+  border-top:1px solid var(--hair);
+  position:relative;
+}
+.pies .pie:last-child{border-bottom:1px solid var(--hair)}
+.pie:hover,.pie:focus-within{--price-color:var(--damson);--draw:1}
+.pie::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-1px;
+  height:1px;
+  background:var(--damson);
+  transform:scaleX(var(--draw));
+  transform-origin:left center;
+  opacity:var(--draw);
+  transition:transform 420ms cubic-bezier(0.16,1,0.3,1),opacity 420ms cubic-bezier(0.16,1,0.3,1);
+}
+.pie-name{
+  font-weight:600;
+  font-size:22px;
+  line-height:1.35;
+  margin:0;
+}
+.pie-note{
+  font-size:15px;
+  line-height:1.5;
+  color:var(--muted);
+  margin:0;
+  flex:1 1 220px;
+}
+.pie-price{
+  font-family:var(--mono);
+  font-size:17px;
+  line-height:1.5;
+  color:var(--price-color);
+  margin:0;
+  white-space:nowrap;
+  transition:color 420ms cubic-bezier(0.16,1,0.3,1);
+}
+.keeping{
+  margin:34px 0 0 0;
+  font-size:15px;
+  line-height:1.7;
+  color:var(--muted);
+  max-width:70ch;
+}
+.keeping b{color:var(--ink);font-weight:600}
+
+/* ---------- breads band ---------- */
+.breads{
+  background:var(--card);
+  border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.breads-grid{
+  display:grid;
+  grid-template-columns:minmax(0,42fr) minmax(0,58fr);
+  gap:52px;
+  align-items:center;
+}
+.breads img{width:100%;height:auto;border-radius:2px}
+.breads p{margin:0 0 16px 0;max-width:56ch}
+.breads p:last-child{margin-bottom:0}
+
+/* ---------- pair band ---------- */
+.pair{
+  padding-top:80px;
+  padding-bottom:70px;
+}
+.pair-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:34px;
+}
+.pair img{width:100%;height:auto;border-radius:2px}
+.pair figcaption{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  padding-top:13px;
+}
+
+/* ---------- counter footer ---------- */
+.counter{
+  border-top:1px solid var(--hair);
+  padding-top:70px;
+  padding-bottom:40px;
+}
+.counter-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  gap:40px;
+}
+.counter h3{
+  font-family:var(--mono);
+  font-weight:400;
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0 0 14px 0;
+}
+.counter address{
+  font-style:normal;
+  font-size:19px;
+  line-height:1.55;
+  margin:0;
+}
+.counter .tel{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:32px;
+  line-height:1.2;
+  letter-spacing:-0.01em;
+  color:var(--damson);
+  text-decoration:none;
+  display:inline-block;
+  padding-top:2px;
+  padding-bottom:4px;
+  border-bottom:2px solid rgba(168,31,92,0.28);
+  transition:border-color 260ms cubic-bezier(0.16,1,0.3,1);
+}
+.counter .tel:hover,.counter .tel:focus-visible{border-bottom-color:var(--damson)}
+.open{
+  font-size:19px;
+  line-height:1.55;
+  margin:0 0 8px 0;
+}
+.open-note{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0;
+}
+.colophon{
+  border-top:1px solid var(--hair);
+  margin-top:50px;
+  padding-top:22px;
+  padding-bottom:18px;
+}
+.disclosure{
+  font-family:var(--mono);
+  font-size:12px;
+  line-height:1.8;
+  color:var(--muted);
+  margin:0;
+  max-width:92ch;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .wordmark{font-size:88px;max-width:12ch}
+  .ahead-cols{grid-template-columns:minmax(0,1fr);gap:24px}
+  .breads-grid{grid-template-columns:minmax(0,1fr);gap:34px}
+  .counter-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .lattice img{height:320px}
+}
+@media (max-width:680px){
+  :root{--gutter:20px}
+  .name{padding-top:56px;padding-bottom:56px}
+  .wordmark{font-size:52px;line-height:0.98;max-width:9ch}
+  .correction{font-size:20px}
+  h2{font-size:30px}
+  .lattice img{height:230px}
+  .pie-name{font-size:20px}
+  .pie-note{flex:1 1 100%}
+  .pair-grid{grid-template-columns:minmax(0,1fr)}
+  .counter-grid{grid-template-columns:minmax(0,1fr)}
+  .counter .tel{font-size:27px}
+}
+@media (prefers-reduced-motion:reduce){
+  .pie::after,.pie-price,.counter .tel{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="here">The Golden Plum</p>
+    <p>126A Commerce Street, Occoquan</p>
+    <span class="mast-spacer"></span>
+    <a href="tel:+17034977437">703-497-7437</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="name">
+    <div class="wrap">
+      <h1 class="wordmark">The Golden Plum</h1>
+      <p class="correction">Formerly Mom's Apple Pie in Occoquan. <b>Same kitchen, same recipes, same family.</b></p>
+      <p class="since">Avis and Steve Cox baked here for twenty years. In 2023 their daughter Ansa took the shop on, remodelled it and changed the sign. Nothing else changed.</p>
+    </div>
+  </section>
+
+  <figure class="lattice">
+    <!-- generated illustrative imagery -->
+    <img src="images/lattice.png" alt="A deep dish fruit pie in a plain metal tin, hand cut lattice on top, dark berry juice risen through the gaps." width="2000" height="1024">
+  </figure>
+
+  <section class="ahead">
+    <div class="wrap">
+      <h2>Call ahead for the cinnamon rolls.</h2>
+      <div class="ahead-cols">
+        <p>They are made fresh daily and they usually sell out while the day's orders are still coming in. One is $5.50, a box of four is $20, half a dozen is $30. Ring the shop and one will be waiting.</p>
+        <p class="seasonal">In season now:<br>Cranberry Apple<br>Pumpkin<br>Sweet Potato</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="list">
+    <div class="wrap">
+      <div class="list-head">
+        <h2>The pie list</h2>
+        <p class="list-rule">$29 a whole pie, $5.75 a slice. Fruit pies come with a butter crust or a butter pecan crumb top.</p>
+      </div>
+      <ul class="pies">
+        <li class="pie" tabindex="0">
+          <p class="pie-name">Blackberry Crumble</p>
+          <p class="pie-note">The one people have been driving here for since long before the sign changed.</p>
+          <p class="pie-price">$29</p>
+        </li>
+        <li class="pie" tabindex="0">
+          <p class="pie-name">Strawberry Rhubarb</p>
+          <p class="pie-note">Sharp, short season, gone when it is gone.</p>
+          <p class="pie-price">$29</p>
+        </li>
+        <li class="pie" tabindex="0">
+          <p class="pie-name">Lemon Chess</p>
+          <p class="pie-note">The underdog. Order it once and it becomes the one you order.</p>
+          <p class="pie-price">$29</p>
+        </li>
+        <li class="pie" tabindex="0">
+          <p class="pie-name">Bourbon Walnut</p>
+          <p class="pie-note">Heavier than pecan and worth the difference.</p>
+          <p class="pie-price">$29</p>
+        </li>
+        <li class="pie" tabindex="0">
+          <p class="pie-name">Chocolate Pecan</p>
+          <p class="pie-note">For people who cannot choose between the two.</p>
+          <p class="pie-price">$29</p>
+        </li>
+        <li class="pie" tabindex="0">
+          <p class="pie-name">Coconut Cream</p>
+          <p class="pie-note">Whipped cream on top, made the morning it is sold.</p>
+          <p class="pie-price">$29</p>
+        </li>
+        <li class="pie" tabindex="0">
+          <p class="pie-name">Key Lime Meringue</p>
+          <p class="pie-note">Meringue torched, not piped from a tub.</p>
+          <p class="pie-price">$29</p>
+        </li>
+        <li class="pie" tabindex="0">
+          <p class="pie-name">Seasonal fresh berry</p>
+          <p class="pie-note">Blackberry Dream or Strawberry Deluxe, when the fruit is right.</p>
+          <p class="pie-price">$42</p>
+        </li>
+      </ul>
+      <p class="keeping"><b>Keeping it.</b> A whole pie holds three or four days in the refrigerator and two months in the freezer. Take a cream pie straight home. Warm a fruit pie for ten minutes before you cut it and nobody will know it was not baked that hour.</p>
+    </div>
+  </section>
+
+  <section class="breads">
+    <div class="wrap breads-grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/loaf.png" alt="A seeded brown loaf on baker's paper with two slices cut and leaning against it, sunflower seeds visible through the crumb." width="1024" height="1024">
+      </figure>
+      <div>
+        <h2>Mom's Breads are still here.</h2>
+        <p>The Sunflower Crunch Loaf never left the shelf and it never left the recipe book. Six dollars, same loaf, same method, baked in the same room it has been baked in for twenty years.</p>
+        <p>So are the Pulla, the Challah and the Irish Soda. If you used to buy your bread here on a Saturday morning, you still can.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pair">
+    <div class="wrap">
+      <div class="pair-grid">
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/rack.png" alt="Four whole pies cooling on a wire rack against a pale wall, two lattice topped and two crumb topped, each one visibly hand made." width="1024" height="1024">
+          <figcaption>Everything is baked here, in small numbers</figcaption>
+        </figure>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/slice.png" alt="A slice of dark berry crumble pie standing on a plain white plate, the glossy filling and coarse crumb top clearly visible." width="1024" height="1024">
+          <figcaption>A slice is $5.75, and there is somewhere to sit</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="counter">
+    <div class="wrap counter-grid">
+      <div>
+        <h3>The shop</h3>
+        <address>
+          126A Commerce Street<br>
+          Occoquan, Virginia 22125
+        </address>
+      </div>
+      <div>
+        <h3>Order a pie</h3>
+        <a class="tel" href="tel:+17034977437">703-497-7437</a>
+      </div>
+      <div>
+        <h3>Open</h3>
+        <p class="open">Nine to six,<br>seven days a week.</p>
+        <p class="open-note">Some listing sites still say eleven. They are wrong.</p>
+      </div>
+    </div>
+    <div class="wrap colophon">
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of The Golden Plum's own pies. Prices and hours are those published by the bakery in September 2026. Keeping and warming guidance is general advice for the concept and would be set by the shop.</p>
+    </div>
+  </section>
+
+</main>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for The Golden Plum, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
