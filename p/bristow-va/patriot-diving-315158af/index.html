@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn to Scuba Dive in Occoquan, VA | Patriot Diving | PADI Five Star IDC</title>
+<meta name="description" content="Veteran run PADI Five Star Instructor Development Center at 305 Mill Street in the Occoquan historic district. Discover Scuba through Instructor, adaptive diving taught here, gear serviced on site. Closed Wednesdays.">
+<style>
+@font-face{font-family:"Saira Cond";src:url("fonts/sairacond-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Saira Cond";src:url("fonts/sairacond-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Asap";src:url("fonts/asap-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Asap";src:url("fonts/asap-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"DM Mono";src:url("fonts/dmmono-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  --deep:#0E1614;
+  --shallow:#22332C;
+  --light:#E9EFEB;
+  --soft:#A6C0B4;
+  --amber:#E5A32B;
+  --rule:rgba(166,192,180,0.22);
+  --display:"Saira Cond",system-ui,sans-serif;
+  --text:"Asap",system-ui,sans-serif;
+  --mono:"DM Mono",ui-monospace,monospace;
+  --gutter:28px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--deep);
+  color:var(--light);
+  font-family:var(--text);
+  font-size:17px;
+  line-height:1.65;
+  caret-color:var(--amber);
+  accent-color:var(--amber);
+  scrollbar-color:var(--shallow) var(--deep);
+}
+::selection{background:var(--amber);color:#14100A}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+a{color:var(--amber)}
+
+.wrap{
+  max-width:1180px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--rule)}
+.mast .wrap{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:8px 24px;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+.wordmark{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:22px;
+  letter-spacing:0.02em;
+  line-height:1.3;
+  margin:0;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.mast-meta{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+  color:var(--soft);
+  margin:0;
+}
+.mast-spacer{flex:1 1 auto}
+.mast-call{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+  color:var(--amber);
+  text-decoration:none;
+  border-bottom:1px solid rgba(229,163,43,0.5);
+  padding-bottom:2px;
+  white-space:nowrap;
+}
+
+/* ---------- hero ---------- */
+.hero-shot img{
+  width:100%;
+  height:430px;
+  object-fit:cover;
+  object-position:center 34%;
+}
+.hero{
+  padding-top:52px;
+  padding-bottom:62px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,60fr) minmax(0,40fr);
+  gap:46px;
+  align-items:end;
+}
+h1{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:58px;
+  line-height:1.03;
+  letter-spacing:-0.012em;
+  margin:0 0 22px 0;
+  max-width:15ch;
+}
+.lede{
+  font-size:20px;
+  line-height:1.55;
+  color:var(--soft);
+  margin:0;
+  max-width:48ch;
+}
+.creds{
+  list-style:none;
+  margin:0 0 26px 0;
+  padding-left:0;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+  color:var(--light);
+}
+.creds li{
+  border-top:1px solid var(--rule);
+  padding-top:11px;
+  padding-bottom:11px;
+}
+.cta{
+  display:inline-block;
+  font-family:var(--display);
+  font-weight:700;
+  font-size:20px;
+  line-height:1.2;
+  letter-spacing:0.03em;
+  text-transform:uppercase;
+  color:#14100A;
+  background:var(--amber);
+  text-decoration:none;
+  border-radius:2px;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:30px;
+  padding-right:30px;
+  transition:transform 240ms cubic-bezier(0.16,1,0.3,1),background-color 240ms cubic-bezier(0.16,1,0.3,1);
+}
+.cta:hover,.cta:focus-visible{background-color:#F2B443;transform:translateY(-2px)}
+.cta:active{transform:translateY(0)}
+
+/* ---------- the descent ---------- */
+.descent{
+  background-image:linear-gradient(180deg,#22332C 0%,#16211D 46%,#0A100F 100%);
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  padding-top:74px;
+  padding-bottom:74px;
+}
+.descent h2{margin-bottom:12px}
+.descent-lead{
+  color:var(--soft);
+  margin:0 0 40px 0;
+  max-width:60ch;
+}
+h2{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:36px;
+  line-height:1.1;
+  letter-spacing:-0.008em;
+  margin:0 0 18px 0;
+}
+.rungs{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+}
+.rung{
+  --tick:0.28;
+  --depth-color:var(--soft);
+  display:grid;
+  grid-template-columns:118px minmax(0,1fr);
+  column-gap:30px;
+  row-gap:8px;
+  padding-top:26px;
+  padding-bottom:26px;
+  padding-left:22px;
+  padding-right:22px;
+  border-top:1px solid var(--rule);
+  position:relative;
+  transition:background-color 300ms cubic-bezier(0.16,1,0.3,1);
+}
+.rungs .rung:last-child{border-bottom:1px solid var(--rule)}
+.rung:hover,.rung:focus-within{
+  --tick:1;
+  --depth-color:var(--amber);
+  background-color:rgba(229,163,43,0.055);
+}
+.rung::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:26px;
+  bottom:26px;
+  width:2px;
+  background:var(--amber);
+  opacity:var(--tick);
+  transform:scaleY(var(--tick));
+  transform-origin:top center;
+  transition:opacity 300ms cubic-bezier(0.16,1,0.3,1),transform 300ms cubic-bezier(0.16,1,0.3,1);
+}
+.rung-name{
+  grid-column:2;
+  grid-row:1;
+  font-family:var(--display);
+  font-weight:700;
+  font-size:27px;
+  line-height:1.2;
+  letter-spacing:0.005em;
+  margin:0;
+}
+.rung-depth{
+  grid-column:1;
+  grid-row:1;
+  font-family:var(--mono);
+  font-size:16px;
+  line-height:1.5;
+  color:var(--depth-color);
+  margin:0;
+  padding-top:5px;
+  transition:color 300ms cubic-bezier(0.16,1,0.3,1);
+}
+.rung-note{
+  grid-column:2;
+  grid-row:2;
+  color:var(--soft);
+  margin:0;
+  max-width:62ch;
+}
+.descent-foot{
+  color:var(--soft);
+  font-size:15px;
+  line-height:1.65;
+  margin:26px 0 0 0;
+  max-width:70ch;
+}
+.descent-foot b{color:var(--light);font-weight:600}
+
+/* ---------- alternating bands ---------- */
+.band{
+  padding-top:78px;
+  padding-bottom:78px;
+}
+.band-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:54px;
+  align-items:center;
+}
+.band figure img{
+  width:100%;
+  height:auto;
+  border-radius:2px;
+}
+.band p{margin:0 0 16px 0;max-width:58ch}
+.band p:last-child{margin-bottom:0}
+.band-service{border-top:1px solid var(--rule)}
+.band-service .band-text{order:-1}
+
+/* ---------- history strip ---------- */
+.history{
+  border-top:1px solid var(--rule);
+  padding-bottom:78px;
+}
+.history-shot img{
+  width:100%;
+  height:330px;
+  object-fit:cover;
+  object-position:center 58%;
+}
+.history-text{padding-top:56px}
+.history-cols{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:38px;
+}
+.history-cols p{margin:0;color:var(--soft);max-width:54ch}
+
+/* ---------- shop footer ---------- */
+.shop{
+  border-top:1px solid var(--rule);
+  padding-top:70px;
+  padding-bottom:44px;
+}
+.shop-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  gap:40px;
+}
+.shop h3{
+  font-family:var(--mono);
+  font-weight:500;
+  font-size:13px;
+  line-height:1.5;
+  color:var(--soft);
+  margin:0 0 14px 0;
+}
+.shop address{
+  font-style:normal;
+  font-size:19px;
+  line-height:1.55;
+  margin:0 0 18px 0;
+}
+.shop-mail{
+  font-family:var(--mono);
+  font-size:14px;
+  line-height:1.6;
+  color:var(--amber);
+}
+.hours{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+  font-family:var(--mono);
+  font-size:14px;
+  line-height:1.6;
+}
+.hours li{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  border-bottom:1px solid var(--rule);
+  padding-top:9px;
+  padding-bottom:9px;
+}
+.hours li:last-child{border-bottom:0}
+.hours .shut{color:var(--amber)}
+.colophon{
+  border-top:1px solid var(--rule);
+  margin-top:48px;
+  padding-top:22px;
+  padding-bottom:18px;
+}
+.disclosure{
+  font-family:var(--mono);
+  font-size:12px;
+  line-height:1.75;
+  color:var(--soft);
+  margin:0;
+  max-width:88ch;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:34px;align-items:start}
+  .band-grid{grid-template-columns:minmax(0,1fr);gap:34px}
+  .band-service .band-text{order:0}
+  .history-cols{grid-template-columns:minmax(0,1fr);gap:16px}
+  .history-shot img{height:250px}
+  h1{font-size:46px;max-width:20ch}
+  .hero-shot img{height:340px}
+  .shop-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:680px){
+  :root{--gutter:20px}
+  h1{font-size:36px;max-width:22ch}
+  h2{font-size:28px}
+  .lede{font-size:18px}
+  .hero-shot img{height:260px}
+  .rung{grid-template-columns:minmax(0,1fr);row-gap:6px}
+  .rung-name{grid-column:1;grid-row:2}
+  .rung-depth{grid-column:1;grid-row:1;padding-top:0}
+  .rung-note{grid-column:1;grid-row:3}
+  .rung-name{font-size:24px}
+  .shop-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){
+  .rung,.rung::before,.rung-depth,.cta{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="wordmark">Patriot Diving</p>
+    <p class="mast-meta">305 Mill St B-1, Occoquan Historic District VA</p>
+    <span class="mast-spacer"></span>
+    <a class="mast-call" href="tel:+17034901175">(703) 490-1175</a>
+  </div>
+</header>
+
+<main>
+
+  <figure class="hero-shot">
+    <!-- generated illustrative imagery -->
+    <img src="images/surface.png" alt="A single scuba diver silhouetted in green fresh water, seen from below against shafts of daylight breaking through the surface." width="1536" height="1024">
+  </figure>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Learn to dive in Occoquan.</h1>
+        <p class="lede">A veteran run PADI Five Star Instructor Development Center on Mill Street. We teach the whole ladder, from a first breath in the pool to instructor, and we dive every weekend.</p>
+      </div>
+      <div>
+        <ul class="creds">
+          <li>PADI Five Star Instructor Development Center</li>
+          <li>Veteran owned and run since 2023</li>
+          <li>Handicapped Scuba Association instruction</li>
+        </ul>
+        <a class="cta" href="tel:+17034901175">Book a pool session</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="descent">
+    <div class="wrap">
+      <h2>How far down do you want to go?</h2>
+      <p class="descent-lead">Every certification is a rung, and they run in order. Find the one you are on. If you have never breathed off a regulator, that is the first one, and it happens in a pool.</p>
+      <ul class="rungs">
+        <li class="rung" tabindex="0">
+          <h3 class="rung-name">Discover Scuba Diving</h3>
+          <p class="rung-depth">40 ft</p>
+          <p class="rung-note">No certification, no commitment. One session with an instructor and you are breathing underwater. Most people book this one first and decide afterward.</p>
+        </li>
+        <li class="rung" tabindex="0">
+          <h3 class="rung-name">Open Water Diver</h3>
+          <p class="rung-depth">60 ft</p>
+          <p class="rung-note">The one that makes you a diver. It does not expire and it works anywhere in the world you go on holiday.</p>
+        </li>
+        <li class="rung" tabindex="0">
+          <h3 class="rung-name">Advanced Open Water</h3>
+          <p class="rung-depth">100 ft</p>
+          <p class="rung-note">Five dives, five new skills, including navigation and your first proper deep dive. No exam.</p>
+        </li>
+        <li class="rung" tabindex="0">
+          <h3 class="rung-name">Rescue Diver</h3>
+          <p class="rung-depth">100 ft</p>
+          <p class="rung-note">Not deeper. Harder. Divers who have taken it tend to describe it as the course that changed how they dive.</p>
+        </li>
+        <li class="rung" tabindex="0">
+          <h3 class="rung-name">Divemaster and Instructor</h3>
+          <p class="rung-depth">130 ft</p>
+          <p class="rung-note">The working end of the ladder. We run the full Instructor Development Course here, which is what the Five Star IDC rating means and what most shops this size cannot offer.</p>
+        </li>
+      </ul>
+      <p class="descent-foot">Depths shown are the standard recreational limits for each certification. Been out of the water a while? <b>ReActivate</b> is a short refresher, not a new course. We also teach stay dry certifications and mermaid, and yes, those are real.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap band-grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/flag.png" alt="A red and white dive flag on an inflatable float drifting on dark green river water below a wooded bank." width="1024" height="1024">
+      </figure>
+      <div class="band-text">
+        <h2>Adaptive diving is taught here.</h2>
+        <p>Patriot Diving teaches Handicapped Scuba Association courses. Allie, who runs the shop with Roger, holds a seat on the board of Patriots for Disabled Divers.</p>
+        <p>Walter Reed, Fort Belvoir and Quantico are all inside a forty minute drive of Mill Street. If you or someone you dive with needs the course adapted, call and ask for the detail. It is a conversation, not a form.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-service">
+    <div class="wrap band-grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/bench.png" alt="A scuba regulator first stage opened on a service bench beside a torque wrench, a pick and a scatter of o-rings." width="1024" height="1024">
+      </figure>
+      <div class="band-text">
+        <h2>We service all gear.</h2>
+        <p>Regulators, jackets, computers, tanks. Bring it in before the trip rather than after it, and bring it in even if you bought it somewhere else.</p>
+        <p>Rentals for a class or for a weekend are on the shelf. If you are not sure what you need yet, do not buy anything: take the pool session first and ask afterward.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="history">
+    <figure class="history-shot">
+      <!-- generated illustrative imagery -->
+      <img src="images/pool.png" alt="Two aluminium scuba tanks and a folded buoyancy jacket on the deck of an empty indoor training pool, seen from the waterline." width="1024" height="1024">
+    </figure>
+    <div class="wrap history-text">
+      <h2>Some of you know us as Patriot Scuba.</h2>
+      <div class="history-cols">
+        <p>In early 2023 Jeff and Merial decided to leave the retail dive business, and Roger and Allie took the shop on rather than let it close. Roger had managed it. Allie had been diving out of it for years.</p>
+        <p>Same shop, same pool, same weekends in the water. If you certified with Patriot Scuba, your records and your instructors are still here, and the pool sessions still run on the same nights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop">
+    <div class="wrap shop-grid">
+      <div>
+        <h3>The shop</h3>
+        <address>
+          305 Mill Street B-1<br>
+          Occoquan Historic District<br>
+          Virginia 22125
+        </address>
+        <p class="shop-mail">info@patriotdiving.net</p>
+      </div>
+      <div>
+        <h3>Book a pool session</h3>
+        <a class="cta" href="tel:+17034901175">(703) 490-1175</a>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <ul class="hours">
+          <li><span>Mon and Tue</span><span>12pm to 7pm</span></li>
+          <li><span>Wednesday</span><span class="shut">Closed</span></li>
+          <li><span>Thu and Fri</span><span>12pm to 7pm</span></li>
+          <li><span>Sat and Sun</span><span>12pm to 5pm</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap colophon">
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Patriot Diving, its pool sessions and its own instructors.</p>
+    </div>
+  </section>
+
+</main>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Patriot Diving, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
