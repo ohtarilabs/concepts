@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>13 Magickal Moons | Metaphysical shop and tarot readings in Occoquan, VA</title>
+<meta name="description" content="A metaphysical supply shop at 440 Mill Street in the Occoquan historic district. Incense blended in the shop, herbs, candles, crystals and tarot supplies, readings at the counter, and cats asleep on the windowsill. Everyone is welcome.">
+<style>
+@font-face{font-family:"Young S";src:url("fonts/youngserif-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Hanken";src:url("fonts/hanken-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Hanken";src:url("fonts/hanken-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Spline M";src:url("fonts/splinemono-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#E6EAE2;
+  --card:#F4F6F1;
+  --ink:#161C17;
+  --muted:#5A6659;
+  --ember:#C2410C;
+  --on-ember:#FFF0E4;
+  --hair:#C9D2C6;
+  --display:"Young S",Georgia,serif;
+  --text:"Hanken",system-ui,sans-serif;
+  --mono:"Spline M",ui-monospace,monospace;
+  --gutter:28px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--text);
+  font-size:17px;
+  line-height:1.68;
+  caret-color:var(--ember);
+  accent-color:var(--ember);
+}
+::selection{background:var(--ember);color:var(--on-ember)}
+:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+a{color:var(--ember);text-underline-offset:3px;text-decoration-thickness:1px}
+
+.wrap{
+  max-width:1140px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--hair)}
+.mast .wrap{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:8px 26px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+}
+.mast p{margin:0;color:var(--muted)}
+.mast .here{color:var(--ink)}
+.mast-spacer{flex:1 1 auto}
+.mast a{
+  color:var(--ember);
+  text-decoration:none;
+  border-bottom:1px solid var(--ember);
+  padding-bottom:2px;
+  white-space:nowrap;
+}
+
+/* ---------- image-led first screen ---------- */
+.room img{
+  width:100%;
+  height:560px;
+  object-fit:cover;
+  object-position:center 42%;
+}
+.plate-holder{
+  position:relative;
+  z-index:1;
+  margin-top:-104px;
+  padding-bottom:78px;
+}
+.plate{
+  background:var(--ember);
+  color:var(--on-ember);
+  border-radius:2px;
+  max-width:640px;
+  padding-top:38px;
+  padding-bottom:38px;
+  padding-left:40px;
+  padding-right:40px;
+  box-shadow:0 22px 50px rgba(22,28,23,0.24);
+}
+.plate h1{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:54px;
+  line-height:1.04;
+  letter-spacing:-0.012em;
+  margin:0 0 18px 0;
+  color:var(--on-ember);
+}
+.plate p{
+  font-size:20px;
+  line-height:1.5;
+  margin:0;
+  color:var(--on-ember);
+  max-width:34ch;
+}
+
+h2{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:38px;
+  line-height:1.12;
+  letter-spacing:-0.008em;
+  margin:0 0 18px 0;
+}
+
+/* ---------- what is on ---------- */
+.on{
+  background:var(--card);
+  border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  padding-top:76px;
+  padding-bottom:76px;
+}
+.on-note{
+  font-size:15px;
+  line-height:1.65;
+  color:var(--muted);
+  margin:0 0 34px 0;
+  max-width:66ch;
+}
+.on-list{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+}
+.on-row{
+  --tag:var(--muted);
+  --mark:0;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:6px 18px;
+  padding-top:19px;
+  padding-bottom:19px;
+  padding-left:26px;
+  padding-right:6px;
+  border-top:1px solid var(--hair);
+  position:relative;
+}
+.on-list .on-row:last-child{border-bottom:1px solid var(--hair)}
+.on-row:hover,.on-row:focus-within{--tag:var(--ember);--mark:1}
+.on-row::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:1.55em;
+  width:16px;
+  height:2px;
+  background:var(--ember);
+  opacity:var(--mark);
+  transform:scaleX(var(--mark));
+  transform-origin:left center;
+  transition:opacity 380ms cubic-bezier(0.16,1,0.3,1),transform 380ms cubic-bezier(0.16,1,0.3,1);
+}
+.on-name{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:23px;
+  line-height:1.3;
+  margin:0;
+}
+.on-what{
+  font-size:15px;
+  line-height:1.55;
+  color:var(--muted);
+  margin:0;
+  flex:1 1 240px;
+}
+.on-when{
+  font-family:var(--mono);
+  font-size:14px;
+  line-height:1.5;
+  color:var(--tag);
+  margin:0;
+  white-space:nowrap;
+  transition:color 380ms cubic-bezier(0.16,1,0.3,1);
+}
+
+/* ---------- welcome band ---------- */
+.welcome{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.welcome-grid{
+  display:grid;
+  grid-template-columns:minmax(0,40fr) minmax(0,60fr);
+  gap:54px;
+  align-items:center;
+}
+.welcome img{width:100%;height:auto;border-radius:2px}
+.welcome p{margin:0 0 17px 0;max-width:56ch}
+.welcome p:last-child{margin-bottom:0}
+
+/* ---------- shelf pair ---------- */
+.shelf{
+  background:var(--card);
+  border-top:1px solid var(--hair);
+  padding-top:76px;
+  padding-bottom:70px;
+}
+.shelf-lead{
+  max-width:58ch;
+  margin:0 0 40px 0;
+}
+.shelf-pair{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:34px;
+}
+.shelf-pair img{width:100%;height:auto;border-radius:2px}
+.shelf-pair figcaption{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  padding-top:13px;
+}
+
+/* ---------- visit footer ---------- */
+.visit{
+  border-top:1px solid var(--hair);
+  padding-top:70px;
+  padding-bottom:40px;
+}
+.visit-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  gap:40px;
+}
+.visit h3{
+  font-family:var(--mono);
+  font-weight:500;
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0 0 14px 0;
+}
+.visit address{
+  font-style:normal;
+  font-size:19px;
+  line-height:1.55;
+  margin:0;
+}
+.visit .tel{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:31px;
+  line-height:1.2;
+  color:var(--ember);
+  text-decoration:none;
+  display:inline-block;
+  padding-top:2px;
+  padding-bottom:4px;
+  border-bottom:2px solid rgba(194,65,12,0.3);
+  transition:border-color 260ms cubic-bezier(0.16,1,0.3,1);
+}
+.visit .tel:hover,.visit .tel:focus-visible{border-bottom-color:var(--ember)}
+.visit-grid p{margin:0;max-width:34ch;font-size:16px;line-height:1.65;color:var(--muted)}
+.hours{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+  font-family:var(--mono);
+  font-size:14px;
+  line-height:1.6;
+}
+.hours li{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  border-bottom:1px solid var(--hair);
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.hours li:last-child{border-bottom:0}
+.hours .late{color:var(--ember)}
+.colophon{
+  border-top:1px solid var(--hair);
+  margin-top:50px;
+  padding-top:22px;
+  padding-bottom:18px;
+}
+.disclosure{
+  font-family:var(--mono);
+  font-size:12px;
+  line-height:1.8;
+  color:var(--muted);
+  margin:0;
+  max-width:92ch;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1000px){
+  .room img{height:420px}
+  .plate-holder{margin-top:-80px;padding-bottom:62px}
+  .plate h1{font-size:44px}
+  .welcome-grid{grid-template-columns:minmax(0,1fr);gap:34px}
+  .visit-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:680px){
+  :root{--gutter:20px}
+  .room img{height:300px}
+  .plate-holder{margin-top:-56px;padding-bottom:52px}
+  .plate{padding-left:24px;padding-right:24px;padding-top:28px;padding-bottom:28px}
+  .plate h1{font-size:34px}
+  .plate p{font-size:18px}
+  h2{font-size:30px}
+  .on-row{padding-left:24px}
+  .on-row::before{width:12px;opacity:1;transform:none}
+  .on-what{flex:1 1 100%}
+  .shelf-pair{grid-template-columns:minmax(0,1fr)}
+  .visit-grid{grid-template-columns:minmax(0,1fr)}
+  .visit .tel{font-size:27px}
+}
+@media (prefers-reduced-motion:reduce){
+  .on-row::before,.on-when,.visit .tel{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="here">13 Magickal Moons</p>
+    <p>440 Mill Street, Occoquan</p>
+    <span class="mast-spacer"></span>
+    <a href="tel:+17034955135">703-495-5135</a>
+  </div>
+</header>
+
+<main>
+
+  <figure class="room">
+    <!-- generated illustrative imagery -->
+    <img src="images/shelves.png" alt="A wall of wooden shelves in a small shop, filled with glass jars of dried herbs and rows of candles, with dried bundles hanging from the shelf edges in afternoon light." width="1536" height="1024">
+  </figure>
+
+  <div class="wrap plate-holder">
+    <div class="plate">
+      <h1>13 Magickal Moons</h1>
+      <p>Incense blended in the shop. Herbs, candles, stones and tarot. Readings at the counter, and cats asleep in the window.</p>
+    </div>
+  </div>
+
+  <section class="on">
+    <div class="wrap">
+      <h2>What is on this month</h2>
+      <p class="on-note">Sample listing, shown for this concept. On the finished page this is the block that changes, and it is the only thing about the shop a listing site can never carry.</p>
+      <ul class="on-list">
+        <li class="on-row" tabindex="0">
+          <p class="on-name">Tarot readings</p>
+          <p class="on-what">Ask at the counter. No booking, and no need to have had one before.</p>
+          <p class="on-when">ask in shop</p>
+        </li>
+        <li class="on-row" tabindex="0">
+          <p class="on-name">Sabbat rituals</p>
+          <p class="on-what">Eight a year, marked here since 2004. Samhain has filled the street before now.</p>
+          <p class="on-when">the wheel</p>
+        </li>
+        <li class="on-row" tabindex="0">
+          <p class="on-name">Classes</p>
+          <p class="on-what">Taught by Rev. Samantha Harvey, who has run this shop since it opened.</p>
+          <p class="on-when">by term</p>
+        </li>
+        <li class="on-row" tabindex="0">
+          <p class="on-name">Handfastings and rites of passage</p>
+          <p class="on-what">Named, married and remembered. Talk to Samantha about dates.</p>
+          <p class="on-when">by arrangement</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="welcome">
+    <div class="wrap welcome-grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/bench.png" alt="A wooden workbench with three heaps of loose incense ingredients, a brass scoop and a stone mortar with a pestle across it." width="1024" height="1024">
+      </figure>
+      <div>
+        <h2>You do not need to know anything to come in.</h2>
+        <p>People stand outside this shop and talk themselves out of it, which is a shame, because the most common thing said inside it is a question. Nobody here is going to test you.</p>
+        <p>If you came for a candle, buy the candle. If you came because something is going on and a friend said we were kind, that is also a reason, and it is the one we hear most.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="shelf">
+    <div class="wrap">
+      <h2>What is on the shelves.</h2>
+      <p class="shelf-lead">Incense blended here rather than bought in, loose herbs by weight, candles, stones, jewellery and tarot. If you do not know what you want, say so and somebody will walk the shelves with you.</p>
+      <div class="shelf-pair">
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/stones.png" alt="Four shallow wooden trays holding rough green stones, tumbled amber pieces, flat dark slate ovals and clear quartz points." width="1024" height="1024">
+          <figcaption>Stones sold by the piece, not by the set</figcaption>
+        </figure>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/window.png" alt="Candles burning on a deep shopfront windowsill with a dark cat curled asleep at the far end, historic brick buildings blurred beyond the glass." width="1024" height="1024">
+          <figcaption>The windowsill, most afternoons</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit">
+    <div class="wrap visit-grid">
+      <div>
+        <h3>Find us</h3>
+        <address>
+          440 Mill Street<br>
+          Occoquan, Virginia 22125
+        </address>
+      </div>
+      <div>
+        <h3>Call the shop</h3>
+        <a class="tel" href="tel:+17034955135">703-495-5135</a>
+      </div>
+      <div>
+        <h3>Open</h3>
+        <ul class="hours">
+          <li><span>Sun to Tue</span><span>12 to 6</span></li>
+          <li><span>Wednesday</span><span class="late">12 to 9</span></li>
+          <li><span>Thu and Fri</span><span>12 to 6</span></li>
+          <li><span>Saturday</span><span class="late">11 to 6</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap colophon">
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of 13 Magickal Moons, its own shelves and its own cats. What is on above is shown by kind rather than by date, for this concept. The hours are the shop's own, as published on its claimed Yelp listing and on its previous website: Apple Maps currently flattens them to twelve to six every day, which loses both the late Wednesday and the early Saturday.</p>
+    </div>
+  </section>
+
+</main>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for 13 Magickal Moons, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
