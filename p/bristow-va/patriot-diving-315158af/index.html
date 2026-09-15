@@ -193,7 +193,7 @@ h2{
   --tick:0.28;
   --depth-color:var(--soft);
   display:grid;
-  grid-template-columns:118px minmax(0,1fr);
+  grid-template-columns:104px minmax(0,1fr) auto;
   column-gap:30px;
   row-gap:8px;
   padding-top:26px;
@@ -244,6 +244,17 @@ h2{
   padding-top:5px;
   transition:color 300ms cubic-bezier(0.16,1,0.3,1);
 }
+.rung-price{
+  grid-column:3;
+  grid-row:1;
+  font-family:var(--mono);
+  font-size:16px;
+  line-height:1.5;
+  color:var(--amber);
+  margin:0;
+  padding-top:5px;
+  white-space:nowrap;
+}
 .rung-note{
   grid-column:2;
   grid-row:2;
@@ -290,7 +301,7 @@ h2{
   width:100%;
   height:330px;
   object-fit:cover;
-  object-position:center 58%;
+  object-position:center 34%;
 }
 .history-text{padding-top:56px}
 .history-cols{
@@ -381,10 +392,11 @@ h2{
   h2{font-size:28px}
   .lede{font-size:18px}
   .hero-shot img{height:260px}
-  .rung{grid-template-columns:minmax(0,1fr);row-gap:6px}
+  .rung{grid-template-columns:minmax(0,1fr) auto;row-gap:6px}
   .rung-name{grid-column:1;grid-row:2}
   .rung-depth{grid-column:1;grid-row:1;padding-top:0}
-  .rung-note{grid-column:1;grid-row:3}
+  .rung-price{grid-column:2;grid-row:1;padding-top:0}
+  .rung-note{grid-column:1 / -1;grid-row:3}
   .rung-name{font-size:24px}
   .shop-grid{grid-template-columns:minmax(0,1fr)}
 }
@@ -420,7 +432,7 @@ h2{
       <div>
         <ul class="creds">
           <li>PADI Five Star Instructor Development Center</li>
-          <li>Veteran owned and run since 2023</li>
+          <li>Veteran owned and woman owned, since 2023</li>
           <li>Handicapped Scuba Association instruction</li>
         </ul>
         <a class="cta" href="tel:+17034901175">Book a pool session</a>
@@ -436,11 +448,13 @@ h2{
         <li class="rung" tabindex="0">
           <h3 class="rung-name">Discover Scuba Diving</h3>
           <p class="rung-depth">40 ft</p>
+          <p class="rung-price">from $100</p>
           <p class="rung-note">No certification, no commitment. One session with an instructor and you are breathing underwater. Most people book this one first and decide afterward.</p>
         </li>
         <li class="rung" tabindex="0">
           <h3 class="rung-name">Open Water Diver</h3>
           <p class="rung-depth">60 ft</p>
+          <p class="rung-price">$880</p>
           <p class="rung-note">The one that makes you a diver. It does not expire and it works anywhere in the world you go on holiday.</p>
         </li>
         <li class="rung" tabindex="0">
@@ -459,7 +473,7 @@ h2{
           <p class="rung-note">The working end of the ladder. We run the full Instructor Development Course here, which is what the Five Star IDC rating means and what most shops this size cannot offer.</p>
         </li>
       </ul>
-      <p class="descent-foot">Depths shown are the standard recreational limits for each certification. Been out of the water a while? <b>ReActivate</b> is a short refresher, not a new course. We also teach stay dry certifications and mermaid, and yes, those are real.</p>
+      <p class="descent-foot">Depths shown are the standard recreational limits for each certification. The Open Water price includes confined water gear, and a wetsuit, jacket and regulator for the open water dives; mask, snorkel, boots and fins are yours to buy or rent. <b>There is a military discount. Ask for it on the phone.</b> Been out of the water a while? ReActivate is a short refresher, not a new course. We also teach Adaptive Support Diver, stay dry certifications, Bubblemaker and Seal Team for children, and four levels of mermaid.</p>
     </div>
   </section>
 
@@ -486,7 +500,7 @@ h2{
       <div class="band-text">
         <h2>We service all gear.</h2>
         <p>Regulators, jackets, computers, tanks. Bring it in before the trip rather than after it, and bring it in even if you bought it somewhere else.</p>
-        <p>Rentals for a class or for a weekend are on the shelf. If you are not sure what you need yet, do not buy anything: take the pool session first and ask afterward.</p>
+        <p>Air and nitrox fills, and rentals for a class or for a weekend. If you are not sure what you need yet, do not buy anything: take the pool session first and ask afterward.</p>
       </div>
     </div>
   </section>
@@ -531,7 +545,7 @@ h2{
       </div>
     </div>
     <div class="wrap colophon">
-      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Patriot Diving, its pool sessions and its own instructors.</p>
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Patriot Diving, its pool sessions and its own instructors. Course prices are those published on patriotdiving.net in September 2026.</p>
     </div>
   </section>
 
