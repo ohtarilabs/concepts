@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cozy Calico Books | Independent Bookshop in Occoquan, VA</title>
+<meta name="description" content="An independent bookshop at 199 Union Street in the Occoquan historic district, opened April 2026 and run by a working novelist. New books, curated shelves, author events, and a cat called Checkers.">
+<style>
+@font-face{font-family:"Petrona";src:url("fonts/petrona-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Petrona";src:url("fonts/petrona-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Mulish";src:url("fonts/mulish-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Mulish";src:url("fonts/mulish-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Overpass M";src:url("fonts/overpassmono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --paper:#EFF1EC;
+  --card:#F8F9F6;
+  --ink:#16211C;
+  --muted:#5C6B62;
+  --marm:#A6480F;
+  --hair:#D3DAD2;
+  --display:"Petrona",Georgia,serif;
+  --text:"Mulish",system-ui,sans-serif;
+  --mono:"Overpass M",ui-monospace,monospace;
+  --gutter:28px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--text);
+  font-size:17px;
+  line-height:1.68;
+  caret-color:var(--marm);
+  accent-color:var(--marm);
+}
+::selection{background:var(--marm);color:#FFF3EA}
+:focus-visible{outline:2px solid var(--marm);outline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+a{color:var(--marm);text-underline-offset:3px;text-decoration-thickness:1px}
+
+.wrap{
+  max-width:1160px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--hair);background:var(--card)}
+.mast .wrap{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:8px 26px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+}
+.mast p{margin:0;color:var(--muted)}
+.mast .here{color:var(--ink)}
+.mast-spacer{flex:1 1 auto}
+.mast a{
+  color:var(--marm);
+  text-decoration:none;
+  border-bottom:1px solid var(--marm);
+  padding-bottom:2px;
+  white-space:nowrap;
+}
+
+/* ---------- hero ---------- */
+.hero{
+  padding-top:80px;
+  padding-bottom:64px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,60fr) minmax(0,40fr);
+  gap:56px;
+  align-items:end;
+}
+h1{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:64px;
+  line-height:1.04;
+  letter-spacing:-0.026em;
+  margin:0 0 24px 0;
+  max-width:14ch;
+}
+.lede{
+  font-size:20px;
+  line-height:1.55;
+  color:var(--muted);
+  margin:0;
+  max-width:46ch;
+}
+.facts{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.55;
+}
+.facts li{
+  border-top:1px solid var(--hair);
+  padding-top:13px;
+  padding-bottom:13px;
+}
+.facts li:last-child{border-bottom:1px solid var(--hair)}
+.facts b{font-weight:400;color:var(--marm)}
+
+.shopshot img{
+  width:100%;
+  height:440px;
+  object-fit:cover;
+  object-position:center 48%;
+}
+
+h2{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:38px;
+  line-height:1.1;
+  letter-spacing:-0.018em;
+  margin:0 0 18px 0;
+}
+
+/* ---------- the shelves (signature) ---------- */
+.shelves{
+  background:var(--card);
+  border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.shelves-lead{
+  color:var(--muted);
+  margin:0 0 40px 0;
+  max-width:62ch;
+}
+.shelf-list{list-style:none;margin:0;padding-left:0}
+.shelf{
+  --note:var(--muted);
+  --draw:0;
+  display:grid;
+  grid-template-columns:minmax(0,38fr) minmax(0,62fr);
+  gap:6px 30px;
+  align-items:baseline;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:26px;
+  padding-right:6px;
+  border-top:1px solid var(--hair);
+  position:relative;
+}
+.shelf-list .shelf:last-child{border-bottom:1px solid var(--hair)}
+.shelf:hover,.shelf:focus-within{--note:var(--marm);--draw:1}
+.shelf::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:1.5em;
+  width:16px;
+  height:2px;
+  background:var(--marm);
+  opacity:var(--draw);
+  transform:scaleX(var(--draw));
+  transform-origin:left center;
+  transition:opacity 380ms cubic-bezier(0.16,1,0.3,1),transform 380ms cubic-bezier(0.16,1,0.3,1);
+}
+.shelf-name{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:23px;
+  line-height:1.3;
+  margin:0;
+}
+.shelf-note{
+  font-size:16px;
+  line-height:1.6;
+  color:var(--note);
+  margin:0;
+  transition:color 380ms cubic-bezier(0.16,1,0.3,1);
+}
+.month{
+  margin-top:46px;
+  padding-top:34px;
+  border-top:1px solid var(--hair);
+}
+.month h3{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:26px;
+  line-height:1.2;
+  margin:0 0 20px 0;
+}
+.dates{list-style:none;margin:0;padding-left:0}
+.dates li{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:6px 20px;
+  padding-top:14px;
+  padding-bottom:14px;
+  border-top:1px solid var(--hair);
+}
+.dates li:last-child{border-bottom:1px solid var(--hair)}
+.date{
+  font-family:var(--mono);
+  font-size:14px;
+  line-height:1.5;
+  color:var(--marm);
+  margin:0;
+  min-width:11ch;
+}
+.event{font-size:17px;line-height:1.55;margin:0;flex:1 1 260px}
+.where{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0;
+}
+.month-note{
+  font-size:15px;
+  line-height:1.7;
+  color:var(--muted);
+  margin:26px 0 0 0;
+  max-width:70ch;
+}
+.month-note b{color:var(--ink);font-weight:600}
+
+/* ---------- cat band ---------- */
+.cat{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.cat-grid{
+  display:grid;
+  grid-template-columns:minmax(0,42fr) minmax(0,58fr);
+  gap:52px;
+  align-items:center;
+}
+.cat img{width:100%;height:auto;border-radius:2px}
+.cat p{margin:0 0 17px 0;max-width:56ch}
+.cat p:last-child{margin-bottom:0}
+
+/* ---------- pair ---------- */
+.pair{
+  background:var(--card);
+  border-top:1px solid var(--hair);
+  padding-top:78px;
+  padding-bottom:70px;
+}
+.pair-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:34px;
+}
+.pair-grid img{width:100%;height:auto;border-radius:2px}
+.pair-grid figcaption{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  padding-top:13px;
+}
+
+/* ---------- visit ---------- */
+.visit{
+  border-top:1px solid var(--hair);
+  padding-top:70px;
+  padding-bottom:40px;
+}
+.visit-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  gap:40px;
+}
+.visit h3{
+  font-family:var(--mono);
+  font-weight:400;
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0 0 14px 0;
+}
+.visit address{
+  font-style:normal;
+  font-size:19px;
+  line-height:1.55;
+  margin:0;
+}
+.visit .tel{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:30px;
+  line-height:1.24;
+  letter-spacing:-0.018em;
+  color:var(--marm);
+  text-decoration:none;
+  display:inline-block;
+  padding-top:2px;
+  padding-bottom:4px;
+  border-bottom:2px solid rgba(166,72,15,0.32);
+  transition:border-color 260ms cubic-bezier(0.16,1,0.3,1);
+}
+.visit .tel:hover,.visit .tel:focus-visible{border-bottom-color:var(--marm)}
+.visit-grid p{margin:0;font-size:16px;line-height:1.66;color:var(--muted);max-width:34ch}
+.colophon{
+  border-top:1px solid var(--hair);
+  margin-top:50px;
+  padding-top:22px;
+  padding-bottom:18px;
+}
+.disclosure{
+  font-family:var(--mono);
+  font-size:12px;
+  line-height:1.8;
+  color:var(--muted);
+  margin:0;
+  max-width:94ch;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:36px;align-items:start}
+  h1{font-size:50px;max-width:18ch}
+  .shopshot img{height:340px}
+  .cat-grid{grid-template-columns:minmax(0,1fr);gap:34px}
+  .visit-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:680px){
+  :root{--gutter:20px}
+  h1{font-size:37px;max-width:20ch}
+  h2{font-size:29px}
+  .lede{font-size:18px}
+  .shopshot img{height:240px}
+  .shelf{grid-template-columns:minmax(0,1fr);padding-left:24px}
+  .shelf::before{opacity:1;transform:none}
+  .pair-grid{grid-template-columns:minmax(0,1fr)}
+  .visit-grid{grid-template-columns:minmax(0,1fr)}
+  .visit .tel{font-size:26px}
+}
+@media (prefers-reduced-motion:reduce){
+  .shelf::before,.shelf-note,.visit .tel{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="here">Cozy Calico Books</p>
+    <p>199 Union Street, Occoquan</p>
+    <span class="mast-spacer"></span>
+    <a href="tel:+15714090897">571-409-0897</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>A bookshop in Occoquan, five months old, with a cat.</h1>
+        <p class="lede">New books, chosen one at a time by somebody who writes them. Come and be recommended something. You do not have to buy it.</p>
+      </div>
+      <div>
+        <ul class="facts">
+          <li><b>Opened</b> April 2026</li>
+          <li><b>Checkers</b> is in most Tuesdays and Wednesdays</li>
+          <li><b>199 Union Street</b>, in the historic district</li>
+          <li><b>Author signings</b> at the Fall Craft Show</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <figure class="shopshot">
+    <!-- generated illustrative imagery -->
+    <img src="images/shelves.png" alt="A wall of painted wooden shelving in a small bookshop filled with new paperbacks and hardbacks, with afternoon light from a shopfront window at the end of the run." width="1536" height="1024">
+  </figure>
+
+  <section class="shelves">
+    <div class="wrap">
+      <h2>The shelves.</h2>
+      <p class="shelves-lead">Not Fiction and Non-Fiction. Nobody browses those. These are the shelves the shop actually keeps, and they change when the person who keeps them changes her mind.</p>
+      <ul class="shelf-list">
+        <li class="shelf" tabindex="0">
+          <p class="shelf-name">What I'm reading</p>
+          <p class="shelf-note">Three books, swapped at the start of the month, with a line each about why.</p>
+        </li>
+        <li class="shelf" tabindex="0">
+          <p class="shelf-name">Banned and challenged</p>
+          <p class="shelf-note">The shelf a chain will not build. Stocked deliberately and kept full.</p>
+        </li>
+        <li class="shelf" tabindex="0">
+          <p class="shelf-name">Written near here</p>
+          <p class="shelf-note">Virginia and DC authors, including the one behind the counter.</p>
+        </li>
+        <li class="shelf" tabindex="0">
+          <p class="shelf-name">Small people, big books</p>
+          <p class="shelf-note">Picture books at the front, first chapter books behind them, at the right height.</p>
+        </li>
+        <li class="shelf" tabindex="0">
+          <p class="shelf-name">One more chapter</p>
+          <p class="shelf-note">The ones that keep people up. Ask and you will be talked into something.</p>
+        </li>
+        <li class="shelf" tabindex="0">
+          <p class="shelf-name">Read it before the film</p>
+          <p class="shelf-note">Whatever is about to be adapted, while there is still time.</p>
+        </li>
+      </ul>
+
+      <div class="month">
+        <h3>This month</h3>
+        <ul class="dates">
+          <li>
+            <p class="date">Sat 26 Sep</p>
+            <p class="event">Author signings, Fall Arts and Crafts Show</p>
+            <p class="where">In store</p>
+          </li>
+          <li>
+            <p class="date">Sun 27 Sep</p>
+            <p class="event">Author signings, second day of the show</p>
+            <p class="where">In store</p>
+          </li>
+          <li>
+            <p class="date">Tuesdays</p>
+            <p class="event">Checkers is usually in</p>
+            <p class="where">Windowsill</p>
+          </li>
+        </ul>
+        <p class="month-note">Events here are free and open to anyone. <b>Buying the book at the shop is never required</b>, and it is what pays for the chairs, so if you can, buy it here rather than somewhere else. The Fall Craft Show dates and the shop's own author schedule are real; the rest of this block is shown as a shape for the concept.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat">
+    <div class="wrap cat-grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/cat.png" alt="A calico cat curled asleep on a deep wooden windowsill beside a short stack of hardbacks, with a historic brick street blurred beyond the glass." width="1024" height="1024">
+      </figure>
+      <div>
+        <h2>Checkers works Tuesdays and Wednesdays.</h2>
+        <p>He does not help. He sits on the windowsill in the afternoon sun and occasionally on a book somebody was about to buy, and he is the reason a fair number of people come in the first time.</p>
+        <p>The shop is named for a calico, which is both a cat and a printed cotton, and either reading is fine.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pair">
+    <div class="wrap">
+      <div class="pair-grid">
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/table.png" alt="A low wooden table just inside a bookshop door holding new hardbacks laid face up in loose rows, one propped on a small stand." width="1024" height="1024">
+          <figcaption>The front table, changed every week</figcaption>
+        </figure>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/corner.png" alt="A reading corner with a worn green armchair, a side table with a mug, and a low shelf of children's picture books." width="1024" height="1024">
+          <figcaption>Sit down. Nobody will hurry you</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit">
+    <div class="wrap visit-grid">
+      <div>
+        <h3>The shop</h3>
+        <address>
+          199 Union Street<br>
+          Occoquan, Virginia 22125
+        </address>
+      </div>
+      <div>
+        <h3>Call or ask</h3>
+        <a class="tel" href="tel:+15714090897">571-409-0897</a>
+      </div>
+      <div>
+        <h3>Ordering</h3>
+        <p>If we do not have it, we will get it. A book ordered here takes about the same time and the money stays on Union Street.</p>
+      </div>
+    </div>
+    <div class="wrap colophon">
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Cozy Calico Books, its own shelves and its own cat. The shelf names above are written as examples of the shop's own voice rather than as its current sections. Opening hours are deliberately left off until they can be taken from the shop rather than from a listing site.</p>
+    </div>
+  </section>
+
+</main>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Cozy Calico Books, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
