@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nail Salon in Occoquan, VA | Angie's Nails on Union Street</title>
+<meta name="description" content="A small nail salon at 206 Union Street in the Occoquan historic district. Manicures from $25, pedicures from $38, gel, Gel X, waxing, a full kids' menu, and Fairy Hair. Open Tuesday to Saturday.">
+<style>
+@font-face{font-family:"Syne";src:url("fonts/syne-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Rubik";src:url("fonts/rubik-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Rubik";src:url("fonts/rubik-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Overpass M";src:url("fonts/overpassmono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --blush:#F6EEF0;
+  --card:#FCF8F9;
+  --ink:#221A1D;
+  --muted:#6E5D63;
+  --lacquer:#B0143C;
+  --hair:#E3D5D9;
+  --display:"Syne",system-ui,sans-serif;
+  --text:"Rubik",system-ui,sans-serif;
+  --mono:"Overpass M",ui-monospace,monospace;
+  --gutter:28px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--blush);
+  color:var(--ink);
+  font-family:var(--text);
+  font-size:17px;
+  line-height:1.66;
+  caret-color:var(--lacquer);
+  accent-color:var(--lacquer);
+}
+::selection{background:var(--lacquer);color:#FFE6EE}
+:focus-visible{outline:2px solid var(--lacquer);outline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+a{color:var(--lacquer);text-underline-offset:3px;text-decoration-thickness:1px}
+
+.wrap{
+  max-width:1160px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--hair);background:var(--card)}
+.mast .wrap{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:8px 26px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+}
+.mast p{margin:0;color:var(--muted)}
+.mast .here{color:var(--ink)}
+.mast-spacer{flex:1 1 auto}
+.mast a{
+  color:var(--lacquer);
+  text-decoration:none;
+  border-bottom:1px solid var(--lacquer);
+  padding-bottom:2px;
+  white-space:nowrap;
+}
+
+/* ---------- poster hero ---------- */
+.poster{
+  padding-top:84px;
+  padding-bottom:64px;
+}
+.poster-grid{
+  display:grid;
+  grid-template-columns:minmax(0,62fr) minmax(0,38fr);
+  gap:56px;
+  align-items:end;
+}
+h1{
+  font-family:var(--display);
+  font-weight:800;
+  font-size:76px;
+  line-height:0.98;
+  letter-spacing:-0.036em;
+  margin:0 0 24px 0;
+  max-width:11ch;
+}
+.poster-sub{
+  font-size:20px;
+  line-height:1.55;
+  color:var(--muted);
+  margin:0;
+  max-width:44ch;
+}
+.hours{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+  font-family:var(--mono);
+  font-size:14px;
+  line-height:1.6;
+}
+.hours li{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  border-bottom:1px solid var(--hair);
+  padding-top:11px;
+  padding-bottom:11px;
+}
+.hours li:first-child{border-top:1px solid var(--hair)}
+.hours .shut{color:var(--lacquer)}
+
+.wallshot img{
+  width:100%;
+  height:440px;
+  object-fit:cover;
+  object-position:center 46%;
+}
+
+h2{
+  font-family:var(--display);
+  font-weight:800;
+  font-size:38px;
+  line-height:1.08;
+  letter-spacing:-0.028em;
+  margin:0 0 18px 0;
+}
+
+/* ---------- priced list (signature) ---------- */
+.list{
+  background:var(--card);
+  border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.list-lead{
+  color:var(--muted);
+  margin:0 0 38px 0;
+  max-width:60ch;
+}
+.rows{list-style:none;margin:0;padding-left:0}
+.row{
+  --fig:var(--ink);
+  --draw:0;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto auto;
+  gap:6px 26px;
+  align-items:baseline;
+  padding-top:18px;
+  padding-bottom:18px;
+  padding-left:4px;
+  padding-right:4px;
+  border-top:1px solid var(--hair);
+  position:relative;
+}
+.rows .row:last-child{border-bottom:1px solid var(--hair)}
+.row:hover,.row:focus-within{--fig:var(--lacquer);--draw:1}
+.row::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-1px;
+  height:1px;
+  background:var(--lacquer);
+  transform:scaleX(var(--draw));
+  transform-origin:left center;
+  opacity:var(--draw);
+  transition:transform 400ms cubic-bezier(0.16,1,0.3,1),opacity 400ms cubic-bezier(0.16,1,0.3,1);
+}
+.svc{
+  font-weight:500;
+  font-size:21px;
+  line-height:1.34;
+  margin:0;
+}
+.dur{
+  font-family:var(--mono);
+  font-size:14px;
+  line-height:1.5;
+  color:var(--muted);
+  margin:0;
+  white-space:nowrap;
+}
+.fig{
+  font-family:var(--display);
+  font-weight:800;
+  font-size:30px;
+  line-height:1.16;
+  letter-spacing:-0.024em;
+  color:var(--fig);
+  margin:0;
+  white-space:nowrap;
+  transition:color 400ms cubic-bezier(0.16,1,0.3,1);
+}
+.list-foot{
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.7;
+  margin:30px 0 0 0;
+  max-width:72ch;
+}
+.list-foot b{color:var(--ink);font-weight:500}
+
+/* ---------- fairy band ---------- */
+.fairy{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.fairy-grid{
+  display:grid;
+  grid-template-columns:minmax(0,42fr) minmax(0,58fr);
+  gap:52px;
+  align-items:center;
+}
+.fairy img{width:100%;height:auto;border-radius:2px}
+.fairy p{margin:0 0 16px 0;max-width:54ch}
+.fairy p:last-child{margin-bottom:0}
+
+/* ---------- pair ---------- */
+.pair{
+  background:var(--card);
+  border-top:1px solid var(--hair);
+  padding-top:78px;
+  padding-bottom:70px;
+}
+.pair-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:34px;
+}
+.pair-grid img{width:100%;height:auto;border-radius:2px}
+.pair-grid figcaption{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  padding-top:13px;
+}
+
+/* ---------- booking footer ---------- */
+.book{
+  border-top:1px solid var(--hair);
+  padding-top:70px;
+  padding-bottom:40px;
+}
+.book-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  gap:40px;
+}
+.book h3{
+  font-family:var(--mono);
+  font-weight:400;
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0 0 14px 0;
+}
+.book address{
+  font-style:normal;
+  font-size:19px;
+  line-height:1.55;
+  margin:0;
+}
+.book .tel{
+  font-family:var(--display);
+  font-weight:800;
+  font-size:30px;
+  line-height:1.2;
+  letter-spacing:-0.03em;
+  color:var(--lacquer);
+  text-decoration:none;
+  display:inline-block;
+  padding-top:2px;
+  padding-bottom:4px;
+  border-bottom:2px solid rgba(176,20,60,0.3);
+  transition:border-color 260ms cubic-bezier(0.16,1,0.3,1);
+}
+.book .tel:hover,.book .tel:focus-visible{border-bottom-color:var(--lacquer)}
+.book-grid p{margin:0;font-size:16px;line-height:1.66;color:var(--muted);max-width:34ch}
+.colophon{
+  border-top:1px solid var(--hair);
+  margin-top:50px;
+  padding-top:22px;
+  padding-bottom:18px;
+}
+.disclosure{
+  font-family:var(--mono);
+  font-size:12px;
+  line-height:1.8;
+  color:var(--muted);
+  margin:0;
+  max-width:94ch;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .poster-grid{grid-template-columns:minmax(0,1fr);gap:36px;align-items:start}
+  h1{font-size:56px;max-width:14ch}
+  .wallshot img{height:340px}
+  .fairy-grid{grid-template-columns:minmax(0,1fr);gap:34px}
+  .book-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:680px){
+  :root{--gutter:20px}
+  h1{font-size:40px;max-width:15ch}
+  h2{font-size:29px}
+  .poster-sub{font-size:18px}
+  .wallshot img{height:240px}
+  .row{grid-template-columns:minmax(0,1fr) auto}
+  .dur{grid-column:1;grid-row:2}
+  .fig{grid-column:2;grid-row:1;font-size:26px}
+  .pair-grid{grid-template-columns:minmax(0,1fr)}
+  .book-grid{grid-template-columns:minmax(0,1fr)}
+  .book .tel{font-size:26px}
+}
+@media (prefers-reduced-motion:reduce){
+  .row::after,.fig,.book .tel{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="here">Angie's Nails</p>
+    <p>206 Union Street, Unit 102, Occoquan</p>
+    <span class="mast-spacer"></span>
+    <a href="tel:+17034906761">703-490-6761</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="poster">
+    <div class="wrap poster-grid">
+      <div>
+        <h1>Union Street, Occoquan.</h1>
+        <p class="poster-sub">A small nail salon in the historic district, family owned, with every price printed below. First time in? Ask for whatever you like. Nobody here minds explaining it.</p>
+      </div>
+      <div>
+        <ul class="hours">
+          <li><span>Tue to Sat</span><span>10 to 6</span></li>
+          <li><span>Sunday</span><span>11 to 5</span></li>
+          <li><span>Monday</span><span class="shut">Closed</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <figure class="wallshot">
+    <!-- generated illustrative imagery -->
+    <img src="images/wall.png" alt="A wall-mounted rack of several hundred nail polish bottles arranged loosely by shade, with gaps where bottles have been taken, in daylight against a pale wall." width="1536" height="1024">
+  </figure>
+
+  <section class="list">
+    <div class="wrap">
+      <h2>What it costs.</h2>
+      <p class="list-lead">All of it, printed. No "call for pricing", no consultation before a number. These are the prices in the booking system today.</p>
+      <ul class="rows">
+        <li class="row" tabindex="0">
+          <p class="svc">Classic manicure</p>
+          <p class="dur">35 min</p>
+          <p class="fig">$25</p>
+        </li>
+        <li class="row" tabindex="0">
+          <p class="svc">Gel manicure</p>
+          <p class="dur">40 min</p>
+          <p class="fig">$40</p>
+        </li>
+        <li class="row" tabindex="0">
+          <p class="svc">Classic pedicure</p>
+          <p class="dur">40 min</p>
+          <p class="fig">$38</p>
+        </li>
+        <li class="row" tabindex="0">
+          <p class="svc">Spa pedicure, with paraffin</p>
+          <p class="dur">75 min</p>
+          <p class="fig">$65</p>
+        </li>
+        <li class="row" tabindex="0">
+          <p class="svc">Gel X full set</p>
+          <p class="dur">90 min</p>
+          <p class="fig">$65</p>
+        </li>
+        <li class="row" tabindex="0">
+          <p class="svc">Manicure and pedicure together</p>
+          <p class="dur">120 min</p>
+          <p class="fig">$64</p>
+        </li>
+        <li class="row" tabindex="0">
+          <p class="svc">Fairy Hair, 25 strands</p>
+          <p class="dur">tied at the root</p>
+          <p class="fig">$35</p>
+        </li>
+        <li class="row" tabindex="0">
+          <p class="svc">Children, 11 and under</p>
+          <p class="dur">mani and pedi</p>
+          <p class="fig">$42</p>
+        </li>
+      </ul>
+      <p class="list-foot">Gel and Gel X come off properly: <b>gel polish removal is $18</b> and it is a service, not something to pick at in the car. A polish change is $8 for children's hands. The full list runs from a $5 trim to $100, and every price on it is in the booking system.</p>
+    </div>
+  </section>
+
+  <section class="fairy">
+    <div class="wrap fairy-grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/strands.png" alt="About thirty fine iridescent tinsel strands fanned out on a pale blush surface beside a small pair of steel scissors." width="1024" height="1024">
+      </figure>
+      <div>
+        <h2>Fairy Hair, and what it actually is.</h2>
+        <p>Twenty-five fine strands tied individually at the root, so they move with your hair rather than sitting on top of it. Thirty-five dollars, and twenty-five for children.</p>
+        <p>It takes about as long as a manicure, and it is the one thing here nobody arrives knowing the price of. So it is printed above with everything else.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pair">
+    <div class="wrap">
+      <div class="pair-grid">
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/station.png" alt="An empty manicure station with a folded white towel, a row of steel tools laid out on it, a small dish and a curved lamp." width="1024" height="1024">
+          <figcaption>Tools laid out clean for every appointment</figcaption>
+        </figure>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/pedi.png" alt="A single empty pedicure chair with a tiled foot basin below it and a rolled white towel on the footrest." width="1024" height="1024">
+          <figcaption>The pedicure includes the hot towel, not as an extra</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="book">
+    <div class="wrap book-grid">
+      <div>
+        <h3>Where</h3>
+        <address>
+          206 Union Street, Unit 102<br>
+          Occoquan, Virginia 22125
+        </address>
+      </div>
+      <div>
+        <h3>Book or ask</h3>
+        <a class="tel" href="tel:+17034906761">703-490-6761</a>
+      </div>
+      <div>
+        <h3>Before you come</h3>
+        <p>Appointments are best, especially on a Saturday. Call and say what you want, or say you are not sure and somebody will talk you through it.</p>
+      </div>
+    </div>
+    <div class="wrap colophon">
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Angie's Nails, its own room and its own work. Prices and durations are taken from the salon's own booking system in September 2026, and the hours are the ones six separate listings already agree on.</p>
+    </div>
+  </section>
+
+</main>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Angie's Nails, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
