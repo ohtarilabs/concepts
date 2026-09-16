@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bar-J Chili Parlor | Tex-Mex and Chili in Occoquan, VA</title>
+<meta name="description" content="Bar-J Chili Parlor in Occoquan, VA. Texas chili and Cincinnati chili on one menu, the Texas Platter, chimichangas, fajitas and sopaipillas. The Anderson family, since 1981.">
+<style>
+@font-face{font-family:"Alfa Slab";src:url("fonts/alfaslab-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Public S";src:url("fonts/publicsans-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Public S";src:url("fonts/publicsans-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Space M";src:url("fonts/spacemono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+
+:root{
+  --chili:#8E1F1B;
+  --deep:#7A1815;
+  --masa:#F2E4C8;
+  --soft:#E3C9A8;
+  --turq:#48D6C4;
+  --hair:rgba(242,228,200,0.26);
+  --display:"Alfa Slab",Georgia,serif;
+  --text:"Public S",system-ui,sans-serif;
+  --mono:"Space M",ui-monospace,monospace;
+  --gutter:28px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--chili);
+  color:var(--masa);
+  font-family:var(--text);
+  font-size:17px;
+  line-height:1.66;
+  caret-color:var(--turq);
+  accent-color:var(--turq);
+  scrollbar-color:var(--deep) var(--chili);
+}
+::selection{background:var(--turq);color:var(--deep)}
+:focus-visible{outline:2px solid var(--turq);outline-offset:3px}
+img{display:block;max-width:100%}
+figure{margin:0}
+a{color:var(--turq);text-underline-offset:3px;text-decoration-thickness:1px}
+
+.wrap{
+  max-width:1180px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:1px solid var(--hair)}
+.mast .wrap{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:8px 26px;
+  padding-top:15px;
+  padding-bottom:15px;
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+}
+.mast p{margin:0;color:var(--soft)}
+.mast .here{color:var(--masa)}
+.mast-spacer{flex:1 1 auto}
+.mast a{
+  color:var(--turq);
+  text-decoration:none;
+  border-bottom:1px solid var(--turq);
+  padding-bottom:2px;
+  white-space:nowrap;
+}
+
+/* ---------- poster hero ---------- */
+.poster{
+  padding-top:86px;
+  padding-bottom:52px;
+}
+h1{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:84px;
+  line-height:0.98;
+  letter-spacing:-0.022em;
+  margin:0 0 26px 0;
+  max-width:11ch;
+}
+.poster-sub{
+  font-size:21px;
+  line-height:1.55;
+  color:var(--soft);
+  margin:0;
+  max-width:52ch;
+}
+
+/* ---------- week strip ---------- */
+.week{padding-bottom:70px}
+.week-band{
+  display:grid;
+  grid-template-columns:repeat(7,minmax(0,1fr));
+  border-top:1px solid var(--hair);
+}
+.day{
+  --tag:var(--soft);
+  --lift:0;
+  padding-top:22px;
+  padding-bottom:22px;
+  padding-left:14px;
+  padding-right:14px;
+  border-left:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  position:relative;
+}
+.week-band .day:last-child{border-right:1px solid var(--hair)}
+.day:hover,.day:focus-within{--tag:var(--turq);--lift:1}
+.day::before{
+  content:"";
+  position:absolute;
+  top:-1px;
+  left:0;
+  right:0;
+  height:2px;
+  background:var(--turq);
+  opacity:var(--lift);
+  transform:scaleX(var(--lift));
+  transform-origin:left center;
+  transition:opacity 340ms cubic-bezier(0.16,1,0.3,1),transform 340ms cubic-bezier(0.16,1,0.3,1);
+}
+.day-name{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.5;
+  color:var(--tag);
+  margin:0 0 8px 0;
+  transition:color 340ms cubic-bezier(0.16,1,0.3,1);
+}
+.day-what{
+  font-size:15px;
+  line-height:1.5;
+  color:var(--masa);
+  margin:0;
+}
+.week-note{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.7;
+  color:var(--soft);
+  margin:22px 0 0 0;
+  max-width:70ch;
+}
+
+h2{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:40px;
+  line-height:1.06;
+  letter-spacing:-0.018em;
+  margin:0 0 18px 0;
+}
+
+/* ---------- two chilis ---------- */
+.two{
+  background:var(--deep);
+  border-top:1px solid var(--hair);
+  border-bottom:1px solid var(--hair);
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.two-lead{
+  color:var(--soft);
+  margin:0 0 42px 0;
+  max-width:64ch;
+}
+.two-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:44px;
+}
+.two-grid img{width:100%;height:300px;object-fit:cover;border-radius:2px}
+.two-grid h3{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:30px;
+  line-height:1.14;
+  margin:22px 0 12px 0;
+}
+.two-grid p{margin:0;color:var(--soft);max-width:46ch}
+
+/* ---------- the rest of it ---------- */
+.rest{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.rest-grid{
+  display:grid;
+  grid-template-columns:minmax(0,56fr) minmax(0,44fr);
+  gap:52px;
+  align-items:start;
+}
+.dishes{
+  list-style:none;
+  margin:0;
+  padding-left:0;
+}
+.dishes li{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:6px 16px;
+  padding-top:16px;
+  padding-bottom:16px;
+  padding-left:4px;
+  padding-right:4px;
+  border-top:1px solid var(--hair);
+}
+.dishes li:last-child{border-bottom:1px solid var(--hair)}
+.dish-name{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:21px;
+  line-height:1.3;
+  margin:0;
+}
+.dish-note{
+  font-size:15px;
+  line-height:1.55;
+  color:var(--soft);
+  margin:0;
+  flex:1 1 200px;
+}
+.rest figure img{width:100%;height:auto;border-radius:2px}
+.rest figcaption{
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.6;
+  color:var(--soft);
+  padding-top:13px;
+}
+
+/* ---------- family band ---------- */
+.family{
+  background:var(--deep);
+  border-top:1px solid var(--hair);
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.family-grid{
+  display:grid;
+  grid-template-columns:minmax(0,44fr) minmax(0,56fr);
+  gap:52px;
+  align-items:center;
+}
+.family img{width:100%;height:auto;border-radius:2px}
+.family p{margin:0 0 16px 0;max-width:54ch;color:var(--soft)}
+.family p:last-child{margin-bottom:0}
+
+/* ---------- order footer ---------- */
+.order{
+  border-top:1px solid var(--hair);
+  padding-top:70px;
+  padding-bottom:40px;
+}
+.order-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  gap:40px;
+}
+.order h3{
+  font-family:var(--mono);
+  font-weight:400;
+  font-size:13px;
+  line-height:1.6;
+  color:var(--soft);
+  margin:0 0 14px 0;
+}
+.order address{
+  font-style:normal;
+  font-size:19px;
+  line-height:1.55;
+  margin:0;
+}
+.order .tel{
+  font-family:var(--display);
+  font-weight:400;
+  font-size:29px;
+  line-height:1.24;
+  letter-spacing:-0.012em;
+  color:var(--turq);
+  text-decoration:none;
+  display:inline-block;
+  padding-top:2px;
+  padding-bottom:4px;
+  border-bottom:2px solid rgba(72,214,196,0.34);
+  transition:border-color 260ms cubic-bezier(0.16,1,0.3,1);
+}
+.order .tel:hover,.order .tel:focus-visible{border-bottom-color:var(--turq)}
+.order-grid p{margin:0;font-size:16px;line-height:1.66;color:var(--soft);max-width:34ch}
+.colophon{
+  border-top:1px solid var(--hair);
+  margin-top:50px;
+  padding-top:22px;
+  padding-bottom:18px;
+}
+.disclosure{
+  font-family:var(--mono);
+  font-size:12px;
+  line-height:1.8;
+  color:var(--soft);
+  margin:0;
+  max-width:94ch;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  h1{font-size:60px;max-width:14ch}
+  .week-band{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .week-band .day:last-child{border-right:0}
+  .week-band .day:nth-child(4n){border-right:1px solid var(--hair)}
+  .two-grid{grid-template-columns:minmax(0,1fr);gap:36px}
+  .rest-grid{grid-template-columns:minmax(0,1fr);gap:36px}
+  .family-grid{grid-template-columns:minmax(0,1fr);gap:34px}
+  .order-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:680px){
+  :root{--gutter:20px}
+  h1{font-size:40px;max-width:15ch}
+  h2{font-size:30px}
+  .poster-sub{font-size:19px}
+  .week-band{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .week-band .day{border-right:1px solid var(--hair)}
+  .day::before{opacity:1;transform:none}
+  .two-grid img{height:230px}
+  .dish-note{flex:1 1 100%}
+  .order-grid{grid-template-columns:minmax(0,1fr)}
+  .order .tel{font-size:25px}
+}
+@media (prefers-reduced-motion:reduce){
+  .day::before,.day-name,.order .tel{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="here">Bar-J Chili Parlor</p>
+    <p>125 Mill Street, Occoquan</p>
+    <span class="mast-spacer"></span>
+    <a href="tel:+15713986294">571-398-6294</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="poster">
+    <div class="wrap">
+      <h1>Two chilis. One family. Since 1981.</h1>
+      <p class="poster-sub">A Tex-Mex chili parlor on Mill Street, run by the Anderson family for over forty years. Texas chili and Cincinnati chili on the same menu, which almost nowhere does.</p>
+    </div>
+  </section>
+
+  <section class="week">
+    <div class="wrap">
+      <div class="week-band">
+        <div class="day" tabindex="0"><p class="day-name">Mon</p><p class="day-what">Open for dinner</p></div>
+        <div class="day" tabindex="0"><p class="day-name">Tue</p><p class="day-what">$1 off all tacos</p></div>
+        <div class="day" tabindex="0"><p class="day-name">Wed</p><p class="day-what">Open for dinner</p></div>
+        <div class="day" tabindex="0"><p class="day-name">Thu</p><p class="day-what">Open for dinner</p></div>
+        <div class="day" tabindex="0"><p class="day-name">Fri</p><p class="day-what">Open late</p></div>
+        <div class="day" tabindex="0"><p class="day-name">Sat</p><p class="day-what">Open late</p></div>
+        <div class="day" tabindex="0"><p class="day-name">Sun</p><p class="day-what">Open for dinner</p></div>
+      </div>
+      <p class="week-note">Taco Tuesday is the shop's own standing offer, a dollar off every taco item. The rest of the week is shown as a shape for this concept; on the finished page this strip is the one block the kitchen updates, and it is the reason a family checks the site on a Wednesday.</p>
+    </div>
+  </section>
+
+  <section class="two">
+    <div class="wrap">
+      <h2>The two chilis.</h2>
+      <p class="two-lead">These are rival styles. Texas and Cincinnati do not agree about beans, about spice, or about whether chili is a bowl or a sauce. Bar-J serves both and lets you pick a side.</p>
+      <div class="two-grid">
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/bowl.png" alt="A plain white bowl of dark red Texas style chili con carne on a worn diner tabletop with saltine crackers beside it." width="1536" height="1024">
+          <h3>Texas</h3>
+          <p>Coarse beef, chile heat, no beans in it and no argument about that. Eaten from a bowl with crackers, the way it was eaten in 1981.</p>
+        </figure>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/cincinnati.png" alt="Cincinnati style chili over spaghetti on an oval plate under a tall mound of finely shredded cheddar, with oyster crackers alongside." width="1024" height="1024">
+          <h3>Cincinnati</h3>
+          <p>Thinner, sweeter, faintly cinnamon, poured over spaghetti and buried under shredded cheddar. If you have never had it this way, this is the one to try.</p>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="rest">
+    <div class="wrap rest-grid">
+      <div>
+        <h2>The rest of it.</h2>
+        <ul class="dishes">
+          <li>
+            <p class="dish-name">The Texas Platter</p>
+            <p class="dish-note">The one the shop tells you to ask about, and has for years.</p>
+          </li>
+          <li>
+            <p class="dish-name">Chili con carne and queso</p>
+            <p class="dish-note">By the bowl, or over anything else on this list.</p>
+          </li>
+          <li>
+            <p class="dish-name">Chimichangas and enchiladas</p>
+            <p class="dish-note">Plates, not small plates. Nobody leaves hungry.</p>
+          </li>
+          <li>
+            <p class="dish-name">Fajitas and pollo loco</p>
+            <p class="dish-note">Marinated and char broiled, off the same grill since the eighties.</p>
+          </li>
+          <li>
+            <p class="dish-name">Texas fries and wing zings</p>
+            <p class="dish-note">What the bar end of the room orders.</p>
+          </li>
+          <li>
+            <p class="dish-name">Sopaipillas</p>
+            <p class="dish-note">Order them at the start. They take a minute and they are worth it.</p>
+          </li>
+        </ul>
+      </div>
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/platter.png" alt="A Tex-Mex combination platter with a cheese enchilada under red sauce, Mexican rice and refried beans with melted cheese." width="1024" height="1024">
+        <figcaption>Plates come out of the kitchen full</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="family">
+    <div class="wrap family-grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/room.png" alt="A small empty family restaurant dining room with wooden tables, mismatched chairs and booth seating, looking out onto a historic main street." width="1024" height="1024">
+      </figure>
+      <div>
+        <h2>The Anderson family, since 1981.</h2>
+        <p>Forty-odd years of the same recipes in a room on Mill Street. Not a concept, not a chain, and not somebody's second location.</p>
+        <p>Kids are welcome and so is everybody else. If you came here as a child and are bringing your own now, you will recognise the chili.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="order">
+    <div class="wrap order-grid">
+      <div>
+        <h3>Where</h3>
+        <address>
+          125 Mill Street, Suite 101<br>
+          Occoquan, Virginia 22125
+        </address>
+      </div>
+      <div>
+        <h3>Call or order</h3>
+        <a class="tel" href="tel:+15713986294">571-398-6294</a>
+      </div>
+      <div>
+        <h3>Before you come</h3>
+        <p>Online ordering is up and running. For a big table on a festival weekend, call first.</p>
+      </div>
+    </div>
+    <div class="wrap colophon">
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Bar-J's own kitchen and dining room. The Taco Tuesday offer, the Texas Platter, the 1981 founding and the Anderson family are all from bar-jchili.com; the rest of the week strip is shown as a shape for this concept rather than as a schedule. Opening hours are deliberately left off until they can be taken from the shop rather than from a listing site.</p>
+    </div>
+  </section>
+
+</main>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Bar-J Chili Parlor, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
