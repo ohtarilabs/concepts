@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Greedy's Grill, Bridgewater VA. Breakfast, burgers and pizza in the old Bob-A-Rea's on North Main Street</title>
+<meta name="description" content="Greedy's Grill at 305 North Main Street, Bridgewater, Virginia, in the building that was Bob-A-Rea's: breakfast platters, patty melts and burgers, wraps, pizza and dinners, to eat in or take out. Menu with prices, the real phone number, and one order button.">
+<style>
+@font-face{font-family:"Lilita One";src:url("fonts/lilita-one-var.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Nunito Sans";src:url("fonts/nunito-sans-var.woff2") format("woff2");font-weight:200 1000;font-style:normal;font-display:swap}
+:root{
+  --yolk:#F5C842;
+  --paper:#FFFFFF;
+  --ink:#2A1F0A;
+  --muted:#5A4A1E;
+  --tomato:#B3261E;
+  --ink-on-tomato:#FFF4EC;
+  --rule:rgba(42,31,10,.22);
+  --display:"Lilita One","Arial Rounded MT Bold",sans-serif;
+  --body:"Nunito Sans","Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(20px,5vw,72px);
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--tomato) var(--yolk)}
+body{margin:0;background:var(--yolk);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+::selection{background:var(--tomato);color:var(--ink-on-tomato)}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.18em}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:4px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1;letter-spacing:.005em;text-wrap:balance}
+h2{font-size:42px}
+h3{font-size:22px;line-height:1.2}
+p{margin:0}
+.skip{position:absolute;left:-999px;top:12px;background:var(--ink);color:var(--yolk);padding:10px 16px;z-index:10}
+.skip:focus{left:12px}
+.wrap{max-width:var(--max);margin-left:auto;margin-right:auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px;max-width:var(--max);margin-left:auto;margin-right:auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.mark{font-family:var(--display);font-size:28px;text-decoration:none;white-space:nowrap}
+.top nav{display:flex;gap:26px;font-size:15px;font-weight:700}
+.top nav a{text-decoration:none;color:var(--muted);transition:color .25s cubic-bezier(.16,1,.3,1)}
+.top nav a:hover{color:var(--ink)}
+.phone{font-size:16px;font-weight:700;text-decoration:none;white-space:nowrap;color:var(--ink)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;height:52px;padding-left:24px;padding-right:24px;font-family:var(--body);font-size:16px;font-weight:700;text-decoration:none;white-space:nowrap;border-radius:8px;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .25s cubic-bezier(.16,1,.3,1)}
+.btn-solid{background:var(--tomato);color:var(--ink-on-tomato)}
+.btn-solid:hover{background:#961F18}
+.btn-line{color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn-line:hover{background:rgba(42,31,10,.08)}
+.btn:active{transform:translateY(1px)}
+
+/* opener */
+.open{padding-top:64px;padding-bottom:56px}
+.open h1{font-size:clamp(3rem,7.6vw,6.4rem);max-width:11ch}
+.open .sub{margin-top:14px;font-family:var(--display);font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.3;color:var(--ink);max-width:22ch}
+.open .lede{margin-top:22px;font-size:clamp(1.05rem,1.4vw,1.25rem);max-width:46ch}
+.open .facts{display:flex;flex-wrap:wrap;gap:10px 32px;margin-top:22px;font-weight:700;color:var(--ink)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* placemat */
+.mat{padding-top:8px;padding-bottom:88px}
+.placemat{position:relative;background:var(--paper);border-radius:10px;padding-top:56px;padding-bottom:56px;padding-left:56px;padding-right:56px;box-shadow:0 30px 60px -40px rgba(42,31,10,.55)}
+.placemat h2{max-width:14ch}
+.placemat .intro{margin-top:14px;max-width:48ch;color:var(--muted)}
+.pins{position:absolute;top:-28px;right:44px;display:flex;gap:18px}
+.pins figure{width:150px;transform:rotate(3deg);box-shadow:0 14px 30px -18px rgba(42,31,10,.6);border:6px solid var(--paper)}
+.pins figure:last-child{transform:rotate(-4deg);margin-top:26px}
+.pins img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.groups{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px 40px;margin-top:40px}
+.group h3{padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.ledger{list-style:none;margin:6px 0 0 0;padding:0}
+.ledger li{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline;padding-top:11px;padding-bottom:11px;border-bottom:1px dashed var(--rule)}
+.ledger .n{font-weight:700}
+.ledger .d{grid-column:1/-1;margin-top:-4px;font-size:14px;color:var(--muted);line-height:1.4}
+.ledger .p{--x:0px;font-weight:700;transform:translateX(var(--x));transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.ledger li:hover .p{--x:-6px}
+.placemat .fine{margin-top:32px;font-size:14px;color:var(--muted);max-width:60ch}
+.group figure{margin-top:26px}
+.group img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px}
+
+/* room */
+.room{padding-top:16px;padding-bottom:88px}
+.room .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.room img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:10px}
+.room h2{max-width:14ch}
+.room .copy p{margin-top:18px;max-width:46ch}
+.room .copy p:first-of-type{margin-top:20px}
+.room .plate{margin-top:24px;padding-top:16px;border-top:2px solid var(--ink);font-size:15px;color:var(--muted);max-width:46ch}
+
+/* deals */
+.deals{padding-top:8px;padding-bottom:96px}
+.deals h2{max-width:12ch}
+.deal-list{list-style:none;margin:28px 0 0 0;padding:0;border-top:2px solid var(--ink)}
+.deal-list li{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:baseline;padding-top:18px;padding-bottom:18px;border-bottom:1px dashed var(--rule)}
+.deal-list .n{font-family:var(--display);font-size:24px;line-height:1.3}
+.deal-list .p{font-family:var(--display);font-size:28px;color:var(--ink)}
+
+/* visit */
+.visit{background:var(--paper);padding-top:72px;padding-bottom:72px;padding-left:72px;padding-right:72px}
+.visit .inner{max-width:var(--max);margin-left:auto;margin-right:auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.visit .rows{margin-top:24px;border-top:2px solid var(--ink)}
+.visit .row{display:grid;grid-template-columns:110px 1fr;gap:16px;padding-top:14px;padding-bottom:14px;border-bottom:1px dashed var(--rule)}
+.visit .row .v{font-weight:700}
+.visit .row a{text-decoration:none;color:var(--tomato)}
+.visit .note{margin-top:18px;font-size:15px;color:var(--muted);max-width:44ch}
+.visit .actions{margin-top:22px}
+.visit .aside p{max-width:40ch;margin-top:14px}
+.visit .aside p:first-of-type{margin-top:0;font-family:var(--display);font-size:30px;line-height:1.1}
+
+/* footer */
+.foot{padding-top:48px;padding-bottom:44px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+.foot-grid p{max-width:36ch}
+.foot .mark{font-size:26px}
+.foot address{font-style:normal;margin-top:12px;line-height:1.7}
+.foot .list{list-style:none;margin:8px 0 0 0;padding:0;line-height:1.9}
+.foot .list a{color:var(--ink);text-decoration:none}
+.foot .list a:hover{color:var(--tomato)}
+.foot-grid .disclosure{grid-column:1/-1;margin-top:22px;padding-top:20px;border-top:1px solid var(--rule);font-size:14px;color:var(--muted);max-width:96ch;line-height:1.6}
+
+@media (max-width:1440px){ .visit{padding-left:5vw;padding-right:5vw} }
+@media (max-width:980px){
+  .groups{grid-template-columns:1fr 1fr}
+  .room .grid,.visit .inner{grid-template-columns:1fr;gap:36px}
+  .pins{position:static;margin-top:24px}
+  .pins figure{width:120px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .top{height:64px}
+  .top nav{display:none}
+  .open{padding-top:36px;padding-bottom:44px}
+  .placemat{padding-left:22px;padding-right:22px;padding-top:36px;padding-bottom:36px}
+  .groups{grid-template-columns:1fr;gap:28px}
+  .room,.deals{padding-bottom:64px}
+  .visit{padding-top:56px;padding-bottom:56px;padding-left:20px;padding-right:20px}
+  .visit .row{grid-template-columns:90px 1fr}
+  .foot-grid{grid-template-columns:1fr;gap:26px}
+  h2{font-size:34px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn,.ledger .p,.top nav a{transition:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A small-town grill sold as its own paper placemat: the menu with real prices is the page. Refuses the marketplace storefront it has now and the red-checkerboard diner template.
+OWN-WORLD: a drenched egg-yolk field (#F5C842) with a white placemat panel, near-black ink, one tomato red on the buttons and the deal prices; Lilita One for the big lines, Nunito Sans for the ledger; dashed rules, pinned square photographs, rounded corners.
+STORY: the visitor learns this is the place in the old Bob-A-Rea's, reads the menu with prices, sees the room and the owner's story, finds the real phone number and one order button.
+FIRST VIEWPORT: header with the wordmark, three links and the phone; "In the old Bob-A-Rea's." at 6rem on the yolk field, "Breakfast, burgers and pizza." in tomato beneath, a two-sentence lede, the address, and "Order online" solid tomato beside "Call the grill" outlined; the placemat begins at the fold.
+FORM: colour-field, first on the ordered list; direction pinned by the frozen design-brief.md of the outreach pipeline, no concept roll.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="mark" href="#main">Greedy's Grill</a>
+  <nav aria-label="Sections">
+    <a href="#menu">Menu</a>
+    <a href="#room">The room</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a class="phone" href="tel:+15408283433">(540) 828-3433</a>
+</header>
+
+<main id="main">
+  <section class="open wrap" aria-label="Greedy's Grill, Bridgewater">
+    <h1>In the old Bob-A-Rea's.</h1>
+    <p class="sub">Breakfast, burgers and pizza, eat in or take out.</p>
+    <p class="lede">The grill at 305 North Main Street, in the building Bridgewater knew as Bob-A-Rea's for almost fifty years. Bob's Chef Salad is still on the menu. So is pizza.</p>
+    <div class="facts">
+      <span>305 North Main Street, Bridgewater</span>
+      <span>Open since October 2024</span>
+    </div>
+    <div class="actions">
+      <a class="btn btn-solid" href="https://www.greedysgrill.com/">Order online</a>
+      <a class="btn btn-line" href="tel:+15408283433">Call the grill</a>
+    </div>
+  </section>
+
+  <section class="mat wrap" id="menu" aria-labelledby="menu-h">
+    <div class="placemat">
+      <div class="pins">
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/melt.png" alt="A patty melt on grilled rye cut in half with fries on a white diner plate on a paper placemat">
+        </figure>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/breakfast.png" alt="A diner breakfast of two eggs, hash browns, toast and bacon with black coffee and orange juice on a paper placemat">
+        </figure>
+      </div>
+      <h2 id="menu-h">The menu, with the prices on it.</h2>
+      <p class="intro">Prices as listed on the grill's ordering page in September 2026. The full menu is longer; this is what people order.</p>
+      <div class="groups">
+        <div class="group">
+          <h3>Breakfast and handhelds</h3>
+          <ul class="ledger">
+            <li><span class="n">Egg and cheese sandwich</span><span class="p">4.50</span></li>
+            <li><span class="n">Single pancake</span><span class="p">2.50</span></li>
+            <li><span class="n">Creamy chicken wrap</span><span class="p">10.99</span><span class="d">Grilled chicken, candied maple bacon, avocado, ranch</span></li>
+            <li><span class="n">Chubs wrap</span><span class="p">11.99</span><span class="d">Diced sirloin, grilled peppers and onions, pepper jack</span></li>
+            <li><span class="n">Buffalo chicken wrap</span><span class="p">9.99</span></li>
+            <li><span class="n">Catfish wrap</span><span class="p">10.99</span><span class="d">Fried catfish, Swiss, tartar, a squeeze of lemon</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Burgers and salads</h3>
+          <ul class="ledger">
+            <li><span class="n">Patty melt</span><span class="p">12.99</span><span class="d">Two patties, Swiss, grilled onion, mushrooms, maple bacon</span></li>
+            <li><span class="n">Smackin' cheeseburger</span><span class="p">11.99</span><span class="d">Candied maple bacon and a scoop of mac and cheese</span></li>
+            <li><span class="n">Kid's chicken sandwich with fries</span><span class="p">8.99</span></li>
+            <li><span class="n">Bob's Chef Salad</span><span class="p">8.99</span><span class="d">Lettuce, cabbage, egg, cheese, smoked ham, tomatoes, cucumbers, onions, croutons</span></li>
+            <li><span class="n">Southwest salad</span><span class="p">9.99</span></li>
+            <li><span class="n">Chicken BLT salad</span><span class="p">8.99</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Pizza and starters</h3>
+          <ul class="ledger">
+            <li><span class="n">Cheese pizza</span><span class="p">13.99</span><span class="d">Classic cheese, or build your own</span></li>
+            <li><span class="n">Supreme pizza</span><span class="p">13.99</span></li>
+            <li><span class="n">Meat lovers pizza</span><span class="p">14.99</span></li>
+            <li><span class="n">Philly steak pizza</span><span class="p">13.75</span><span class="d">Garlic butter, green peppers and onions</span></li>
+            <li><span class="n">Buffalo chicken pizza</span><span class="p">13.75</span></li>
+            <li><span class="n">Fried mushrooms</span><span class="p">7.99</span></li>
+            <li><span class="n">Jalapeno poppers</span><span class="p">7.99</span></li>
+          </ul>
+          <figure>
+            <!-- generated illustrative imagery -->
+            <img src="images/pizza.png" alt="A pepperoni pizza on a metal pan on a diner counter with one slice lifted and the cheese stretching">
+          </figure>
+        </div>
+      </div>
+      <p class="fine">Pizza came back onto the menu after the opening because people kept asking for it; so did Bob's Chef Salad. Order online for pickup or delivery, or call the grill.</p>
+    </div>
+  </section>
+
+  <section class="room wrap" id="room" aria-labelledby="room-h">
+    <div class="grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/room.png" alt="A small-town diner in morning light: red vinyl booths along the windows, a long counter with chrome stools and a checkered floor">
+      </figure>
+      <div class="copy">
+        <h2 id="room-h">The room, since October 2024.</h2>
+        <p>Jose Dimas Hernandez came to Bridgewater from El Salvador fifteen years ago, learned kitchens from the inside, and already ran New York Flying Pizza up the street and Ciro's in Grottoes when Bob-A-Rea's owners retired in 2024. He bought the place that May, spent four weeks cleaning the kitchen and two months fitting it, and opened in October.</p>
+        <p>He kept the dishes people came in asking for, took the license plates off the walls, and told the Daily News-Record that what Bridgewater needed was something different from another pizza shop or burger place. The menu is his answer.</p>
+        <p class="plate">The building at 305 North Main has served food since Bob-A-Rea's opened in 1975.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="deals wrap" aria-labelledby="deals-h">
+    <h2 id="deals-h">Three deals, always on.</h2>
+    <ul class="deal-list">
+      <li><span class="n">Large one-topping pizza and an order of breadsticks</span><span class="p">24.99</span></li>
+      <li><span class="n">New York strip steak, fries, side salad and mashed potatoes</span><span class="p">29.99</span></li>
+      <li><span class="n">Large cheese pizza, large Caesar salad and a soft drink</span><span class="p">34.99</span></li>
+    </ul>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-h">
+    <div class="inner">
+      <div>
+        <h2 id="visit-h">Visit.</h2>
+        <div class="rows">
+          <div class="row"><p class="label">Address</p><p class="v">305 North Main Street, Bridgewater, VA 22812</p></div>
+          <div class="row"><p class="label">Phone</p><p class="v"><a href="tel:+15408283433">(540) 828-3433</a></p></div>
+          <div class="row"><p class="label">Hours</p><p class="v">Call or check the ordering page before you come; the grill sets its own hours.</p></div>
+        </div>
+        <p class="note">On North Main Street in downtown Bridgewater, a short walk from the college.</p>
+        <div class="actions"><a class="btn btn-solid" href="https://www.greedysgrill.com/">Order online</a></div>
+      </div>
+      <div class="aside">
+        <p>Eat in, take out, or have it brought to you.</p>
+        <p>Online orders run through the grill's ordering page; the prices on this page are the ones listed there.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="mark">Greedy's Grill</p>
+      <address>
+        305 North Main Street<br>
+        Bridgewater, Virginia 22812<br>
+        <a href="tel:+15408283433">(540) 828-3433</a>
+      </address>
+    </div>
+    <div>
+      <p class="label">Order</p>
+      <ul class="list">
+        <li><a href="https://www.greedysgrill.com/">Order online for pickup or delivery</a></li>
+        <li><a href="#menu">Menu and prices</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="label">On this page</p>
+      <ul class="list">
+        <li><a href="#room">The room</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Greedy's Grill. Menu items and prices are as listed on the grill's ordering page in September 2026; the opening story follows the Daily News-Record's report of January 17, 2025; hours are left to the grill because its existing listings disagree.</p>
+  </div>
+</footer>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Greedy's Grill, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
