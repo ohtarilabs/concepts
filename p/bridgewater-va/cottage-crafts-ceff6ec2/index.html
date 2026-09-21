@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cottage Crafts, Bridgewater VA. Hand-knit scarves and hand-loomed hats in your school's colours, since 2002</title>
+<meta name="description" content="Cottage Crafts at 219 South Main Street, Bridgewater, Virginia: Judy Galang's hand-knit scarves and hand-loomed hats in JMU, Virginia Tech, Turner Ashby, Bridgewater College and Eastern Mennonite colours, seasonal hand towels, barrettes, ornaments and custom orders. No set hours; call and she will open the shop.">
+<style>
+@font-face{font-family:"Yeseva One";src:url("fonts/yeseva-one-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Mulish";src:url("fonts/mulish-var.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+:root{
+  --wool:#F0F1F3;
+  --white:#FFFFFF;
+  --ink:#1D1F24;
+  --mid:#5B5F66;
+  --denim:#2F5D8A;
+  --denim-deep:#244B70;
+  --rule:rgba(29,31,36,.16);
+  --display:"Yeseva One",Georgia,serif;
+  --body:"Mulish","Helvetica Neue",Arial,sans-serif;
+  --max:1120px;
+  --jmu-a:#450084;--jmu-b:#CBB677;
+  --vt-a:#861F41;--vt-b:#E5751F;
+  --ta-a:#111111;--ta-b:#A7A9AC;
+  --bc-a:#C8102E;--bc-b:#D9A21B;
+  --emu-a:#1F3E9E;--emu-b:#111111;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--denim) var(--wool)}
+body{margin:0;background:var(--wool);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+::selection{background:var(--denim);color:var(--white)}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.18em}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:4px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;letter-spacing:0;text-wrap:balance}
+h2{font-size:40px;line-height:1.3}
+h3{font-size:22px;line-height:1.3}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.skip{position:absolute;left:-999px;top:12px;background:var(--ink);color:var(--white);padding:10px 16px;z-index:10}
+.skip:focus{left:12px}
+.wrap{max-width:var(--max);margin-left:auto;margin-right:auto}
+.label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
+
+/* header */
+.top{padding-left:72px;padding-right:72px}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px;max-width:var(--max);margin-left:auto;margin-right:auto}
+.mark{font-family:var(--display);font-size:26px;line-height:1.3;text-decoration:none;white-space:nowrap;color:var(--ink)}
+.top nav{display:flex;gap:26px;font-size:15px;font-weight:700}
+.top nav a{text-decoration:none;color:var(--mid);transition:color .25s cubic-bezier(.16,1,.3,1)}
+.top nav a:hover{color:var(--ink)}
+.phone{font-size:16px;font-weight:700;text-decoration:none;white-space:nowrap;color:var(--ink)}
+
+/* the stripes: one school per rule */
+.rule{padding-left:72px;padding-right:72px}
+.rule-in{max-width:var(--max);margin-left:auto;margin-right:auto;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.school{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
+.stripe{position:relative;width:100%;height:16px;border-radius:8px;overflow:hidden;cursor:default}
+.stripe::before,.stripe::after{content:"";position:absolute;inset:0;transition:opacity .2s ease}
+.stripe::before{background-image:linear-gradient(90deg,var(--a) 0 50%,var(--b) 50% 100%),linear-gradient(90deg,rgba(255,255,255,.14) 0 40%,transparent 40% 100%);background-size:44px 100%,5px 100%;opacity:1}
+.stripe::after{background-image:linear-gradient(90deg,var(--b) 0 50%,var(--a) 50% 100%),linear-gradient(90deg,rgba(255,255,255,.14) 0 40%,transparent 40% 100%);background-size:44px 100%,5px 100%;opacity:0}
+.stripe:hover::before{opacity:0}
+.stripe:hover::after{opacity:1}
+.jmu{--a:var(--jmu-a);--b:var(--jmu-b)}
+.vt{--a:var(--vt-a);--b:var(--vt-b)}
+.ta{--a:var(--ta-a);--b:var(--ta-b)}
+.bc{--a:var(--bc-a);--b:var(--bc-b)}
+.emu{--a:var(--emu-a);--b:var(--emu-b)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;height:54px;padding-left:26px;padding-right:26px;font-family:var(--body);font-size:16px;font-weight:700;text-decoration:none;white-space:nowrap;border-radius:8px;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .25s cubic-bezier(.16,1,.3,1)}
+.btn-denim{background:var(--denim);color:var(--white)}
+.btn-denim:hover{background:var(--denim-deep)}
+.btn:active{transform:translateY(1px)}
+
+/* opener */
+.open{padding-top:40px;padding-bottom:72px;padding-left:72px;padding-right:72px}
+.open h1{font-size:clamp(3rem,7.4vw,6.4rem);line-height:1.08;max-width:12ch}
+.open .sub{margin-top:18px;font-size:clamp(1.15rem,1.7vw,1.35rem);line-height:1.5;color:var(--mid);max-width:46ch}
+.call{margin-top:36px;padding-top:28px;padding-bottom:28px;padding-left:28px;padding-right:28px;background:var(--white);border-radius:8px;display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:center}
+.call .promise{font-family:var(--display);font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.4}
+.call .num{display:block;margin-top:10px;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;text-decoration:none;color:var(--denim)}
+.call address{font-style:normal;color:var(--mid);line-height:1.7}
+.open figure{margin-top:48px}
+.open figure img{border-radius:8px}
+
+/* what she makes */
+.makes{padding-top:72px;padding-bottom:72px;padding-left:72px;padding-right:72px}
+.makes .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.makes p{margin-top:16px;color:var(--mid);max-width:44ch}
+.list{margin-top:22px;border-top:1px solid var(--rule)}
+.list li{padding-top:11px;padding-bottom:11px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:16px}
+.list li span:last-child{color:var(--mid);text-align:right}
+.makes figure img{border-radius:8px}
+
+/* your school */
+.schools{padding-top:72px;padding-bottom:72px;padding-left:72px;padding-right:72px}
+.schools p{margin-top:16px;color:var(--mid);max-width:52ch}
+.ledger{margin-top:32px;background:var(--white);border-radius:8px;padding-top:8px;padding-bottom:8px;padding-left:28px;padding-right:28px}
+.ledger li{display:grid;grid-template-columns:120px 1.2fr 1fr;gap:24px;align-items:center;padding-top:16px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.ledger li:last-child{border-bottom:0}
+.ledger .stripe{height:14px;border-radius:7px}
+.ledger .name{font-weight:700}
+.ledger .colours{color:var(--mid)}
+
+/* the shop */
+.shop{padding-top:72px;padding-bottom:72px;padding-left:72px;padding-right:72px}
+.shop .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.shop p{margin-top:16px;color:var(--mid);max-width:44ch}
+.shop p b{color:var(--ink);font-weight:700}
+.shop figure img{border-radius:8px}
+
+/* call */
+.visit{padding-top:72px;padding-bottom:88px;padding-left:72px;padding-right:72px}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.visit p{margin-top:16px;color:var(--mid);max-width:44ch}
+.visit address{font-style:normal;margin-top:22px;font-size:19px;line-height:1.7}
+.visit .cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin-top:28px}
+.visit figure img{border-radius:8px}
+
+/* footer */
+.foot{background:var(--ink);color:var(--wool);padding-top:56px;padding-bottom:40px;padding-left:72px;padding-right:72px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot .mark{color:var(--wool)}
+.foot address{font-style:normal;margin-top:12px;color:#C9CBD1;line-height:1.7}
+.foot .label{color:#C9CBD1}
+.foot .flist{margin-top:10px}
+.foot .flist li{padding-top:4px;padding-bottom:4px}
+.foot .flist a{color:var(--wool);text-decoration:none}
+.foot .flist a:hover{text-decoration:underline}
+.disclosure{grid-column:1 / -1;margin-top:28px;padding-top:20px;border-top:1px solid rgba(240,241,243,.2);font-size:14px;color:#C9CBD1;max-width:84ch}
+
+@media (max-width:1440px){
+  .top,.rule,.open,.makes,.schools,.shop,.visit,.foot{padding-left:5vw;padding-right:5vw}
+}
+@media (max-width:980px){
+  .call,.makes .wrap,.shop .wrap,.visit .wrap{grid-template-columns:1fr;gap:24px}
+  .ledger li{grid-template-columns:90px 1fr;gap:14px}
+  .ledger .colours{grid-column:2}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .top,.rule,.open,.makes,.schools,.shop,.visit,.foot{padding-left:20px;padding-right:20px}
+  .top nav{display:none}
+  h2{font-size:32px}
+  .call{padding-top:22px;padding-bottom:22px;padding-left:20px;padding-right:20px}
+  .ledger{padding-left:18px;padding-right:18px}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none !important}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A one-maker craft shop with no hours and no cart, sold as the scarves it knits: five schools' colour pairs become the stripe rules that structure the page, and the action is a phone call. Refuses the cream-and-script craft template and the marketplace listing.
+OWN-WORLD: a cool wool-white ground (#F0F1F3) with white panels, near-black ink and a grey mid, one denim blue (#2F5D8A) for the number and the button; the five school pairs live only in the knitted stripe rules drawn in CSS; Yeseva One for the name and the promise, Mulish for the rest; hairline rules, eight-pixel corners.
+STORY: the visitor reads the promise and the number under the first stripe, sees the scarves, learns what she makes, finds their school in the ledger of five, sees the 1867 brick shop and the maker, and calls.
+FIRST VIEWPORT: wordmark, four links and the phone; the James Madison stripe; "Cottage Crafts" at up to 6.4rem; one line of what and since when; a white panel with "No set hours. Call, and Judy will come over and open the shop." in the display face, the number large in denim, and the address; the wide photograph of stacked scarves begins at the fold.
+FORM: structural, first on the ordered list; direction pinned by the frozen design-brief.md of the outreach pipeline, no concept roll.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="#main">Cottage Crafts</a>
+    <nav aria-label="Sections">
+      <a href="#makes">What she makes</a>
+      <a href="#schools">Your school</a>
+      <a href="#shop">The shop</a>
+      <a href="#call">Call</a>
+    </nav>
+    <a class="phone" href="tel:+15404787973">(540) 478-7973</a>
+  </div>
+</header>
+
+<div class="rule" role="separator" aria-label="James Madison colours">
+  <div class="rule-in"><span class="school">James Madison</span><div class="stripe jmu"></div></div>
+</div>
+
+<section class="open" id="main">
+  <div class="wrap">
+    <h1>Cottage Crafts</h1>
+    <p class="sub">Handmade in Bridgewater since 2002. Scarves knitted and hats hand-loomed in your school's colours, seasonal gifts for the house, and custom orders.</p>
+    <div class="call">
+      <div>
+        <p class="promise">No set hours. Call, and Judy will come over and open the shop.</p>
+        <a class="num" href="tel:+15404787973">(540) 478-7973</a>
+      </div>
+      <address>
+        219 South Main Street<br>
+        Bridgewater, Virginia 22812<br>
+        She lives next door.
+      </address>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/scarves.png" alt="Hand-knit striped wool scarves stacked on a wooden table by a window, in purple and gold, maroon and orange, black and silver, red and gold, and blue and black, with a knit hat on top" width="1536" height="1024">
+    </figure>
+  </div>
+</section>
+
+<div class="rule" role="separator" aria-label="Virginia Tech colours">
+  <div class="rule-in"><span class="school">Virginia Tech</span><div class="stripe vt"></div></div>
+</div>
+
+<section class="makes" id="makes">
+  <div class="wrap">
+    <div>
+      <h2>What she makes</h2>
+      <p>Everything in the shop is made by hand, most of it by Judy, and most of it can be made again in the colours you ask for.</p>
+      <ul class="list">
+        <li><span>Knitted scarves</span><span>school and college colours</span></li>
+        <li><span>Hand-loomed hats</span><span>to match</span></li>
+        <li><span>Seasonal hand towels</span><span>autumn, Christmas, spring</span></li>
+        <li><span>Team barrettes</span><span>in your colours</span></li>
+        <li><span>Ornaments, pins, bookmarks</span><span>gifts under the tree</span></li>
+        <li><span>Custom orders</span><span>name the school</span></li>
+      </ul>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/hands.png" alt="An older woman's hands knitting a purple and gold striped scarf on wooden needles, a ball of gold yarn beside her" width="1024" height="1024">
+    </figure>
+  </div>
+</section>
+
+<div class="rule" role="separator" aria-label="Turner Ashby colours">
+  <div class="rule-in"><span class="school">Turner Ashby</span><div class="stripe ta"></div></div>
+</div>
+
+<section class="schools" id="schools">
+  <div class="wrap">
+    <h2>Your school's colours</h2>
+    <p>Five schools are always in the shop. The stripes on this page are theirs, as each school names its colours; the yarn is matched by eye. Any other school is a custom order.</p>
+    <ul class="ledger">
+      <li><div class="stripe jmu" aria-hidden="true"></div><span class="name">James Madison University</span><span class="colours">purple and gold</span></li>
+      <li><div class="stripe vt" aria-hidden="true"></div><span class="name">Virginia Tech</span><span class="colours">Chicago maroon and burnt orange</span></li>
+      <li><div class="stripe ta" aria-hidden="true"></div><span class="name">Turner Ashby High School</span><span class="colours">black, silver and white</span></li>
+      <li><div class="stripe bc" aria-hidden="true"></div><span class="name">Bridgewater College</span><span class="colours">red and gold</span></li>
+      <li><div class="stripe emu" aria-hidden="true"></div><span class="name">Eastern Mennonite University</span><span class="colours">royal blue, black and white</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="rule" role="separator" aria-label="Bridgewater College colours">
+  <div class="rule-in"><span class="school">Bridgewater College</span><div class="stripe bc"></div></div>
+</div>
+
+<section class="shop" id="shop">
+  <div class="wrap">
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/shopfront.png" alt="A small one-storey brick shop with a single door and one shuttered window beside a taller three-storey brick building on a quiet main street in morning light" width="1536" height="1024">
+    </figure>
+    <div>
+      <h2>The shop on South Main</h2>
+      <p><b>219 South Main Street</b> is a one-storey brick shop two doors from the Masonic Lodge; the National Register nomination for the town's historic district dates it to 1867 to 1869 and calls it a miniature of the lodge.</p>
+      <p><b>Judy Galang</b>, Bridgewater College class of 1964, has kept Cottage Crafts here since 2002. She lives next door, which is why there are no hours: the shop opens when you call.</p>
+    </div>
+  </div>
+</section>
+
+<div class="rule" role="separator" aria-label="Eastern Mennonite colours">
+  <div class="rule-in"><span class="school">Eastern Mennonite</span><div class="stripe emu"></div></div>
+</div>
+
+<section class="visit" id="call">
+  <div class="wrap">
+    <div>
+      <h2>Call, and the door opens</h2>
+      <p>For a scarf in your school's colours, a hat to match, or a table of gifts before the holidays, call and Judy will come over. Custom orders: tell her the school and the colours.</p>
+      <address>
+        Cottage Crafts<br>
+        219 South Main Street<br>
+        Bridgewater, Virginia 22812<br>
+        <a href="tel:+15404787973">(540) 478-7973</a>
+      </address>
+      <div class="cta">
+        <a class="btn btn-denim" href="tel:+15404787973">Call (540) 478-7973</a>
+      </div>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/towels.png" alt="A craft-shop table laid with folded hand towels in autumn and Christmas prints, small knitted ornaments, a row of ribbon barrettes, wooden bookmarks and enamel pins" width="1024" height="1024">
+    </figure>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="mark">Cottage Crafts</p>
+      <address>
+        219 South Main Street<br>
+        Bridgewater, Virginia 22812<br>
+        <a href="tel:+15404787973">(540) 478-7973</a>
+      </address>
+    </div>
+    <div>
+      <p class="label">Order</p>
+      <ul class="flist">
+        <li><a href="tel:+15404787973">Call to open the shop</a></li>
+        <li><a href="#schools">Your school's colours</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="label">On this page</p>
+      <ul class="flist">
+        <li><a href="#makes">What she makes</a></li>
+        <li><a href="#shop">The shop</a></li>
+      </ul>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction; the shopfront pictured is not the real one. The finished site would use photography of Cottage Crafts. What the shop makes, the year, the owner and the call-ahead line follow the Town of Bridgewater directory, the Go-Virginia listing and the Bridgewater College alumni directory as of September 2026; the building's date follows the 1984 National Register nomination; school colours are as each school names them, with no school marks used.</p>
+  </div>
+</footer>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Cottage Crafts, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
