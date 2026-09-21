@@ -52,6 +52,7 @@ h3{font-size:22px;line-height:1.3;margin-bottom:10px}
 .lede{font-size:21px;line-height:1.5;color:var(--muted);max-width:56ch}
 .sand{background:var(--sand);color:var(--ink-warm)}
 .sand .lede{color:var(--ink-warm)}
+.sand .about .quote small,.about.sand .quote small{color:var(--ink-warm)}
 .small{font-family:var(--display);font-weight:500;font-size:14px;line-height:1.5;color:var(--muted)}
 .sand .small{color:var(--ink-warm)}
 
@@ -108,6 +109,12 @@ h3{font-size:22px;line-height:1.3;margin-bottom:10px}
 .tan-cols h3{font-size:22px}
 .tan-cols p{font-size:16px;line-height:1.5;margin-top:10px;max-width:40ch}
 
+/* reviews */
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:40px;row-gap:32px;margin-top:36px}
+.quotes blockquote{margin:0;padding-top:22px;border-top:1px solid var(--line)}
+.quotes p{font-size:19px;line-height:1.45}
+.quotes cite{display:block;margin-top:14px;font-style:normal;font-family:var(--display);font-weight:500;font-size:14px;line-height:1.5;color:var(--muted)}
+
 /* about */
 .about .copy{max-width:64ch}
 .about .copy p{margin-bottom:18px}
@@ -153,6 +160,7 @@ h3{font-size:22px;line-height:1.3;margin-bottom:10px}
   .split.flip figure{order:-1}
   .cols,.tan-cols{grid-template-columns:1fr}
   .visit-grid{grid-template-columns:1fr}
+  .quotes{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){
@@ -284,7 +292,7 @@ FORM: single light column with an overlapping menu card and three counter bands;
             <p>Facial and shoulder tanners, body fans and a twelve-minute maximum.</p>
           </div>
           <div>
-            <h3>Supreme beds and booth</h3>
+            <h3>Supreme bed</h3>
             <ul class="menu">
               <li><span>One session</span><span class="lead"></span><span class="price">$21</span></li>
               <li><span>Three sessions</span><span class="lead"></span><span class="price">$39</span></li>
@@ -293,14 +301,26 @@ FORM: single light column with an overlapping menu card and three counter bands;
               <li><span>One month</span><span class="lead"></span><span class="price">$62</span></li>
               <li><span>Monthly pass</span><span class="lead"></span><span class="price">$48.99</span></li>
             </ul>
-            <p>A lie-down bed and a stand-up booth with bronzing bulbs; the salon counts one Supreme session as roughly three Premium ones.</p>
+            <p>A lie-down bed with bronzing bulbs; the salon counts one Supreme session as roughly three Premium ones. The stand-up booth is at the Harrisonburg salon.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="band about" id="about">
+  <section class="band" id="reviews">
+    <div class="wrap">
+      <h2>What clients say</h2>
+      <p class="lede">From the salon's Google listing, as it stood in September 2026. Clients name the stylist, every time.</p>
+      <div class="quotes">
+        <blockquote><p>"Amy Phillips is the BEST hair dresser! We love her!!"</p><cite>S. Campbell, Google review, July 2026</cite></blockquote>
+        <blockquote><p>"I have had 2 great appointments here with Rachel. She is very friendly and listened to my requests for my hair color and cut."</p><cite>Jamina L., Google review, about 2024</cite></blockquote>
+        <blockquote><p>"Samantha did an amazing job with my hair today. She also did an excellent job with my daughter's hair a while back."</p><cite>Jessica F., Google review, about 2023</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="band sand about" id="about">
     <div class="wrap">
       <div class="copy">
         <h2>Three counters, one roof, twenty-five years</h2>
@@ -332,7 +352,7 @@ FORM: single light column with an overlapping menu card and three counter bands;
       <div><strong>Simmons Cut and Tan</strong><p>630 N Main Street, Bridgewater, VA 22812<br>540-828-2338</p></div>
       <div><strong>Hair, nails, tanning</strong><p>Independently contracted stylists. Starting prices shown; your stylist confirms the price before the service.</p></div>
     </div>
-    <p class="disclosure">Photography shown is illustrative art direction of a salon's objects and a room, not this salon. The finished site would use photography of Simmons Cut and Tan. Every price is the salon's own published starting price as of September 2026, quoted as "from" where the salon says "and up". No opening hours are shown because the salon's listings disagree on them; the booking page is the source. No stylist names are shown because none could be confirmed. This is an unsolicited design concept and not the salon's website.</p>
+    <p class="disclosure">Photography shown is illustrative art direction of a salon's objects and a room, not this salon. The finished site would use photography of Simmons Cut and Tan. Every price is the salon's own published starting price as of September 2026, quoted as "from" where the salon says "and up". No opening hours are shown because the salon's listings disagree on them; the booking page is the source. Stylists are named only where a client named them in a public review; the salon itself publishes no staff list. This is an unsolicited design concept and not the salon's website.</p>
   </footer>
 
 </main>
