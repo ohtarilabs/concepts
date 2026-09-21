@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rebecca's Well, Bridgewater VA. Seven rooms of gifts in a 19th-century house on Main Street, since 1986</title>
+<meta name="description" content="Rebecca's Well is a gift shop in a 19th-century house at 405 North Main Street, Bridgewater, Virginia: seven rooms of Cat's Meow Village, Rowe Pottery, local antiques and gifts for just about anyone, since 1986. Home of the First Friday farmers market, May to October.">
+<style>
+@font-face{font-family:"Gloock";src:url("fonts/gloock-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Karla";src:url("fonts/karla-var.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+:root{
+  --ground:#E6EDE6;
+  --paper:#FFFFFF;
+  --ink:#1F1B1C;
+  --muted:#565D5A;
+  --plum:#6B2D4E;
+  --ink-on-plum:#F6DCEA;
+  --rule:rgba(31,27,28,.18);
+  --display:"Gloock",Georgia,serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(20px,5vw,72px);
+  --max:1320px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--plum) var(--ground)}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+::selection{background:var(--plum);color:var(--ink-on-plum)}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.18em}
+a:focus-visible{outline:2px solid var(--plum);outline-offset:4px;border-radius:2px}
+h1,h2{font-family:var(--display);font-weight:400;margin:0;line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:40px}
+p{margin:0}
+.skip{position:absolute;left:-999px;top:12px;background:var(--plum);color:var(--ink-on-plum);padding:10px 16px;z-index:10}
+.skip:focus{left:12px}
+.wrap{max-width:var(--max);margin-left:auto;margin-right:auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.label{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px;max-width:var(--max);margin-left:auto;margin-right:auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.mark{font-family:var(--display);font-size:27px;text-decoration:none;white-space:nowrap}
+.top nav{display:flex;gap:26px;font-size:15px;font-weight:600}
+.top nav a{text-decoration:none;color:var(--muted);transition:color .25s cubic-bezier(.16,1,.3,1)}
+.top nav a:hover{color:var(--ink)}
+.phone{font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap;color:var(--ink)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding-left:24px;padding-right:24px;font-family:var(--body);font-size:16px;font-weight:600;text-decoration:none;white-space:nowrap;border-radius:999px;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .25s cubic-bezier(.16,1,.3,1),color .25s cubic-bezier(.16,1,.3,1)}
+.btn-solid{background:var(--plum);color:var(--ink-on-plum)}
+.btn-solid:hover{background:#5A2441}
+.btn-line{color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.btn-line:hover{background:rgba(31,27,28,.06)}
+.btn:active{transform:translateY(1px)}
+
+/* opener */
+.open{padding-top:72px;padding-bottom:88px}
+.open h1{font-size:clamp(3.1rem,7.4vw,6rem);max-width:12ch}
+.open .lede{margin-top:28px;font-size:clamp(1.1rem,1.5vw,1.3rem);max-width:46ch;line-height:1.5}
+.open .facts{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:26px;padding-top:22px;border-top:1px solid var(--rule);color:var(--muted);font-size:16px}
+.open .facts span{white-space:nowrap}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+/* rooms index */
+.rooms{padding-top:16px;padding-bottom:104px}
+.rooms .grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
+.rooms h2{max-width:14ch}
+.rooms .intro{margin-top:16px;max-width:44ch;color:var(--ink)}
+.index{list-style:none;margin:32px 0 0 0;padding:0;border-top:1px solid var(--rule)}
+.index li{--y:0px;--rc:var(--rule);display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding-top:14px;padding-bottom:14px;border-bottom:1px solid var(--rc);transform:translateY(var(--y));transition:transform .35s cubic-bezier(.16,1,.3,1),border-color .35s cubic-bezier(.16,1,.3,1)}
+.index li:hover{--y:-4px;--rc:var(--plum)}
+.index .n{font-family:var(--display);font-size:24px;line-height:1.3}
+.index .d{color:var(--muted);font-size:15px;text-align:right;max-width:22ch}
+.rooms img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.rooms figcaption{margin-top:12px;font-size:15px;color:var(--muted)}
+
+/* first friday */
+.friday{background:var(--paper);padding-top:0;padding-bottom:96px;padding-left:0;padding-right:0}
+.friday .strip{width:100%;aspect-ratio:21/8;object-fit:cover}
+.friday .inner{max-width:var(--max);margin-left:auto;margin-right:auto;padding-left:72px;padding-right:72px;padding-top:56px}
+.friday .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.friday h2{max-width:14ch}
+.friday .cols p{max-width:42ch}
+.friday .when{display:grid;gap:14px;padding-top:6px}
+.friday .when .row{display:grid;grid-template-columns:110px 1fr;gap:12px;padding-top:12px;padding-bottom:12px;border-bottom:1px solid var(--rule)}
+.friday .when .v{font-weight:600}
+.friday .fine{margin-top:18px;font-size:15px;color:var(--muted)}
+
+/* forty years */
+.since{padding-top:104px;padding-bottom:104px}
+.since .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.since img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.since .copy p{margin-top:18px;max-width:52ch}
+.since .copy p:first-of-type{margin-top:22px}
+.since .plate{margin-top:26px;padding-top:18px;border-top:1px solid var(--rule);font-size:15px;color:var(--muted);max-width:52ch}
+
+/* visit */
+.visit{padding-top:16px;padding-bottom:112px}
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.visit .rows{margin-top:28px;border-top:1px solid var(--rule)}
+.visit .row{display:grid;grid-template-columns:110px 1fr;gap:16px;padding-top:14px;padding-bottom:14px;border-bottom:1px solid var(--rule)}
+.visit .row .v{font-weight:600}
+.visit .row a{text-decoration:none;color:var(--plum)}
+.visit .note{margin-top:20px;font-size:15px;color:var(--muted);max-width:44ch}
+.visit .actions{margin-top:24px}
+.visit .aside{padding-top:8px}
+.visit .aside p{max-width:40ch;margin-top:16px}
+.visit .aside p:first-of-type{margin-top:0;font-family:var(--display);font-size:30px;line-height:1.3;color:var(--plum)}
+
+/* footer */
+.foot{background:var(--paper);padding-top:56px;padding-bottom:48px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+.foot-grid p{max-width:36ch}
+.foot .mark{font-size:26px}
+.foot address{font-style:normal;margin-top:14px;line-height:1.7}
+.foot .list{list-style:none;margin:8px 0 0 0;padding:0;line-height:1.9}
+.foot .list a{color:var(--ink);text-decoration:none}
+.foot .list a:hover{color:var(--plum)}
+.foot-grid .disclosure{grid-column:1/-1;margin-top:24px;padding-top:22px;border-top:1px solid var(--rule);font-size:14px;color:var(--muted);max-width:96ch;line-height:1.6}
+
+@media (max-width:1440px){ .friday .inner{padding-left:5vw;padding-right:5vw} }
+@media (max-width:980px){
+  .rooms .grid,.since .grid,.visit .grid,.friday .cols{grid-template-columns:1fr;gap:36px}
+  .rooms figure{order:-1}
+  .since figure{max-width:420px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .top{height:64px}
+  .top nav{display:none}
+  .open{padding-top:40px;padding-bottom:56px}
+  .rooms{padding-bottom:72px}
+  .index .n{font-size:21px}
+  .index .d{max-width:16ch}
+  .friday .strip{aspect-ratio:4/3}
+  .friday .inner{padding-left:20px;padding-right:20px;padding-top:40px}
+  .friday{padding-bottom:64px}
+  .since{padding-top:72px;padding-bottom:72px}
+  .visit{padding-bottom:80px}
+  .visit .row,.friday .when .row{grid-template-columns:90px 1fr}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  h2{font-size:34px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn,.index li,.top nav a{transition:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A forty-year gift shop in an old house, sold by its own two numbers set very large. Refuses the cream-and-script gift-shop template and the product grid a shop with no online store does not need.
+OWN-WORLD: pale eucalyptus ground (#E6EDE6) with white paper bands, near-black ink, one plum accent; Gloock for the two lines that matter, Karla for everything else; hairline rules, no cards, photographs beside type and never behind it.
+STORY: the visitor reads "Seven rooms, forty years", learns what the rooms hold, sees the First Friday market on the lawn, reads who has kept the shop since 1986, and finds the days and the door.
+FIRST VIEWPORT: header with the wordmark, three links and the phone; then the headline at 6rem over the eucalyptus ground, a two-sentence lede, a ruled line of facts (address, since 1986, phone), and "Plan a visit" solid plum beside "First Friday market" outlined. No photograph until the next band.
+FORM: type-led, first on the ordered list; direction pinned by the frozen design-brief.md of the outreach pipeline, no concept roll.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="mark" href="#main">Rebecca's Well</a>
+  <nav aria-label="Sections">
+    <a href="#rooms">The rooms</a>
+    <a href="#friday">First Friday</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a class="phone" href="tel:+15408284949">(540) 828-4949</a>
+</header>
+
+<main id="main">
+  <section class="open wrap" aria-label="Rebecca's Well, Bridgewater">
+    <h1>Seven rooms, forty years.</h1>
+    <p class="lede">A gift shop in a late-19th-century brick house on Main Street: Cat's Meow Village, Rowe Pottery, local antiques and gifts for just about anyone in your life. Kept by one owner since 1986.</p>
+    <div class="facts">
+      <span>405 North Main Street, Bridgewater</span>
+      <span>Across from Generations Park</span>
+      <span>Since December 1986</span>
+    </div>
+    <div class="actions">
+      <a class="btn btn-solid" href="#visit">Plan a visit</a>
+      <a class="btn btn-line" href="#friday">First Friday market</a>
+    </div>
+  </section>
+
+  <section class="rooms wrap" id="rooms" aria-labelledby="rooms-h">
+    <div class="grid">
+      <div>
+        <h2 id="rooms-h">What the rooms hold.</h2>
+        <p class="intro">Seven rooms of a brick house built in the 1880s and 90s, with the lines collectors look for and the gifts everyone else needs by Saturday.</p>
+        <ul class="index">
+          <li><span class="n">Cat's Meow Village</span><span class="d">Wooden keepsake buildings, made in Ohio since 1982</span></li>
+          <li><span class="n">Rowe Pottery</span><span class="d">Hand-crafted salt-glazed stoneware</span></li>
+          <li><span class="n">Local antiques</span><span class="d">Antiques from the Valley</span></li>
+          <li><span class="n">Scramble Squares</span><span class="d">The nine-piece puzzles, sold here</span></li>
+          <li><span class="n">The occasion</span><span class="d">Gifts for just about anyone in your life</span></li>
+        </ul>
+      </div>
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/room.png" alt="A front parlour of an old house set out as a gift shop, with a painted mantel, tall windows, and tables and shelves of wrapped gifts, candles and ribbon in morning light">
+        <figcaption>The front room. Six more behind it.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="friday" id="friday" aria-labelledby="friday-h">
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img class="strip" src="images/market.png" alt="An evening farmers market on a lawn beside an old brick house, white canopy tents with produce and flowers, string lights coming on at dusk">
+    </figure>
+    <div class="inner">
+      <div class="cols">
+        <div>
+          <h2 id="friday-h">First Friday, on the grass.</h2>
+          <p style="margin-top:16px">From May to October, the first Friday evening of the month, the grounds behind the shop are Bridgewater's farmers market: growers, bakers, a beekeeper and a coffee stand under canopies, with Generations Park across the street.</p>
+          <p class="fine">At Rebecca's Well since 2024. The Town of Bridgewater posts the month's vendors: meats, produce, baked goods, honey, coffee. Bring cash; not every vendor takes cards.</p>
+        </div>
+        <div class="when">
+          <div class="row"><p class="label">Season</p><p class="v">May to October</p></div>
+          <div class="row"><p class="label">When</p><p class="v">The first Friday of the month, 5 to 8 pm</p></div>
+          <div class="row"><p class="label">Where</p><p class="v">Behind 405 North Main Street, rain or shine</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="since wrap" id="since" aria-labelledby="since-h">
+    <div class="grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/gifts.png" alt="Three gift boxes wrapped in kraft paper and tied with twine, a sprig of eucalyptus under the top ribbon, on a worn wooden shop counter beside a brass bell">
+      </figure>
+      <div class="copy">
+        <h2 id="since-h">Forty years in the house.</h2>
+        <p>Becki Witt opened Rebecca's Well in December 1986 and has kept it since: seven rooms of a brick house built in the 1880s and 90s, across from Generations Park. Forty years in 2026.</p>
+        <p>The town's own directory describes it as "unique gifts and trinkets for just about anyone in your life", which is the right order of words: the person first, then the thing.</p>
+        <p class="plate">Listed by Rockingham County's business directory as seven rooms of gifts in a historic house, carrying Cat's Meow pieces, Rowe pottery and local antiques; in the 1984 Bridgewater Historic District inventory as a late-19th-century brick house on the north end of Main Street.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit wrap" id="visit" aria-labelledby="visit-h">
+    <div class="grid">
+      <div>
+        <h2 id="visit-h">Visit.</h2>
+        <div class="rows">
+          <div class="row"><p class="label">Address</p><p class="v">405 North Main Street, Bridgewater, VA 22812</p></div>
+          <div class="row"><p class="label">Open</p><p class="v">Tuesday to Saturday, 10 to 5. Closed Sunday. Monday differs by listing, so call first.</p></div>
+          <div class="row"><p class="label">Phone</p><p class="v"><a href="tel:+15408284949">(540) 828-4949</a></p></div>
+        </div>
+        <p class="note">Hours as published by the shop's directory listings, which disagree on Monday; a call ahead is never wasted.</p>
+        <div class="actions"><a class="btn btn-solid" href="tel:+15408284949">Call the shop</a></div>
+      </div>
+      <div class="aside">
+        <p>Across from Generations Park, on the north end of Main Street.</p>
+        <p>The First Friday market sets up on the grounds behind the shop from May to October, with more parking across the street.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="mark">Rebecca's Well</p>
+      <address>
+        405 North Main Street<br>
+        Bridgewater, Virginia 22812<br>
+        <a href="tel:+15408284949">(540) 828-4949</a>
+      </address>
+    </div>
+    <div>
+      <p class="label">Open</p>
+      <ul class="list">
+        <li>Tuesday to Saturday, 10 to 5</li>
+        <li>Closed Sunday; Monday varies, call first</li>
+      </ul>
+    </div>
+    <div>
+      <p class="label">On this page</p>
+      <ul class="list">
+        <li><a href="#rooms">The rooms</a></li>
+        <li><a href="#friday">First Friday market</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Rebecca's Well. Hours are as published in the shop's directory listings in September 2026, which disagree about Monday; the lines carried follow the Rockingham County listing and the makers' own retailer lists; the First Friday market details follow the Town of Bridgewater's August 2026 post and the market's own September 2026 event listing; the house's date follows the 1984 National Register nomination for the Bridgewater Historic District.</p>
+  </div>
+</footer>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Rebecca's Well, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
