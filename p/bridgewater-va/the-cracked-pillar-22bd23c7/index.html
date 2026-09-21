@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Cracked Pillar Pub, Bridgewater VA. A tavern in the Barbee House, open Thursday to Sunday</title>
+<meta name="description" content="The Cracked Pillar is a pub in the ca. 1840 Barbee House at 403 North Main Street, Bridgewater, Virginia. Pub kitchen, a covered deck for every show, dogs welcome outside, and a private Event Room for 30. Open Thursday to Sunday.">
+<style>
+@font-face{font-family:"Libre Caslon Display";src:url("fonts/libre-caslon-display-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("fonts/source-sans-3-var.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+:root{
+  --night:#0F1A16;
+  --panel:#1A2A24;
+  --bone:#E8E3D5;
+  --moss:#98B3A5;
+  --amber:#D8A33E;
+  --ink-on-amber:#2B1D06;
+  --line:rgba(232,227,213,.16);
+  --display:"Libre Caslon Display",Georgia,"Times New Roman",serif;
+  --body:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(20px,5vw,72px);
+  --max:1360px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--amber) var(--panel)}
+body{margin:0;background:var(--night);color:var(--bone);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+::selection{background:var(--amber);color:var(--ink-on-amber)}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.18em}
+a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offset:4px;border-radius:2px}
+h1,h2{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:40px;line-height:1.1}
+p{margin:0}
+.skip{position:absolute;left:-999px;top:12px;background:var(--amber);color:var(--ink-on-amber);padding:10px 16px;z-index:10}
+.skip:focus{left:12px}
+.wrap{max-width:var(--max);margin-left:auto;margin-right:auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px;max-width:var(--max);margin-left:auto;margin-right:auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.mark{font-family:var(--display);font-size:26px;text-decoration:none;white-space:nowrap;letter-spacing:.005em}
+.top nav{display:flex;gap:28px;font-size:15px;font-weight:600;letter-spacing:.02em}
+.top nav a{text-decoration:none;color:var(--moss);transition:color .25s cubic-bezier(.16,1,.3,1)}
+.top nav a:hover{color:var(--bone)}
+.phone{font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap;color:var(--bone)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding-left:24px;padding-right:24px;font-family:var(--body);font-size:16px;font-weight:600;letter-spacing:.01em;text-decoration:none;white-space:nowrap;border-radius:2px;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .25s cubic-bezier(.16,1,.3,1),color .25s cubic-bezier(.16,1,.3,1)}
+.btn-solid{background:var(--amber);color:var(--ink-on-amber)}
+.btn-solid:hover{background:#E7B857}
+.btn-line{color:var(--bone);box-shadow:inset 0 0 0 1px rgba(232,227,213,.55)}
+.btn-line:hover{background:rgba(232,227,213,.08)}
+.btn:active{transform:translateY(1px)}
+
+/* hero */
+.hero{position:relative;height:min(86vh,880px);min-height:560px;overflow:hidden}
+.hero figure{position:absolute;inset:0}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:58% 50%}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,26,22,.96) 0%,rgba(15,26,22,.62) 34%,rgba(15,26,22,0) 62%)}
+.hero-copy{position:absolute;left:0;right:0;bottom:0;max-width:var(--max);margin-left:auto;margin-right:auto;padding-left:var(--gutter);padding-right:var(--gutter);padding-bottom:64px}
+.hero h1{font-size:clamp(2.2rem,4.4vw,3.8rem);line-height:1.06;max-width:24ch}
+.hero .lede{margin-top:20px;font-size:clamp(1.05rem,1.4vw,1.25rem);max-width:44ch;color:var(--bone)}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+
+/* nights */
+.nights{padding-top:96px;padding-bottom:88px}
+.nights h2{max-width:20ch}
+.week{display:grid;grid-template-columns:repeat(7,1fr);margin-top:44px;border-top:1px solid var(--line)}
+.night{--day:var(--moss);--rule:0;position:relative;padding-top:22px;padding-bottom:26px;padding-right:8px;border-bottom:1px solid var(--line)}
+.night::after{content:"";position:absolute;left:0;top:-1px;height:2px;width:100%;background:var(--amber);transform:scaleX(var(--rule));transform-origin:left center;transition:transform .45s cubic-bezier(.16,1,.3,1)}
+.night .day{font-family:var(--display);font-size:clamp(1.15rem,3.6vw,3.2rem);line-height:1;color:var(--day);transition:transform .45s cubic-bezier(.16,1,.3,1),color .45s cubic-bezier(.16,1,.3,1);will-change:transform}
+.night .state{margin-top:14px;font-size:14px;font-weight:600;letter-spacing:.02em;color:var(--moss)}
+.night.open{--day:var(--bone)}
+.night.open:hover{--day:var(--amber);--rule:1}
+.night.open:hover .day{transform:translateY(-6px)}
+.night.shut .day{opacity:.38}
+.week-note{margin-top:28px;max-width:60ch;color:var(--moss);font-size:16px}
+
+/* menu ledger */
+.kitchen{padding-top:16px;padding-bottom:104px}
+.kitchen .grid{display:grid;grid-template-columns:1.25fr .9fr;gap:64px;align-items:start}
+.kitchen h2{max-width:18ch}
+.kitchen .intro{margin-top:18px;max-width:52ch;color:var(--moss)}
+.groups{display:grid;grid-template-columns:1fr 1fr;gap:36px 40px;margin-top:40px}
+.group{font-size:14px;font-weight:600;letter-spacing:.03em;color:var(--amber);margin-bottom:10px}
+.ledger{list-style:none;margin:0;padding:0}
+.ledger li{display:flex;align-items:baseline;gap:10px;padding-top:9px;padding-bottom:9px;font-size:17px}
+.ledger .name{white-space:nowrap}
+.ledger .dots{flex:1;border-bottom:1px dotted rgba(232,227,213,.35);transform:translateY(-5px)}
+.ledger .price{font-weight:600;font-variant-numeric:tabular-nums}
+.kitchen .fine{margin-top:34px;font-size:15px;color:var(--moss);max-width:54ch}
+.kitchen figure{position:sticky;top:24px}
+.kitchen img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.kitchen figcaption{margin-top:12px;font-size:15px;color:var(--moss)}
+
+/* deck band */
+.deck{background:var(--panel);padding-top:96px;padding-bottom:96px;padding-left:72px;padding-right:72px}
+.deck .wrap{padding-left:0;padding-right:0}
+.deck .proof{margin-top:44px;padding-top:24px;border-top:1px solid var(--line);max-width:62ch;color:var(--bone)}
+.deck h2{max-width:16ch;font-size:clamp(2.2rem,4.2vw,3.6rem)}
+.deck .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:44px;max-width:1000px}
+.deck .cols p{max-width:38ch}
+.deck .lead{font-weight:600;color:var(--bone)}
+.deck .cols .body{margin-top:8px;color:var(--bone)}
+
+/* event room */
+.room{padding-top:112px;padding-bottom:112px}
+.room .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center}
+.room img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.room .intro{margin-top:18px;max-width:46ch}
+.rates{width:100%;border-collapse:collapse;margin-top:28px;font-size:17px}
+.rates th{text-align:left;font-weight:600;font-size:14px;letter-spacing:.03em;color:var(--amber);padding-top:0;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.rates td{padding-top:12px;padding-bottom:12px;border-bottom:1px solid var(--line);vertical-align:top}
+.rates td.n{text-align:right;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.room .fine{margin-top:16px;font-size:15px;color:var(--moss);max-width:46ch}
+.room .actions{margin-top:26px}
+
+/* house */
+.house{padding-top:16px;padding-bottom:120px}
+.house .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.house img{width:100%;aspect-ratio:2/3;object-fit:cover}
+.house .copy p{margin-top:18px;max-width:54ch}
+.house .copy p:first-of-type{margin-top:22px}
+.house .plate{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:15px;color:var(--moss);max-width:54ch}
+
+/* footer */
+.foot{background:var(--panel);padding-top:64px;padding-bottom:56px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+.foot-grid p{max-width:34ch}
+.foot .mark{font-size:30px}
+.foot .muted{color:var(--moss);font-size:15px}
+.foot address{font-style:normal;margin-top:16px;line-height:1.7}
+.foot .label{font-size:14px;font-weight:600;letter-spacing:.03em;color:var(--amber);margin-bottom:8px}
+.foot .list{list-style:none;margin:0;padding:0;line-height:1.9}
+.foot .list a{color:var(--bone);text-decoration:none}
+.foot .list a:hover{color:var(--amber)}
+.foot-grid .disclosure{grid-column:1/-1;margin-top:28px;padding-top:24px;border-top:1px solid var(--line);font-size:14px;color:var(--moss);max-width:94ch;line-height:1.6}
+
+@media (max-width:1440px){
+  .deck{padding-left:5vw;padding-right:5vw}
+}
+@media (max-width:980px){
+  .kitchen .grid,.room .grid,.house .grid{grid-template-columns:1fr;gap:40px}
+  .kitchen figure{position:static;order:-1}
+  .house figure{max-width:420px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .top{height:64px}
+  .top nav{display:none}
+  .hero{height:min(78vh,720px)}
+  .hero img{object-position:42% 50%}
+  .hero-copy{padding-bottom:40px}
+  .nights{padding-top:72px;padding-bottom:64px}
+  .night{padding-top:16px;padding-bottom:18px}
+  .night .state{display:none}
+  .groups{grid-template-columns:1fr;gap:28px}
+  .deck{padding-top:72px;padding-bottom:72px;padding-left:20px;padding-right:20px}
+  .deck .cols{grid-template-columns:1fr;gap:28px}
+  .room{padding-top:80px;padding-bottom:80px}
+  .house{padding-bottom:88px}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  h2{font-size:32px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn,.night .day,.night::after,.top nav a{transition:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A four-night tavern in an 1840 inn, sold as a lit porch after dark. Refuses the cream-paper-and-terracotta "historic restaurant" page and the three-card feature row.
+OWN-WORLD: night-green ground (#0F1A16) with a raised moss panel, bone type, one porch-light amber; Libre Caslon Display for the house's own decade, Source Sans 3 for the ledger; wide bands, hairline rules, no cards.
+STORY: the visitor sees the deck with the lights on, learns it is open Thursday to Sunday, reads real prices, finds the Event Room rate card, and either orders or emails to book the room.
+FIRST VIEWPORT: header with wordmark, four links and the phone; one full-bleed dusk photograph of the covered deck; headline and lede bottom-left over a scrim; "Order online" solid amber and "Book the Event Room" outlined beside it.
+FORM: image-led, first on the ordered list; direction pinned by the frozen design-brief.md of the outreach pipeline, no concept roll.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="mark" href="#main">The Cracked Pillar</a>
+  <nav aria-label="Sections">
+    <a href="#kitchen">Menu</a>
+    <a href="#deck">Deck</a>
+    <a href="#room">Event Room</a>
+    <a href="#house">The House</a>
+  </nav>
+  <a class="phone" href="tel:+15402374563">(540) 237-4563</a>
+</header>
+
+<main id="main">
+  <section class="hero" aria-label="The deck at dusk">
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/hero.png" alt="A covered wooden deck at dusk with string lights on, pint glasses on the nearest table, a dog asleep beneath it, guests further along and a band setting up at the far end against the Shenandoah ridgeline">
+      <div class="scrim" aria-hidden="true"></div>
+    </figure>
+    <div class="hero-copy">
+      <h1>A tavern in the Barbee House, open Thursday to Sunday.</h1>
+      <p class="lede">Pub kitchen, a covered deck for every show, and dogs welcome at the outside tables. 403 North Main Street, Bridgewater.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="https://orders.cake.net/10934958">Order online</a>
+        <a class="btn btn-line" href="mailto:owner@thecrackedpillar.com?subject=Event%20Room%20booking">Book the Event Room</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="nights wrap" aria-labelledby="nights-h">
+    <h2 id="nights-h">Four nights a week, and the porch lights tell you which.</h2>
+    <div class="week">
+      <div class="night shut"><p class="day">Mon</p><p class="state">Closed</p></div>
+      <div class="night shut"><p class="day">Tue</p><p class="state">Closed</p></div>
+      <div class="night shut"><p class="day">Wed</p><p class="state">Closed</p></div>
+      <div class="night open"><p class="day">Thu</p><p class="state">Open from late morning</p></div>
+      <div class="night open"><p class="day">Fri</p><p class="state">Open late</p></div>
+      <div class="night open"><p class="day">Sat</p><p class="state">Open late</p></div>
+      <div class="night open"><p class="day">Sun</p><p class="state">Open from noon</p></div>
+    </div>
+    <p class="week-note">Closed Monday, Tuesday and Wednesday. Opening and closing times are posted on the door and on the tavern's Facebook page. Last call for food and drink is thirty minutes before close.</p>
+  </section>
+
+  <section class="kitchen wrap" id="kitchen" aria-labelledby="kitchen-h">
+    <div class="grid">
+      <div>
+        <h2 id="kitchen-h">From the kitchen, with fries.</h2>
+        <p class="intro">Sandwiches, half-pound burgers, wings and the Pillar Pretzel, to eat on the deck or to take out through the back door at the bar. Prices as listed on the tavern's ordering page.</p>
+        <div class="groups">
+          <div>
+            <p class="group">Sandwiches, with fries</p>
+            <ul class="ledger">
+              <li><span class="name">The Warhammer Reuben</span><span class="dots"></span><span class="price">14.49</span></li>
+              <li><span class="name">Finding Nemo</span><span class="dots"></span><span class="price">14.50</span></li>
+              <li><span class="name">The Clucker</span><span class="dots"></span><span class="price">13.79</span></li>
+              <li><span class="name">Buffalo Chicken Wrap</span><span class="dots"></span><span class="price">13.79</span></li>
+              <li><span class="name">BLT</span><span class="dots"></span><span class="price">12.49</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="group">Half-pound burgers, with fries</p>
+            <ul class="ledger">
+              <li><span class="name">Bourbon Burger</span><span class="dots"></span><span class="price">14.49</span></li>
+              <li><span class="name">Breakfast Barbee</span><span class="dots"></span><span class="price">14.49</span></li>
+              <li><span class="name">Fried Pickle Drunken Burger</span><span class="dots"></span><span class="price">14.49</span></li>
+              <li><span class="name">Bacon Cheeseburger</span><span class="dots"></span><span class="price">14.49</span></li>
+              <li><span class="name">The Basic Bitty</span><span class="dots"></span><span class="price">11.85</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="group">To start</p>
+            <ul class="ledger">
+              <li><span class="name">Pillar Pretzel</span><span class="dots"></span><span class="price">10.99</span></li>
+              <li><span class="name">Boss Brussels</span><span class="dots"></span><span class="price">8.99</span></li>
+              <li><span class="name">Fried Pickles</span><span class="dots"></span><span class="price">8.25</span></li>
+              <li><span class="name">Wings, six</span><span class="dots"></span><span class="price">9.95</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="group">To finish, and for the dog</p>
+            <ul class="ledger">
+              <li><span class="name">Patti's Pumpkin Cake</span><span class="dots"></span><span class="price">7.99</span></li>
+              <li><span class="name">Caramel Caviar Mousse Cake</span><span class="dots"></span><span class="price">6.95</span></li>
+              <li><span class="name">Doggie Hamburger</span><span class="dots"></span><span class="price">6.49</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="fine">Full menu, sides and drinks on the ordering page. Gluten-free buns are available. Some weekend evenings the kitchen runs past thirty minutes on to-go orders; the tavern says so on its menu, and so do we.</p>
+      </div>
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/reuben.png" alt="A grilled Reuben on marble rye, cut in half on a paper-lined tray with fries and a pickle spear, beside a pint of amber beer on a dark wooden table">
+        <figcaption>The Warhammer Reuben, on marble rye, with fries.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="deck" id="deck" aria-labelledby="deck-h">
+    <div class="wrap">
+      <h2 id="deck-h">Every show is on the covered deck.</h2>
+      <div class="cols">
+        <div>
+          <p class="lead">Live music, outside, under a roof.</p>
+          <p class="body">All events are held on the outside covered deck. Active tables are required, and the current calendar is posted on the tavern's Facebook page.</p>
+        </div>
+        <div>
+          <p class="lead">Bring the dog.</p>
+          <p class="body">Dogs are welcome at the outdoor tables, and the kitchen keeps a Doggie Hamburger on the menu for them.</p>
+        </div>
+      </div>
+      <p class="proof">Readers of Valley Hometown Guru voted the deck the winner for Outdoor Dining in 2025, and the bar the winner for Place for Cocktails in 2025 and 2026.</p>
+    </div>
+  </section>
+
+  <section class="room wrap" id="room" aria-labelledby="room-h">
+    <div class="grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/room.png" alt="A private dining room in an old brick house with one long table set for twenty, a small bar along the wall and French doors open onto a balcony at evening">
+      </figure>
+      <div>
+        <h2 id="room-h">The Event Room, upstairs.</h2>
+        <p class="intro">On the second floor above the dining room, with its own bar, audio-visual set-up and a private balcony. Seats up to thirty, with a private bartender and the kitchen downstairs. Two hours reserved.</p>
+        <table class="rates">
+          <thead><tr><th scope="col">When</th><th scope="col" class="n">Two hours</th></tr></thead>
+          <tbody>
+            <tr><td>Sunday to Wednesday, daytime</td><td class="n">$150</td></tr>
+            <tr><td>Sunday to Wednesday, night</td><td class="n">$200</td></tr>
+            <tr><td>Thursday, Friday and Saturday</td><td class="n">$300</td></tr>
+          </tbody>
+        </table>
+        <p class="fine">Rates change on band nights and holidays. Outside food and drink are not permitted; cakes are fine with prior approval.</p>
+        <div class="actions"><a class="btn btn-solid" href="mailto:owner@thecrackedpillar.com?subject=Event%20Room%20booking">Email to book the room</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="house wrap" id="house" aria-labelledby="house-h">
+    <div class="grid">
+      <figure>
+        <!-- generated illustrative imagery -->
+        <img src="images/house.png" alt="A deep window seat in an old brick tavern with wavy glass panes, a candle in a brass holder and a pint of beer on the sill, sunlight across wide plank floors">
+      </figure>
+      <div class="copy">
+        <h2 id="house-h">The Barbee House, about 1840.</h2>
+        <p>Brick, two storeys, and a porch on four stuccoed columns with a sawn balustrade above. The National Register nomination for the Bridgewater Historic District calls it one of the oldest and most imposing houses on the north end of Main Street. By the late 1800s Colonel Gabriel Barbee was running it as an inn called the Barbee House, and the name stayed.</p>
+        <p>After the Civil War the house was a girls' boarding school; the room numbers are still on the doors upstairs. Patti and Tim Landes bought it in late 2015, after more than a century as a family home, and opened the pub in 2017 with the outside much as it was. The name is the porch's own: one of the four pillars carries two long cracks.</p>
+        <p class="plate">Bridgewater Historic District, Virginia Landmarks Register and National Register of Historic Places, listed 1984. Barbee House, 403 North Main Street.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="mark">The Cracked Pillar</p>
+      <p class="muted">Restaurant and bar in the Barbee House</p>
+      <address>
+        403 North Main Street<br>
+        Bridgewater, Virginia 22812<br>
+        <a href="tel:+15402374563">(540) 237-4563</a><br>
+        <a href="mailto:owner@thecrackedpillar.com">owner@thecrackedpillar.com</a>
+      </address>
+    </div>
+    <div>
+      <p class="label">Open</p>
+      <ul class="list">
+        <li>Thursday, Friday, Saturday and Sunday</li>
+        <li>Closed Monday to Wednesday</li>
+        <li>Times on the door and on Facebook</li>
+      </ul>
+    </div>
+    <div>
+      <p class="label">Find</p>
+      <ul class="list">
+        <li><a href="https://orders.cake.net/10934958">Order online for pickup</a></li>
+        <li><a href="#room">Book the Event Room</a></li>
+        <li><a href="#kitchen">Menu and prices</a></li>
+      </ul>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of The Cracked Pillar. Menu prices and Event Room rates are as published by the tavern in September 2026; opening times are posted by the tavern on the door and on Facebook, and the history above follows the tavern's own account and the 1984 National Register nomination for the Bridgewater Historic District.</p>
+  </div>
+</footer>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for The Cracked Pillar, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
