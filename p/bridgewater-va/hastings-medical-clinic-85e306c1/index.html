@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hastings Medical Clinic, Bridgewater VA: direct primary care with one flat monthly fee</title>
+<meta name="description" content="Direct primary care on Main Street in Bridgewater, Virginia. Jonathan Shomo, PA-C. One flat monthly fee set by age and no insurance billing. Call 540-515-HEAL.">
+<link rel="canonical" href="https://www.hastingsclinic.com/">
+<meta property="og:title" content="Hastings Medical Clinic, Bridgewater VA">
+<meta property="og:description" content="Your own clinician, one flat monthly fee, no clock on the visit. Direct primary care at 110-A N Main Street, Bridgewater.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalClinic","name":"Hastings Medical Clinic","alternateName":"Bridgewater Direct Primary Care","url":"https://www.hastingsclinic.com/","telephone":"+1-540-515-4325","email":"office@hastingsclinic.com","address":{"@type":"PostalAddress","streetAddress":"110-A N Main Street","addressLocality":"Bridgewater","addressRegion":"VA","postalCode":"22812","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"08:30","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"13:00","closes":"17:00"}],"founder":{"@type":"Person","name":"Jonathan Shomo, PA-C"},"foundingDate":"2021","medicalSpecialty":"PrimaryCare","paymentAccepted":"Cash, Card","currenciesAccepted":"USD"}
+</script>
+<style>
+@font-face{font-family:"Bricolage Grotesque";src:url("fonts/bricolage.woff2") format("woff2");font-weight:200 800;font-stretch:75% 100%;font-display:swap}
+@font-face{font-family:"Source Serif 4";src:url("fonts/sourceserif.woff2") format("woff2");font-weight:200 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Serif 4";src:url("fonts/sourceserif-italic.woff2") format("woff2");font-weight:200 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Public Sans";src:url("fonts/publicsans.woff2") format("woff2");font-weight:100 900;font-display:swap}
+
+:root{
+  --paper:#F3F5F4;
+  --ink:#14262E;
+  --vermilion:#B83A12;
+  --vermilion-deep:#9E300E;
+  --tint:#F3A07A;
+  --chalk:#D9EAF4;
+  --muted:#4E6470;
+  --panel:#E3ECE9;
+  --line:#C9D4D2;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --utility:"Public Sans","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;font-weight:400}
+::selection{background:var(--tint);color:var(--ink)}
+:focus-visible{outline:2px solid var(--vermilion);outline-offset:3px}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-color:var(--vermilion)}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:700;margin:0;text-wrap:balance}
+p{margin:0}
+
+/* ---------- frame ---------- */
+.frame{display:grid;grid-template-columns:300px minmax(0,1fr);min-height:100vh}
+
+/* ---------- rail ---------- */
+.rail{position:sticky;top:0;height:100vh;overflow:auto;background:var(--ink);color:var(--chalk);padding-top:36px;padding-bottom:32px;padding-left:32px;padding-right:32px;display:flex;flex-direction:column}
+.mark{font-family:var(--display);font-weight:700;font-size:26px;line-height:1.15;color:#FFFFFF;letter-spacing:-.01em}
+.mark small{display:block;font-family:var(--utility);font-weight:500;font-size:13px;line-height:1.5;letter-spacing:.01em;color:var(--chalk);margin-top:6px}
+.number{margin-top:44px;font-family:var(--display);font-weight:800;font-stretch:90%;font-size:44px;line-height:1.05;letter-spacing:-.02em;color:#FFFFFF;white-space:nowrap}
+.number a{text-decoration:none;color:inherit;display:inline-block}
+.heal{position:relative;display:inline-block;color:var(--tint)}
+.heal .word,.heal .digits{transition:opacity .32s ease-out}
+.heal .digits{position:absolute;left:0;top:0;opacity:0}
+.number a:hover .heal .word,.number a:focus-visible .heal .word{opacity:0}
+.number a:hover .heal .digits,.number a:focus-visible .heal .digits{opacity:1}
+.number-note{font-family:var(--utility);font-size:13px;line-height:1.5;color:var(--chalk);margin-top:10px}
+.rail .btn{margin-top:26px;align-self:flex-start}
+.rail-hours{margin-top:40px;font-family:var(--utility);font-size:14px;line-height:1.6;color:var(--chalk);font-variant-numeric:tabular-nums}
+.rail-hours strong{display:block;color:#FFFFFF;font-weight:600}
+.rail-nav{margin-top:auto;padding-top:36px;list-style:none;padding-left:0;margin-bottom:0;font-family:var(--utility);font-size:14px;line-height:1.5}
+.rail-nav li{padding-top:7px;padding-bottom:7px;border-top:1px solid rgba(217,234,244,.18)}
+.rail-nav a{text-decoration:none;color:var(--chalk)}
+.rail-nav a:hover{color:#FFFFFF;text-decoration:underline;text-decoration-color:var(--tint)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-block;font-family:var(--utility);font-weight:600;font-size:15px;line-height:1.2;letter-spacing:.005em;color:#FFFFFF;background:var(--vermilion);text-decoration:none;padding-top:15px;padding-bottom:15px;padding-left:22px;padding-right:22px;border-radius:4px;transition:background-color .2s ease-out,transform .12s ease-out}
+.btn:hover{background:var(--vermilion-deep);color:#FFFFFF}
+.btn:active{transform:translateY(1px)}
+.btn-line{display:inline-block;font-family:var(--utility);font-weight:600;font-size:15px;line-height:1.2;color:var(--ink);text-decoration:none;padding-top:15px;padding-bottom:15px;padding-left:2px;padding-right:2px;border-bottom:1px solid var(--ink);margin-left:22px}
+.btn-line:hover{color:var(--vermilion);border-bottom-color:var(--vermilion)}
+
+/* ---------- main column ---------- */
+.main{min-width:0}
+.band{padding-top:88px;padding-bottom:88px;padding-left:72px;padding-right:72px}
+.band-tight{padding-top:72px;padding-bottom:72px}
+.wrap{max-width:1040px}
+.lede{font-size:21px;line-height:1.5;color:var(--muted);max-width:60ch}
+h2{font-size:36px;line-height:1.1;letter-spacing:-.015em;margin-bottom:22px}
+h3{font-size:22px;line-height:1.3;margin-bottom:10px}
+.copy{max-width:64ch}
+.copy p{margin-bottom:18px}
+.copy p:last-child{margin-bottom:0}
+.small{font-family:var(--utility);font-size:14px;line-height:1.55;color:var(--muted)}
+
+/* hero */
+.hero{padding-top:80px}
+.hero h1{font-size:58px;line-height:1.02;letter-spacing:-.025em;max-width:16ch}
+.hero .lede{margin-top:26px}
+.hero-actions{margin-top:34px;display:flex;align-items:center;flex-wrap:wrap}
+.hero figure{margin-top:56px}
+.hero img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px}
+
+/* included ledger */
+.ledger{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:40px;row-gap:28px}
+.ledger>div{padding-top:20px;border-top:1px solid var(--ink)}
+.ledger h3{font-size:20px;line-height:1.3;margin-bottom:12px}
+.ledger ul{list-style:none;padding-left:0;margin-top:0;margin-bottom:0}
+.ledger li{padding-top:7px;padding-bottom:7px;font-size:17px;line-height:1.5}
+.fee{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;column-gap:48px;row-gap:24px;align-items:start;border-top:1px solid var(--ink);padding-top:28px}
+.fee h3{font-size:26px;line-height:1.2;letter-spacing:-.01em;margin-bottom:12px}
+.fee p{max-width:52ch}
+.fee .tiers{font-family:var(--utility);font-size:14px;line-height:1.6;color:var(--muted);margin-top:14px}
+.fee .actions{margin-top:20px}
+
+/* steps */
+.steps{list-style:none;padding-left:0;margin-top:0;margin-bottom:0;display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:40px;counter-reset:step}
+.steps li{padding-top:22px;border-top:1px solid var(--line)}
+.steps .n{font-family:var(--display);font-weight:800;font-size:44px;line-height:1;letter-spacing:-.02em;color:var(--vermilion);display:block;margin-bottom:14px}
+.steps h3{font-size:22px;line-height:1.3}
+.steps p{font-size:17px;line-height:1.5;color:var(--muted);max-width:32ch}
+
+/* split bands */
+.split{display:grid;grid-template-columns:5fr 6fr;column-gap:64px;align-items:center}
+.split.flip{grid-template-columns:6fr 5fr}
+.split img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px}
+.panel{background:var(--panel)}
+.procs{list-style:none;padding-left:0;margin-top:18px;margin-bottom:0;font-size:17px;line-height:1.5;columns:2;column-gap:32px}
+.procs li{padding-top:5px;padding-bottom:5px;break-inside:avoid}
+.price-line{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--utility);font-size:14px;line-height:1.6;color:var(--muted)}
+.price-line strong{color:var(--ink);font-weight:600}
+
+/* story */
+.story .copy p{font-size:18px}
+.story .sig{font-family:var(--display);font-weight:600;font-size:20px;margin-top:22px;line-height:1.3}
+
+/* reviews band */
+.reviews{background:var(--ink);color:var(--chalk)}
+.reviews h2{color:#FFFFFF;max-width:20ch}
+.reviews .sub{font-family:var(--utility);font-size:14px;line-height:1.55;color:var(--chalk);max-width:56ch;margin-bottom:44px}
+.quotes{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:40px;row-gap:32px;margin:0;padding:0}
+.quotes blockquote{margin:0;padding-top:22px;border-top:1px solid rgba(217,234,244,.28)}
+.quotes p{font-size:19px;line-height:1.45;color:#FFFFFF}
+.quotes cite{display:block;margin-top:16px;font-style:normal;font-family:var(--utility);font-size:14px;line-height:1.5;color:var(--chalk)}
+.reviews .after{margin-top:48px}
+.reviews .btn-line{color:var(--chalk);border-bottom-color:var(--chalk)}
+.reviews .btn-line:hover{color:var(--tint);border-bottom-color:var(--tint)}
+
+/* visit */
+.visit-photo{padding-left:0;padding-right:0;padding-top:0;padding-bottom:0}
+.visit-photo img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:40px;row-gap:28px;margin-top:36px}
+.visit-grid h3{font-size:16px;font-family:var(--utility);font-weight:600;letter-spacing:.005em;margin-bottom:8px}
+.visit-grid p{font-size:18px;line-height:1.5;font-variant-numeric:tabular-nums}
+.visit-grid a{text-decoration:none;border-bottom:1px solid var(--line)}
+.visit-grid a:hover{border-bottom-color:var(--vermilion);color:var(--vermilion)}
+
+/* faq */
+.faq{list-style:none;padding-left:0;margin-top:0;margin-bottom:0;max-width:70ch}
+.faq li{padding-top:26px;padding-bottom:26px;border-top:1px solid var(--line)}
+.faq li:last-child{border-bottom:1px solid var(--line)}
+.faq h3{font-size:23px;line-height:1.3;margin-bottom:10px}
+.faq p{font-size:18px;line-height:1.55;color:var(--muted)}
+
+/* footer */
+.foot{border-top:1px solid var(--line);padding-top:44px;padding-bottom:52px;padding-left:72px;padding-right:72px}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;row-gap:24px;font-family:var(--utility);font-size:14px;line-height:1.6;color:var(--muted)}
+.foot-grid strong{color:var(--ink);font-weight:600;display:block;margin-bottom:6px}
+.foot-grid p{max-width:44ch}
+.disclosure{margin-top:36px;font-family:var(--utility);font-size:13px;line-height:1.6;color:var(--muted);max-width:94ch}
+
+/* ---------- responsive ---------- */
+@media (max-width:1180px){
+  .band{padding-left:48px;padding-right:48px}
+  .foot{padding-left:48px;padding-right:48px}
+  .hero h1{font-size:50px}
+  .split,.split.flip{column-gap:40px}
+}
+@media (max-width:900px){
+  .frame{display:block}
+  .rail{position:static;height:auto;overflow:visible;padding-top:28px;padding-bottom:28px;padding-left:20px;padding-right:20px}
+  .rail-nav{display:none}
+  .rail-hours{margin-top:26px}
+  .number{font-size:38px;margin-top:28px}
+  .band{padding-top:56px;padding-bottom:56px;padding-left:20px;padding-right:20px}
+  .foot{padding-left:20px;padding-right:20px}
+  .hero{padding-top:48px}
+  .hero h1{font-size:38px;line-height:1.05}
+  .lede{font-size:19px}
+  h2{font-size:30px}
+  .hero figure{margin-top:36px}
+  .hero-actions{gap:14px}
+  .btn-line{margin-left:0}
+  .ledger{grid-template-columns:1fr;row-gap:20px}
+  .fee{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;row-gap:8px}
+  .split,.split.flip{grid-template-columns:1fr;row-gap:28px}
+  .split.flip figure{order:-1}
+  .procs{columns:1}
+  .quotes{grid-template-columns:1fr}
+  .visit-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  .heal .word,.heal .digits,.btn{transition:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: a direct primary care page that keeps its two actions, the phone number and the join button, on screen the whole way down, and refuses the centred blue hero with three icon cards.
+OWN-WORLD: cool paper, deep ink-blue rail and reviews band, one brick-vermilion accent (its tint on ink), Bricolage Grotesque display over Source Serif 4 body with Public Sans for hours and labels.
+STORY: the visitor learns this is membership primary care with a real person behind it, sees what the fee covers, and either starts enrolment or calls 540-515-HEAL.
+FIRST VIEWPORT: a 300px sticky ink rail (wordmark, the HEAL number, Start enrolment, hours) beside a 58px headline, a one-line lede, two actions, and a 3:2 photograph of an exam room.
+FORM: two-column ledger with a sticky rail; brief-pinned, no roll.
+-->
+<div class="frame">
+
+  <aside class="rail" aria-label="Contact and navigation">
+    <div class="mark">Hastings Medical Clinic<small>Bridgewater, Virginia</small></div>
+    <p class="number"><a href="tel:+15405154325" aria-label="Call 540-515-4325">540-515-<span class="heal"><span class="word">HEAL</span><span class="digits" aria-hidden="true">4325</span></span></a></p>
+    <p class="number-note">That is 540-515-4325.</p>
+    <a class="btn" href="https://hastingsclinic.sigmamd.com/signup/membership">Start enrolment</a>
+    <div class="rail-hours">
+      <strong>Monday to Thursday</strong>
+      8:30 to 12, then 1 to 5<br>
+      110-A N Main Street
+    </div>
+    <ul class="rail-nav">
+      <li><a href="#membership">What the fee covers</a></li>
+      <li><a href="#how">How joining works</a></li>
+      <li><a href="#nonmembers">Not a member yet</a></li>
+      <li><a href="#jonathan">Jonathan Shomo, PA-C</a></li>
+      <li><a href="#reviews">What patients say</a></li>
+      <li><a href="#visit">Find the door</a></li>
+      <li><a href="#questions">Questions</a></li>
+    </ul>
+  </aside>
+
+  <main class="main">
+
+    <section class="band hero">
+      <div class="wrap">
+        <h1>Your own clinician. One flat monthly fee. No clock on the visit.</h1>
+        <p class="lede">Direct primary care on Bridgewater's Main Street. No insurance billing, longer appointments, and the clinician you join is the one you see.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://hastingsclinic.sigmamd.com/signup/membership">Start enrolment</a>
+          <a class="btn-line" href="tel:+15405154325">Call 540-515-HEAL</a>
+        </div>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/hero.png" width="1536" height="1024" alt="An empty exam room in morning light: a wooden desk with two chairs, a paper chart and a stethoscope, white-painted brick, an anatomical chart on the wall">
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" id="membership">
+      <div class="wrap">
+        <h2>What the monthly fee covers</h2>
+        <p class="lede" style="margin-bottom:34px">Everything here is included in the membership. It is the clinic's own itemised list, grouped, not a summary.</p>
+        <div class="ledger">
+          <div><h3>Everyday care</h3><ul><li>Primary care and preventive medicine</li><li>Medication management</li><li>Physicals and medical examinations</li><li>Laboratory and diagnostic services</li></ul></div>
+          <div><h3>When something happens</h3><ul><li>Wound and injury care, and minor dermatological surgery</li><li>Sports medicine</li><li>Ear, nose and throat care</li><li>Telemedicine, and care while you are travelling</li></ul></div>
+          <div><h3>The longer view</h3><ul><li>Men's and women's health</li><li>Weight management, and consultations on peptide therapy</li><li>Access to Emsella treatments</li></ul></div>
+        </div>
+        <div class="fee">
+          <div>
+            <h3>One fee, set by age, and the list above is what it covers.</h3>
+            <p>Membership is billed monthly and the fee depends on your age band. The clinic keeps an itemised document of everything the fee includes; ask for it before you decide.</p>
+            <p class="tiers">Age bands include Young Adult (18 to 26) and Adult (27 to 49). Call for this year's figures and the bands for children and older adults.</p>
+          </div>
+          <div>
+            <h3>Still want insurance?</h3>
+            <p>Keep it. Direct primary care is not a replacement for insurance. Many patients pair the membership with a catastrophic plan or a health-sharing plan for hospital care and specialists, and use the clinic for everything else.</p>
+            <div class="actions"><a class="btn" href="https://hastingsclinic.sigmamd.com/signup/membership">Start enrolment</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-tight" id="how">
+      <div class="wrap">
+        <h2>How joining works</h2>
+        <ol class="steps">
+          <li><span class="n">1</span><h3>Enrol online</h3><p>A few minutes on the enrolment page. You can enrol yourself, your household, or someone you look after.</p></li>
+          <li><span class="n">2</span><h3>The office calls you</h3><p>You get everything you need to begin, and exactly what your access to Jonathan looks like from here on.</p></li>
+          <li><span class="n">3</span><h3>Get care, in person or by phone</h3><p>Longer appointments at 110-A N Main, and a clinician you can reach between them, including when you travel.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band panel" id="nonmembers">
+      <div class="wrap split">
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/tray.png" width="1024" height="1024" alt="A small sterile procedure tray on a stainless counter: a suture kit in its packet, folded gauze, an antiseptic bottle, a dermatoscope and gloves">
+        </figure>
+        <div>
+          <h2>Not a member? Some things are still open to you.</h2>
+          <p class="copy">Jonathan's first love in medicine is dermatology, and the clinic keeps its skin work and its weight-loss programme open to non-members, cash pay, at a rate they will tell you on the phone. No insurance is accepted, so there is no claim to wait on.</p>
+          <ul class="procs">
+            <li>Stitches</li>
+            <li>Skin biopsies</li>
+            <li>Mole, skin tag and cyst removal</li>
+            <li>Skin cancer diagnosis and removal</li>
+            <li>Wart treatment</li>
+            <li>Ingrown toenail treatment</li>
+            <li>Weight loss, with GLP-1 medication where it fits</li>
+            <li>Emsella and Emsculpt Neo sessions</li>
+          </ul>
+          <p class="price-line"><strong>Weight-loss management begins at $300 a month.</strong> Skin procedures and Emsella or Emsculpt Neo sessions are priced by phone. Call 540-515-HEAL.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band story" id="jonathan">
+      <div class="wrap split flip">
+        <div class="copy">
+          <h2>The person behind the fee</h2>
+          <p>Jonathan Shomo grew up in ten countries, the son of an economist with the Asian Development Bank. His mother is Mary Hastings. He watched his first operation on a volunteer trip to a hospital in Nairobi, fainted, and decided on medicine anyway.</p>
+          <p>He worked two years as a dermatologist's assistant in Reston, moved to the Valley in 2002, trained in clinical laboratory science at Augusta Medical Center and took his physician assistant degree at James Madison University. Then came UVA's neurosurgery department, cardiology at Rockingham Memorial, and running a clinic in Dayton.</p>
+          <p>By November 2021 he had opened his own door on Main Street, so that the length of an appointment could be decided by the patient in the room and not by anyone else.</p>
+          <p class="sig">Jonathan Shomo, PA-C</p>
+        </div>
+        <figure>
+          <!-- generated illustrative imagery -->
+          <img src="images/desk.png" width="1024" height="1024" alt="A clinician's desk by a window: an open notebook, a stethoscope, reading glasses and a mug, with green Valley hills out of focus beyond the glass">
+        </figure>
+      </div>
+    </section>
+
+    <section class="band reviews" id="reviews">
+      <div class="wrap">
+        <h2>Sixty Google reviews. Four point nine.</h2>
+        <p class="sub">Quoted from the clinic's public Google listing, as it stood in September 2026.</p>
+        <div class="quotes">
+          <blockquote><p>"This was absolutely the best Dr. visit I have ever had ... walked out smiling just because of this visit."</p><cite>Scott K., Google review, September 2026</cite></blockquote>
+          <blockquote><p>"He always takes time to explain things and always helps us get the best price on medications."</p><cite>Mark F., Google review, September 2026</cite></blockquote>
+          <blockquote><p>"Dr Shomo is very attentive and detailed in explaining the treatment plan ... Alexa is very welcoming, and also knowledgeable."</p><cite>Kimberly G., Google review, July 2026</cite></blockquote>
+        </div>
+        <div class="after"><a class="btn" href="https://hastingsclinic.sigmamd.com/signup/membership">Start enrolment</a><a class="btn-line" href="tel:+15405154325">Call 540-515-HEAL</a></div>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="visit-photo">
+        <!-- generated illustrative imagery -->
+        <img src="images/street.png" width="1536" height="1024" alt="A small Virginia main street on an autumn morning: brick storefronts with painted trim, a row of mailboxes at the curb, a parked pickup and long tree shadows">
+      </div>
+      <div class="band band-tight">
+        <div class="wrap">
+          <h2>Find the door</h2>
+          <p class="lede">Suite A at 110 North Main Street, in the middle of town.</p>
+          <div class="visit-grid">
+            <div><h3>Address</h3><p>110-A N Main Street<br>Bridgewater, VA 22812</p></div>
+            <div><h3>Hours</h3><p>Monday to Thursday<br>8:30 to 12, then 1 to 5</p></div>
+            <div><h3>Reach the office</h3><p><a href="tel:+15405154325">540-515-HEAL (4325)</a><br><a href="mailto:office@hastingsclinic.com">office@hastingsclinic.com</a></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-tight" id="questions">
+      <div class="wrap">
+        <h2>Three questions people ask</h2>
+        <ul class="faq">
+          <li><h3>Will I still need insurance?</h3><p>Direct primary care is not a replacement for insurance. It is still a good idea to be covered for emergency care, specialists, or something like a car or farming accident. Many patients pair the membership with a catastrophic plan or a health-sharing plan.</p></li>
+          <li><h3>Will I still need the emergency room?</h3><p>Sometimes. The clinic is not an emergency room, but it handles most of what an urgent care does, and as a member you can call and ask whether you should go, or whether it can be sorted from home. Patients have saved themselves the trip, and the bill, that way.</p></li>
+          <li><h3>What exactly is included?</h3><p>The list above is the clinic's own itemised list. If something you need is not on it, call and ask before you enrol. The office would rather answer the question than have you guess.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div class="foot-grid">
+        <div><strong>Hastings Medical Clinic</strong><p>110-A N Main Street, Bridgewater, VA 22812<br>540-515-4325<br>office@hastingsclinic.com</p></div>
+        <div><strong>Jonathan Shomo, PA-C</strong><p>Direct primary care, cash-pay skin procedures and weight-loss management. No insurance accepted.</p></div>
+      </div>
+      <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Hastings Medical Clinic. The monthly membership fee is not published on the clinic's current site or enrolment page, so this concept states the fee's structure and leaves the figures to a phone call. Hours are the clinic's own, from its contact page. The opening date is from the Town of Bridgewater's newsletter of 20 November 2021, which described the clinic as a new business; the clinic's own site says 2022. Reviews are quoted from the clinic's public Google listing as of September 2026. This is an unsolicited design concept and not the clinic's website.</p>
+    </footer>
+
+  </main>
+</div>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Hastings Medical Clinic, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
