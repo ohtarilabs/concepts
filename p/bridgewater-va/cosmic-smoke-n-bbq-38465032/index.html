@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cosmic Smoke-N-BBQ, Bridgewater VA. Barbecue catering and a food trailer for the Shenandoah Valley, since 2014</title>
+<meta name="description" content="Cosmic Smoke-N-BBQ caters weddings, corporate events, festivals and family parties across the Shenandoah Valley from Bridgewater, Virginia, and runs a food trailer on weekends. Pitmaster Jeffrey Good, since 2014. Call (540) 820-9479 to reserve a date.">
+<style>
+@font-face{font-family:"Alfa Slab One";src:url("fonts/alfa-slab-one-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Work Sans";src:url("fonts/work-sans-var.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+:root{
+  --night:#0B1020;
+  --panel:#151C33;
+  --bone:#F3E9D2;
+  --mist:#AEB6D2;
+  --ember:#E3492B;
+  --ember-deep:#F25C3E;
+  --rule:rgba(243,233,210,.16);
+  --display:"Alfa Slab One",Georgia,serif;
+  --body:"Work Sans","Helvetica Neue",Arial,sans-serif;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--ember) var(--night)}
+body{margin:0;background:var(--night);color:var(--bone);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+::selection{background:var(--ember);color:var(--night)}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.18em}
+a:focus-visible{outline:2px solid var(--bone);outline-offset:4px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;letter-spacing:.005em;text-wrap:balance;color:var(--bone)}
+h2{font-size:40px;line-height:1.3}
+h3{font-size:22px;line-height:1.3}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.skip{position:absolute;left:-999px;top:12px;background:var(--bone);color:var(--night);padding:10px 16px;z-index:10}
+.skip:focus{left:12px}
+.wrap{max-width:var(--max);margin-left:auto;margin-right:auto}
+.label{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mist)}
+
+/* header */
+.top{position:absolute;left:0;right:0;top:0;z-index:3;padding-left:72px;padding-right:72px}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:80px;max-width:var(--max);margin-left:auto;margin-right:auto}
+.mark{font-family:var(--display);font-size:26px;line-height:1.3;text-decoration:none;white-space:nowrap;color:var(--bone)}
+.top nav{display:flex;gap:26px;font-size:15px;font-weight:600}
+.top nav a{text-decoration:none;color:var(--bone);transition:color .25s cubic-bezier(.16,1,.3,1)}
+.top nav a:hover{color:var(--ember)}
+.phone{font-size:16px;font-weight:600;text-decoration:none;white-space:nowrap;color:var(--bone)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;height:54px;padding-left:26px;padding-right:26px;font-family:var(--body);font-size:16px;font-weight:700;text-decoration:none;white-space:nowrap;border-radius:4px;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .25s cubic-bezier(.16,1,.3,1)}
+.btn-ember{background:var(--ember);color:var(--night)}
+.btn-ember:hover{background:var(--ember-deep)}
+.btn-line{color:var(--bone);box-shadow:inset 0 0 0 2px var(--bone)}
+.btn-line:hover{background:rgba(243,233,210,.1)}
+.btn:active{transform:translateY(1px)}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin-top:36px}
+.cta .or{font-size:16px;color:var(--mist)}
+.cta .or a{color:var(--bone);font-weight:600}
+
+/* hero: the pit at blue hour */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;padding-top:120px;padding-bottom:72px;padding-left:72px;padding-right:72px}
+.hero .shot{position:absolute;inset:0;z-index:0}
+.hero .shot img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero .veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,16,32,.15) 0%,rgba(11,16,32,0) 35%,rgba(11,16,32,.55) 70%,var(--night) 100%)}
+.sparks{position:absolute;left:0;right:0;bottom:0;height:70%;z-index:1;pointer-events:none;opacity:.85;
+  background-image:radial-gradient(circle,rgba(227,73,43,.95) 1px,transparent 1.6px),radial-gradient(circle,rgba(243,201,120,.8) 1px,transparent 1.5px);
+  background-size:220px 260px,340px 300px;background-position:20px 40px,150px 120px;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 45%,#000 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 45%,#000 100%);
+  animation:rise 14s linear infinite}
+.sparks::after{content:"";position:absolute;inset:0;opacity:0;transition:opacity .4s ease;
+  background-image:radial-gradient(circle,rgba(227,73,43,.95) 1px,transparent 1.7px);background-size:160px 180px;background-position:80px 10px;
+  animation:rise 5s linear infinite}
+.hero:has(.btn-ember:hover) .sparks::after{opacity:1}
+@keyframes rise{from{background-position-y:40px,120px}to{background-position-y:-220px,-180px}}
+.hero-in{position:relative;z-index:2;max-width:var(--max);width:100%;margin-left:auto;margin-right:auto}
+.hero h1{font-size:clamp(3rem,7.4vw,6.6rem);line-height:1.05;max-width:12ch;text-shadow:0 2px 24px rgba(11,16,32,.6)}
+.hero .sub{margin-top:18px;font-size:clamp(1.1rem,1.6vw,1.3rem);line-height:1.5;color:var(--bone);max-width:48ch}
+
+/* the family */
+.family{background:var(--panel);padding-top:88px;padding-bottom:88px;padding-left:72px;padding-right:72px}
+.family .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
+.family p{margin-top:16px;color:var(--mist);max-width:52ch}
+.family p b{color:var(--bone);font-weight:600}
+.creds{margin-top:26px;border-top:1px solid var(--rule)}
+.creds li{padding-top:11px;padding-bottom:11px;border-bottom:1px solid var(--rule);color:var(--bone);display:flex;gap:14px}
+.creds li span:first-child{color:var(--mist);flex:0 0 11ch}
+.family figure img{border-radius:4px}
+.family figcaption{font-size:14px;color:var(--mist);margin-top:10px}
+
+/* what an event gets */
+.serve{padding-top:88px;padding-bottom:88px;padding-left:72px;padding-right:72px}
+.serve figure img{border-radius:4px}
+.serve .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-top:48px}
+.serve .grid h3{padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.serve .grid li{padding-top:8px;padding-bottom:8px;border-bottom:1px solid var(--rule);color:var(--mist)}
+.serve .lede{margin-top:32px;max-width:60ch;color:var(--mist);font-size:19px}
+.serve .lede b{color:var(--bone);font-weight:600}
+.ways{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.ways li{padding-top:8px;padding-bottom:8px;padding-left:14px;padding-right:14px;border:1px solid var(--rule);border-radius:4px;color:var(--bone);font-size:15px}
+
+/* find the trailer */
+.stops{background:var(--panel);padding-top:88px;padding-bottom:88px;padding-left:72px;padding-right:72px}
+.stops .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}
+.stops p{margin-top:16px;color:var(--mist);max-width:50ch}
+.stops p b{color:var(--bone);font-weight:600}
+.stops figure img{border-radius:4px}
+.stops .cta{margin-top:28px}
+
+/* reserve */
+.reserve{padding-top:88px;padding-bottom:96px;padding-left:72px;padding-right:72px}
+.reserve .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.reserve p{margin-top:16px;color:var(--mist);max-width:46ch}
+.reserve address{font-style:normal;margin-top:22px;font-size:20px;line-height:1.7}
+.ask{margin-top:6px;border-top:1px solid var(--rule)}
+.ask li{padding-top:11px;padding-bottom:11px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:16px;color:var(--mist)}
+.ask li b{color:var(--bone);font-weight:600;white-space:nowrap}
+
+/* footer */
+.foot{background:#06091A;padding-top:56px;padding-bottom:40px;padding-left:72px;padding-right:72px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot address{font-style:normal;margin-top:12px;color:var(--mist);line-height:1.7}
+.foot .list{margin-top:10px}
+.foot .list li{padding-top:4px;padding-bottom:4px}
+.foot .list a{color:var(--bone);text-decoration:none}
+.foot .list a:hover{text-decoration:underline}
+.disclosure{grid-column:1 / -1;margin-top:28px;padding-top:20px;border-top:1px solid var(--rule);font-size:14px;color:var(--mist);max-width:84ch}
+
+@media (max-width:1440px){
+  .top,.hero,.family,.serve,.stops,.reserve,.foot{padding-left:5vw;padding-right:5vw}
+}
+@media (max-width:980px){
+  .family .wrap,.stops .wrap,.reserve .wrap{grid-template-columns:1fr;gap:36px}
+  .serve .grid{grid-template-columns:1fr;gap:24px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .top,.hero,.family,.serve,.stops,.reserve,.foot{padding-left:20px;padding-right:20px}
+  .top nav{display:none}
+  h2{font-size:32px}
+  .creds li{flex-direction:column;gap:2px}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .sparks,.sparks::after{animation:none}
+  *,*::before,*::after{transition:none !important}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A competition-certified family barbecue caterer sold as the pit at blue hour: the trailer, the smoke and the embers are the picture, the certifications are the claim. Refuses the kraft-brown western-slab template, the flame logo and the "award-winning" line the site uses now.
+OWN-WORLD: a night ground (#0B1020) and a deeper panel (#151C33), bone (#F3E9D2) and a blue mist (#AEB6D2) for text, one ember red (#E3492B) on the reserve button and the sparks; Alfa Slab One for the claims, Work Sans for everything else; hairline rules, a CSS spark field, four-pixel corners.
+STORY: the visitor sees the trailer smoking at dusk, reads three words and the phone, meets the family and their certifications, sees what an event gets and how it is served, finds where the trailer goes on weekends, and reserves a date.
+FIRST VIEWPORT: the trailer photograph fills the screen and fades into the night ground; wordmark, four links and the phone float over the top; low left, "Certified. Smoked. Served." at up to 6.6rem, a two-line what-and-since, "Reserve a date" in ember beside "or call (540) 820-9479"; ember sparks drift up behind the words.
+FORM: image-led, first on the ordered list; direction pinned by the frozen design-brief.md of the outreach pipeline, no concept roll.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="#main">Cosmic Smoke-N-BBQ</a>
+    <nav aria-label="Sections">
+      <a href="#family">The family</a>
+      <a href="#serve">Catering</a>
+      <a href="#trailer">The trailer</a>
+      <a href="#reserve">Reserve</a>
+    </nav>
+    <a class="phone" href="tel:+15408209479">(540) 820-9479</a>
+  </div>
+</header>
+
+<section class="hero" id="main">
+  <figure class="shot">
+    <!-- generated illustrative imagery -->
+    <img src="images/trailer.png" alt="A black barbecue trailer in a gravel lot at dusk, smoke rising from its smoker stack into a sky going from orange to deep blue, a string of warm bulbs along the serving window and the Valley hills dark behind" width="1536" height="1024">
+  </figure>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="sparks" aria-hidden="true"></div>
+  <div class="hero-in">
+    <h1>Certified. Smoked. Served.</h1>
+    <p class="sub">Barbecue catering and a food trailer from Bridgewater, Virginia, since 2014. Weddings, corporate events, festivals and family parties, each with a menu built for the day.</p>
+    <div class="cta">
+      <a class="btn btn-ember" href="#reserve">Reserve a date</a>
+      <p class="or">or call <a href="tel:+15408209479">(540) 820-9479</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="family" id="family">
+  <div class="wrap">
+    <div>
+      <h2>A family on the trailer</h2>
+      <p><b>Jeffrey Good</b> started Cosmic under a tent in 2014 and moved it onto a trailer in 2017. He grew up in Bridgewater, graduated from Turner Ashby, served as a Navy Hospital Corpsman, and went full time on the pit in 2021. He lists his credentials plainly:</p>
+      <ul class="creds">
+        <li><span>KCBS</span><span>Kansas City Barbeque Society life member, Certified BBQ Judge and Certified Table Captain</span></li>
+        <li><span>SCA</span><span>Steak Cookoff Association life member and certified judge</span></li>
+        <li><span>PCA</span><span>Pork Cookoff Association member and certified judge</span></li>
+        <li><span>MABA</span><span>Mid-Atlantic Barbecue Association member</span></li>
+        <li><span>ServSafe</span><span>Food Protection Manager</span></li>
+      </ul>
+      <p><b>Kelly Good</b>, a nurse for thirty-one years, makes the sides and runs the events. Their grandson <b>Addison Shank</b> earned his ServSafe certificate at fifteen and works the window.</p>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/firebox.png" alt="Gloved hands placing a split of oak into the open firebox of an offset smoker, embers glowing inside" width="1024" height="1024">
+      <figcaption>Oak into the firebox. The meat cooks on a rotisserie smoker; chicken is smoked separately.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="serve" id="serve">
+  <div class="wrap">
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/table.png" alt="An outdoor wedding catering line under a white tent at dusk: chafing dishes of pulled pork, smoked chicken halves, mac and cheese and beans, a basket of buns, string lights above and guests at round tables behind" width="1536" height="1024">
+    </figure>
+    <p class="lede"><b>What an event gets.</b> A menu built for your day from the list below, served the way the day needs it.</p>
+    <ul class="ways" aria-label="Ways we serve">
+      <li>Pick up</li><li>Drop off</li><li>Buffet</li><li>Family style</li><li>Mobile kitchen</li>
+    </ul>
+    <div class="grid">
+      <div>
+        <h3>From the smoker</h3>
+        <ul>
+          <li>Pork, pulled or sliced, with vinegar or red sauce</li>
+          <li>St. Louis spare ribs</li>
+          <li>Brisket, sliced for a plate or a sandwich; brisket chili</li>
+          <li>Chicken, pulled, or legs, thighs, quarters and halves</li>
+          <li>Turkey, smoked or roasted, with dressing and gravy</li>
+          <li>A whole hog, roasted on site</li>
+          <li>Prime rib or top round at a carving station</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Sides</h3>
+        <ul>
+          <li>Mac and cheese, baked beans, cheesy potatoes</li>
+          <li>Roasted Brussels sprouts, green beans with almonds</li>
+          <li>Cole slaw, potato salad, macaroni salad</li>
+          <li>Broccoli salad, three-bean salad, garden salad</li>
+          <li>Brisket, chicken or pork nachos</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Sweets and drinks</h3>
+        <ul>
+          <li>Peach and cherry cobbler</li>
+          <li>Bread pudding, no-bake brownies</li>
+          <li>Chocolate chip cookies, sheet cake</li>
+          <li>Sweet tea, fresh-squeezed lemonade</li>
+          <li>Hot spiced cider in season, coffee</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stops" id="trailer">
+  <div class="wrap">
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/tray.png" alt="A tray on pink butcher paper: sliced brisket with a dark bark, three pork ribs, sliced smoked sausage, pickles, onion, two slices of white bread and a cup of sauce" width="1024" height="1024">
+    </figure>
+    <div>
+      <h2>Find the trailer</h2>
+      <p>On weekends the trailer serves <b>barbecue sandwiches, barbecue nachos, sides and drinks</b> from the window. Its stops are posted on Facebook: Saturday lots in Bridgewater, Food Truck Wednesdays in Verona, Friday plant stops in Timberville, summer concerts at Dove Park in Dayton and Endless Caverns in New Market, and the Open Doors Food Truck Fest at the Rockingham County Fairgrounds.</p>
+      <div class="cta">
+        <a class="btn btn-line" href="https://www.facebook.com/CosmicSmokeNBBQ/">This week's stops on Facebook</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reserve" id="reserve">
+  <div class="wrap">
+    <div>
+      <h2>Reserve a date</h2>
+      <p>Call or email with the date, the head count and how you want it served, and Jeffrey and Kelly will build the menu with you.</p>
+      <address>
+        <a href="tel:+15408209479">(540) 820-9479</a><br>
+        <a href="mailto:cosmicsmokenbbq@gmail.com">cosmicsmokenbbq@gmail.com</a><br>
+        Bridgewater, Virginia
+      </address>
+    </div>
+    <div>
+      <p class="label">What we will ask</p>
+      <ul class="ask">
+        <li><span>The date and the place</span><b>first</b></li>
+        <li><span>How many guests</span><b>a count</b></li>
+        <li><span>Pick up, drop off, buffet, family style or the trailer</span><b>one</b></li>
+        <li><span>Meats, sides, sweets and drinks from the list</span><b>your picks</b></li>
+        <li><span>Disposable dinnerware</span><b>from 1.50 a person</b></li>
+        <li><span>Chafing setup: stand, water pan, two food pans, two cans of fuel</span><b>25.00 each</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="mark">Cosmic Smoke-N-BBQ</p>
+      <address>
+        Bridgewater, Virginia 22812<br>
+        <a href="tel:+15408209479">(540) 820-9479</a><br>
+        <a href="mailto:cosmicsmokenbbq@gmail.com">cosmicsmokenbbq@gmail.com</a>
+      </address>
+    </div>
+    <div>
+      <p class="label">Book</p>
+      <ul class="list">
+        <li><a href="#reserve">Reserve a date</a></li>
+        <li><a href="#serve">Catering menu</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="label">On this page</p>
+      <ul class="list">
+        <li><a href="#family">The family</a></li>
+        <li><a href="#trailer">Find the trailer</a></li>
+      </ul>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction; the trailer pictured is not the real one. The finished site would use photography of Cosmic Smoke-N-BBQ. Menu items, service types and the two add-on prices are as listed on the business's own site in September 2026; the family's story and certifications are as the business states them on its About page; the trailer's stops follow its own dated Facebook posts from 2026.</p>
+  </div>
+</footer>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Cosmic Smoke-N-BBQ, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
