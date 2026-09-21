@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Francesco's, Bridgewater VA. Italian restaurant and bar on North Main Street: pizza, pasta, weekday lunch buffet and Dave's Taverna pitas</title>
+<meta name="description" content="Francesco's at 101 North Main Street, Bridgewater, Virginia, since 2008: pizza by the pie and the slice, pasta, chicken and seafood dinners, a weekday lunch buffet, Dave's Taverna pitas and a full bar. Menu with prices, the phone, and one order button.">
+<style>
+@font-face{font-family:"Rozha One";src:url("fonts/rozha-one-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Lora";src:url("fonts/lora-var.woff2") format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Lora";src:url("fonts/lora-italic-var.woff2") format("woff2");font-weight:400 700;font-style:italic;font-display:swap}
+:root{
+  --wine:#5A1F2B;
+  --wine-deep:#47161F;
+  --page:#F6F5F2;
+  --ink:#241A14;
+  --mid:#6B5A50;
+  --basil:#3F7A4A;
+  --chalk:#F7E6DA;
+  --chalk-mid:#E3C9BC;
+  --rule:rgba(36,26,20,.18);
+  --board-rule:rgba(247,230,218,.28);
+  --display:"Rozha One",Georgia,serif;
+  --body:"Lora",Georgia,serif;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--wine) var(--page)}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+::selection{background:var(--wine);color:var(--chalk)}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.18em}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:4px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;letter-spacing:.005em;text-wrap:balance}
+h2{font-size:40px;line-height:1.3}
+h3{font-size:24px;line-height:1.3}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.skip{position:absolute;left:-999px;top:12px;background:var(--ink);color:var(--page);padding:10px 16px;z-index:10}
+.skip:focus{left:12px}
+.wrap{max-width:var(--max);margin-left:auto;margin-right:auto}
+.label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
+
+/* the board: first viewport */
+.board{background:var(--wine);color:var(--chalk);min-height:100svh;display:flex;flex-direction:column;padding-top:0;padding-bottom:56px;padding-left:72px;padding-right:72px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px;max-width:var(--max);width:100%;margin-left:auto;margin-right:auto}
+.mark{font-family:var(--display);font-size:28px;line-height:1.3;text-decoration:none;white-space:nowrap;color:var(--chalk)}
+.top nav{display:flex;gap:26px;font-size:15px;font-weight:600}
+.top nav a{text-decoration:none;color:var(--chalk-mid);transition:color .25s cubic-bezier(.16,1,.3,1)}
+.top nav a:hover{color:var(--chalk)}
+.phone{font-size:16px;font-weight:600;text-decoration:none;white-space:nowrap;color:var(--chalk)}
+.board-body{flex:1;display:flex;flex-direction:column;justify-content:center;max-width:var(--max);width:100%;margin-left:auto;margin-right:auto;padding-top:40px;padding-bottom:24px}
+.board h1{font-size:clamp(3.4rem,9vw,8.4rem);line-height:1.02;color:var(--chalk);max-width:9ch}
+.board .sub{margin-top:16px;font-size:clamp(1.15rem,1.7vw,1.35rem);line-height:1.5;color:var(--chalk-mid);max-width:44ch}
+.specials{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:1px solid var(--board-rule);border-bottom:1px solid var(--board-rule)}
+.special{padding-top:22px;padding-bottom:22px;padding-right:24px;border-right:1px solid var(--board-rule)}
+.special:last-child{border-right:0}
+.special + .special{padding-left:24px}
+.day{font-style:italic;font-size:17px;color:var(--chalk-mid)}
+.item{font-family:var(--display);font-size:30px;line-height:1.3;margin-top:4px}
+.price-big{font-size:18px;font-weight:600;margin-top:2px;color:var(--chalk)}
+.board-lines{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px 40px;font-size:17px;color:var(--chalk-mid)}
+.board-lines b{color:var(--chalk);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin-top:40px}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:54px;padding-left:26px;padding-right:26px;font-family:var(--body);font-size:16px;font-weight:700;text-decoration:none;white-space:nowrap;border-radius:4px;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .25s cubic-bezier(.16,1,.3,1)}
+.btn-chalk{background:var(--chalk);color:var(--wine)}
+.btn-chalk:hover{background:#FFF3EA}
+.btn-wine{background:var(--wine);color:var(--chalk)}
+.btn-wine:hover{background:var(--wine-deep)}
+.btn:active{transform:translateY(1px)}
+.cta .or{font-size:16px;color:var(--chalk-mid)}
+.cta .or a{color:var(--chalk);font-weight:600}
+
+/* proof */
+.proof{padding-top:88px;padding-bottom:72px;padding-left:72px;padding-right:72px}
+.proof .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.proof figure img{border-radius:4px}
+.proof p{margin-top:18px;color:var(--mid);max-width:46ch}
+.proof p b{color:var(--ink);font-weight:600}
+.num{font-family:var(--display);font-size:clamp(2.6rem,5vw,4.6rem);line-height:1.3;color:var(--wine)}
+
+/* menu */
+.menu{padding-top:24px;padding-bottom:80px;padding-left:72px;padding-right:72px}
+.menu-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px 24px;padding-bottom:20px;border-bottom:1px solid var(--ink)}
+.menu-head p{color:var(--mid)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0 64px}
+.group{padding-top:36px}
+.group h3{padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.group .note{font-size:15px;color:var(--mid);margin-top:8px}
+.line{--price:var(--mid);display:flex;align-items:baseline;gap:12px;padding-top:12px;padding-bottom:12px;border-bottom:1px dotted var(--rule)}
+.line .n{flex:1}
+.line .n small{display:block;font-size:14px;color:var(--mid)}
+.line .p{color:var(--price);font-weight:600;white-space:nowrap;transition:color .15s ease}
+.line:hover{--price:var(--ink)}
+.pin{margin-top:36px}
+.pin img{border-radius:4px}
+.pin figcaption{font-size:14px;color:var(--mid);margin-top:10px}
+
+/* buffet and catering */
+.tray{background:var(--wine);color:var(--chalk);padding-top:72px;padding-bottom:72px;padding-left:72px;padding-right:72px}
+.tray .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.tray h2{color:var(--chalk)}
+.tray p{margin-top:16px;color:var(--chalk-mid);max-width:44ch}
+.tray p b{color:var(--chalk);font-weight:600}
+.tray .prices{margin-top:22px;border-top:1px solid var(--board-rule)}
+.tray .prices li{display:flex;justify-content:space-between;gap:16px;padding-top:11px;padding-bottom:11px;border-bottom:1px solid var(--board-rule);color:var(--chalk-mid)}
+.tray .prices li b{color:var(--chalk);font-weight:600;white-space:nowrap}
+
+/* visit */
+.visit{padding-top:88px;padding-bottom:88px;padding-left:72px;padding-right:72px}
+.visit .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.visit address{font-style:normal;margin-top:18px;font-size:19px;line-height:1.6}
+.visit .hours{margin-top:18px;color:var(--mid);max-width:42ch}
+.visit .cta{margin-top:28px}
+.visit .cta .or{color:var(--mid)}
+.visit .cta .or a{color:var(--ink)}
+.visit figure img{border-radius:4px}
+
+/* footer */
+.foot{background:var(--ink);color:var(--page);padding-top:56px;padding-bottom:40px;padding-left:72px;padding-right:72px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot .mark{color:var(--page)}
+.foot address{font-style:normal;margin-top:12px;color:#CFC8C2;line-height:1.7}
+.foot .label{color:#CFC8C2}
+.foot .list{margin-top:10px}
+.foot .list li{padding-top:4px;padding-bottom:4px}
+.foot .list a{color:var(--page);text-decoration:none}
+.foot .list a:hover{text-decoration:underline}
+.disclosure{grid-column:1 / -1;margin-top:28px;padding-top:20px;border-top:1px solid rgba(246,245,242,.2);font-size:14px;color:#CFC8C2;max-width:82ch}
+
+@media (max-width:1440px){
+  .board,.proof,.menu,.tray,.visit,.foot{padding-left:5vw;padding-right:5vw}
+}
+@media (max-width:980px){
+  .proof .wrap,.tray .wrap,.visit .wrap{grid-template-columns:1fr;gap:36px}
+  .cols{grid-template-columns:1fr;gap:0}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .board,.proof,.menu,.tray,.visit,.foot{padding-left:20px;padding-right:20px}
+  .top nav{display:none}
+  .specials{grid-template-columns:1fr}
+  .special{border-right:0;border-bottom:1px solid var(--board-rule)}
+  .special:last-child{border-bottom:0}
+  .special + .special{padding-left:0}
+  h2{font-size:32px}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none !important}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A family Italian restaurant whose only complete page online is an ordering menu, sold as the menu board behind its own counter: the board is the first screen, the prices are the copy. Refuses the green-white-red tablecloth template and the dead BentoBox splash it has now.
+OWN-WORLD: a wine board (#5A1F2B) with chalk lettering (#F7E6DA) in Rozha One, a neutral pale page (#F6F5F2) under it with Lora for the ledger, near-black ink, one basil green held in reserve; hairline rules, dotted leaders, square photographs pinned between menu groups, four-pixel corners.
+STORY: the visitor reads the week's specials and the pizza prices off the board, taps order or the phone, learns the place is first of sixteen and has been here since 2008, reads the menu with prices, sees the buffet and the catering trays, finds the address.
+FIRST VIEWPORT: the board fills the screen: wordmark, four links and the phone in the top row; "Francesco's" at up to 8.4rem in chalk; one line of what and where; the three day specials in a ruled row with their prices; the cheese-pizza and buffet prices in a line; "Order online" in chalk beside "or call (540) 828-3255".
+FORM: type-led, first on the ordered list; direction pinned by the frozen design-brief.md of the outreach pipeline and its written amendment, no concept roll.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+<a class="skip" href="#main">Skip to content</a>
+<section class="board" id="main">
+  <header class="top">
+    <a class="mark" href="#main">Francesco's</a>
+    <nav aria-label="Sections">
+      <a href="#menu">Menu</a>
+      <a href="#buffet">Buffet and catering</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="phone" href="tel:+15408283255">(540) 828-3255</a>
+  </header>
+  <div class="board-body">
+    <h1>Francesco's</h1>
+    <p class="sub">Italian restaurant and bar at 101 North Main Street, Bridgewater. Pizza, pasta, a weekday lunch buffet, Dave's Taverna pitas and a full bar, since 2008.</p>
+    <div class="specials" aria-label="Weekday specials">
+      <div class="special">
+        <p class="day">Tuesday</p>
+        <p class="item">Sub special</p>
+        <p class="price-big">11.00</p>
+      </div>
+      <div class="special">
+        <p class="day">Wednesday</p>
+        <p class="item">Wrap special</p>
+        <p class="price-big">11.00</p>
+      </div>
+      <div class="special">
+        <p class="day">Thursday</p>
+        <p class="item">Calzone special</p>
+        <p class="price-big">11.00</p>
+      </div>
+    </div>
+    <div class="board-lines">
+      <p>Cheese pizza, 12 inch <b>12.25</b>, 16 inch <b>18.75</b>, by the slice <b>5.00</b></p>
+      <p>Weekday lunch buffet <b>13.50</b>, under ten <b>6.00</b></p>
+      <p>Gyro <b>15.50</b></p>
+    </div>
+    <div class="cta">
+      <a class="btn btn-chalk" href="https://www.toasttab.com/local/order/francescos-bridgewater">Order online</a>
+      <p class="or">or call <a href="tel:+15408283255">(540) 828-3255</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="proof" aria-label="About Francesco's">
+  <div class="wrap">
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/pie.png" alt="A large cheese pizza on a round metal pan on a dark wood table, one slice pulled away with the cheese stretching, a shaker of pepper flakes and a stack of plates beside it" width="1536" height="1024">
+    </figure>
+    <div>
+      <p class="num">First of sixteen.</p>
+      <p>Tripadvisor ranks Francesco's <b>first of the sixteen restaurants</b> it lists in Bridgewater, from 112 reviews, as of September 2026.</p>
+      <p>The restaurant opened in 2008 at the north end of Main Street: <b>120 seats at 27 tables</b>, a bar and a patio. Dave Miller, who ran Dave's Downtown Taverna in Harrisonburg from 1994 to 2013, bought it in January 2022. The Dave's Taverna pitas on the menu carry his old restaurant's name.</p>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <h2>The menu</h2>
+      <p>Prices as listed on the order page, September 2026.</p>
+    </div>
+    <div class="cols">
+      <div>
+        <div class="group">
+          <h3>Pizza</h3>
+          <ul>
+            <li class="line"><span class="n">Cheese pizza, 12 inch</span><span class="p">12.25</span></li>
+            <li class="line"><span class="n">Cheese pizza, 16 inch</span><span class="p">18.75</span></li>
+            <li class="line"><span class="n">One slice</span><span class="p">5.00</span></li>
+            <li class="line"><span class="n">Specialty pizza, 12 inch<small>Margherita, BLT, Buffalo Chicken or Crazy; half and half at the same price</small></span><span class="p">19.75</span></li>
+            <li class="line"><span class="n">Specialty pizza, 16 inch</span><span class="p">25.75</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Dave's Taverna Pita's</h3>
+          <ul>
+            <li class="line"><span class="n">Gyro</span><span class="p">15.50</span></li>
+            <li class="line"><span class="n">Chicken Souvlaki</span><span class="p">15.50</span></li>
+            <li class="line"><span class="n">Steak and Cheese Pita</span><span class="p">15.50</span></li>
+            <li class="line"><span class="n">Veggie Pita</span><span class="p">14.50</span></li>
+          </ul>
+        </div>
+        <figure class="pin">
+          <!-- generated illustrative imagery -->
+          <img src="images/gyro.png" alt="A gyro of sliced meat, tomato, onion and tzatziki folded in a pita, in a paper-lined basket with fries and a cup of tzatziki" width="1024" height="1024">
+          <figcaption>The gyro, from the Dave's Taverna pita line.</figcaption>
+        </figure>
+        <div class="group">
+          <h3>Burgers</h3>
+          <ul>
+            <li class="line"><span class="n">Taverna Burger<small>A third of a pound of Angus beef on a Kaiser bun, with fries</small></span><span class="p">14.75</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Kids</h3>
+          <ul>
+            <li class="line"><span class="n">Manicotti</span><span class="p">6.00</span></li>
+            <li class="line"><span class="n">Ziti</span><span class="p">6.00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="group">
+          <h3>Dinners</h3>
+          <p class="note">Pasta, chicken and seafood dinners come with salad and bread knots. Stromboli, calzones, eight-inch subs and wraps are on the order page with the day's prices.</p>
+        </div>
+        <div class="group">
+          <h3>Salads and soup</h3>
+          <ul>
+            <li class="line"><span class="n">Shrimp Salad</span><span class="p">17.50</span></li>
+            <li class="line"><span class="n">Side Salad</span><span class="p">4.50</span></li>
+            <li class="line"><span class="n">Side Caesar Salad</span><span class="p">4.50</span></li>
+            <li class="line"><span class="n">Soup</span><span class="p">4.50</span></li>
+          </ul>
+        </div>
+        <figure class="pin">
+          <!-- generated illustrative imagery -->
+          <img src="images/buffet.png" alt="A lunch buffet line of steel pans under warming lamps: baked ziti, chicken parmesan, meatballs in sauce and a green salad, with a stack of plates at the end" width="1024" height="1024">
+          <figcaption>The weekday lunch buffet: pizza, pasta and a salad bar.</figcaption>
+        </figure>
+        <div class="group">
+          <h3>Starters and sides</h3>
+          <ul>
+            <li class="line"><span class="n">Bread order</span><span class="p">3.50</span></li>
+            <li class="line"><span class="n">Onion Rings</span><span class="p">7.00</span></li>
+            <li class="line"><span class="n">Chips</span><span class="p">4.00</span></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Desserts</h3>
+          <ul>
+            <li class="line"><span class="n">Cookie Skillet</span><span class="p">7.50</span></li>
+            <li class="line"><span class="n">Scoop of ice cream</span><span class="p">2.00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tray" id="buffet">
+  <div class="wrap">
+    <div>
+      <h2>The weekday lunch buffet</h2>
+      <p>Pizza, pasta and a salad bar, <b>13.50</b>, and <b>6.00</b> under ten. The buffet came back on February 7, 2022, after the pandemic took it away, and it has been the lunch crowd's reason to come ever since.</p>
+    </div>
+    <div>
+      <h2>Trays for a crowd</h2>
+      <p>Full and half trays from the catering menu, ordered on the same page as dinner.</p>
+      <ul class="prices">
+        <li><span>Pasta trays: lasagna, ziti al forno, manicotti, ravioli, tortellini, eggplant parmesan</span><b>140 full, 70 half</b></li>
+        <li><span>Chicken trays: parmesan, marsala, alfredo, cacciatore, cardinal, broccoli</span><b>150 full, 75 half</b></li>
+        <li><span>Seafood trays: shrimp scampi, shrimp alfredo, fra diavolo, broiled salmon</span><b>160 full, 80 half</b></li>
+        <li><span>Salad trays, garden and Caesar</span><b>from 25</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div>
+      <h2>Come in</h2>
+      <address>
+        Francesco's<br>
+        101 North Main Street<br>
+        Bridgewater, Virginia 22812<br>
+        <a href="tel:+15408283255">(540) 828-3255</a>
+      </address>
+      <p class="hours">Today's hours are on the order page. Call ahead for a large party or a tray.</p>
+      <div class="cta">
+        <a class="btn btn-wine" href="https://www.toasttab.com/local/order/francescos-bridgewater">Order online</a>
+        <p class="or">or call <a href="tel:+15408283255">(540) 828-3255</a></p>
+      </div>
+    </div>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/room.png" alt="An Italian restaurant dining room in the evening: wooden tables set with white napkins, pendant lamps, a brick wall with framed photographs and a long bar of bottles and taps at the back" width="1024" height="1024">
+    </figure>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="mark">Francesco's</p>
+      <address>
+        101 North Main Street<br>
+        Bridgewater, Virginia 22812<br>
+        <a href="tel:+15408283255">(540) 828-3255</a>
+      </address>
+    </div>
+    <div>
+      <p class="label">Order</p>
+      <ul class="list">
+        <li><a href="https://www.toasttab.com/local/order/francescos-bridgewater">Order online for pickup</a></li>
+        <li><a href="#menu">Menu and prices</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="label">On this page</p>
+      <ul class="list">
+        <li><a href="#buffet">Buffet and catering</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction. The finished site would use photography of Francesco's. Menu items and prices are as listed on the restaurant's ordering page in September 2026; the Tripadvisor rank is as of the same month; the opening year, seating and ownership follow the Daily News-Record's report of February 23, 2022; hours are left to the restaurant because its existing listings disagree.</p>
+  </div>
+</footer>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Francesco's, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
