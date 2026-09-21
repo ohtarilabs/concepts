@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- preview build: injected by publish_pages.py; source is unmodified -->
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Apple Chinese Restaurant, Bridgewater VA. Menu with prices, takeout and delivery on South Main Street</title>
+<meta name="description" content="Red Apple Chinese Restaurant at 205 South Main Street, Bridgewater, Virginia: General Tso's chicken, lo mein, fried rice, dinner plates and combination plates, to eat in, take out or have delivered. The full numbered menu with prices, and the phone: (540) 828-3598.">
+<style>
+@font-face{font-family:"Syne";src:url("fonts/syne-var.woff2") format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Karla";src:url("fonts/karla-var.woff2") format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
+:root{
+  --paper:#F4E7C6;
+  --white:#FFFFFF;
+  --ink:#23191A;
+  --mid:#6B5A57;
+  --red:#B2261C;
+  --red-deep:#921C14;
+  --blue:#2B4C8C;
+  --cream-on-red:#FFF1E6;
+  --rule:rgba(35,25,26,.22);
+  --display:"Syne","Helvetica Neue",Arial,sans-serif;
+  --body:"Karla","Helvetica Neue",Arial,sans-serif;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--red) var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+::selection{background:var(--red);color:var(--cream-on-red)}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.18em}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:4px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);font-weight:800;margin:0;letter-spacing:.01em;text-wrap:balance}
+h2{font-size:22px;line-height:1.3;text-transform:uppercase;letter-spacing:.08em}
+h3{font-size:24px;line-height:1.3}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.skip{position:absolute;left:-999px;top:12px;background:var(--ink);color:var(--white);padding:10px 16px;z-index:10}
+.skip:focus{left:12px}
+.wrap{max-width:var(--max);margin-left:auto;margin-right:auto}
+
+/* masthead */
+.mast{background:var(--red);color:var(--cream-on-red);padding-top:28px;padding-bottom:36px;padding-left:72px;padding-right:72px}
+.mast .wrap{display:grid;grid-template-columns:1fr auto;gap:24px 40px;align-items:end}
+.mast h1{font-size:clamp(3.2rem,9vw,7.6rem);line-height:1;color:var(--cream-on-red);text-transform:uppercase;letter-spacing:.02em}
+.mast .sub{margin-top:12px;font-size:clamp(1.05rem,1.5vw,1.25rem);line-height:1.5;color:var(--cream-on-red);max-width:44ch}
+.mast .right{text-align:right}
+.mast .phone{display:block;font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.3;text-decoration:none;color:var(--cream-on-red);white-space:nowrap}
+.mast .hrs{font-size:15px;color:var(--cream-on-red);margin-top:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:52px;padding-left:24px;padding-right:24px;font-family:var(--body);font-size:16px;font-weight:700;text-decoration:none;white-space:nowrap;border-radius:2px;margin-top:14px;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .25s cubic-bezier(.16,1,.3,1)}
+.btn-cream{background:var(--cream-on-red);color:var(--red)}
+.btn-cream:hover{background:var(--white)}
+.btn-red{background:var(--red);color:var(--cream-on-red)}
+.btn-red:hover{background:var(--red-deep)}
+.btn:active{transform:translateY(1px)}
+.mast nav{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:15px;font-weight:700;padding-top:18px;border-top:1px solid rgba(255,241,230,.35)}
+.mast nav a{text-decoration:none;color:var(--cream-on-red)}
+.mast nav a:hover{text-decoration:underline}
+
+/* the menu */
+.menu{padding-top:56px;padding-bottom:56px;padding-left:72px;padding-right:72px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0 64px}
+.plate{margin-bottom:28px}
+.plate img{border-radius:2px;border:1px solid var(--rule)}
+.plate figcaption{font-size:14px;color:var(--mid);margin-top:8px}
+.sec{margin-top:36px}
+.sec:first-child{margin-top:0}
+.sec h2{padding-bottom:8px;border-bottom:2px solid var(--ink);color:var(--ink)}
+.sec .note{font-size:14px;color:var(--mid);margin-top:8px}
+.line{--num:var(--mid);display:grid;grid-template-columns:3.4em 1fr auto;gap:10px;align-items:baseline;padding-top:10px;padding-bottom:10px;border-bottom:1px dotted var(--rule)}
+.line .n{font-weight:700;color:var(--num);transition:color .15s ease}
+.line:hover{--num:var(--red)}
+.line .p{font-weight:700;white-space:nowrap}
+.line .d{display:block;font-size:14px;color:var(--mid)}
+
+/* boxed plates */
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+.box{background:var(--white);border:2px solid var(--ink);border-radius:2px;padding-top:22px;padding-bottom:22px;padding-left:24px;padding-right:24px}
+.box h3{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.box h3 span:last-child{font-family:var(--body);font-weight:700;font-size:20px;color:var(--red);white-space:nowrap}
+.box .with{font-size:14px;color:var(--mid);margin-top:8px}
+.box ul{margin-top:8px;columns:2;column-gap:24px}
+.box li{--num:var(--mid);display:grid;grid-template-columns:3em 1fr;gap:8px;padding-top:6px;padding-bottom:6px;break-inside:avoid}
+.box li .n{font-weight:700;color:var(--num);transition:color .15s ease}
+.box li:hover{--num:var(--red)}
+
+/* the strip */
+.strip{background:var(--white);padding-top:64px;padding-bottom:64px;padding-left:72px;padding-right:72px}
+.strip .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px}
+.strip figure img{border-radius:2px}
+.strip figcaption{font-size:14px;color:var(--mid);margin-top:8px}
+
+/* visit */
+.visit{padding-top:72px;padding-bottom:88px;padding-left:72px;padding-right:72px}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.visit h3{font-size:30px}
+.visit p{margin-top:14px;color:var(--mid);max-width:44ch}
+.visit address{font-style:normal;margin-top:18px;font-size:19px;line-height:1.7}
+.visit .panel{background:var(--white);border:2px solid var(--ink);border-radius:2px;padding-top:24px;padding-bottom:24px;padding-left:24px;padding-right:24px}
+.visit .panel ul{margin-top:12px;border-top:1px solid var(--rule)}
+.visit .panel li{padding-top:11px;padding-bottom:11px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:16px;color:var(--mid)}
+.visit .panel li b{color:var(--ink);font-weight:700;white-space:nowrap}
+
+/* footer */
+.foot{background:var(--ink);color:var(--paper);padding-top:56px;padding-bottom:40px;padding-left:72px;padding-right:72px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot .mark{font-family:var(--display);font-weight:800;font-size:22px;color:var(--paper)}
+.foot address{font-style:normal;margin-top:12px;color:#D7CFC0;line-height:1.7}
+.foot .label{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#D7CFC0}
+.foot .list{margin-top:10px}
+.foot .list li{padding-top:4px;padding-bottom:4px}
+.foot .list a{color:var(--paper);text-decoration:none}
+.foot .list a:hover{text-decoration:underline}
+.disclosure{grid-column:1 / -1;margin-top:28px;padding-top:20px;border-top:1px solid rgba(244,231,198,.2);font-size:14px;color:#D7CFC0;max-width:84ch}
+
+@media (max-width:1440px){
+  .mast,.menu,.strip,.visit,.foot{padding-left:5vw;padding-right:5vw}
+}
+@media (max-width:980px){
+  .mast .wrap{grid-template-columns:1fr}
+  .mast .right{text-align:left}
+  .cols{grid-template-columns:1fr}
+  .boxes{grid-template-columns:1fr}
+  .strip .wrap{grid-template-columns:1fr 1fr}
+  .strip figure:first-child{grid-column:1 / -1}
+  .visit .wrap{grid-template-columns:1fr;gap:32px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .mast,.menu,.strip,.visit,.foot{padding-left:20px;padding-right:20px}
+  .box ul{columns:1}
+  .strip .wrap{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none !important}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: The one Chinese restaurant in a small town, spoken for online by four satellites and a delivery app, sold as its own paper takeout menu: a red masthead, the numbered items with their real prices, the dinner and combination plates boxed at one price each, the phone. Refuses the dragon, the novelty typeface and the lantern.
+OWN-WORLD: menu-paper manila (#F4E7C6) with white panels, a near-black ink, a warm mid, one lacquer red (#B2261C) for the masthead and the hovered numbers, one longevity-plate blue held for the photograph's plate; Syne for the name and section heads, Karla with tabular figures for the items and prices; two-pixel ruled boxes, dotted leaders, two-pixel corners.
+STORY: the visitor reads the name, the address and the phone off the masthead, taps order or the number, reads the menu with prices by section, sees the two plate panels, sees the food and the room, and finds the address.
+FIRST VIEWPORT: the red masthead: "RED APPLE" at up to 7.6rem, "Chinese restaurant, 205 South Main Street, Bridgewater", the phone set large at right with "Order for pickup", and a row of section links; the General Tso's plate and the first menu sections begin at the fold.
+FORM: structural, first on the ordered list; direction pinned by the frozen design-brief.md of the outreach pipeline and its written amendment, no concept roll.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast" id="main">
+  <div class="wrap">
+    <div>
+      <h1>Red Apple</h1>
+      <p class="sub">Chinese restaurant. 205 South Main Street, Suite B, Bridgewater, Virginia. Eat in, take out, or have it delivered.</p>
+    </div>
+    <div class="right">
+      <a class="phone" href="tel:+15408283598">(540) 828-3598</a>
+      <p class="hrs">Call for today's hours.</p>
+      <a class="btn btn-cream" href="https://order.online/store/red-apple-chinese-restaurant-bridgewater-23174873">Order for pickup or delivery</a>
+    </div>
+    <nav aria-label="Menu sections">
+      <a href="#appetizers">Appetizers</a>
+      <a href="#noodles">Lo mein and fried rice</a>
+      <a href="#entrees">Entrees</a>
+      <a href="#plates">Dinner and combination plates</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<section class="menu" aria-label="Menu with prices">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <figure class="plate">
+          <!-- generated illustrative imagery -->
+          <img src="images/plate.png" alt="General Tso's chicken with broccoli and white rice on a pink-and-blue longevity plate on a laminate table, chopsticks and a takeout container beside it" width="1536" height="1024">
+          <figcaption>D16, General Tso's Chicken, the most ordered dish on the storefront.</figcaption>
+        </figure>
+        <div class="sec" id="appetizers">
+          <h2>Appetizers</h2>
+          <ul>
+            <li class="line"><span class="n">4</span><span>Dumplings, eight<span class="d">steamed or fried</span></span><span class="p">8.35</span></li>
+            <li class="line"><span class="n">13</span><span>Cheese Wonton, eight</span><span class="p">8.00</span></li>
+            <li class="line"><span class="n">5</span><span>Boneless Spare Ribs</span><span class="p">16.20</span></li>
+          </ul>
+        </div>
+        <div class="sec" id="noodles">
+          <h2>Lo mein, fried rice and mei fun</h2>
+          <p class="note">Lo mein and fried rice by the quart.</p>
+          <ul>
+            <li class="line"><span class="n">44</span><span>Chicken Lo Mein</span><span class="p">11.80</span></li>
+            <li class="line"><span class="n">45</span><span>Shrimp Lo Mein</span><span class="p">12.40</span></li>
+            <li class="line"><span class="n">46</span><span>Beef Lo Mein</span><span class="p">12.40</span></li>
+            <li class="line"><span class="n">39</span><span>Shrimp Fried Rice</span><span class="p">11.80</span></li>
+            <li class="line"><span class="n">41</span><span>Young Chow Fried Rice</span><span class="p">12.45</span></li>
+            <li class="line"><span class="n">53</span><span>Singapore Chow Mei Fun</span><span class="p">13.75</span></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="sec" id="entrees">
+          <h2>Entrees</h2>
+          <p class="note">With white rice.</p>
+          <ul>
+            <li class="line"><span class="n">63</span><span>Chicken with Broccoli</span><span class="p">13.75</span></li>
+            <li class="line"><span class="n">71</span><span>Chicken with Mixed Vegetable</span><span class="p">13.75</span></li>
+            <li class="line"><span class="n">72</span><span>Beef with Broccoli</span><span class="p">14.20</span></li>
+            <li class="line"><span class="n">80</span><span>Shrimp with Broccoli</span><span class="p">14.70</span></li>
+          </ul>
+        </div>
+        <div class="sec">
+          <h2>Sweet and sour</h2>
+          <ul>
+            <li class="line"><span class="n">54</span><span>Sweet and Sour Chicken, quart</span><span class="p">13.75</span></li>
+            <li class="line"><span class="n">56</span><span>Sweet and Sour Shrimp</span><span class="p">14.70</span></li>
+          </ul>
+        </div>
+        <div class="sec">
+          <h2>Chef's specialties</h2>
+          <ul>
+            <li class="line"><span class="n">C 7</span><span>Happy Family<span class="d">chicken, beef, shrimp and vegetables</span></span><span class="p">17.80</span></li>
+            <li class="line"><span class="n">C 17</span><span>Chicken with Black Pepper</span><span class="p">17.80</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes" id="plates">
+      <div class="box">
+        <h3><span>Dinner plates</span><span>12.40</span></h3>
+        <p class="with">One price. The numbered "D" plates, with rice.</p>
+        <ul>
+          <li><span class="n">D 3</span><span>Pepper Steak with Onion</span></li>
+          <li><span class="n">D 9</span><span>Beef, or Chicken, with Broccoli</span></li>
+          <li><span class="n">D 12</span><span>Sweet and Sour Chicken</span></li>
+          <li><span class="n">D 16</span><span>General Tso's Chicken</span></li>
+          <li><span class="n">D 18</span><span>Chicken with Garlic Sauce</span></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3><span>Combination plates</span><span>15.50</span></h3>
+        <p class="with">One price. The numbered "C" plates, with rice and an egg roll.</p>
+        <ul>
+          <li><span class="n">C 1</span><span>General Tso's Chicken</span></li>
+          <li><span class="n">C 2</span><span>Orange Flavor Chicken</span></li>
+          <li><span class="n">C 10</span><span>Lemon Chicken</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip" aria-label="The kitchen and the room">
+  <div class="wrap">
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/wok.png" alt="A cook tossing sliced beef and broccoli in a flaming wok in a small restaurant kitchen" width="1536" height="1024">
+      <figcaption>Beef with broccoli, number 72.</figcaption>
+    </figure>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/dumplings.png" alt="Eight pan-fried dumplings in a paper takeout tray with a cup of dipping sauce" width="1024" height="1024">
+      <figcaption>Dumplings, number 4.</figcaption>
+    </figure>
+    <figure>
+      <!-- generated illustrative imagery -->
+      <img src="images/room.png" alt="A small-town Chinese restaurant dining room with red booths, a fish tank and paper lanterns" width="1024" height="1024">
+      <figcaption>The room on South Main.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div>
+      <h3>Come in, or call it in</h3>
+      <p>Suite B at 205 South Main Street, at the south end of town, a walk from the college. Order at the counter, by phone, or through the storefront.</p>
+      <address>
+        Red Apple Chinese Restaurant<br>
+        205 South Main Street, Suite B<br>
+        Bridgewater, Virginia 22812<br>
+        <a href="tel:+15408283598">(540) 828-3598</a>
+      </address>
+      <a class="btn btn-red" href="https://order.online/store/red-apple-chinese-restaurant-bridgewater-23174873">Order for pickup or delivery</a>
+    </div>
+    <div class="panel">
+      <h3>Good to know</h3>
+      <ul>
+        <li><span>Dinner plates, any of the "D" numbers</span><b>12.40</b></li>
+        <li><span>Combination plates, any of the "C" numbers</span><b>15.50</b></li>
+        <li><span>Lo mein and fried rice</span><b>by the quart</b></li>
+        <li><span>Today's hours</span><b>call</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="mark">Red Apple Chinese Restaurant</p>
+      <address>
+        205 South Main Street, Suite B<br>
+        Bridgewater, Virginia 22812<br>
+        <a href="tel:+15408283598">(540) 828-3598</a>
+      </address>
+    </div>
+    <div>
+      <p class="label">Order</p>
+      <ul class="list">
+        <li><a href="https://order.online/store/red-apple-chinese-restaurant-bridgewater-23174873">Pickup or delivery</a></li>
+        <li><a href="#plates">Dinner and combination plates</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="label">On this page</p>
+      <ul class="list">
+        <li><a href="#appetizers">The menu</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </div>
+    <p class="disclosure">Photography shown is illustrative art direction; the plate, the wok, the dumplings and the room pictured are not the restaurant's. The finished site would use photography of Red Apple's own food and room. Menu items, numbers and prices are as listed on the restaurant's own ordering storefront in September 2026, and a few items whose prices did not appear there are listed without one; the plate panels show only the items the storefront named; hours are left to the restaurant because its listings disagree.</p>
+  </div>
+</footer>
+<!-- preview build: provenance line injected by publish_pages.py -->
+<p class="preview-provenance" style="margin:0;padding:1.5rem;font-size:0.75rem;line-height:1.5;text-align:center;opacity:0.55">An unsolicited design concept for Red Apple Chinese Restaurant, prepared by Ohtari Labs. This is not their website.</p>
+</body>
+</html>
